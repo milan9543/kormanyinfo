@@ -1,0 +1,19 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+pipeline/tmp/
+
+# Node
+node_modules/
+
+# Astro build output
+dist/
+.astro/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
