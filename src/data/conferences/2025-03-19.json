@@ -48,11 +48,15 @@
       "end_time": "14:09",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["usa", "vance", "diplomácia"],
+      "tags": [
+        "usa",
+        "vance",
+        "diplomácia"
+      ],
       "question": "Meg tudja erősíteni, hogy J.D. Vance Budapestre jöhet?",
       "answer": "Külföldi állami látogatásokról megfelelő időben tájékoztatunk.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_02",
@@ -60,11 +64,16 @@
       "end_time": "14:46",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["usa", "vance", "választás", "kampány"],
+      "tags": [
+        "usa",
+        "vance",
+        "választás",
+        "kampány"
+      ],
       "question": "Mekkora az esélye, hogy a választások előtt eljön az amerikai alelnök?",
       "answer": "A republikánus párt egyértelművé tette, hogy Magyarország jelenlegi vezetésével kíván együttműködni. Nem zárható ki személyes kampánysegítség.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_03",
@@ -72,11 +81,15 @@
       "end_time": "14:51",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["szipek", "patrióták", "vance"],
+      "tags": [
+        "szipek",
+        "patrióták",
+        "vance"
+      ],
       "question": "A SZIPEK-re vagy a Patrióták találkozójára érkezne?",
       "answer": "Megfelelő időben tájékoztatunk.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_04",
@@ -84,11 +97,16 @@
       "end_time": "15:51",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["druzsba", "ukrajna", "eu-támogatás", "90-milliárd"],
+      "tags": [
+        "druzsba",
+        "ukrajna",
+        "eu-támogatás",
+        "90-milliárd"
+      ],
       "question": "Mi a garancia a 90 milliárd eurós hitel jóváhagyásához? Elég egy ígéret vagy tényleg folynia kell az olajnak?",
       "answer": "Ha három hét múlva megérkezik az olaj, jóváhagyjuk. De csak a ténylegesen megérkezett olaj számít.",
       "hostility_percent": 0,
-      "question_criticism_percent": 25
+      "criticism_percent": 25
     },
     {
       "id": "q_05",
@@ -96,11 +114,16 @@
       "end_time": "16:17",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["zelenszkij", "eu-csúcs", "druzsba", "90-milliárd"],
+      "tags": [
+        "zelenszkij",
+        "eu-csúcs",
+        "druzsba",
+        "90-milliárd"
+      ],
       "question": "Ha Zelenszkij a csúcson bejelenti, hogy jövő hétfőn megnyitja a vezetéket, az elég?",
       "answer": "Ha három óra múlva itt az olaj, az sem elég. Semmilyen ígéretnek nem hiszünk. Zelenszkij szavaira nincs okunk adni — Brüsszel a cinkosa.",
       "hostility_percent": 5,
-      "question_criticism_percent": 35
+      "criticism_percent": 35
     },
     {
       "id": "q_06",
@@ -108,11 +131,16 @@
       "end_time": "17:46",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["merz", "németország", "90-milliárd", "vétó"],
+      "tags": [
+        "merz",
+        "németország",
+        "90-milliárd",
+        "vétó"
+      ],
       "question": "Merz szerint Orbán zsarolja az EU-t. Hogy tudja megakadályozni a 90 milliárd folyósítását?",
       "answer": "Magyar hozzájárulás nélkül jogszerűen nem lehet. Egyhangú döntés kell. Ha Németország nem akarja betartani a szabályokat, szóljon Kijevnek a vezetékről.",
       "hostility_percent": 5,
-      "question_criticism_percent": 40
+      "criticism_percent": 40
     },
     {
       "id": "q_07",
@@ -120,11 +148,15 @@
       "end_time": "20:28",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["választás", "orosz-beavatkozás", "elismerés"],
+      "tags": [
+        "választás",
+        "orosz-beavatkozás",
+        "elismerés"
+      ],
       "question": "Elemzők szerint ha Orbán nyer, az EU orosz beavatkozás címén nem ismeri el a választást. Beszélnek erről?",
       "answer": "A baloldal és a Tiszapárt vereségre készül, ezért előre magyarázzák. A magyar választási rendszer Európa legjobbjai közé tartozik. Orosz beavatkozást nem látunk — ukránt igen, a Tisza érdekében.",
       "hostility_percent": 0,
-      "question_criticism_percent": 30
+      "criticism_percent": 30
     },
     {
       "id": "q_08",
@@ -132,11 +164,15 @@
       "end_time": "22:00",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["választás", "eu", "megegyezés"],
+      "tags": [
+        "választás",
+        "eu",
+        "megegyezés"
+      ],
       "question": "Magabiztos Fidesz-győzelem esetén lesz megegyezés az Unióval?",
       "answer": "A Kijev–Brüsszel tengely azt szeretné, ha nem mi lennénk kormányon. Ha mégis, nekik is érdekük megegyezni.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_09",
@@ -144,11 +180,15 @@
       "end_time": "23:43",
       "reporter": "Csua Ildikó",
       "outlet": "Közmedia",
-      "tags": ["druzsba", "ukrajna", "választás"],
+      "tags": [
+        "druzsba",
+        "ukrajna",
+        "választás"
+      ],
       "question": "Akkor a választások után Kiev megnyitja a vezetéket?",
       "answer": "Kijevnek nincs más lehetősége. Ukrajna nem képes önmagát fenntartani. A választásokig kihúzhatják, de utána kénytelenek megnyitni.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_10",
@@ -156,11 +196,15 @@
       "end_time": "25:06",
       "reporter": "Csere Judit",
       "outlet": "M1 Híradó",
-      "tags": ["üzemanyag", "tartalékok", "benzinturizmus"],
+      "tags": [
+        "üzemanyag",
+        "tartalékok",
+        "benzinturizmus"
+      ],
       "question": "Környező országok mennyiségi korlátozást vezetnek be. Hogy állnak itthon a tartalékok? Kell-e hasonló intézkedés?",
       "answer": "A kőolaj stratégiai tartalék 80%-a megvan, az üzemanyag-tartalékból csak 3%-ot használtunk. Urai vagyunk a helyzetnek.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_11",
@@ -168,11 +212,15 @@
       "end_time": "26:38",
       "reporter": "Csere Judit",
       "outlet": "M1 Híradó",
-      "tags": ["druzsba", "eu-bizottság", "szakértők"],
+      "tags": [
+        "druzsba",
+        "eu-bizottság",
+        "szakértők"
+      ],
       "question": "Az EU Bizottság szakértőket küldött a vezeték vizsgálatára magyar és szlovák mérnökök nélkül. Mi erről a véleménye?",
       "answer": "Ficó miniszterelnök is mondta: ez vicc. A két érintett ország szakértőit kihagyni — színjáték. Brüsszel Kijev cinkosa.",
       "hostility_percent": 0,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_12",
@@ -180,11 +228,15 @@
       "end_time": "27:51",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["kitiltás", "ukrajna", "fenyegetés"],
+      "tags": [
+        "kitiltás",
+        "ukrajna",
+        "fenyegetés"
+      ],
       "question": "A kitiltott három ukrán állampolgár konkrétan milyen tevékenységet folytatott? Volt magyarországi aktivitásuk?",
       "answer": "Omelcsenkó a miniszterelnök meggyilkolásával fenyeget, és az öt gyermekét, hat unokáját is megemlíti. Tenhj ukrán csapatok Magyarországra küldéséről beszélt. Karas neonáci C14-vezető, szintén fenyeget.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_13",
@@ -192,11 +244,15 @@
       "end_time": "30:14",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["druzsba", "olajblokád", "eu-csúcs"],
+      "tags": [
+        "druzsba",
+        "olajblokád",
+        "eu-csúcs"
+      ],
       "question": "Orbán azt mondta, nekünk magyaroknak kell megoldani az olajblokádot. Milyen eszközök vannak? Mit várnak a mai naptól?",
       "answer": "Brüsszelre nem számíthatunk. Le kell törni az ukrán blokádot. Magyarország egyetlen eszköze: semmilyen Ukrajnát támogató döntést nem fogad el, amíg nincs olaj. A tartalékok biztosítják az ellátást.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_14",
@@ -204,11 +260,15 @@
       "end_time": "31:29",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["facebook", "közösségi-média", "cenzúra"],
+      "tags": [
+        "facebook",
+        "közösségi-média",
+        "cenzúra"
+      ],
       "question": "Szokott-e Facebookozni? Milyen arányban lát Tisza vs. Fidesz tartalmakat?",
       "answer": "Hetente egyszer nézem, kollégáim kezelik az oldalamat. A közösségi médiát a 21. századi politika borzalmas velejárójának tartom. Van cenzúra, ami Magyarországot is érinti.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_15",
@@ -216,11 +276,16 @@
       "end_time": "33:00",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["facebook", "manipuláció", "magyar-péter", "románia"],
+      "tags": [
+        "facebook",
+        "manipuláció",
+        "magyar-péter",
+        "románia"
+      ],
       "question": "Mario Nawfal szerint Magyar Péter elérései aránytalanul nagyok. Vizsgálják? Van eszköz a Facebook-manipuláció ellen?",
       "answer": "Az amerikaiakon kívül talán senkinek sincs erre eszköze. A Facebook algoritmusai blokkolják a kormánypártiakat és segítik a Tiszát. Ez a szólásszabadság jogellenes korlátozása.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_16",
@@ -228,11 +293,15 @@
       "end_time": "34:06",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["ukrajna", "pénzmozgás", "nyomozás"],
+      "tags": [
+        "ukrajna",
+        "pénzmozgás",
+        "nyomozás"
+      ],
       "question": "Orbán arról beszélt, hogy vizsgálják az Ukrajnából nyugatra áramló pénzeket. Van-e konkrét adat?",
       "answer": "Jelentős összegekről van szó. Folyamatban van ezzel kapcsolatos nyomozás és vizsgálat.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_17",
@@ -240,11 +309,14 @@
       "end_time": "34:16",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["nav", "nyomozás"],
+      "tags": [
+        "nav",
+        "nyomozás"
+      ],
       "question": "Kik vizsgálják pontosan?",
       "answer": "A NAV.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_18",
@@ -252,11 +324,16 @@
       "end_time": "34:36",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["tisza", "ukrajna", "titkosszolgálat", "nemzetbiztonság"],
+      "tags": [
+        "tisza",
+        "ukrajna",
+        "titkosszolgálat",
+        "nemzetbiztonság"
+      ],
       "question": "Mikor ismerheti meg a közvélemény a Tiszapárthoz érkező ukrán összegekről szóló titkosszolgálati jelentést?",
       "answer": "A nemzetbiztonsági bizottság már megismerhette. A titkosítás feloldása 10 napon, legfeljebb két héten belül megtörténik.",
       "hostility_percent": 0,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_19",
@@ -264,11 +341,15 @@
       "end_time": "35:01",
       "reporter": "Hejter Dávid",
       "outlet": "HírTV",
-      "tags": ["tisza", "náci-karlendítés", "tárkányi"],
+      "tags": [
+        "tisza",
+        "náci-karlendítés",
+        "tárkányi"
+      ],
       "question": "Tárkányi Zsolt Tiszás sajtófőnökről náci karlendítéses felvétel jelent meg. Mi lenne a helyes magatartás?",
       "answer": "Aki ilyen szélsőjobbos múlttal rendelkezik felnőtt korából, ne vállaljon közéleti szerepet. Ha a Tiszapártnak ez belefér, a választóknak kell következtetést levonni.",
       "hostility_percent": 5,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_20",
@@ -276,11 +357,16 @@
       "end_time": "36:17",
       "reporter": "Mucsi Viktor",
       "outlet": "Index",
-      "tags": ["nato", "usa", "hormuz", "irán"],
+      "tags": [
+        "nato",
+        "usa",
+        "hormuz",
+        "irán"
+      ],
       "question": "Foglalkozott-e a kormány az amerikai kéréssel, hogy NATO-tagként segítsenek a Hormuz-szoros biztosításában?",
       "answer": "Magyarországot erre nem kérték. Trump megnevezte az érintett országokat — ez a nagy haditengerészettel rendelkezőknek szólt.",
       "hostility_percent": 5,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_21",
@@ -288,11 +374,15 @@
       "end_time": "37:10",
       "reporter": "Mucsi Viktor",
       "outlet": "Index",
-      "tags": ["infláció", "hormuz", "energia"],
+      "tags": [
+        "infláció",
+        "hormuz",
+        "energia"
+      ],
       "question": "Milyen inflációs hatással számol a kormány a Hormuz-helyzet miatt?",
       "answer": "Egy hónap: elhanyagolható. Fél év: sajnos érdemi. Az üzemanyag-ársapka mérsékli, de az import beárazódhat.",
       "hostility_percent": 0,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_22",
@@ -300,11 +390,16 @@
       "end_time": "37:59",
       "reporter": "Mucsi Viktor",
       "outlet": "Index",
-      "tags": ["nato", "usa", "erbil", "irak"],
+      "tags": [
+        "nato",
+        "usa",
+        "erbil",
+        "irak"
+      ],
       "question": "Érkezett-e amerikai bírálat az erbili bázisról hazahozott katonák miatt?",
       "answer": "Semmilyen bírálat nem érkezett. Az olasz parancsnokság döntött, nem volt más lehetőség.",
       "hostility_percent": 0,
-      "question_criticism_percent": 20
+      "criticism_percent": 20
     },
     {
       "id": "q_23",
@@ -312,11 +407,15 @@
       "end_time": "38:15",
       "reporter": "Mucsi Viktor",
       "outlet": "Index",
-      "tags": ["irán", "közel-kelet", "magyar-állampolgárok"],
+      "tags": [
+        "irán",
+        "közel-kelet",
+        "magyar-állampolgárok"
+      ],
       "question": "Hány magyar állampolgár lehet még Iránban, illetve a Közel-Keleten?",
       "answer": "Legtöbben hazatértek. Iránban a konzuli védelemre regisztráltak számáról a Külügyminisztériumot kell megkérdezni.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_24",
@@ -324,11 +423,15 @@
       "end_time": "39:04",
       "reporter": "Mucsi Viktor",
       "outlet": "Index",
-      "tags": ["vance", "trump", "választás"],
+      "tags": [
+        "vance",
+        "trump",
+        "választás"
+      ],
       "question": "Ha Vance jön, az azt jelenti, hogy Trump már nem jön a kampányvéghajrában?",
       "answer": "Megfelelő időben tájékoztatunk.",
       "hostility_percent": 5,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_25",
@@ -336,11 +439,15 @@
       "end_time": "39:41",
       "reporter": "Sarner Félix",
       "outlet": "TV2",
-      "tags": ["kőolaj", "tartalékok", "adria-vezeték"],
+      "tags": [
+        "kőolaj",
+        "tartalékok",
+        "adria-vezeték"
+      ],
       "question": "Hány napnyi kőolajtartaléka van Magyarországnak? Mi a megoldás, ha nem indul el a szállítás?",
       "answer": "Kb. 3,5 hónapra elegendő stratégiai készlet, 80%-a megvan. Az Adria-vezetéken érkezik kőolaj. Ha a MOL be tudja szerezni a napi szükségletet, a tartalék nem csökken.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_26",
@@ -348,11 +455,14 @@
       "end_time": "40:58",
       "reporter": "Sarner Félix",
       "outlet": "TV2",
-      "tags": ["magyar-péter", "kampány"],
+      "tags": [
+        "magyar-péter",
+        "kampány"
+      ],
       "question": "Mi a véleménye arról, hogy Magyar Péter azzal vádolja Orbánt, hogy a Tisza rendezvényeit másolja?",
       "answer": "A választási kampány humorista része. A Tiszapártnak ez nem mindig sikerül jól.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_27",
@@ -360,11 +470,16 @@
       "end_time": "41:00",
       "reporter": "Sarner Félix",
       "outlet": "TV2",
-      "tags": ["patrióták", "eu", "kampány", "konzervatív"],
+      "tags": [
+        "patrióták",
+        "eu",
+        "kampány",
+        "konzervatív"
+      ],
       "question": "Hétfőn lesz az első Patrióta nagygyűlés Budapesten. Mi lesz a fő üzenet?",
       "answer": "Van Európának egy konzervatív jobboldali pártszövetsége, ami nemet mond a migrációra, békét és versenyképességet akar. Babiš, az erős osztrák és francia pártok vezetői is támogatják a Fideszt.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_28",
@@ -372,11 +487,16 @@
       "end_time": "42:45",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["irán", "nato", "usa", "hormuz"],
+      "tags": [
+        "irán",
+        "nato",
+        "usa",
+        "hormuz"
+      ],
       "question": "Trump azzal indokolja a kérést, hogy megakadályozza Irán atombombáját és rakétáit, amelyek Magyarországot is elérnék. Támogatja, semleges vagy ellenzi a kormány a beavatkozást?",
       "answer": "Nem kérték Magyarországot. Atomenergiával kapcsolatos egyezményeket be kell tartani — Irán nem tartotta be. Az egész világnak érdeke, hogy ne legyenek új atomhatalmak.",
       "hostility_percent": 10,
-      "question_criticism_percent": 30
+      "criticism_percent": 30
     },
     {
       "id": "q_29",
@@ -384,11 +504,15 @@
       "end_time": "44:38",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["irán", "usa", "morális-támogatás"],
+      "tags": [
+        "irán",
+        "usa",
+        "morális-támogatás"
+      ],
       "question": "Venezuela esetén Orbán élesen támogatta Trumpot. Eszmeileg, morálisan támogatja-e a kormány az iráni beavatkozást?",
       "answer": "Úgy érzem, erre válaszoltam. Magyarországnak és az egész világnak érdeke, hogy újabb atomhatalmak ne legyenek.",
       "hostility_percent": 15,
-      "question_criticism_percent": 45
+      "criticism_percent": 45
     },
     {
       "id": "q_30",
@@ -396,11 +520,14 @@
       "end_time": "44:53",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["irán", "usa"],
+      "tags": [
+        "irán",
+        "usa"
+      ],
       "question": "Az igen-nem skálán az igent mondta?",
       "answer": "Válaszoltam a kérdésre legjobb tudásom szerint.",
       "hostility_percent": 20,
-      "question_criticism_percent": 55
+      "criticism_percent": 55
     },
     {
       "id": "q_31",
@@ -408,11 +535,15 @@
       "end_time": "45:27",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["ukrajna", "90-milliárd", "összeomlás"],
+      "tags": [
+        "ukrajna",
+        "90-milliárd",
+        "összeomlás"
+      ],
       "question": "Ha nem kap 90 milliárdot Ukrajna, összeomlik. Örülne ennek a kormány?",
       "answer": "Nem. Annak örülnénk, ha kapnánk kőolajat. Ez a kérdés Zelenszkijé: megnyitja a vezetéket, vagy nem kap pénzt.",
       "hostility_percent": 15,
-      "question_criticism_percent": 55
+      "criticism_percent": 55
     },
     {
       "id": "q_32",
@@ -420,11 +551,15 @@
       "end_time": "46:02",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["druzsba", "ukrajna", "összeomlás"],
+      "tags": [
+        "druzsba",
+        "ukrajna",
+        "összeomlás"
+      ],
       "question": "A mérleg egyik serpenyőjében a vezeték, a másikban Ukrajna összeomlása. Ugyanaz a súly?",
       "answer": "Ezt Zelenszkijnek kell feltenni. Ha megnyitja a vezetéket, megkapja a pénzt. A jogszerűség útjára kellene visszatérnie.",
       "hostility_percent": 15,
-      "question_criticism_percent": 50
+      "criticism_percent": 50
     },
     {
       "id": "q_33",
@@ -432,11 +567,15 @@
       "end_time": "46:44",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["zelenszkij", "plakát", "kampány"],
+      "tags": [
+        "zelenszkij",
+        "plakát",
+        "kampány"
+      ],
       "question": "Van-e példa arra, hogy egy EU-országban kiplakátolják Zelenszkijt kampányban? Nem példátlan, amit a Fidesz csinált?",
       "answer": "Nem tudom, van-e példa. Vélelmezem, más országokban is kritizálják Ukrajna korlátlan pénzügyi támogatását. De a lényeg: Zelenszkij és Ukrajna fenyegeti Magyarországot — erre reagáltunk.",
       "hostility_percent": 20,
-      "question_criticism_percent": 50
+      "criticism_percent": 50
     },
     {
       "id": "q_34",
@@ -444,11 +583,15 @@
       "end_time": "49:03",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["omelcsenkó", "fenyegetés", "putyin"],
+      "tags": [
+        "omelcsenkó",
+        "fenyegetés",
+        "putyin"
+      ],
       "question": "Omelcsenkó azt is mondta, hogy Orbán Putyin foglyul ejtett embere. Ha az egyik fenyegetést komolyan vesszük, ezt a részt is értékeli?",
       "answer": "Ezt is komolyan vesszük. Ez is része a kitiltás okának — nyilvánvaló hazugság.",
       "hostility_percent": 15,
-      "question_criticism_percent": 35
+      "criticism_percent": 35
     },
     {
       "id": "q_35",
@@ -456,11 +599,16 @@
       "end_time": "49:52",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["önazonosság", "önkormányzat", "diszkrimináció", "roma"],
+      "tags": [
+        "önazonosság",
+        "önkormányzat",
+        "diszkrimináció",
+        "roma"
+      ],
       "question": "A Nógrád megyei kormányhivatal diszkriminatívnak találta több települési önazonossági rendeletet. Lesz-e törvénymódosítás?",
       "answer": "A törvény önkormányzati hatáskör. Hogy a kormányhivatal megsemmisít rendeleteket, az a törvény működőképességét bizonyítja. Ha valaki visszaél vele, a jogvédelem működik.",
       "hostility_percent": 10,
-      "question_criticism_percent": 45
+      "criticism_percent": 45
     },
     {
       "id": "q_36",
@@ -468,11 +616,15 @@
       "end_time": "52:05",
       "reporter": "Haz Zsolt",
       "outlet": "ATV",
-      "tags": ["önazonosság", "diszkrimináció", "roma"],
+      "tags": [
+        "önazonosság",
+        "diszkrimináció",
+        "roma"
+      ],
       "question": "Nógrádban egy rendelet ment át a szűrőn, a többi nem. Nem gondolják, hogy vissza kellene vonni a törvényt?",
       "answer": "Megkérem a kormányhivatalokat az országos adatokra. Ha egy rendelet fennakad a szűrőn, az a rendszer működését bizonyítja. Javító szándékú módosítástól nem zárkózom el, de először nézzük az adatokat.",
       "hostility_percent": 10,
-      "question_criticism_percent": 50
+      "criticism_percent": 50
     },
     {
       "id": "q_37",
@@ -480,11 +632,16 @@
       "end_time": "54:55",
       "reporter": "Máté Patrik",
       "outlet": "Magyar Nemzet",
-      "tags": ["tisza", "mol", "külföldi-tulajdon", "energia"],
+      "tags": [
+        "tisza",
+        "mol",
+        "külföldi-tulajdon",
+        "energia"
+      ],
       "question": "A Tiszapárt munkacsoportot hozott létre a MOL kezelésére. Arra készülnek, hogy külföldi kézbe adják?",
       "answer": "A baloldal eladta az oroszoknak a MOL egy részét, mi visszavásároltuk. A Tisza ukránpárti — le akar válni az orosz energiáról. Egy magáncég struktúrájába beavatkozni piacellenes szemlélet.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_38",
@@ -492,11 +649,15 @@
       "end_time": "55:49",
       "reporter": "Máté Patrik",
       "outlet": "Magyar Nemzet",
-      "tags": ["mol", "rezsicsökkentés", "benzinár"],
+      "tags": [
+        "mol",
+        "rezsicsökkentés",
+        "benzinár"
+      ],
       "question": "Mit jelentene a hazai benzinárakra és a rezsicsökkentésre, ha a MOL külföldi kézbe kerülne?",
       "answer": "Tragikus. Az orosz energiáról való lemondás és a MOL külföldi kézbe adása a rezsicsökkentés végét jelentené.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_39",
@@ -504,11 +665,16 @@
       "end_time": "57:23",
       "reporter": "Máté Patrik",
       "outlet": "Magyar Nemzet",
-      "tags": ["meta", "facebook", "orbán", "cenzúra"],
+      "tags": [
+        "meta",
+        "facebook",
+        "orbán",
+        "cenzúra"
+      ],
       "question": "Egy nyíltan ukránpárti Meta-tisztviselő dönthetett Orbán Facebook-oldalának korlátozásáról. Hogyan vélekedik?",
       "answer": "A szólásszabadság súlyos sérelmének tartjuk. A Meta algoritmusai a Tiszapártot segítik, a kormánypártiakat korlátozzák.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_40",
@@ -516,11 +682,15 @@
       "end_time": "58:01",
       "reporter": "Máté Patrik",
       "outlet": "Magyar Nemzet",
-      "tags": ["meta", "tisza", "dávid-dóra"],
+      "tags": [
+        "meta",
+        "tisza",
+        "dávid-dóra"
+      ],
       "question": "Lát összefüggést azzal, hogy a Metánál dolgozott korábban Dávid Dóra, aki most Tiszás EP-képviselő?",
       "answer": "Sok személyi összefüggés van. Aki a tartalmakat meghatározza, ukrán zászlóval látható a saját oldalán. Ne csodálkozzunk.",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_41",
@@ -528,11 +698,14 @@
       "end_time": "58:42",
       "reporter": "Máté Patrik",
       "outlet": "Magyar Nemzet",
-      "tags": ["nemzeti-petíció", "számok"],
+      "tags": [
+        "nemzeti-petíció",
+        "számok"
+      ],
       "question": "Miért hosszabbították meg a Nemzeti Petíciót? Hányan küldték vissza?",
       "answer": "Bőven meghaladta a másfél milliót. Április 8-ig azért toltuk ki, hogy mindenki hallathassa a hangját. (Szóvivő válaszol.)",
       "hostility_percent": 0,
-      "question_criticism_percent": 5
+      "criticism_percent": 5
     },
     {
       "id": "q_42",
@@ -550,7 +723,7 @@
       "question": "A német külügyminiszter súlyos következményekkel fenyeget, ha Magyarország akadályozza Ukrajna EU-csatlakozását. Hogyan értékeli — különösen a német megszállás évfordulóján?",
       "answer": "Az EU legerősebb tagállamának nem kellene kritizálnia mások döntéshozatali jogát. Új tagfelvétel teljes egyhangúságot igényel — szavazati jog megvonása esetén is. Kétlem, hogy az EU-polgárok többsége támogatná Ukrajna csatlakozását. Nagyobb szerénységet kérnénk Németországtól.",
       "hostility_percent": 0,
-      "question_criticism_percent": 20
+      "criticism_percent": 20
     },
     {
       "id": "q_43",
@@ -558,11 +731,16 @@
       "end_time": "1:02:22",
       "reporter": "Senzáyás",
       "outlet": "Pesti Srácok",
-      "tags": ["eu", "migráció", "kitoloncolás", "libe"],
+      "tags": [
+        "eu",
+        "migráció",
+        "kitoloncolás",
+        "libe"
+      ],
       "question": "A LIBE bizottság elfogadta a kitoloncolási szabályok szigorítását. Ez előrelépés?",
       "answer": "Minden szigorítás jó irány, de az alapállás téves. A migrációs paktum menedzselni akarja a migrációt, nem megállítani. Egyetlen megoldás: brutálisan szigorú külső határvédelem és külső hotspotok.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_44",
@@ -570,11 +748,16 @@
       "end_time": "1:05:07",
       "reporter": "Senzáyás",
       "outlet": "Pesti Srácok",
-      "tags": ["eu", "migráció", "kitoloncolás", "schengen"],
+      "tags": [
+        "eu",
+        "migráció",
+        "kitoloncolás",
+        "schengen"
+      ],
       "question": "Felkészültek-e az EU-tagállamok arra, hogy egymás kitoloncolási határozatait végrehajtják?",
       "answer": "Mi vagyunk a legjobban felkészülve. De semmit nem old meg: Németországban a kitoloncolások végrehajtási aránya 5-10% alatt van.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_45",
@@ -582,11 +765,15 @@
       "end_time": "1:06:50",
       "reporter": "Senzáyás",
       "outlet": "Pesti Srácok",
-      "tags": ["migráció", "büntetés", "eu"],
+      "tags": [
+        "migráció",
+        "büntetés",
+        "eu"
+      ],
       "question": "A kitoloncolási szigorítás jogi hatással lehet Magyarország büntetésére?",
       "answer": "Nem. Magyarország megbüntetése politikai döntés, nem jogi. Az EU Bírósága politikai testület. A tranzitzóna-megoldást az emberi jogi bíróság jogszerűnek találta — Luxemburg mégis elítélt minket.",
       "hostility_percent": 0,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_46",
@@ -594,11 +781,15 @@
       "end_time": "1:09:24",
       "reporter": "Őri Panna",
       "outlet": "Blikk",
-      "tags": ["ukrajna", "diplomácia", "kijev"],
+      "tags": [
+        "ukrajna",
+        "diplomácia",
+        "kijev"
+      ],
       "question": "Van-e még működő diplomáciai csatorna Kijev és Budapest között?",
       "answer": "Nagykövetségek vannak. De Ukrajna ellenségként kezeli azt az EU-tagállamot, ahova tartozni szeretne. Rövid távon pesszimista vagyok — a választások után kénytelenek lesznek egyességet keresni.",
       "hostility_percent": 5,
-      "question_criticism_percent": 15
+      "criticism_percent": 15
     },
     {
       "id": "q_47",
@@ -606,11 +797,15 @@
       "end_time": "1:10:46",
       "reporter": "Őri Panna",
       "outlet": "Blikk",
-      "tags": ["terrorfokozat", "biztonság", "orbán"],
+      "tags": [
+        "terrorfokozat",
+        "biztonság",
+        "orbán"
+      ],
       "question": "Szigorítottak-e a kormányfő személyi védelmén a fenyegetések után?",
       "answer": "A terrorfenyegetettséget egy fokkal megemeltük. A személyi védelmi döntések a biztonsági felelősökre tartoznak — nem tudom, nyilvánosak-e.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_48",
@@ -618,11 +813,15 @@
       "end_time": "1:11:27",
       "reporter": "Őri Panna",
       "outlet": "Blikk",
-      "tags": ["határvédelem", "migráció", "technológia"],
+      "tags": [
+        "határvédelem",
+        "migráció",
+        "technológia"
+      ],
       "question": "Extra forrást biztosít-e a kormány a határvadászegységeknek az aktivizálódó embercsempész-hálózatok ellen?",
       "answer": "Bő egy éve döntött a kormány: bármilyen technológiai fejlesztésre szükség van, az anyagi forrást biztosítjuk. Éjjellátók, hőérzékelők rendszeresítése megtörtént.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_49",
@@ -630,11 +829,15 @@
       "end_time": "1:12:08",
       "reporter": "Őri Panna",
       "outlet": "Blikk",
-      "tags": ["izrael", "szipek", "netanjahu"],
+      "tags": [
+        "izrael",
+        "szipek",
+        "netanjahu"
+      ],
       "question": "A Times of Israel szerint az izraeli miniszterelnök részt vesz a SZIPEK-en. Meg tudják erősíteni?",
       "answer": "Nem tudom megerősíteni.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_50",
@@ -642,11 +845,15 @@
       "end_time": "1:12:29",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["mcc", "orosz-beavatkozás", "választás"],
+      "tags": [
+        "mcc",
+        "orosz-beavatkozás",
+        "választás"
+      ],
       "question": "Nem a baloldal, hanem az MCC kutatója írt soha nem látott mértékű orosz befolyásolásról a választáson. Komolyan veszik?",
       "answer": "Hogyan válaszoljak a legfinomabban... Ön tájékozódott a kérdés előtt? Az illető személyesen segítségre szoruló ember.",
       "hostility_percent": 55,
-      "question_criticism_percent": 65
+      "criticism_percent": 65
     },
     {
       "id": "q_51",
@@ -654,11 +861,14 @@
       "end_time": "1:13:20",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["mcc", "etika"],
+      "tags": [
+        "mcc",
+        "etika"
+      ],
       "question": "Nem érzi etikátlannak, amit tesznek?",
       "answer": "Nem arról van szó, hogy bárki információt hozna nyilvánosságra, hanem egy személyesen segítségre szoruló emberről beszélünk.",
       "hostility_percent": 45,
-      "question_criticism_percent": 60
+      "criticism_percent": 60
     },
     {
       "id": "q_52",
@@ -666,11 +876,16 @@
       "end_time": "1:14:00",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["ukrán-zászló", "fidelitas", "tisza", "nemzeti-menet"],
+      "tags": [
+        "ukrán-zászló",
+        "fidelitas",
+        "tisza",
+        "nemzeti-menet"
+      ],
       "question": "A 444 fotói szerint azok a fiatalok, akik az ukrán zászlót feszítették ki a Tisza menetén, korábban a Fidelitas vezetőivel voltak egy erkélyen. Mi köze ehhez a Fidelitasnak?",
       "answer": "Nem látom a botrányt. Egy ukránpárti pártnak, amelynek EP-képviselői ukrán mezben tapsolnak, a rendezvényén valaki ukrán zászlót feszít ki.",
       "hostility_percent": 40,
-      "question_criticism_percent": 60
+      "criticism_percent": 60
     },
     {
       "id": "q_53",
@@ -678,11 +893,14 @@
       "end_time": "1:15:04",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["fidelitas", "ukrán-zászló"],
+      "tags": [
+        "fidelitas",
+        "ukrán-zászló"
+      ],
       "question": "Nem érdekli, hogy a Fidelitas vezetőivel jóban lévő emberek feszítettek ki ukrán zászlót?",
       "answer": "Ha mindenkivel jó kapcsolatban vagyok, akivel egyszer egy teraszon álltam, akkor nagyon széles ez a kör. Kérdezzék meg a Fidelitast.",
       "hostility_percent": 45,
-      "question_criticism_percent": 55
+      "criticism_percent": 55
     },
     {
       "id": "q_54",
@@ -690,11 +908,14 @@
       "end_time": "1:18:07",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["üzemanyag", "ársapka"],
+      "tags": [
+        "üzemanyag",
+        "ársapka"
+      ],
       "question": "Elképzelhető-e, hogy az üzemanyag maximáltáron emelni kell?",
       "answer": "A kormány nem akar változtatni a védett áron.",
       "hostility_percent": 0,
-      "question_criticism_percent": 10
+      "criticism_percent": 10
     },
     {
       "id": "q_55",
@@ -702,11 +923,15 @@
       "end_time": "1:18:31",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["buszoztatás", "kampány", "dunaújváros"],
+      "tags": [
+        "buszoztatás",
+        "kampány",
+        "dunaújváros"
+      ],
       "question": "Tudósítónknak nyilatkozták Dunaújvárosban, hogy a Fidesz buszoztatta őket. Mi szükség van erre és ki fizeti?",
       "answer": "A buszoztatás méltatlan szó. Ha emberek részt akarnak venni egy rendezvényen és a párt segít, az helyes. Magyar Péter maga is szervez buszokat. Minden párttámogatásban van közpénz — ez 30 éve így működik.",
       "hostility_percent": 30,
-      "question_criticism_percent": 45
+      "criticism_percent": 45
     },
     {
       "id": "q_56",
@@ -714,11 +939,17 @@
       "end_time": "1:20:53",
       "reporter": "Kéri Barna",
       "outlet": "RTL Híradó",
-      "tags": ["ukrajna", "eu-pénz", "mnb", "matolcsy", "aranybudli"],
+      "tags": [
+        "ukrajna",
+        "eu-pénz",
+        "mnb",
+        "matolcsy",
+        "aranybudli"
+      ],
       "question": "A 444 kiderítette, hogy Matolcsy WC-je 30 millió Ft-ba került a MNB felújításnál. Felelős gazdálkodás ez?",
       "answer": "Senkinek nem kell 30 millió Ft-os WC, sőt 2 milliós sem. Közpénzzel felelősen kell gazdálkodni. Büntetőeljárás folyik — a hatóságoktól a legszigorúbb eljárást várjuk.",
       "hostility_percent": 10,
-      "question_criticism_percent": 50
+      "criticism_percent": 50
     },
     {
       "id": "q_57",
@@ -726,11 +957,16 @@
       "end_time": "1:22:43",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["ukrán-zászló", "fidelitas", "ddfu", "tisza"],
+      "tags": [
+        "ukrán-zászló",
+        "fidelitas",
+        "ddfu",
+        "tisza"
+      ],
       "question": "Mi írtuk meg, hogy a Digitális Demokrácia Fejlesztési Ügynökség (budapesti Fidelitas elnöke vezeti) szervezte az ukrán zászlós akciót. A tiszások kérték, tegyék el. Ön mégis a Tiszának tulajdonította. Nem igaz, amit posztolt?",
       "answer": "Ki fogom tenni a Tisza EP-képviselőinek ukrán mezes fotóit, az Ukrajna EU-csatlakozásáról szóló szavazásaikat és Radnai Márk bejelentését — a 444 kérésére pontosításként.",
       "hostility_percent": 60,
-      "question_criticism_percent": 75
+      "criticism_percent": 75
     },
     {
       "id": "q_58",
@@ -738,11 +974,15 @@
       "end_time": "1:25:03",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["ukrán-zászló", "hazugság", "poszt"],
+      "tags": [
+        "ukrán-zászló",
+        "hazugság",
+        "poszt"
+      ],
       "question": "Tehát a valótlanságot úgy hagyja, ahogy volt?",
       "answer": "444 kérésére pontosításként kitenni, amit elmondtam — így megfelelő.",
       "hostility_percent": 65,
-      "question_criticism_percent": 80
+      "criticism_percent": 80
     },
     {
       "id": "q_59",
@@ -750,11 +990,15 @@
       "end_time": "1:25:24",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["tisza", "ukrajna", "titkosszolgálat"],
+      "tags": [
+        "tisza",
+        "ukrajna",
+        "titkosszolgálat"
+      ],
       "question": "Orbán szerint a Tisza mögött Ukrajna áll, de a titkosított jelentést nem hozzák nyilvánosságra. Mikor lesz publikus?",
       "answer": "Fél órával ezelőtt ugyanezt válaszoltam: 10 napon, legfeljebb két héten belül a titkosítás feloldása megtörténik.",
       "hostility_percent": 30,
-      "question_criticism_percent": 30
+      "criticism_percent": 30
     },
     {
       "id": "q_60",
@@ -762,11 +1006,15 @@
       "end_time": "1:25:51",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["nato", "hormuz", "usa"],
+      "tags": [
+        "nato",
+        "hormuz",
+        "usa"
+      ],
       "question": "Trump a NATO-t kérte, mi is tagok vagyunk. Segítenénk, ha kérné?",
       "answer": "Ha kérné, megfontolnánk.",
       "hostility_percent": 20,
-      "question_criticism_percent": 25
+      "criticism_percent": 25
     },
     {
       "id": "q_61",
@@ -774,11 +1022,14 @@
       "end_time": "1:26:50",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["nato", "hormuz"],
+      "tags": [
+        "nato",
+        "hormuz"
+      ],
       "question": "Ellenszolgáltatásért, vagy csak úgy?",
       "answer": "A kormány létező dolgokkal foglalkozik, nem hipotetikus kérésekre adandó válaszokkal. A NATO főtitkára reagál. Ez a nagy haditengerészetekkel rendelkező országoknak szólt — mi tenger nélküli ország vagyunk.",
       "hostility_percent": 30,
-      "question_criticism_percent": 35
+      "criticism_percent": 35
     },
     {
       "id": "q_62",
@@ -786,11 +1037,14 @@
       "end_time": "1:27:32",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["nato", "hormuz"],
+      "tags": [
+        "nato",
+        "hormuz"
+      ],
       "question": "Mi támogatnánk a NATO részvételt a Hormuz-szorosnál?",
       "answer": "Ha a NATO-ban ez kérdésként felmerül, Magyarország állást fog foglalni.",
       "hostility_percent": 15,
-      "question_criticism_percent": 30
+      "criticism_percent": 30
     },
     {
       "id": "q_63",
@@ -798,11 +1052,16 @@
       "end_time": "1:27:49",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["tisza", "adóemelés", "bíróság", "index"],
+      "tags": [
+        "tisza",
+        "adóemelés",
+        "bíróság",
+        "index"
+      ],
       "question": "Jogerős ítélet: az Index nem állított valótlanságot a Tisza állítólagos adóemelési terveiről. Önök erre kampányt építettek. Mi a kormány álláspontja?",
       "answer": "Nem ez derült ki. Több egymásnak ellentmondó bírósági döntés van. A Riposzt elleni eljárásban a bíróság kimondta: Tar Zoltán nyilatkozata elégséges ténybeli alap az adóemelési tervek létezésének következtetéséhez.",
       "hostility_percent": 45,
-      "question_criticism_percent": 65
+      "criticism_percent": 65
     },
     {
       "id": "q_64",
@@ -810,11 +1069,15 @@
       "end_time": "1:30:12",
       "reporter": "Herczeg Márk",
       "outlet": "444",
-      "tags": ["tisza", "adóemelés", "bíróság"],
+      "tags": [
+        "tisza",
+        "adóemelés",
+        "bíróság"
+      ],
       "question": "Tehát mindegy, hogy a jogerős ítélet mit mond?",
       "answer": "Különböző jogerős ítéletek vannak. Van olyan, ami azt mondta ki, hogy igaz. A riposzttal szembeni ítéletben pontosan ez szerepel.",
       "hostility_percent": 45,
-      "question_criticism_percent": 70
+      "criticism_percent": 70
     },
     {
       "id": "q_65",
@@ -822,11 +1085,16 @@
       "end_time": "1:34:26",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["mol", "oroszország", "baloldal", "szurgutyeftegaz"],
+      "tags": [
+        "mol",
+        "oroszország",
+        "baloldal",
+        "szurgutyeftegaz"
+      ],
       "question": "Kétszer mondta, hogy a baloldal eladta az oroszoknak a MOL-t. Kifejtené, hogyan történt?",
       "answer": "A MOL-részvények jelentős része orosz tulajdonba került.",
       "hostility_percent": 15,
-      "question_criticism_percent": 50
+      "criticism_percent": 50
     },
     {
       "id": "q_66",
@@ -834,11 +1102,16 @@
       "end_time": "1:34:52",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["mol", "omv", "szurgutyeftegaz", "baloldal"],
+      "tags": [
+        "mol",
+        "omv",
+        "szurgutyeftegaz",
+        "baloldal"
+      ],
       "question": "Az OMV adta el a Szurgutyeftegáznak. Mi köze ehhez bármilyen baloldali pártnak?",
       "answer": "A baloldali kormány idején történt. Meg lehetett volna akadályozni — ahogy később meg is tettük. A baloldal nem tett semmit ellene, mi visszavásároltuk.",
       "hostility_percent": 25,
-      "question_criticism_percent": 65
+      "criticism_percent": 65
     },
     {
       "id": "q_67",
@@ -846,11 +1119,15 @@
       "end_time": "1:36:46",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["facebook", "algoritmus", "manipuláció"],
+      "tags": [
+        "facebook",
+        "algoritmus",
+        "manipuláció"
+      ],
       "question": "Mire alapozza, hogy a Facebook algoritmust a Meta közreműködésével manipulálják a Tisza javára?",
       "answer": "Algoritmusokat állítanak be a Tiszapártnak kedvezően. Hosszabb ideje látjuk. Olyanokkal beszéltem, akik értenek hozzá. A Meta helyi tisztviselői Európa legnagyobb ukrán barát figurái.",
       "hostility_percent": 20,
-      "question_criticism_percent": 55
+      "criticism_percent": 55
     },
     {
       "id": "q_68",
@@ -858,11 +1135,15 @@
       "end_time": "1:37:34",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["facebook", "mario-nawfal", "tényellenőrzés"],
+      "tags": [
+        "facebook",
+        "mario-nawfal",
+        "tényellenőrzés"
+      ],
       "question": "Mario Nawfal a legtöbbször kijavított twitterezők toplistáján van. Erre hivatkozik igazolásként?",
       "answer": "Nevetségesnek tartom az érvet. Az ő állítása igazolás nélküli. A Facebook-manipulációt hosszabb ideje látjuk, és olyanokra támaszkodom, akik értenek hozzá.",
       "hostility_percent": 30,
-      "question_criticism_percent": 60
+      "criticism_percent": 60
     },
     {
       "id": "q_69",
@@ -870,11 +1151,16 @@
       "end_time": "1:38:44",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["facebook", "tiktok", "youtube", "manipuláció"],
+      "tags": [
+        "facebook",
+        "tiktok",
+        "youtube",
+        "manipuláció"
+      ],
       "question": "Akkor a TikTokra és a YouTube-ra is igaz? Három világcégnél is el tudja ezt érni Magyar Péter?",
       "answer": "A TikToknál hasonló problémák vannak, de ott nem lennék ilyen sarkos. Felvértezném magam ismeretekkel — ez nekem nem jól ismert világ. A Facebook-ról viszont határozottan állítom.",
       "hostility_percent": 15,
-      "question_criticism_percent": 55
+      "criticism_percent": 55
     },
     {
       "id": "q_70",
@@ -882,11 +1168,17 @@
       "end_time": "1:39:39",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["ukrajna", "pénzszállítmány", "raiffeisen", "nav", "törvény"],
+      "tags": [
+        "ukrajna",
+        "pénzszállítmány",
+        "raiffeisen",
+        "nav",
+        "törvény"
+      ],
       "question": "A Raiffeisen Banktól az Oshad Banknak hivatalosan szállított ukrán készpénz lefoglalása után miért kellett utólag törvényt hozni?",
       "answer": "A NAV hatósági eljárása. A törvény garanciát ad: 60 napon belül le kell zárni a nyomozást és legfeljebb 60 napig lehet lefoglalva tartani.",
       "hostility_percent": 15,
-      "question_criticism_percent": 50
+      "criticism_percent": 50
     },
     {
       "id": "q_71",
@@ -894,11 +1186,15 @@
       "end_time": "1:40:15",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["ukrajna", "pénzszállítmány", "törvény"],
+      "tags": [
+        "ukrajna",
+        "pénzszállítmány",
+        "törvény"
+      ],
       "question": "Törvény nélkül miben volt korlátozva a hatóság?",
       "answer": "Törvény nélkül nem lett volna 60 napos felső határ a lefoglalásra. Most 60 napon belül kell lezárni.",
       "hostility_percent": 10,
-      "question_criticism_percent": 45
+      "criticism_percent": 45
     },
     {
       "id": "q_72",
@@ -906,11 +1202,15 @@
       "end_time": "1:41:00",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["ukrajna", "pénzszállítmány", "dokumentumok"],
+      "tags": [
+        "ukrajna",
+        "pénzszállítmány",
+        "dokumentumok"
+      ],
       "question": "A törvény szövege szerint a pénz eredete nem volt tisztázható. Nem volt dokumentum, vagy a magyar fél nem fogadta el a Raiffeisen igazolását?",
       "answer": "Az én ismereteim szerint egy későbbi banki dokumentummal akarták igazolni. A NAV-ot érdemes részletekről kérdezni. Azóta érkezett banki igazolás, amit a magyar fél vizsgál.",
       "hostility_percent": 10,
-      "question_criticism_percent": 45
+      "criticism_percent": 45
     },
     {
       "id": "q_73",
@@ -918,11 +1218,16 @@
       "end_time": "1:42:00",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["ukrajna", "pénzszállítmány", "tek", "konzuli-jog"],
+      "tags": [
+        "ukrajna",
+        "pénzszállítmány",
+        "tek",
+        "konzuli-jog"
+      ],
       "question": "Ha tanúk voltak, miért volt kényszerintézkedés? Miért volt TEK, ha nem volt fegyver?",
       "answer": "Pénzmosás gyanúja esetén a nyomozóhatóság meghatározza a szükséges rendőri segítséget. Ez általános eljárás szerint történt.",
       "hostility_percent": 15,
-      "question_criticism_percent": 55
+      "criticism_percent": 55
     },
     {
       "id": "q_74",
@@ -930,11 +1235,15 @@
       "end_time": "1:42:56",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["ukrajna", "pénzszállítmány", "konzuli-védelem"],
+      "tags": [
+        "ukrajna",
+        "pénzszállítmány",
+        "konzuli-védelem"
+      ],
       "question": "Az ukrán nagykövetnek és ügyvédnek sem engedték a tanúkkal való találkozást — csak a határon. Ez megfelel a konzuli védelmi szabályoknak?",
       "answer": "Folyamatban lévő hatósági eljárásban nem mondok véleményt. A panasz lehetősége adott, a bíróság kivizsgálja.",
       "hostility_percent": 15,
-      "question_criticism_percent": 60
+      "criticism_percent": 60
     },
     {
       "id": "q_75",
@@ -942,11 +1251,15 @@
       "end_time": "1:44:45",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["ukrajna", "pénzszállítmány", "30-milliárd"],
+      "tags": [
+        "ukrajna",
+        "pénzszállítmány",
+        "30-milliárd"
+      ],
       "question": "3 évben ~30 milliárd euró készpénz áramlott ugyanígy Ukrajnába Ausztrián át. Mi különböztette meg ezt az egyet?",
       "answer": "Az korábbiak nem ukrán rendszámú kocsiban, nem ukrán szolgálati kísérettel történtek. Ez önmagában komoly különbség.",
       "hostility_percent": 15,
-      "question_criticism_percent": 60
+      "criticism_percent": 60
     },
     {
       "id": "q_76",
@@ -964,7 +1277,7 @@
       "question": "Lázár János kijelentette, hogy a lefoglalás nem volt független a kőolajvezeték elzárásától. Nem politikai indíttatású volt?",
       "answer": "A NAV-tól kaptam tájékoztatást: jogszabályi okok szerepelnek, politikai okok nem. Egyetértek azzal, hogy amit az ukránok tesznek, felháborító — de ez hatósági eljárás, amit jogszabályok alapján kell folytatni.",
       "hostility_percent": 20,
-      "question_criticism_percent": 70
+      "criticism_percent": 70
     },
     {
       "id": "q_77",
@@ -972,11 +1285,15 @@
       "end_time": "1:47:49",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["eu-pénzek", "jogállamiság", "kompromisszum"],
+      "tags": [
+        "eu-pénzek",
+        "jogállamiság",
+        "kompromisszum"
+      ],
       "question": "Az EU-s pénzekhez való hozzáférésért cserébe a kormány vagy az EU lesz kompromisszumkészebb?",
       "answer": "A jó kompromisszum mindenkinek fáj. 2022-ben a Bizottság 11 pontos elvárásait 100%-ban, sőt túlteljesítve teljesítettük. Kizárólag politikai oka van, hogy nem zárták le. Nem jogi, hanem hatalmi küzdelem.",
       "hostility_percent": 15,
-      "question_criticism_percent": 40
+      "criticism_percent": 40
     },
     {
       "id": "q_78",
@@ -984,11 +1301,14 @@
       "end_time": "1:49:55",
       "reporter": "Nyilas Gergely",
       "outlet": "Telex",
-      "tags": ["eu-pénzek", "jogállamiság"],
+      "tags": [
+        "eu-pénzek",
+        "jogállamiság"
+      ],
       "question": "Tehát a magyar kormány már nem tud mit kínálni a megegyezéshez?",
       "answer": "A Bizottsággal kell tárgyalni. Mi kompromisszumkészek voltunk — 100%-ban teljesítettünk. Brüsszelnek az a problémája, hogy szembemegyünk velük a migrációban és Ukrajna ügyében. Ez nem jogi, hanem hatalmi kérdés.",
       "hostility_percent": 15,
-      "question_criticism_percent": 45
+      "criticism_percent": 45
     }
   ]
 }

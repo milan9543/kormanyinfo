@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Telex",
+    "total_questions": 14,
+    "avg_criticism": 53.9,
+    "avg_hostility": 16.8,
+    "conferences_attended": 1
+  },
+  {
+    "name": "Közmedia",
+    "total_questions": 9,
+    "avg_criticism": 18.3,
+    "avg_hostility": 1.1,
+    "conferences_attended": 1
+  },
+  {
+    "name": "ATV",
+    "total_questions": 9,
+    "avg_criticism": 46.1,
+    "avg_hostility": 14.4,
+    "conferences_attended": 1
+  },
+  {
+    "name": "HírTV",
+    "total_questions": 8,
+    "avg_criticism": 8.1,
+    "avg_hostility": 0.6,
+    "conferences_attended": 1
+  },
+  {
+    "name": "444",
+    "total_questions": 8,
+    "avg_criticism": 51.2,
+    "avg_hostility": 38.8,
+    "conferences_attended": 1
+  },
+  {
+    "name": "RTL Híradó",
+    "total_questions": 7,
+    "avg_criticism": 49.3,
+    "avg_hostility": 32.1,
+    "conferences_attended": 1
+  },
+  {
+    "name": "Index",
+    "total_questions": 5,
+    "avg_criticism": 14.0,
+    "avg_hostility": 2.0,
+    "conferences_attended": 1
+  },
+  {
+    "name": "Magyar Nemzet",
+    "total_questions": 5,
+    "avg_criticism": 5.0,
+    "avg_hostility": 0.0,
+    "conferences_attended": 1
+  },
+  {
+    "name": "Blikk",
+    "total_questions": 4,
+    "avg_criticism": 11.2,
+    "avg_hostility": 1.2,
+    "conferences_attended": 1
+  },
+  {
+    "name": "TV2",
+    "total_questions": 3,
+    "avg_criticism": 6.7,
+    "avg_hostility": 0.0,
+    "conferences_attended": 1
+  },
+  {
+    "name": "Pesti Srácok",
+    "total_questions": 3,
+    "avg_criticism": 11.7,
+    "avg_hostility": 0.0,
+    "conferences_attended": 1
+  },
+  {
+    "name": "M1 Híradó",
+    "total_questions": 2,
+    "avg_criticism": 12.5,
+    "avg_hostility": 0.0,
+    "conferences_attended": 1
+  },
+  {
+    "name": "Magyar Hírlap",
+    "total_questions": 1,
+    "avg_criticism": 20.0,
+    "avg_hostility": 0.0,
+    "conferences_attended": 1
+  }
+]
