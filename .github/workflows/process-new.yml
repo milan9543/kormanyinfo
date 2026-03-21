@@ -1,0 +1,47 @@
+name: Process new Kormányinfó
+
+on:
+  workflow_dispatch:
+    inputs:
+      youtube_url:
+        description: "YouTube video URL"
+        required: true
+      date:
+        description: "Conference date (YYYY-MM-DD)"
+        required: true
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Download subtitles
+        run: python pipeline/download_srt.py "${{ inputs.youtube_url }}"
+
+      - name: Process with Claude
+        run: python pipeline/process_srt.py "${{ inputs.date }}"
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: Rebuild aggregated stats
+        run: python pipeline/build_stats.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "Kormányinfó Bot"
+          git config user.email "bot@kormanyinfo.example"
+          git add src/data/
+          git commit -m "Új kormányinfó: ${{ inputs.date }}"
+          git push
+      # push triggers Cloudflare Pages auto-deploy
