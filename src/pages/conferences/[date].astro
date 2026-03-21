@@ -1,0 +1,1500 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import {
+  getAllConferences,
+  getConference,
+  outlets as outletColorData,
+} from "../../lib/data";
+
+export async function getStaticPaths() {
+  return getAllConferences().map((c) => ({ params: { date: c.meta.date } }));
+}
+
+const { date } = Astro.params;
+const conf = getConference(date!);
+if (!conf) return Astro.redirect("/");
+
+// Outlet stats for chart
+const outletMap: Record<
+  string,
+  { crits: number[]; hosts: number[]; count: number }
+> = {};
+for (const q of conf.questions) {
+  if (!outletMap[q.outlet])
+    outletMap[q.outlet] = { crits: [], hosts: [], count: 0 };
+  outletMap[q.outlet].crits.push(q.criticism_percent);
+  outletMap[q.outlet].hosts.push(q.hostility_percent);
+  outletMap[q.outlet].count++;
+}
+const outletStats = Object.entries(outletMap)
+  .map(([name, d]) => ({
+    name,
+    avgCrit: Math.round(d.crits.reduce((a, b) => a + b, 0) / d.crits.length),
+    avgHost: Math.round(d.hosts.reduce((a, b) => a + b, 0) / d.hosts.length),
+    count: d.count,
+  }))
+  .sort((a, b) => b.avgCrit - a.avgCrit);
+
+// Overall stats
+const qCount = conf.questions.length;
+const reporterCount = new Set(conf.questions.map((q) => q.reporter)).size;
+const outletCount = outletStats.length;
+const avgCrit = Math.round(
+  conf.questions.reduce((s, q) => s + q.criticism_percent, 0) / qCount,
+);
+const avgHost = Math.round(
+  conf.questions.reduce((s, q) => s + q.hostility_percent, 0) / qCount,
+);
+const maxCrit = Math.max(...conf.questions.map((q) => q.criticism_percent));
+
+const allOutlets = outletStats.map((o) => o.name);
+
+const allTags = [...new Set(conf.questions.flatMap((q) => q.tags))].sort();
+
+// Timeline chart data
+const chartPoints = conf.questions.map((q) => ({
+  t: timeToSeconds(q.start_time),
+  crit: q.criticism_percent,
+  host: q.hostility_percent,
+  id: q.id,
+  reporter: q.reporter,
+  outlet: q.outlet,
+}));
+const maxTime =
+  chartPoints.length > 0 ? Math.max(...chartPoints.map((d) => d.t)) : 0;
+
+const CW = 960,
+  CH = 160,
+  PL = 44,
+  PR = 16,
+  PT = 12,
+  PB = 28;
+const cw = CW - PL - PR;
+const ch = CH - PT - PB;
+function tx(seconds: number): number {
+  return PL + (maxTime > 0 ? (seconds / maxTime) * cw : 0);
+}
+function ty(pct: number): number {
+  return PT + ch - (pct / 100) * ch;
+}
+function fmtTime(s: number): string {
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return `${m}:${String(sec).padStart(2, "0")}`;
+}
+const tickInterval = Math.max(60, Math.ceil(maxTime / 7 / 60) * 60);
+const xTicks: number[] = [];
+for (let t = 0; t <= maxTime; t += tickInterval) xTicks.push(t);
+if (xTicks[xTicks.length - 1] < maxTime - 10) xTicks.push(maxTime);
+
+// Outlet bar segments: each question spans to the next question's start
+const outletBarSegments = chartPoints.map((p, i) => {
+  const nextT = i + 1 < chartPoints.length ? chartPoints[i + 1].t : maxTime;
+  return {
+    x: tx(p.t),
+    width: Math.max(tx(nextT) - tx(p.t), 2),
+    outlet: p.outlet,
+    id: p.id,
+    reporter: p.reporter,
+    t: p.t,
+  };
+});
+
+// Map outlet name to color/text_color
+const outletColors: Record<string, { color: string; text_color: string }> =
+  Object.fromEntries(
+    outletColorData.map((o) => [
+      o.name,
+      { color: o.color, text_color: o.text_color },
+    ]),
+  );
+
+function timeToSeconds(t: string): number {
+  const parts = t.split(":").map(Number);
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return 0;
+}
+---
+
+<Layout title={conf.meta.title}>
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a href="/" class="back-link">← Összes sajtótájékoztató</a>
+      <div class="dateline">Kormányinfó · {conf.meta.location}</div>
+      <h1>Sajtótájékoztató</h1>
+      <p class="subtitle">
+        A kormány sajtótájékoztatójának teljes Q&amp;A feldolgozása — kérdések,
+        válaszok, kritikusság és ellenségesség elemzéssel
+      </p>
+      <div class="meta-row">
+        <div class="meta-pill">
+          <span>{conf.meta.date.replace(/-/g, ". ")}</span>
+        </div>
+        <div class="meta-pill">
+          Miniszter: <span
+            >{conf.speakers.find((s) => s.role === "miniszter")?.name}</span
+          >
+        </div>
+        <div class="meta-pill">
+          Időtartam: <span>{conf.meta.duration}</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats bar -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-card">
+        <div class="num">{qCount}</div><div class="label">Kérdés</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">{reporterCount}</div><div class="label">Újságíró</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">{outletCount}</div><div class="label">Médium</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">{avgCrit}%</div><div class="label">
+          Átl. kritikusság
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="num">{avgHost}%</div><div class="label">
+          Átl. ellenségesség
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="num">{maxCrit}%</div><div class="label">
+          Max kritikusság
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Opening statements -->
+  <div class="section-header">
+    <h2>
+      Nyitó nyilatkozatok <span class="count"
+        >{conf.opening_statements.length}</span
+      >
+    </h2>
+  </div>
+  <div class="opening-cards">
+    {
+      conf.opening_statements.map((stmt) => (
+        <div class="open-card">
+          <div class="oc-time">
+            {stmt.start_time} – {stmt.end_time}
+          </div>
+          {(() => {
+            const sp = conf.speakers.find((s) => s.id === stmt.speaker_id);
+            return (
+              <div class="oc-speaker">
+                {sp?.name} <span>· {sp?.role}</span>
+              </div>
+            );
+          })()}
+          <div class="oc-summary">{stmt.summary}</div>
+          <div class="oc-tags">
+            {stmt.tags.map((t) => (
+              <button class="tag open-tag" data-tag={t}>
+                {t}
+              </button>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- Outlet chart -->
+  <div class="chart-section">
+    <h2>Médiumok összehasonlítása</h2>
+    <div class="chart-legend">
+      <span class="leg-crit">Kérdés kritikussága</span>
+      <span class="leg-host">Válasz ellenségessége</span>
+    </div>
+    <div class="outlet-chart">
+      {
+        outletStats.map((s) => {
+          const cw = Math.max(s.avgCrit, 2);
+          const hw = Math.max(s.avgHost, 2);
+          const c = outletColors[s.name];
+          return (
+            <div
+              class="outlet-row"
+              data-outlet={s.name}
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="outlet-name"
+                title={s.name}
+                style={
+                  c
+                    ? `background:${c.color};color:${c.text_color};padding:2px 8px;border-radius:4px;max-width:110px;`
+                    : undefined
+                }
+              >
+                {s.name}
+              </div>
+              <div class="bar-wrapper">
+                <div class="bar-container">
+                  <div class="bar-fill crit" style={`width:${cw}%`} />
+                </div>
+                <span class="bar-label-external">{s.avgCrit}%</span>
+              </div>
+              <div class="bar-wrapper">
+                <div class="bar-container">
+                  <div class="bar-fill host" style={`width:${hw}%`} />
+                </div>
+                <span class="bar-label-external">{s.avgHost}%</span>
+              </div>
+              <div class="outlet-count">{s.count} db</div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+
+  <!-- Timeline charts -->
+  <div class="chart-section">
+    <h2>Idővonal</h2>
+    <div class="timeline-charts">
+      <div class="timeline-chart-wrap">
+        <div class="timeline-chart-title crit-title">Kérdés kritikussága</div>
+        <svg
+          class="timeline-svg"
+          viewBox={`0 0 ${CW} ${CH}`}
+          preserveAspectRatio="none"
+          aria-label="Kérdés kritikussága idővonalon"
+        >
+          {
+            [0, 25, 50, 75, 100].map((pct) => (
+              <>
+                <line
+                  x1={PL}
+                  x2={CW - PR}
+                  y1={ty(pct)}
+                  y2={ty(pct)}
+                  stroke="#e8e4db"
+                  stroke-width="1"
+                />
+                <text
+                  x={PL - 5}
+                  y={ty(pct) + 4}
+                  text-anchor="end"
+                  font-size="10"
+                  fill="#7a756e"
+                >
+                  {pct}
+                </text>
+              </>
+            ))
+          }
+          {
+            xTicks.map((t) => (
+              <>
+                <line
+                  x1={tx(t)}
+                  x2={tx(t)}
+                  y1={PT + ch}
+                  y2={PT + ch + 4}
+                  stroke="#7a756e"
+                  stroke-width="1"
+                />
+                <text
+                  x={tx(t)}
+                  y={PT + ch + 16}
+                  text-anchor="middle"
+                  font-size="10"
+                  fill="#7a756e"
+                >
+                  {fmtTime(t)}
+                </text>
+              </>
+            ))
+          }
+          <polyline
+            points={chartPoints
+              .map((p) => `${tx(p.t)},${ty(p.crit)}`)
+              .join(" ")}
+            fill="none"
+            stroke="var(--blue)"
+            stroke-width="1.5"
+            stroke-opacity="0.35"></polyline>
+          {
+            chartPoints.map((p) => (
+              <circle
+                cx={tx(p.t)}
+                cy={ty(p.crit)}
+                r="5"
+                fill="var(--blue)"
+                stroke="white"
+                stroke-width="1.5"
+                class="timeline-dot"
+                data-id={p.id}
+                data-reporter={p.reporter}
+                data-outlet={p.outlet}
+                data-val={p.crit}
+                data-t={fmtTime(p.t)}
+              />
+            ))
+          }
+        </svg>
+      </div>
+
+      <div class="timeline-chart-wrap">
+        <div class="timeline-chart-title host-title">Válasz ellenségessége</div>
+        <svg
+          class="timeline-svg"
+          viewBox={`0 0 ${CW} ${CH}`}
+          preserveAspectRatio="none"
+          aria-label="Válasz ellenségessége idővonalon"
+        >
+          {
+            [0, 25, 50, 75, 100].map((pct) => (
+              <>
+                <line
+                  x1={PL}
+                  x2={CW - PR}
+                  y1={ty(pct)}
+                  y2={ty(pct)}
+                  stroke="#e8e4db"
+                  stroke-width="1"
+                />
+                <text
+                  x={PL - 5}
+                  y={ty(pct) + 4}
+                  text-anchor="end"
+                  font-size="10"
+                  fill="#7a756e"
+                >
+                  {pct}
+                </text>
+              </>
+            ))
+          }
+          {
+            xTicks.map((t) => (
+              <>
+                <line
+                  x1={tx(t)}
+                  x2={tx(t)}
+                  y1={PT + ch}
+                  y2={PT + ch + 4}
+                  stroke="#7a756e"
+                  stroke-width="1"
+                />
+                <text
+                  x={tx(t)}
+                  y={PT + ch + 16}
+                  text-anchor="middle"
+                  font-size="10"
+                  fill="#7a756e"
+                >
+                  {fmtTime(t)}
+                </text>
+              </>
+            ))
+          }
+          <polyline
+            points={chartPoints
+              .map((p) => `${tx(p.t)},${ty(p.host)}`)
+              .join(" ")}
+            fill="none"
+            stroke="var(--accent)"
+            stroke-width="1.5"
+            stroke-opacity="0.35"></polyline>
+          {
+            chartPoints.map((p) => (
+              <circle
+                cx={tx(p.t)}
+                cy={ty(p.host)}
+                r="5"
+                fill="var(--accent)"
+                stroke="white"
+                stroke-width="1.5"
+                class="timeline-dot"
+                data-id={p.id}
+                data-reporter={p.reporter}
+                data-outlet={p.outlet}
+                data-val={p.host}
+                data-t={fmtTime(p.t)}
+              />
+            ))
+          }
+        </svg>
+      </div>
+    </div>
+    <!-- Outlet bar -->
+    <div class="timeline-chart-wrap">
+      <div class="timeline-chart-title outlet-title">Médium</div>
+      <svg
+        class="outlet-bar-svg"
+        viewBox={`0 0 ${CW} 32`}
+        preserveAspectRatio="none"
+        aria-label="Médiumok idővonalon"
+      >
+        <text x={PL - 5} y={20} text-anchor="end" font-size="10" fill="#7a756e">
+        </text>
+        {
+          outletBarSegments.map((seg) => {
+            const c = outletColors[seg.outlet];
+            return (
+              <rect
+                x={seg.x}
+                y={8}
+                width={seg.width}
+                height={16}
+                fill={c ? c.color : "#ccc6bb"}
+                class="timeline-dot outlet-bar-seg"
+                data-id={seg.id}
+                data-outlet={seg.outlet}
+                data-reporter={seg.reporter}
+                data-t={fmtTime(seg.t)}
+                data-val={seg.outlet}
+              />
+            );
+          })
+        }
+        {
+          xTicks.map((t) => (
+            <>
+              <line
+                x1={tx(t)}
+                x2={tx(t)}
+                y1={24}
+                y2={28}
+                stroke="#7a756e"
+                stroke-width="1"
+              />
+              <text
+                x={tx(t)}
+                y={32}
+                text-anchor="middle"
+                font-size="10"
+                fill="#7a756e"
+              >
+                {fmtTime(t)}
+              </text>
+            </>
+          ))
+        }
+      </svg>
+    </div>
+  </div>
+  <div id="timeline-tooltip" class="timeline-tooltip" style="display:none">
+  </div>
+</Layout>
+
+<!-- Filter controls -->
+<div class="controls">
+  <div class="controls-row">
+    <div class="filter-group">
+      <label>Médium</label>
+      <select id="fOutlet">
+        <option value="">Mind ({allOutlets.length})</option>
+        {allOutlets.map((o) => <option value={o}>{o}</option>)}
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Téma</label>
+      <select id="fTag">
+        <option value="">Mind ({allTags.length})</option>
+        {allTags.map((t) => <option value={t}>{t}</option>)}
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>Keresés</label>
+      <input
+        type="text"
+        id="fSearch"
+        placeholder="kérdés vagy válasz..."
+        style="width:180px"
+      />
+    </div>
+    <button class="reset-btn" id="resetBtn">Szűrők törlése</button>
+  </div>
+</div>
+
+<!-- Q&A -->
+<div class="section-header">
+  <h2>
+    Kérdések és válaszok <span class="count" id="qCount"
+      >{qCount} / {qCount}</span
+    >
+  </h2>
+</div>
+<div class="qa-list" id="qaList">
+  {
+    conf.questions.map((q) => {
+      const ytUrl = conf.meta.youtube_url
+        ? `${conf.meta.youtube_url}&t=${timeToSeconds(q.start_time)}`
+        : null;
+      const critC = 2 * Math.PI * 34;
+      const hostC = 2 * Math.PI * 34;
+      const critOffset = critC - (q.criticism_percent / 100) * critC;
+      const hostOffset = hostC - (q.hostility_percent / 100) * hostC;
+
+      return (
+        <div
+          class="qa-card"
+          id={`card-${q.id}`}
+          data-outlet={q.outlet}
+          data-tags={q.tags.join(",")}
+          data-crit={q.criticism_percent}
+          data-host={q.hostility_percent}
+          data-text={`${q.question} ${q.answer}`.toLowerCase()}
+        >
+          <div class="qa-meta">
+            <div class="qa-meta-left">
+              <span class="qa-time">
+                {ytUrl ? (
+                  <a href={ytUrl} target="_blank" rel="noopener">
+                    {q.start_time}
+                  </a>
+                ) : (
+                  q.start_time
+                )}
+              </span>
+              <div class="qa-divider" />
+              <div class="qa-reporter-meta">
+                <span class="qa-reporter-label">Újságíró:</span>
+                <span class="qa-reporter-name">{q.reporter}</span>
+              </div>
+            </div>
+            <div class="qa-meta-right">
+              {(() => {
+                const c = outletColors[q.outlet];
+                return c ? (
+                  <span
+                    class="outlet-badge"
+                    style={`background:${c.color};color:${c.text_color}`}
+                  >
+                    {q.outlet}
+                  </span>
+                ) : (
+                  <span class="outlet-badge-default">{q.outlet}</span>
+                );
+              })()}
+            </div>
+          </div>
+
+          <div class="qa-content">
+            <div class="qa-left">
+              <div class="qa-question-block">
+                <h3 class="qa-question">{q.question}</h3>
+              </div>
+              <div class="qa-answer-block">
+                <div class="qa-answer-label">Válasz:</div>
+                <p class="qa-answer">{q.answer}</p>
+              </div>
+              <div class="qa-tags">
+                {q.tags.map((t) => (
+                  <button class="tag qa-tag" data-tag={t}>
+                    {t}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div class="qa-right">
+              <div class="meter-container">
+                <div class="meter">
+                  <div class="meter-ring">
+                    <svg
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      style="transform:rotate(-90deg)"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="34"
+                        fill="none"
+                        stroke="#e8e4db"
+                        stroke-width="5"
+                      />
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="34"
+                        fill="none"
+                        stroke="var(--blue)"
+                        stroke-width="6"
+                        stroke-dasharray={critC}
+                        stroke-dashoffset={critOffset}
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <div class="meter-val">
+                      {q.criticism_percent}
+                      <span class="percent">%</span>
+                    </div>
+                  </div>
+                  <div class="meter-label">KRIT. INDEX</div>
+                </div>
+
+                <div class="meter">
+                  <div class="meter-ring">
+                    <svg
+                      width="80"
+                      height="80"
+                      viewBox="0 0 80 80"
+                      style="transform:rotate(-90deg)"
+                    >
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="34"
+                        fill="none"
+                        stroke="#e8e4db"
+                        stroke-width="5"
+                      />
+                      <circle
+                        cx="40"
+                        cy="40"
+                        r="34"
+                        fill="none"
+                        stroke="var(--accent)"
+                        stroke-width="6"
+                        stroke-dasharray={hostC}
+                        stroke-dashoffset={hostOffset}
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                    <div class="meter-val">
+                      {q.hostility_percent}
+                      <span class="percent">%</span>
+                    </div>
+                  </div>
+                  <div class="meter-label">ELL. FAKTOR</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    })
+  }
+</div>
+
+<div class="empty-state" id="emptyState" style="display:none">
+  <div class="big">Nincs találat</div>
+  <div>Próbálj más szűrőket</div>
+</div>
+
+<script>
+  const state = { outlet: "", tag: "", search: "" };
+
+  const cards = Array.from(document.querySelectorAll<HTMLElement>(".qa-card"));
+  const outletRows = Array.from(
+    document.querySelectorAll<HTMLElement>(".outlet-row[data-outlet]"),
+  );
+  const qCountEl = document.getElementById("qCount")!;
+  const emptyEl = document.getElementById("emptyState")!;
+  const total = cards.length;
+
+  function syncOutletRows() {
+    for (const row of outletRows) {
+      row.classList.toggle(
+        "active",
+        row.dataset.outlet === state.outlet && state.outlet !== "",
+      );
+    }
+  }
+
+  function applyFilters() {
+    let visible = 0;
+    for (const card of cards) {
+      const outlet = card.dataset.outlet ?? "";
+      const tags = card.dataset.tags?.split(",") ?? [];
+      const text = card.dataset.text ?? "";
+
+      const show =
+        (!state.outlet || outlet === state.outlet) &&
+        (!state.tag || tags.includes(state.tag)) &&
+        (!state.search || text.includes(state.search));
+
+      card.style.display = show ? "" : "none";
+      if (show) visible++;
+    }
+    qCountEl.textContent = `${visible} / ${total}`;
+    emptyEl.style.display = visible === 0 ? "" : "none";
+    syncOutletRows();
+  }
+
+  // Filter controls
+  document.getElementById("fOutlet")!.addEventListener("change", (e) => {
+    state.outlet = (e.target as HTMLSelectElement).value;
+    applyFilters();
+  });
+  document.getElementById("fTag")!.addEventListener("change", (e) => {
+    state.tag = (e.target as HTMLSelectElement).value;
+    applyFilters();
+  });
+  document.getElementById("fSearch")!.addEventListener("input", (e) => {
+    state.search = (e.target as HTMLInputElement).value.toLowerCase();
+    applyFilters();
+  });
+  document.getElementById("resetBtn")!.addEventListener("click", () => {
+    state.outlet = "";
+    state.tag = "";
+    state.search = "";
+    (document.getElementById("fOutlet") as HTMLSelectElement).value = "";
+    (document.getElementById("fTag") as HTMLSelectElement).value = "";
+    (document.getElementById("fSearch") as HTMLInputElement).value = "";
+    applyFilters();
+  });
+
+  // Outlet chart row clicks → filter
+  document.addEventListener("click", (e) => {
+    const row = (e.target as HTMLElement).closest<HTMLElement>(".outlet-row");
+    if (!row) return;
+    const outlet = row.dataset.outlet!;
+    if (state.outlet === outlet) {
+      state.outlet = "";
+      (document.getElementById("fOutlet") as HTMLSelectElement).value = "";
+    } else {
+      state.outlet = outlet;
+      (document.getElementById("fOutlet") as HTMLSelectElement).value = outlet;
+    }
+    applyFilters();
+    document
+      .getElementById("qaList")!
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // Tag clicks (from opening cards and Q&A cards)
+  document.addEventListener("click", (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>(
+      ".open-tag, .qa-tag",
+    );
+    if (!btn) return;
+    e.stopPropagation();
+    const tag = btn.dataset.tag!;
+    state.tag = tag;
+    (document.getElementById("fTag") as HTMLSelectElement).value = tag;
+    applyFilters();
+    document
+      .getElementById("qaList")!
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // Timeline dot tooltip + click-to-scroll
+  const tlTooltip = document.getElementById("timeline-tooltip")!;
+
+  document.addEventListener("mouseover", (e) => {
+    const dot = (e.target as Element).closest<SVGCircleElement>(
+      ".timeline-dot",
+    );
+    if (!dot) return;
+    const valStr = dot.classList.contains("outlet-bar-seg")
+      ? dot.dataset.outlet!
+      : `${dot.dataset.val}%`;
+    tlTooltip.innerHTML = `<strong>${dot.dataset.reporter}</strong> · ${dot.dataset.outlet}<br>${dot.dataset.t} &nbsp;·&nbsp; ${valStr}`;
+    tlTooltip.style.display = "block";
+    if (dot.tagName === "circle") dot.setAttribute("r", "7");
+  });
+
+  document.addEventListener("mouseout", (e) => {
+    const dot = (e.target as Element).closest<SVGCircleElement>(
+      ".timeline-dot",
+    );
+    if (!dot) return;
+    tlTooltip.style.display = "none";
+    if (dot.tagName === "circle") dot.setAttribute("r", "5");
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    if (tlTooltip.style.display === "none") return;
+    tlTooltip.style.left = `${e.clientX + 14}px`;
+    tlTooltip.style.top = `${e.clientY - 36}px`;
+  });
+
+  document.addEventListener("click", (e) => {
+    const dot = (e.target as Element).closest<SVGCircleElement>(
+      ".timeline-dot",
+    );
+    if (!dot) return;
+    const card = document.getElementById(`card-${dot.dataset.id}`);
+    if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+</script>
+
+<style>
+  /* Masthead */
+  .masthead {
+    background: var(--fg);
+    color: var(--bg);
+  }
+  .masthead-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 28px;
+  }
+  .back-link {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: color 0.15s;
+  }
+  .back-link:hover {
+    color: #e8624e;
+  }
+  .dateline {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 8px;
+  }
+  .masthead h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #bbb;
+    max-width: 700px;
+  }
+  .meta-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .meta-pill {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #ccc;
+  }
+  .meta-pill span {
+    color: #e8624e;
+    font-weight: 600;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+  }
+  .stats-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+  }
+  .stat-card {
+    text-align: center;
+  }
+  .stat-card .num {
+    font-family: var(--font-display);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .stat-card .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--fg3);
+    font-weight: 600;
+  }
+
+  /* Chart */
+  .chart-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  .chart-section h2 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .chart-legend {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    color: var(--fg3);
+  }
+  .chart-legend span::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  .leg-crit::before {
+    background: var(--blue);
+  }
+  .leg-host::before {
+    background: var(--accent);
+  }
+  /* Timeline charts */
+  .timeline-charts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .timeline-chart-title {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .crit-title {
+    color: var(--blue);
+  }
+  .host-title {
+    color: var(--accent);
+  }
+  .outlet-title {
+    color: var(--fg3);
+  }
+  .outlet-bar-svg {
+    width: 100%;
+    height: 40px;
+    display: block;
+    overflow: visible;
+  }
+  .outlet-bar-seg {
+    cursor: pointer;
+    opacity: 0.85;
+  }
+  .outlet-bar-seg:hover {
+    opacity: 1;
+  }
+  .timeline-svg {
+    width: 100%;
+    height: 160px;
+    display: block;
+    overflow: visible;
+  }
+  .timeline-dot {
+    cursor: pointer;
+  }
+  .timeline-tooltip {
+    position: fixed;
+    z-index: 1000;
+    background: var(--fg);
+    color: var(--bg);
+    padding: 7px 11px;
+    border-radius: 4px;
+    font-size: 12px;
+    pointer-events: none;
+    white-space: nowrap;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    line-height: 1.5;
+  }
+
+  .outlet-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .outlet-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 1fr 50px;
+    gap: 12px;
+    align-items: center;
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--bg2);
+  }
+  .outlet-row:last-child {
+    border: none;
+  }
+  .outlet-row[role="button"] {
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .outlet-row[role="button"]:hover {
+    background: var(--bg2);
+  }
+  .outlet-row[role="button"].active {
+    background: var(--blue-light);
+    outline: 2px solid var(--blue);
+  }
+  .outlet-name {
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bar-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .bar-container {
+    height: 20px;
+    background: var(--bg2);
+    border-radius: 3px;
+    position: relative;
+    flex: 1;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+  .bar-fill.crit {
+    background: var(--blue);
+  }
+  .bar-fill.host {
+    background: var(--accent);
+  }
+  .bar-label-external {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--fg2);
+    min-width: 35px;
+    text-align: left;
+  }
+  .outlet-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--fg3);
+    text-align: right;
+  }
+
+  /* Controls */
+  .controls {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px 24px 0;
+  }
+  .controls-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .filter-group label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--fg3);
+    font-weight: 600;
+  }
+  .filter-group select,
+  .filter-group input[type="text"] {
+    font-family: var(--font-body);
+    font-size: 14px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: white;
+    color: var(--fg);
+    outline: none;
+    transition: border 0.2s;
+  }
+  .filter-group select:focus,
+  .filter-group input:focus {
+    border-color: var(--accent);
+  }
+  .reset-btn {
+    font-family: var(--font-body);
+    font-size: 13px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: white;
+    color: var(--fg2);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .reset-btn:hover {
+    background: var(--fg);
+    color: white;
+    border-color: var(--fg);
+  }
+
+  /* Section headers */
+  .section-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 12px;
+  }
+  .section-header h2 {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .count {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fg3);
+    background: var(--bg2);
+    padding: 2px 10px;
+    border-radius: 12px;
+  }
+
+  /* Opening cards */
+  .opening-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 12px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+  }
+  .open-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .open-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent);
+  }
+  .oc-time {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--fg3);
+  }
+  .oc-speaker {
+    font-weight: 700;
+    font-size: 15px;
+    margin: 4px 0;
+  }
+  .oc-speaker span {
+    font-weight: 400;
+    color: var(--fg3);
+  }
+  .oc-summary {
+    font-size: 14px;
+    color: var(--fg2);
+    line-height: 1.6;
+  }
+  .oc-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 10px;
+  }
+
+  /* Q&A list */
+  .qa-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 40px;
+  }
+  .qa-card {
+    background: white;
+    border: 1px solid rgba(226, 191, 184, 0.3);
+    border-radius: 8px;
+    margin-bottom: 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Meta header */
+  .qa-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(226, 191, 184, 0.1);
+  }
+  .qa-meta-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .qa-time {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--accent);
+  }
+  .qa-time a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: opacity 0.15s;
+  }
+  .qa-time a:hover {
+    opacity: 0.7;
+  }
+  .qa-divider {
+    width: 1px;
+    height: 16px;
+    background: rgba(226, 191, 184, 0.4);
+  }
+  .qa-reporter-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .qa-reporter-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: rgba(27, 28, 26, 0.6);
+  }
+  .qa-reporter-name {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 15px;
+    color: var(--fg);
+  }
+  .qa-meta-right .outlet-badge {
+    background: var(--blue);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .qa-meta-right .outlet-badge-default {
+    background: var(--fg3);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 2px;
+    font-size: 10px;
+    font-family: var(--font-mono);
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  /* Content grid */
+  .qa-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    padding: 20px;
+  }
+  .qa-left {
+    min-width: 0;
+  }
+  .qa-question-block {
+    margin-bottom: 20px;
+  }
+  .qa-question {
+    font-family: var(--font-body);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--fg);
+    letter-spacing: -0.3px;
+  }
+  .qa-answer-block {
+    position: relative;
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    padding: 20px;
+    border-radius: 0 8px 8px 0;
+    border-left: 5px solid var(--accent);
+    margin-bottom: 12px;
+  }
+  .qa-answer-label {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    background: var(--accent);
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    padding: 3px 7px;
+    font-weight: 700;
+  }
+  .qa-answer {
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(27, 28, 26, 0.9);
+  }
+  .qa-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .qa-card .tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 3px;
+    background: var(--bg2);
+    color: var(--fg2);
+    border: 1px solid transparent;
+    transition: all 0.15s;
+    cursor: pointer;
+  }
+  .qa-card .tag:hover {
+    background: var(--blue-light);
+    color: var(--blue);
+    border-color: var(--blue);
+    transform: translateY(-1px);
+  }
+
+  /* Right side: Meters */
+  .qa-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgba(226, 191, 184, 0.1);
+    padding-left: 20px;
+  }
+  .meter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .meter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .meter-ring {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .meter-ring svg {
+    display: block;
+  }
+  .meter-val {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .meter-val .percent {
+    font-size: 12px;
+  }
+  .meter-label {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: rgba(27, 28, 26, 0.7);
+  }
+
+  /* Empty state */
+  .empty-state {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 24px;
+    color: var(--fg3);
+  }
+  .empty-state .big {
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--fg2);
+    margin-bottom: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .qa-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 16px;
+    }
+    .qa-meta-left {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .qa-divider {
+      display: none;
+    }
+    .qa-content {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 16px;
+    }
+    .qa-right {
+      border-left: none;
+      border-top: 1px solid rgba(226, 191, 184, 0.1);
+      padding-left: 0;
+      padding-top: 20px;
+    }
+    .meter-container {
+      flex-direction: row;
+      gap: 24px;
+    }
+    .qa-question {
+      font-size: 18px;
+    }
+    .qa-answer {
+      font-size: 14px;
+    }
+    .opening-cards {
+      grid-template-columns: 1fr;
+    }
+    .outlet-row {
+      grid-template-columns: 90px 1fr 1fr 36px;
+      font-size: 12px;
+    }
+    .stats-inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+</style>

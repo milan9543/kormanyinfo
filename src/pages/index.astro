@@ -1,17 +1,206 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import { getAllConferences } from "../lib/data";
 
+const conferences = getAllConferences();
+
+function avg(arr: number[]) {
+  return arr.length ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length) : 0;
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Sajtótájékoztatók">
+
+  <!-- Masthead -->
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="dateline">Kormányinfó · Adatbázis</div>
+      <h1>Sajtótájékoztatók</h1>
+      <p class="subtitle">A kormány sajtótájékoztatóinak teljes Q&A feldolgozása — kérdések, kritikusság és ellenségesség elemzéssel</p>
+      <div class="meta-row">
+        <div class="meta-pill"><span>{conferences.length}</span> sajtótájékoztató</div>
+        <div class="meta-pill">
+          <span>{conferences.reduce((s, c) => s + c.questions.length, 0)}</span> kérdés összesen
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conference list -->
+  <div class="conf-list">
+    {conferences.map((conf) => {
+      const crits = conf.questions.map(q => q.criticism_percent);
+      const hosts = conf.questions.map(q => q.hostility_percent);
+      const avgCrit = avg(crits);
+      const avgHost = avg(hosts);
+      const outlets = [...new Set(conf.questions.map(q => q.outlet))];
+      const maxCrit = crits.length ? Math.max(...crits) : 0;
+
+      return (
+        <a href={`/conferences/${conf.meta.date}`} class="conf-card">
+          <div class="conf-card-left">
+            <div class="conf-date">{conf.meta.date}</div>
+            <h2 class="conf-title">{conf.meta.title}</h2>
+            <div class="conf-meta">{conf.speakers.find(s => s.role === "miniszter")?.name} · {conf.meta.location}</div>
+            <div class="conf-outlets">
+              {outlets.map(o => <span class="tag" style="cursor:default">{o}</span>)}
+            </div>
+          </div>
+          <div class="conf-card-right">
+            <div class="conf-stat-grid">
+              <div class="conf-stat">
+                <div class="conf-stat-num">{conf.questions.length}</div>
+                <div class="conf-stat-label">kérdés</div>
+              </div>
+              <div class="conf-stat">
+                <div class="conf-stat-num">{outlets.length}</div>
+                <div class="conf-stat-label">médium</div>
+              </div>
+            </div>
+            <div class="conf-meters">
+              <div class="conf-meter-row">
+                <span class="conf-meter-label">Átl. kritikusság</span>
+                <div class="conf-bar-wrap">
+                  <div class="conf-bar" style={`width:${avgCrit}%; background:var(--blue)`}></div>
+                </div>
+                <span class="conf-meter-val">{avgCrit}%</span>
+              </div>
+              <div class="conf-meter-row">
+                <span class="conf-meter-label">Átl. ellenségesség</span>
+                <div class="conf-bar-wrap">
+                  <div class="conf-bar" style={`width:${avgHost}%; background:var(--accent)`}></div>
+                </div>
+                <span class="conf-meter-val">{avgHost}%</span>
+              </div>
+              <div class="conf-meter-row">
+                <span class="conf-meter-label">Max kritikusság</span>
+                <div class="conf-bar-wrap">
+                  <div class="conf-bar" style={`width:${maxCrit}%; background:var(--blue); opacity:0.4`}></div>
+                </div>
+                <span class="conf-meter-val">{maxCrit}%</span>
+              </div>
+            </div>
+          </div>
+        </a>
+      );
+    })}
+  </div>
+
+</Layout>
+
+<style>
+  /* Masthead */
+  .masthead {
+    background: var(--fg);
+    color: var(--bg);
+  }
+  .masthead-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px 36px;
+  }
+  .dateline {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 8px;
+  }
+  .masthead h1 {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .subtitle {
+    font-size: 17px;
+    font-weight: 300;
+    color: #bbb;
+    max-width: 600px;
+    margin-bottom: 16px;
+  }
+  .meta-row { display: flex; gap: 12px; flex-wrap: wrap; }
+  .meta-pill {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.08);
+    color: #ccc;
+  }
+  .meta-pill span { color: #e8624e; font-weight: 600; }
+
+  /* List */
+  .conf-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .conf-card {
+    display: flex;
+    gap: 24px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .conf-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 2px 12px rgba(194,58,34,0.08);
+  }
+  .conf-card-left { flex: 1; min-width: 0; }
+  .conf-date {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--fg3);
+    margin-bottom: 4px;
+  }
+  .conf-title {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+  .conf-meta { font-size: 14px; color: var(--fg3); margin-bottom: 10px; }
+  .conf-outlets { display: flex; flex-wrap: wrap; gap: 4px; }
+
+  .conf-card-right { flex-shrink: 0; display: flex; flex-direction: column; gap: 16px; min-width: 280px; }
+  .conf-stat-grid { display: flex; gap: 24px; }
+  .conf-stat { text-align: center; }
+  .conf-stat-num {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .conf-stat-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--fg3);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+  .conf-meters { display: flex; flex-direction: column; gap: 6px; }
+  .conf-meter-row { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .conf-meter-label { color: var(--fg3); width: 140px; flex-shrink: 0; }
+  .conf-bar-wrap { flex: 1; height: 6px; background: var(--bg2); border-radius: 3px; overflow: hidden; }
+  .conf-bar { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
+  .conf-meter-val { font-family: var(--font-mono); font-size: 11px; color: var(--fg2); width: 30px; text-align: right; }
+
+  @media (max-width: 700px) {
+    .conf-card { flex-direction: column; }
+    .conf-card-right { min-width: 0; }
+    .conf-stat-grid { justify-content: flex-start; }
+  }
+</style>

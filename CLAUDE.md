@@ -43,17 +43,17 @@ Aggregated files (rebuilt by `pipeline/build_stats.py` after each new conference
 - [x] Create directory structure (`src/data/conferences/`, `pipeline/`)
 - [x] Add `pipeline/requirements.txt`
 - [x] Copy existing `kormanyinfo_qa.json` as `src/data/conferences/2025-03-20.json`
-- [ ] Run `build_stats.py` locally to generate `outlets.json` + `reporters.json`
-- [ ] Verify Astro dev server loads the data
+- [x] Run `build_stats.py` locally to generate `outlets.json` + `reporters.json`
+- [x] Verify Astro dev server loads the data
 
 ## Phase 1: Core pages
 
-- [ ] Home page — list conferences by date with basic stats
-- [ ] Conference detail page — opening statements + Q&A cards
-- [ ] Q&A cards with criticism/hostility meters
-- [ ] Tag filtering (client-side JS island)
-- [ ] YouTube timestamp links (`youtube_url + ?t=seconds`)
-- [ ] Basic responsive layout
+- [x] Home page — list conferences by date with basic stats
+- [x] Conference detail page — opening statements + Q&A cards
+- [x] Q&A cards with criticism/hostility meters
+- [x] Tag filtering (client-side JS island)
+- [x] YouTube timestamp links (`youtube_url + ?t=seconds`)
+- [x] Basic responsive layout
 
 ## Phase 2: Analytics pages
 

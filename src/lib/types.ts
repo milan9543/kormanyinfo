@@ -11,18 +11,19 @@ export interface Question {
   hostility_percent: number;
 }
 
+export interface Speaker {
+  id: string;
+  name: string;
+  role: string;
+  position: string;
+}
+
 export interface OpeningStatement {
-  speaker: string;
+  speaker_id: string;
   start_time: string;
   end_time: string;
   tags: string[];
   summary: string;
-}
-
-export interface Speaker {
-  name: string;
-  role: string;
-  position?: string;
 }
 
 export interface ConferenceMeta {
@@ -47,6 +48,8 @@ export interface OutletStats {
   avg_criticism: number;
   avg_hostility: number;
   conferences_attended: number;
+  color: string;
+  text_color: string;
 }
 
 export interface ReporterStats {

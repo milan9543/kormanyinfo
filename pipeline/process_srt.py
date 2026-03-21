@@ -35,7 +35,7 @@ auto-generated subtitles. Your job:
 4. For opening statements: extract speaker, time range, summary, tags
 
 For each Q&A pair provide:
-- start_time, end_time (from subtitle timestamps)
+- start_time, end_time (from subtitle timestamps) — start_time MUST be when the question begins, not the answer
 - reporter name and outlet
 - question (extremely short Hungarian summary, max ~15 words)
 - answer (extremely short Hungarian summary, max ~20 words)
@@ -45,8 +45,8 @@ For each Q&A pair provide:
 
 Return ONLY valid JSON. No markdown fences. Schema:
 {
-  "speakers": [{"name": "...", "role": "miniszter|szóvivő", "position": "..."}],
-  "opening_statements": [{"speaker": "...", "start_time": "...", "end_time": "...", "summary": "...", "tags": [...]}],
+  "speakers": [{"id": "s_01", "name": "...", "role": "miniszter|szóvivő", "position": "..."}],
+  "opening_statements": [{"speaker_id": "s_01", "start_time": "...", "end_time": "...", "summary": "...", "tags": [...]}],
   "questions": [{"id": "q_01", "start_time": "...", "end_time": "...", "reporter": "...", "outlet": "...",
                   "question": "...", "answer": "...", "tags": [...],
                   "criticism_percent": N, "hostility_percent": N}]
@@ -58,6 +58,7 @@ RULES:
 - The >> marker often indicates a speaker change
 - Be consistent with reporter names across chunks
 - Number question IDs sequentially: q_01, q_02, ...
+- Number speaker IDs sequentially: s_01, s_02, ... and use them consistently in opening_statements
 """
 
 
