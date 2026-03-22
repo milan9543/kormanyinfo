@@ -1,43 +1,65 @@
 @import "tailwindcss";
 
-:root {
-  --bg: #faf8f4;
-  --bg2: #f0ede6;
-  --bg3: #e8e4db;
-  --fg: #1a1816;
-  --fg2: #4a4640;
-  --fg3: #7a756e;
-  --accent: #c23a22;
-  --accent2: #9c2e1a;
-  --accent-light: #fdf0ee;
-  --blue: #2a5fa5;
-  --blue-light: #eef3fb;
-  --green: #2d7a4f;
-  --amber: #b8860b;
-  --border: #ddd8d0;
-  --border2: #ccc6bb;
-  --radius: 6px;
-  --font-display: "Playfair Display", Georgia, serif;
-  --font-body: "Source Sans 3", "Source Sans Pro", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+@theme {
+  --color-bg: #faf8f4;
+  --color-bg2: #f0ede6;
+  --color-bg3: #e8e4db;
+  --color-fg: #1a1816;
+  --color-fg2: #4a4640;
+  --color-fg3: #7a756e;
+  --color-accent: #c23a22;
+  --color-accent2: #9c2e1a;
+  --color-accent-light: #fdf0ee;
+  --color-blue: #2a5fa5;
+  --color-blue-light: #eef3fb;
+  --color-green: #2d7a4f;
+  --color-amber: #b8860b;
+  --color-border: #ddd8d0;
+  --color-border2: #ccc6bb;
+  --font-family-display: "Playfair Display", Georgia, serif;
+  --font-family-body: "Source Sans 3", "Source Sans Pro", sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-family-body);
+    background-color: var(--color-bg);
+    color: var(--color-fg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+}
 
-html { font-size: 16px; scroll-behavior: smooth; }
-
-body {
-  font-family: var(--font-body);
-  background: var(--bg);
-  color: var(--fg);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
+/* ── LEGACY ALIASES (for index.astro inline styles) ── */
+:root {
+  --bg: var(--color-bg);
+  --bg2: var(--color-bg2);
+  --bg3: var(--color-bg3);
+  --fg: var(--color-fg);
+  --fg2: var(--color-fg2);
+  --fg3: var(--color-fg3);
+  --accent: var(--color-accent);
+  --accent2: var(--color-accent2);
+  --accent-light: var(--color-accent-light);
+  --blue: var(--color-blue);
+  --blue-light: var(--color-blue-light);
+  --green: var(--color-green);
+  --amber: var(--color-amber);
+  --border: var(--color-border);
+  --border2: var(--color-border2);
+  --font-display: var(--font-family-display);
+  --font-body: var(--font-family-body);
+  --font-mono: var(--font-family-mono);
+  --radius: 6px;
 }
 
 /* ── SITE NAV ── */
 .site-nav {
-  background: var(--fg);
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background-color: var(--color-fg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 .site-nav-inner {
   max-width: 1200px;
@@ -49,7 +71,7 @@ body {
   height: 44px;
 }
 .site-nav a {
-  font-family: var(--font-mono);
+  font-family: var(--font-family-mono);
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -67,26 +89,26 @@ body {
   font-weight: 500;
   padding: 2px 8px;
   border-radius: 12px;
-  background: var(--bg2);
-  color: var(--fg3);
+  background: var(--color-bg2);
+  color: var(--color-fg3);
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.15s;
   border: 1px solid transparent;
-  font-family: var(--font-body);
+  font-family: var(--font-family-body);
 }
 .tag:hover {
-  background: var(--accent-light);
-  color: var(--accent);
-  border-color: var(--accent);
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 .tag.active {
-  background: var(--accent);
+  background: var(--color-accent);
   color: white;
 }
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background: var(--fg3); }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-border2); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-fg3); }

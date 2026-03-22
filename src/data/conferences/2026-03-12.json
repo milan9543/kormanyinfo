@@ -1,0 +1,539 @@
+{
+  "meta": {
+    "title": "Kormányinfó",
+    "date": "2026-03-12",
+    "youtube_url": "https://www.youtube.com/watch?v=cdCejyLcdoY",
+    "youtube_video_id": "cdCejyLcdoY",
+    "duration": "1h30m23s",
+    "location": "Budapest"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Gulyás Gergely",
+      "role": "miniszter",
+      "position": "a miniszterelnökséget vezető miniszter"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:41:00",
+      "end_time": "00:52:52",
+      "summary": "A kormány két ülésezett: rendkívüli hétfőn (üzemanyagár védettár: benzin 595 Ft, dízel 615 Ft), szokásos szerdán. Az energiahelyzet kétszeresen fenyegető: háborúból adódó válság és Zelenszki elnök barátságvezeték-blokádja. Diplomáciai küldöttség CEK államtitkár vezetésével Ukrajnába ment. Európai Bizottságra nyomást fog gyakorolni. Ukrajna számos halálosan fenyegette a miniszterelnököt és családját, ez elfogadhatatlan. Magyarország nem támogat Ukrajnának szóló döntéseket, amíg a blokád fennáll. 20. szankciós csomagot blokkoljuk. Török áramlatot is támadják az ukránok, ami Magyarországra is veszélyes.",
+      "tags": [
+        "energia-helyzet",
+        "üzemanyag-védettár",
+        "barátság-vezeték",
+        "ukrajna-blokád",
+        "szankcók",
+        "diplomácia"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "start_time": "00:44:88",
+      "end_time": "00:49:40",
+      "reporter": "Herceg Márt",
+      "outlet": "444.hu",
+      "question": "Mit jelent Lázár János Z1G-vel kapcsolatos állítása?",
+      "answer": "Az elnök megkérdezte Lázárt, aki nyilatkozott. A szóvivő szerint Zelenszki minden határon túllépett halálosan fenyegetve a miniszterelnököt.",
+      "tags": ["lázár-jános", "kampány", "zelenszki-fenyegetés"],
+      "criticism_percent": 35,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_02",
+      "start_time": "00:58:00",
+      "end_time": "01:05:08",
+      "reporter": "Csuha Ildikó",
+      "outlet": "közmédia",
+      "question": "Videó mutatott fenyegetéseket, Orbán Viktor megtartja-e nyilvános gyűléseket?",
+      "answer": "Természetesen. A biztonsági szervek megfelelő fokozatot rendelnek elő. Fenyegetéseket komolyan veszi a kormány, de nem befolyásolja az országjárást. BKV és Volánbus panasza az üzemanyagár-védettár miatt.",
+      "tags": [
+        "zelenszki-fenyegetés",
+        "biztonság",
+        "országjárás",
+        "üzemanyag-ár",
+        "bkv",
+        "volánbus"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_03",
+      "start_time": "01:07:40",
+      "end_time": "01:10:20",
+      "reporter": "Mészáros László",
+      "outlet": "M1",
+      "question": "Cepek államtitkár látogatása milyen hatással lesz Brüsszelre? Hogyan értékeli az EU támogatási terve?",
+      "answer": "A delegáció bizonyítékot szolgáltat, hogy a vezeték működőképes. Brüsszelre nyomást kell gyakorolni. Ha EU támogat Ukrajnát, az jogrend helyett személyes döntés alapján történne.",
+      "tags": [
+        "brüsszel",
+        "cepek-delegáció",
+        "barátság-vezeték",
+        "eu-támogatás",
+        "ukrajna"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_04",
+      "start_time": "01:14:00",
+      "end_time": "01:16:40",
+      "reporter": "Hejter Dávid",
+      "outlet": "Hírtv",
+      "question": "Van-e konkrét információ, hogy a fenyegetések valós szándékokra utalnak, nem csak szavakra?",
+      "answer": "A fenyegetéseket komolyan vesz a kormány. Biztonsági szervek megfelelő intézkedéseket hoznak. Részleteket nem közöl a nyilvánosság érdekében.",
+      "tags": ["fenyegetés", "biztonság", "miniszterelnök-védelme"],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_05",
+      "start_time": "01:17:00",
+      "end_time": "01:20:40",
+      "reporter": "Hejter Dávid",
+      "outlet": "Hírtv",
+      "question": "Mikor ismerheti meg a nyilvánosság az ukrán forrásokról szóló nemzetbiztonsági bedeutést?",
+      "answer": "Belátható időn belül. A titkosítás feloldása folyamatban van. Részleteket nem közölhet államtitok miatt.",
+      "tags": [
+        "nemzetbiztonság",
+        "ukrajna-szállítmány",
+        "aranyszállítmány",
+        "pénzmosás-gyanú"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_06",
+      "start_time": "01:20:40",
+      "end_time": "01:25:20",
+      "reporter": "Hejter Dávid",
+      "outlet": "Hírtv",
+      "question": "Mely feltételek mellett oldják fel az ukrán olajblokádot? Milyen biztos eszközök vannak?",
+      "answer": "Ukrajna gazdaságilag függ az EU-tól. Ha nem sikerül kormányváltás, Zelenszki megnyitja a vezetéket. A magyar blokád működik.",
+      "tags": [
+        "barátság-vezeték",
+        "ukrajna-nyomás",
+        "eu-függőség",
+        "energia-szuverenitás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_07",
+      "start_time": "01:25:20",
+      "end_time": "01:28:00",
+      "reporter": "Hejter Dávid",
+      "outlet": "Hírtv",
+      "question": "Van-e terv a magyar aranykonvoy ügyét vizsgáló hatóságtól?",
+      "answer": "Vizsgálat zajlik egyenletes mennyiségű deviza és arany miatt. Gyanúsítás nincs, pénzmosás-elleni eljárás folyik.",
+      "tags": ["aranyszállítmány", "pénzmosás", "nav-vizsgálat", "ukrajna"],
+      "criticism_percent": 40,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_08",
+      "start_time": "01:33:76",
+      "end_time": "01:37:20",
+      "reporter": "Millet Bette",
+      "outlet": "TV2",
+      "question": "Meddig bírja Magyarország az ukrán olajzsarolást?",
+      "answer": "Reméljük bármeddig. Adria vezeték drágább. Ha Horvátország együttműködik, sokáig. Bizonytalanság van a horvát nyilatkozatokból.",
+      "tags": [
+        "barátság-vezeték",
+        "adria-vezeték",
+        "energia-ellátás",
+        "horvátország"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_09",
+      "start_time": "01:37:20",
+      "end_time": "01:40:24",
+      "reporter": "Millet Bette",
+      "outlet": "TV2",
+      "question": "Mit gondol Magyar Péter választási csalás előjelzéseiről?",
+      "answer": "Akik vereségtől tartanak, beszélnek csalásról. Magyarországi választások mindig tisztességesek, nemzetközi megfigyelők ezt igazolják.",
+      "tags": [
+        "választás",
+        "magyar-péter",
+        "tiszapárt",
+        "kampány",
+        "választási-integritás"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_10",
+      "start_time": "01:40:24",
+      "end_time": "01:44:00",
+      "reporter": "Millet Bette",
+      "outlet": "TV2",
+      "question": "Milyen jelentősége lesz az idei békemenetnek egy hónappal a választás előtt?",
+      "answer": "Nagy jelentőség. 2012 óta ez az első alkalom, amikor háború van szomszédságban. Európa belépésének veszélye van. Békepropaganda fontos.",
+      "tags": ["béke-menet", "választás", "háború", "európa-bevonódás"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_11",
+      "start_time": "01:44:00",
+      "end_time": "01:46:40",
+      "reporter": "Szabógyur",
+      "outlet": "Index",
+      "question": "Mikor és hány évig építették a barátság-vezetéket?",
+      "answer": "1960-1964. A miniszter nem ad konkrét választ, másik forrásra utal. Azt tudom, hogy világban sok vezetéket építeni kell.",
+      "tags": ["barátság-vezeték", "történelem", "infrastruktúra"],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_12",
+      "start_time": "01:46:40",
+      "end_time": "01:53:00",
+      "reporter": "Szabógyur",
+      "outlet": "Index",
+      "question": "Miért nem tudott Magyarország alternatív útvonalat találni négy év alatt?",
+      "answer": "Azerbajdzsán felé vezetéket építünk EU-val. Adria vezeték kapacitás-vita van. Olcsóbb az orosz olaj. Verseny a forrásban, nem az útvonalon.",
+      "tags": [
+        "energia-biztonsággság",
+        "alternatív-útvonalak",
+        "kőolaj-ár",
+        "adria-vezeték",
+        "azerbaijan"
+      ],
+      "criticism_percent": 45,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_13",
+      "start_time": "01:53:00",
+      "end_time": "01:57:00",
+      "reporter": "Szabógyur",
+      "outlet": "Index",
+      "question": "Hogyan készült a kormány a török áramlatot érintő támadásra?",
+      "answer": "2010-ben 2 interkonnektor volt, most 6 (Szlovénia nélkül). Ahonnan lehet vásárolni, mennyi, az más kérdés.",
+      "tags": [
+        "török-áramlat",
+        "föld-gáz",
+        "interkonnektor",
+        "energia-biztonsság"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_14",
+      "start_time": "01:57:00",
+      "end_time": "02:00:40",
+      "reporter": "Szabógyur",
+      "outlet": "Index",
+      "question": "Meddig lehetnek velünk az üzemanyagár-védettak? Van-e alsó határ?",
+      "answer": "Akkor nincs velünk, amikor az ár alá megy. Egy maximum ár, nem rögzített ár. 595 és 615 Ft felett szabaddá válik.",
+      "tags": ["üzemanyag-ár", "védettár", "maximum-ár", "barátság-vezeték"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_15",
+      "start_time": "02:00:40",
+      "end_time": "02:04:00",
+      "reporter": "Szabógyur",
+      "outlet": "Index",
+      "question": "Mennyire csökkenhetnek a globális olajárak a barátság-vezeték megnyitásával?",
+      "answer": "Globálisra nem tudunk mondani, Magyarországra igen. Szállítási költség csökken. Az ural-olaj mindig olcsóbb lesz brend-nél.",
+      "tags": [
+        "kőolaj-ár",
+        "barátság-vezeték",
+        "szállítási-költség",
+        "energia-árak"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_16",
+      "start_time": "02:04:00",
+      "end_time": "02:05:28",
+      "reporter": "Brayer Péter",
+      "outlet": "Bryer Press Heti TV",
+      "question": "Románok NATO támaszpontokat nyitnak Trump-nak. Magyarországot is megtalálja az USA? Bevonódik-e Európa a háborúba?",
+      "answer": "Ilyen kérés nem érkezett. Célpont-e Magyarország: esély csekély. Trump nem fog szárazföldi csapatokat bevetni (80% elleni). Légitámadásoknál Fehérház 3-4 hétet mondott, így a háború véget érhet.",
+      "tags": [
+        "nato",
+        "usa-politika",
+        "trump",
+        "háború-veszély",
+        "lópez-katonai-bevonódás"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_17",
+      "start_time": "02:05:28",
+      "end_time": "02:10:15",
+      "reporter": "Brayer Péter",
+      "outlet": "Bryer Press Heti TV",
+      "question": "Irán és Izrael helyzete: melyik védekezik, milyen rizikó Európára?",
+      "answer": "Irán nem fogadja el Izrael létét. Atomprogramja nem transzparens. Atomhatalmi bővülés rizikó. Középkelet-Európa is veszélyben: 3000+ km-es irán-rakéták.",
+      "tags": [
+        "irán-izrael-konfliktus",
+        "atomfegyver",
+        "közel-kelet",
+        "európa-biztonság"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_18",
+      "start_time": "02:12:00",
+      "end_time": "02:15:80",
+      "reporter": "Hazfi Zsolt",
+      "outlet": "ATV",
+      "question": "Jövő héten EU-csúcs. Visz-e Orbán kompromisszus-javaslatot? Mi az egyetlen feltétel?",
+      "answer": "Kompromisszum: nem blokkolja 90 milliárd eurót és 20. szankciócsmagot, ha Ukrajna nyitja a vezetéket és garantációt ad az újabb elzárás ellen.",
+      "tags": [
+        "eu-csúcs",
+        "ukrajna-támogatás",
+        "barátság-vezeték",
+        "szankciók",
+        "kompromisszum"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_19",
+      "start_time": "02:15:80",
+      "end_time": "02:20:00",
+      "reporter": "Hazfi Zsolt",
+      "outlet": "ATV",
+      "question": "Horvátország és Lengyelország kapcsolata nehéz. Béke-offenzíva terv?",
+      "answer": "Lengyelek ellenségesen viszonyulnak, nem vár változást. Horvátok dilemmában: jogi kötelezettség vs. Brüsszel-nyomás. Engedik-e az orosz olajat? A gazdasági miniszter személyes ambícióból beszél butaságokat.",
+      "tags": [
+        "horvátország",
+        "lengyelország",
+        "szomszéd-viszony",
+        "adria-vezeték",
+        "brüsszel-nyomás"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_20",
+      "start_time": "02:20:00",
+      "end_time": "02:24:00",
+      "reporter": "Hazfi Zsolt",
+      "outlet": "ATV",
+      "question": "Pénzmosás-gyanú az aranykonvoyban: konkrét gyanú mit takar? Ki mosott kinek pénzt?",
+      "answer": "Vizsgálat zajlik. Mennyisége egyedülálló (900M dollár, 420M euró, 146 kg arany). Ukrán titkosszolgálathoz köthető személy szállította. Nyomozás eldönti: gyanúsítás vagy feloldás.",
+      "tags": [
+        "aranyszállítmány",
+        "pénzmosás",
+        "ukrajna-szállítmány",
+        "nav-eljárás"
+      ],
+      "criticism_percent": 50,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_21",
+      "start_time": "02:24:00",
+      "end_time": "02:26:00",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Magyar Péter azt mondta: kormány meg akarja akadályozni a drónokat a Tisza-rendezvényen?",
+      "answer": "Általános szabályok szerint működik. Az illetékes hatóság egy szabályzatnak nem megfelelő kérelmet utasított el. Semmi akadálya nincsen szokásos engedéllyel drónozni.",
+      "tags": [
+        "magyar-péter",
+        "tiszapárt",
+        "március-15",
+        "drón-engedély",
+        "kampány"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_22",
+      "start_time": "02:26:00",
+      "end_time": "02:28:00",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Terv-e szankciólistára tenni az ukrán tisztet, aki fenyegette a miniszterelnök családját?",
+      "answer": "A védelmi tanács minden lehetséges eszközt megvizsgál. Ez is alkalmazható eszköz közöttük van.",
+      "tags": [
+        "zelenszki-fenyegetés",
+        "ukrán-tisztség",
+        "szankciók",
+        "miniszterelnök-családja"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_23",
+      "start_time": "02:28:00",
+      "end_time": "02:31:00",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Ha a Cepek-delegáció azt találja: nincs probléma a vezetékkel, mi a következő lépés?",
+      "answer": "Cél: Zelenszki szembesüljön a valósággal. Már nem azt mondják: technikai probléma, hanem politikai döntés. Az ukránok hajlandóak felismerni, hogy nincs akadály.",
+      "tags": [
+        "cepek-delegáció",
+        "barátság-vezeték",
+        "ukrajna-nyomás",
+        "diplomácia"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_24",
+      "start_time": "02:31:00",
+      "end_time": "02:33:00",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Nemzeti petíció: mi az üzenete azoknak, akik még nem küldték vissza az íveket?",
+      "answer": "Biztatok mindenkit. Energiabiztonság: barátság-vezeték működése és rezsicsökkentés szükséges. A kormánynak támogatást kell adni.",
+      "tags": [
+        "nemzeti-petíció",
+        "barátság-vezeték",
+        "rezsicsökkentés",
+        "energia-biztonság"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_25",
+      "start_time": "02:46:00",
+      "end_time": "02:48:36",
+      "reporter": "Sim Dániel",
+      "outlet": "Telex",
+      "question": "Telex újságíróit erőszakosan kilökték kampányeseményből. Mit szól hozzá?",
+      "answer": "Helytelennek tartom. Semmilyen erőszak mindenkivel szemben elfogadhatatlan. Szomorú, hogy nincs újságírói szolidaritás. Zárt fórumon senki nem mehet, de nem erőszak.",
+      "tags": [
+        "sajtó-szabadság",
+        "erőszak",
+        "kampány-rendezvény",
+        "újságíróvédelem"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_26",
+      "start_time": "02:48:36",
+      "end_time": "02:52:00",
+      "reporter": "Sim Dániel",
+      "outlet": "Telex",
+      "question": "Orbán jövő héten nyilvános országjárásra indul. Mennyire lesz nyilvános? Bárki mehet?",
+      "answer": "Nyilvános események. A kérdésben benne van a válasz: igen. Technikai biztonság kérdés, de nyilvános az nyilvános.",
+      "tags": [
+        "orbán-országjárás",
+        "nyilvános-rendezvény",
+        "kampány",
+        "biztonság"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_27",
+      "start_time": "02:52:00",
+      "end_time": "02:55:20",
+      "reporter": "Sarkka DS",
+      "outlet": "Economic",
+      "question": "Szifilises csecsemőhalálokról kapott volna a kormány számokat?",
+      "answer": "Nem kaptam konkrét számot. Az illetékes szervek azt vizsgálják. Egészségügyi visszacsatolás szükséges.",
+      "tags": ["egészségügy", "közegészség", "szifilia"],
+      "criticism_percent": 25,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_28",
+      "start_time": "02:55:20",
+      "end_time": "02:58:00",
+      "reporter": "Sarkka DS",
+      "outlet": "Economic",
+      "question": "A Cepek-delegáció meddig Kievben? Mikor jönnek vissza?",
+      "answer": "Kaptak mandátumot. Tárgyalnak az ukrán energiaügyi minisztériummal. Szeretnék megnézni a vezeték felújításakor hibás pontokat. Ha sikeres, visszajönnek. Ha az ukránok nem engedik meg a megtekintést, akkor sincs értelme maradni.",
+      "tags": [
+        "cepek-delegáció",
+        "ukrajna-tárgyalás",
+        "barátság-vezeték",
+        "brodi-állomáshely"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_29",
+      "start_time": "02:58:00",
+      "end_time": "03:01:00",
+      "reporter": "Sarkka DS",
+      "outlet": "Economic",
+      "question": "A védett üzemanyagárakkal kapcsolatban: Magyarország előtt-e van még energia-előnytel?",
+      "answer": "A védett ár lehetősége van. Pozitív tapasztalat: Magyarországon nem mehetnek az árak felfelé. Európai árak 900 Ft-ig is fölmentek. Garancia az inflációra és szállítási költségekre. MOL beszerzése folyamatban, terv teljesül.",
+      "tags": [
+        "üzemanyag-ár",
+        "védettár",
+        "mol-beszerzés",
+        "infláció-kézben-tartás"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_30",
+      "start_time": "03:01:00",
+      "end_time": "03:04:00",
+      "reporter": "Sarkka DS",
+      "outlet": "Economic",
+      "question": "Milyen szereplők próbálnak beavatkozni a magyar választásba?",
+      "answer": "Ukrajna nyíltan, direkt módon beavatkozik. Oroszország nem vitatott, hogy nem avatkozik be. A Moldova-választásban az EU gátolhatott meg több, mint Oroszország.",
+      "tags": [
+        "választási-beavatkozás",
+        "ukrajna-interferencia",
+        "moldova-választás",
+        "szuverenitás"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_31",
+      "start_time": "03:04:00",
+      "end_time": "03:07:00",
+      "reporter": "Sarkka DS",
+      "outlet": "Economic",
+      "question": "Mit szól Putin nyilatkozatához: politikai feltételek a gáz és olajszállításhoz?",
+      "answer": "Az Adria vezetékhez, Magyarország Szuverenitása. Putin azt mondta: ha Magyarország ezt az álláspontot tartja, akkor szállít. Ez nem feltételezettség, hanem kereslet-kínálat. Ha a Tisza és a DK nem akar orosz vezetéket, Putin nem akar küldeni. Csodás barátság.",
+      "tags": [
+        "putin-politika",
+        "gáz-szállítás",
+        "kőolaj",
+        "tiszapárt",
+        "dk",
+        "energia-politika"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 20
+    }
+  ]
+}
