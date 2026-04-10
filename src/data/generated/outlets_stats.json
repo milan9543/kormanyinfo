@@ -1,5 +1,26 @@
 [
   {
+    "id": "kozmedia",
+    "name": "Közmédia",
+    "color": "#001224",
+    "text_color": "#ffffff",
+    "total_questions": 44,
+    "avg_criticism": 27.4,
+    "avg_hostility": 14.4,
+    "conferences_attended": 8,
+    "total_question_time_seconds": 5190,
+    "reporters": [
+      {
+        "id": "kozmedia_r01",
+        "name": "Csuhaj Ildikó",
+        "total_questions": 44,
+        "avg_criticism": 27.4,
+        "avg_hostility": 14.4,
+        "conferences_attended": 8
+      }
+    ]
+  },
+  {
     "id": "atv",
     "name": "ATV",
     "color": "#F8313F",
@@ -62,27 +83,6 @@
         "avg_criticism": 12.0,
         "avg_hostility": 8.0,
         "conferences_attended": 2
-      }
-    ]
-  },
-  {
-    "id": "kozmedia",
-    "name": "Közmédia",
-    "color": "#001224",
-    "text_color": "#ffffff",
-    "total_questions": 37,
-    "avg_criticism": 26.9,
-    "avg_hostility": 15.4,
-    "conferences_attended": 7,
-    "total_question_time_seconds": 4582,
-    "reporters": [
-      {
-        "id": "kozmedia_r01",
-        "name": "Csuhaj Ildikó",
-        "total_questions": 37,
-        "avg_criticism": 26.9,
-        "avg_hostility": 15.4,
-        "conferences_attended": 7
       }
     ]
   },
@@ -501,18 +501,6 @@
     ]
   },
   {
-    "id": "ismeretlen",
-    "name": "ismeretlen",
-    "color": "#6B7280",
-    "text_color": "#ffffff",
-    "total_questions": 7,
-    "avg_criticism": 30.0,
-    "avg_hostility": 9.3,
-    "conferences_attended": 1,
-    "total_question_time_seconds": 608,
-    "reporters": []
-  },
-  {
     "id": "partizan",
     "name": "Partizán",
     "color": "#FF4D42",
@@ -543,6 +531,15 @@
     "avg_hostility": 6.2,
     "conferences_attended": 1,
     "total_question_time_seconds": 328,
-    "reporters": []
+    "reporters": [
+      {
+        "id": "m4_privatbankar_r01",
+        "name": "Imre Lőrinc",
+        "total_questions": 4,
+        "avg_criticism": 23.8,
+        "avg_hostility": 6.2,
+        "conferences_attended": 1
+      }
+    ]
   }
 ]

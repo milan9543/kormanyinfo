@@ -202,9 +202,7 @@
   {
     "id": "m1",
     "name": "M1 Híradó",
-    "aliases": [
-      "M1"
-    ],
+    "aliases": ["M1"],
     "reporters": [
       {
         "id": "m1_r01",
@@ -257,11 +255,11 @@
   {
     "id": "m4_privatbankar",
     "name": "M4 Privatbankár",
-    "reporters": []
-  },
-  {
-    "id": "ismeretlen",
-    "name": "ismeretlen",
-    "reporters": []
+    "reporters": [
+      {
+        "id": "m4_privatbankar_r01",
+        "name": "Imre Lőrinc"
+      }
+    ]
   }
 ]

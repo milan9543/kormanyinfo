@@ -1,5 +1,15 @@
 [
   {
+    "id": "kozmedia_r01",
+    "name": "Csuhaj Ildikó",
+    "outlet": "Közmédia",
+    "outlet_id": "kozmedia",
+    "total_questions": 44,
+    "avg_criticism": 27.4,
+    "avg_hostility": 14.4,
+    "conferences_attended": 8
+  },
+  {
     "id": "atv_r01",
     "name": "Hazafi Zsolt",
     "outlet": "ATV",
@@ -7,16 +17,6 @@
     "total_questions": 37,
     "avg_criticism": 54.3,
     "avg_hostility": 17.4,
-    "conferences_attended": 7
-  },
-  {
-    "id": "kozmedia_r01",
-    "name": "Csuhaj Ildikó",
-    "outlet": "Közmédia",
-    "outlet_id": "kozmedia",
-    "total_questions": 37,
-    "avg_criticism": 26.9,
-    "avg_hostility": 15.4,
     "conferences_attended": 7
   },
   {
@@ -327,6 +327,16 @@
     "total_questions": 4,
     "avg_criticism": 23.8,
     "avg_hostility": 7.5,
+    "conferences_attended": 1
+  },
+  {
+    "id": "m4_privatbankar_r01",
+    "name": "Imre Lőrinc",
+    "outlet": "M4 Privatbankár",
+    "outlet_id": "m4_privatbankar",
+    "total_questions": 4,
+    "avg_criticism": 23.8,
+    "avg_hostility": 6.2,
     "conferences_attended": 1
   },
   {
