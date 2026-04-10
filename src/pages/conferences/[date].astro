@@ -60,45 +60,6 @@ const chartPoints = conf.questions.map((q) => ({
   reporter: q.reporter,
   outlet: q.outlet,
 }));
-const maxTime =
-  chartPoints.length > 0 ? Math.max(...chartPoints.map((d) => d.t)) : 0;
-
-const CW = 960,
-  CH = 160,
-  PL = 44,
-  PR = 16,
-  PT = 12,
-  PB = 28;
-const cw = CW - PL - PR;
-const ch = CH - PT - PB;
-function tx(seconds: number): number {
-  return PL + (maxTime > 0 ? (seconds / maxTime) * cw : 0);
-}
-function ty(pct: number): number {
-  return PT + ch - (pct / 100) * ch;
-}
-function fmtTime(s: number): string {
-  const m = Math.floor(s / 60);
-  const sec = s % 60;
-  return `${m}:${String(sec).padStart(2, "0")}`;
-}
-const tickInterval = Math.max(60, Math.ceil(maxTime / 7 / 60) * 60);
-const xTicks: number[] = [];
-for (let t = 0; t <= maxTime; t += tickInterval) xTicks.push(t);
-if (xTicks[xTicks.length - 1] < maxTime - 10) xTicks.push(maxTime);
-
-// Outlet bar segments: each question spans to the next question's start
-const outletBarSegments = chartPoints.map((p, i) => {
-  const nextT = i + 1 < chartPoints.length ? chartPoints[i + 1].t : maxTime;
-  return {
-    x: tx(p.t),
-    width: Math.max(tx(nextT) - tx(p.t), 2),
-    outlet: p.outlet,
-    id: p.id,
-    reporter: p.reporter,
-    t: p.t,
-  };
-});
 
 // Map outlet name to color/text_color
 const outletColors: Record<string, { color: string; text_color: string }> =
@@ -120,15 +81,18 @@ function timeToSeconds(t: string): number {
 <Layout title={conf.meta.title}>
   <!-- Masthead -->
   <header class="bg-fg text-bg">
-    <div class="max-w-300 mx-auto px-6 pt-8 pb-7">
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-7">
       <a
         href="/"
         class="inline-block font-mono text-[11px] tracking-[1px] uppercase text-[#777] no-underline mb-3 transition-colors duration-150 hover:text-[#e8624e]"
-      >← Összes sajtótájékoztató</a>
+        >← Összes sajtótájékoztató</a
+      >
       <div class="font-mono text-xs tracking-[2px] uppercase text-[#999] mb-2">
         Kormányinfó · {conf.meta.location}
       </div>
-      <h1 class="font-display text-[clamp(28px,5vw,48px)] font-black leading-tight mb-2 tracking-[-0.5px]">
+      <h1
+        class="font-display text-[clamp(28px,5vw,48px)] font-black leading-tight mb-2 tracking-[-0.5px]"
+      >
         Sajtótájékoztató
       </h1>
       <p class="text-[18px] font-light text-[#bbb] max-w-175">
@@ -136,415 +100,433 @@ function timeToSeconds(t: string): number {
         válaszok, kritikusság és ellenségesség elemzéssel
       </p>
       <div class="flex gap-3 mt-4 flex-wrap">
-        <div class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]">
+        <div
+          class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]"
+        >
           <span>{conf.meta.date.replace(/-/g, ". ")}</span>
         </div>
-        <div class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]">
+        <div
+          class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]"
+        >
           Miniszter: <span class="text-[#e8624e] font-semibold"
             >{conf.speakers.find((s) => s.role === "miniszter")?.name}</span
           >
         </div>
-        <div class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]">
-          Időtartam: <span class="text-[#e8624e] font-semibold">{conf.meta.duration}</span>
+        <div
+          class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]"
+        >
+          Időtartam: <span class="text-[#e8624e] font-semibold"
+            >{conf.meta.duration}</span
+          >
         </div>
+        <a
+          href={conf.meta.youtube_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc] no-underline transition-colors duration-150 hover:bg-white/15 hover:text-white flex items-center gap-1.5"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="11"
+            viewBox="0 0 16 11"
+            ><path
+              d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z"
+              fill="#FF0000"></path><path
+              d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z"
+              fill="#fff"></path></svg
+          >
+          YouTube
+        </a>
       </div>
     </div>
   </header>
 
   <!-- Stats bar -->
   <div class="bg-bg2 border-b border-border">
-    <div class="max-w-300 mx-auto px-6 py-5 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] max-[700px]:grid-cols-3 gap-4">
+    <div
+      class="max-w-300 mx-auto px-6 max-[480px]:px-4 py-5 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] max-[700px]:grid-cols-3 gap-4"
+    >
       <div class="text-center">
-        <div class="font-display text-[32px] font-bold text-accent">{qCount}</div>
-        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Kérdés</div>
+        <div class="font-display text-[32px] font-bold text-accent">
+          {qCount}
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">
+          Kérdés
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-display text-[32px] font-bold text-accent">{reporterCount}</div>
-        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Újságíró</div>
+        <div class="font-display text-[32px] font-bold text-accent">
+          {reporterCount}
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">
+          Újságíró
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-display text-[32px] font-bold text-accent">{outletCount}</div>
-        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Médium</div>
+        <div class="font-display text-[32px] font-bold text-accent">
+          {outletCount}
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">
+          Médium
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-display text-[32px] font-bold text-accent">{avgCrit}%</div>
-        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Átl. kritikusság</div>
+        <div class="font-display text-[32px] font-bold text-accent">
+          {avgCrit}%
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">
+          Átl. kritikusság
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-display text-[32px] font-bold text-accent">{avgHost}%</div>
-        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Átl. ellenségesség</div>
+        <div class="font-display text-[32px] font-bold text-accent">
+          {avgHost}%
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">
+          Átl. ellenségesség
+        </div>
       </div>
       <div class="text-center">
-        <div class="font-display text-[32px] font-bold text-accent">{maxCrit}%</div>
-        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Max kritikusság</div>
+        <div class="font-display text-[32px] font-bold text-accent">
+          {maxCrit}%
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">
+          Max kritikusság
+        </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Reading progress bar -->
+  <div
+    id="readProgressBar"
+    class="sticky top-0 w-full z-200 pointer-events-none flex items-center"
+    style="height:12px;background:rgba(232,98,78,0.08)"
+  >
+    <div
+      id="readProgressFill"
+      class="h-full bg-accent flex items-center justify-end pr-2"
+      style="width:0%;transition:width 0.15s ease;min-width:0"
+    >
+      <span
+        id="readProgressLabel"
+        class="font-mono text-[10px] font-bold text-white leading-none opacity-0"
+        >0%</span
+      >
     </div>
   </div>
 
   <!-- Opening statements -->
-  <div class="max-w-300 mx-auto px-6 pt-8 pb-3">
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-3">
     <h2 class="font-display text-2xl font-bold flex items-center gap-2.5">
-      Nyitó nyilatkozatok <span class="font-mono text-sm font-normal text-fg3 bg-bg2 px-2.5 py-0.5 rounded-full"
+      Nyitó nyilatkozatok <span
+        class="font-mono text-sm font-normal text-fg3 bg-bg2 px-2.5 py-0.5 rounded-full"
         >{conf.opening_statements.length}</span
       >
     </h2>
   </div>
-  <div class="max-w-300 mx-auto px-6 pb-3 grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] max-[700px]:grid-cols-1 gap-4">
+  <div
+    class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-3 grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] max-[700px]:grid-cols-1 gap-4"
+  >
     {
-      conf.opening_statements.map((stmt) => (
-        <div class="bg-white border border-border rounded-md p-5 relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-1 h-full bg-accent" />
-          <div class="font-mono text-xs text-fg3">
-            {stmt.start_time} – {stmt.end_time}
-          </div>
-          {(() => {
-            const sp = conf.speakers.find((s) => s.id === stmt.speaker_id);
-            return (
-              <div class="font-bold text-[15px] my-1">
-                {sp?.name} <span class="font-normal text-fg3">· {sp?.role}</span>
+      conf.opening_statements.map((stmt) => {
+        const sp = conf.speakers.find((s) => s.id === stmt.speaker_id);
+        const stmtYtUrl = conf.meta.youtube_url
+          ? `${conf.meta.youtube_url}&t=${timeToSeconds(stmt.start_time)}`
+          : null;
+        return (
+          <div class="bg-white border border-[rgba(226,191,184,0.3)] rounded-lg overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+            <div class="flex items-center gap-4 p-5 border-b border-[rgba(226,191,184,0.1)] max-[700px]:p-4">
+              {conf.meta.youtube_video_id ? (
+                <button
+                  class="ts-btn font-mono text-base font-medium text-accent bg-transparent border-none p-0 cursor-pointer transition-opacity duration-150 hover:opacity-70 hover:underline"
+                  data-seek={timeToSeconds(stmt.start_time)}
+                >
+                  {stmt.start_time}
+                </button>
+              ) : stmtYtUrl ? (
+                <a
+                  href={stmtYtUrl}
+                  target="_blank"
+                  rel="noopener"
+                  class="font-mono text-base font-medium text-accent no-underline transition-opacity duration-150 hover:opacity-70 hover:underline"
+                >
+                  {stmt.start_time}
+                </a>
+              ) : (
+                <span class="font-mono text-base font-medium text-accent">
+                  {stmt.start_time}
+                </span>
+              )}
+              <div class="w-px h-4 bg-[rgba(226,191,184,0.4)]" />
+              <div class="font-bold text-[15px]">
+                {sp?.name}{" "}
+                <span class="font-normal text-fg3">· {sp?.role}</span>
               </div>
-            );
-          })()}
-          <div class="text-sm text-fg2 leading-relaxed">{stmt.summary}</div>
-          <div class="flex flex-wrap gap-1 mt-2.5">
-            {stmt.tags.map((t) => (
-              <button class="open-tag tag" data-tag={t}>
-                {t}
-              </button>
-            ))}
+            </div>
+            <div class="p-5 max-[700px]:p-4">
+              <div class="text-sm text-fg2 leading-relaxed">{stmt.summary}</div>
+              <div class="flex flex-wrap gap-1 mt-2.5">
+                {stmt.tags.map((t) => (
+                  <button class="open-tag tag" data-tag={t}>
+                    {t}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      ))
+        );
+      })
     }
   </div>
 
-  <!-- Outlet chart -->
-  <div class="max-w-300 mx-auto px-6 py-6">
-    <h2 class="font-display text-xl font-bold mb-3">Médiumok összehasonlítása</h2>
-    <div class="flex gap-4 mb-3 text-xs text-fg3">
-      <span class="flex items-center">
-        <span class="inline-block w-2.5 h-2.5 rounded-xs bg-blue mr-1.5"></span>
-        Kérdés kritikussága
-      </span>
-      <span class="flex items-center">
-        <span class="inline-block w-2.5 h-2.5 rounded-xs bg-accent mr-1.5"></span>
-        Válasz ellenségessége
-      </span>
-    </div>
-    <div class="flex flex-col gap-1.5">
-      {
-        outletStats.map((s) => {
-          const cw = Math.max(s.avgCrit, 2);
-          const hw = Math.max(s.avgHost, 2);
-          const c = outletColors[s.name];
-          return (
-            <div
-              class="outlet-row grid grid-cols-[130px_1fr_1fr_50px] max-[700px]:grid-cols-[90px_1fr_1fr_36px] gap-3 items-center text-[13px] max-[700px]:text-xs py-1.5 border-b border-bg2 last:border-0 cursor-pointer rounded transition-colors duration-150 hover:bg-bg2"
-              data-outlet={s.name}
-              role="button"
-              tabindex="0"
-            >
-              <div
-                class="font-semibold text-[13px] whitespace-nowrap overflow-hidden text-ellipsis"
-                title={s.name}
-                style={
-                  c
-                    ? `background:${c.color};color:${c.text_color};padding:2px 8px;border-radius:4px;max-width:110px;`
-                    : undefined
-                }
-              >
-                {s.name}
-              </div>
-              <div class="flex items-center gap-2">
-                <div class="h-5 bg-bg2 rounded-[3px] relative flex-1">
-                  <div class="h-full rounded-[3px] transition-[width] duration-600 ease-in-out bg-blue" style={`width:${cw}%`} />
-                </div>
-                <span class="font-mono text-[11px] font-semibold text-fg2 min-w-8.75 text-left">{s.avgCrit}%</span>
-              </div>
-              <div class="flex items-center gap-2">
-                <div class="h-5 bg-bg2 rounded-[3px] relative flex-1">
-                  <div class="h-full rounded-[3px] transition-[width] duration-600 ease-in-out bg-accent" style={`width:${hw}%`} />
-                </div>
-                <span class="font-mono text-[11px] font-semibold text-fg2 min-w-8.75 text-left">{s.avgHost}%</span>
-              </div>
-              <div class="font-mono text-xs text-fg3 text-right">{s.count} db</div>
-            </div>
-          );
-        })
-      }
+  <!-- Outlet charts -->
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 py-6">
+    <h2 class="font-display text-xl font-bold mb-4">
+      Médiumok összehasonlítása
+    </h2>
+    <div class="grid grid-cols-2 max-[700px]:grid-cols-1 gap-4">
+      <div class="bg-white border border-border rounded-md p-4">
+        <div
+          class="text-[11px] font-bold tracking-[0.8px] uppercase mb-3 text-blue"
+        >
+          Kérdés kritikussága
+        </div>
+        <div
+          class="relative"
+          style={`height:${Math.max(160, outletStats.length * 36)}px`}
+        >
+          <canvas id="outletCritChart"></canvas>
+        </div>
+      </div>
+      <div class="bg-white border border-border rounded-md p-4">
+        <div
+          class="text-[11px] font-bold tracking-[0.8px] uppercase mb-3 text-accent"
+        >
+          Válasz ellenségessége
+        </div>
+        <div
+          class="relative"
+          style={`height:${Math.max(160, outletStats.length * 36)}px`}
+        >
+          <canvas id="outletHostChart"></canvas>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Timeline charts -->
-  <div class="max-w-300 mx-auto px-6 py-6">
-    <h2 class="font-display text-xl font-bold mb-3">Idővonal</h2>
-    <div class="flex flex-col gap-2">
-      <div>
-        <div class="text-[11px] font-bold tracking-[0.8px] uppercase mb-1.5 text-blue">Kérdés kritikussága</div>
-        <svg
-          class="w-full h-40 block overflow-visible"
-          viewBox={`0 0 ${CW} ${CH}`}
-          preserveAspectRatio="none"
-          aria-label="Kérdés kritikussága idővonalon"
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 py-6">
+    <h2 class="font-display text-xl font-bold mb-4">Idővonal</h2>
+    <div class="flex flex-col gap-4">
+      <div class="bg-white border border-border rounded-md p-4">
+        <div
+          class="text-[11px] font-bold tracking-[0.8px] uppercase mb-3 text-blue"
         >
-          {
-            [0, 25, 50, 75, 100].map((pct) => (
-              <>
-                <line
-                  x1={PL}
-                  x2={CW - PR}
-                  y1={ty(pct)}
-                  y2={ty(pct)}
-                  stroke="#e8e4db"
-                  stroke-width="1"
-                />
-                <text
-                  x={PL - 5}
-                  y={ty(pct) + 4}
-                  text-anchor="end"
-                  font-size="10"
-                  fill="#7a756e"
-                >
-                  {pct}
-                </text>
-              </>
-            ))
-          }
-          {
-            xTicks.map((t) => (
-              <>
-                <line
-                  x1={tx(t)}
-                  x2={tx(t)}
-                  y1={PT + ch}
-                  y2={PT + ch + 4}
-                  stroke="#7a756e"
-                  stroke-width="1"
-                />
-                <text
-                  x={tx(t)}
-                  y={PT + ch + 16}
-                  text-anchor="middle"
-                  font-size="10"
-                  fill="#7a756e"
-                >
-                  {fmtTime(t)}
-                </text>
-              </>
-            ))
-          }
-          <polyline
-            points={chartPoints
-              .map((p) => `${tx(p.t)},${ty(p.crit)}`)
-              .join(" ")}
-            fill="none"
-            stroke="var(--color-blue)"
-            stroke-width="1.5"
-            stroke-opacity="0.35"></polyline>
-          {
-            chartPoints.map((p) => (
-              <circle
-                cx={tx(p.t)}
-                cy={ty(p.crit)}
-                r="5"
-                fill="var(--color-blue)"
-                stroke="white"
-                stroke-width="1.5"
-                class="timeline-dot cursor-pointer"
-                data-id={p.id}
-                data-reporter={p.reporter}
-                data-outlet={p.outlet}
-                data-val={p.crit}
-                data-t={fmtTime(p.t)}
-              />
-            ))
-          }
-        </svg>
+          Kérdés kritikussága
+        </div>
+        <div class="relative h-48">
+          <canvas id="timelineCritChart"></canvas>
+        </div>
       </div>
+      <div class="bg-white border border-border rounded-md p-4">
+        <div
+          class="text-[11px] font-bold tracking-[0.8px] uppercase mb-3 text-accent"
+        >
+          Válasz ellenségessége
+        </div>
+        <div class="relative h-48">
+          <canvas id="timelineHostChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
 
-      <div>
-        <div class="text-[11px] font-bold tracking-[0.8px] uppercase mb-1.5 text-accent">Válasz ellenségessége</div>
-        <svg
-          class="w-full h-40 block overflow-visible"
-          viewBox={`0 0 ${CW} ${CH}`}
-          preserveAspectRatio="none"
-          aria-label="Válasz ellenségessége idővonalon"
-        >
-          {
-            [0, 25, 50, 75, 100].map((pct) => (
-              <>
-                <line
-                  x1={PL}
-                  x2={CW - PR}
-                  y1={ty(pct)}
-                  y2={ty(pct)}
-                  stroke="#e8e4db"
-                  stroke-width="1"
-                />
-                <text
-                  x={PL - 5}
-                  y={ty(pct) + 4}
-                  text-anchor="end"
-                  font-size="10"
-                  fill="#7a756e"
-                >
-                  {pct}
-                </text>
-              </>
-            ))
-          }
-          {
-            xTicks.map((t) => (
-              <>
-                <line
-                  x1={tx(t)}
-                  x2={tx(t)}
-                  y1={PT + ch}
-                  y2={PT + ch + 4}
-                  stroke="#7a756e"
-                  stroke-width="1"
-                />
-                <text
-                  x={tx(t)}
-                  y={PT + ch + 16}
-                  text-anchor="middle"
-                  font-size="10"
-                  fill="#7a756e"
-                >
-                  {fmtTime(t)}
-                </text>
-              </>
-            ))
-          }
-          <polyline
-            points={chartPoints
-              .map((p) => `${tx(p.t)},${ty(p.host)}`)
-              .join(" ")}
-            fill="none"
-            stroke="var(--color-accent)"
-            stroke-width="1.5"
-            stroke-opacity="0.35"></polyline>
-          {
-            chartPoints.map((p) => (
-              <circle
-                cx={tx(p.t)}
-                cy={ty(p.host)}
-                r="5"
-                fill="var(--color-accent)"
-                stroke="white"
-                stroke-width="1.5"
-                class="timeline-dot cursor-pointer"
-                data-id={p.id}
-                data-reporter={p.reporter}
-                data-outlet={p.outlet}
-                data-val={p.host}
-                data-t={fmtTime(p.t)}
-              />
-            ))
-          }
-        </svg>
-      </div>
-    </div>
-    <!-- Outlet bar -->
-    <div>
-      <div class="text-[11px] font-bold tracking-[0.8px] uppercase mb-1.5 text-fg3">Médium</div>
-      <svg
-        class="w-full h-10 block overflow-visible"
-        viewBox={`0 0 ${CW} 32`}
-        preserveAspectRatio="none"
-        aria-label="Médiumok idővonalon"
+  <script
+    id="chart-data"
+    type="application/json"
+    set:html={JSON.stringify({
+      chartPoints,
+      outletStats,
+      outletColors,
+      videoId: conf.meta.youtube_video_id ?? null,
+    })}
+  />
+
+  <!-- Floating YouTube player -->
+  {
+    conf.meta.youtube_video_id && (
+      <div
+        id="ytPlayer"
+        class="fixed bottom-4 left-4 z-999 shadow-2xl rounded-lg overflow-hidden border border-border max-[480px]:bottom-3 max-[480px]:left-3"
+        style="width:min(320px,calc(100vw - 2rem));background:#000"
       >
-        <text x={PL - 5} y={20} text-anchor="end" font-size="10" fill="#7a756e">
-        </text>
-        {
-          outletBarSegments.map((seg) => {
-            const c = outletColors[seg.outlet];
-            return (
-              <rect
-                x={seg.x}
-                y={8}
-                width={seg.width}
-                height={16}
-                fill={c ? c.color : "#ccc6bb"}
-                class="timeline-dot outlet-bar-seg cursor-pointer"
-                data-id={seg.id}
-                data-outlet={seg.outlet}
-                data-reporter={seg.reporter}
-                data-t={fmtTime(seg.t)}
-                data-val={seg.outlet}
+        <div class="flex items-center justify-between px-3 py-2 bg-fg text-bg select-none cursor-default">
+          <div class="flex items-center gap-2 min-w-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="13"
+              viewBox="0 0 16 11"
+              class="shrink-0"
+            >
+              <path
+                d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z"
+                fill="#FF0000"
               />
-            );
-          })
-        }
-        {
-          xTicks.map((t) => (
-            <>
-              <line
-                x1={tx(t)}
-                x2={tx(t)}
-                y1={24}
-                y2={28}
-                stroke="#7a756e"
-                stroke-width="1"
-              />
-              <text
-                x={tx(t)}
-                y={32}
-                text-anchor="middle"
-                font-size="10"
-                fill="#7a756e"
-              >
-                {fmtTime(t)}
-              </text>
-            </>
-          ))
-        }
-      </svg>
-    </div>
-  </div>
-  <div id="timeline-tooltip" class="fixed z-1000 bg-fg text-bg px-2.75 py-1.75 rounded text-xs pointer-events-none whitespace-nowrap shadow-[0_2px_8px_rgba(0,0,0,0.25)] leading-normal" style="display:none">
-  </div>
-</Layout>
+              <path d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z" fill="#fff" />
+            </svg>
+            <span class="text-xs font-mono text-[#aaa] truncate">
+              Kormányinfó · {conf.meta.date}
+            </span>
+          </div>
+          <div class="flex gap-1 items-center shrink-0">
+            <button
+              id="ytMinimize"
+              title="Minimalizál"
+              class="text-[#888] hover:text-white transition-colors text-lg leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-white/10"
+            >
+              −
+            </button>
+            <button
+              id="ytClose"
+              title="Bezár"
+              class="text-[#888] hover:text-white transition-colors text-sm leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-white/10"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+        <div id="ytEmbed" style="aspect-ratio:16/9;background:#000">
+          <div id="ytTarget" style="width:100%;height:100%" />
+        </div>
+      </div>
+    )
+  }
+
+<style>
+  @media (max-width: 480px) {
+    #ytPlayer {
+      width: min(220px, calc(100vw - 1.5rem)) !important;
+    }
+  }
+  .read-check.is-read {
+    border-color: var(--color-green);
+    color: var(--color-green);
+    background: color-mix(in srgb, var(--color-green) 8%, transparent);
+  }
+  .filter-btn.active {
+    background: var(--color-fg);
+    color: white;
+  }
+</style>
 
 <!-- Filter controls -->
-<div class="max-w-300 mx-auto px-6 pt-6">
+<div class="max-w-300 mx-auto px-6 max-[480px]:px-3 pt-6">
   <div class="flex gap-3 flex-wrap items-end">
     <div class="flex flex-col gap-1">
-      <label class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold">Médium</label>
-      <select id="fOutlet" class="font-body text-sm px-3 py-2 border border-border rounded-md bg-white text-fg outline-none transition-[border-color] duration-200 focus:border-accent">
+      <label class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold"
+        >Médium</label
+      >
+      <select
+        id="fOutlet"
+        class="font-body text-sm px-3 py-2 border border-border rounded-md bg-white text-fg outline-none transition-[border-color] duration-200 focus:border-accent"
+      >
         <option value="">Mind ({allOutlets.length})</option>
         {allOutlets.map((o) => <option value={o}>{o}</option>)}
       </select>
     </div>
     <div class="flex flex-col gap-1">
-      <label class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold">Téma</label>
-      <select id="fTag" class="font-body text-sm px-3 py-2 border border-border rounded-md bg-white text-fg outline-none transition-[border-color] duration-200 focus:border-accent">
+      <label class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold"
+        >Téma</label
+      >
+      <select
+        id="fTag"
+        class="font-body text-sm px-3 py-2 border border-border rounded-md bg-white text-fg outline-none transition-[border-color] duration-200 focus:border-accent"
+      >
         <option value="">Mind ({allTags.length})</option>
         {allTags.map((t) => <option value={t}>{t}</option>)}
       </select>
     </div>
     <div class="flex flex-col gap-1">
-      <label class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold">Keresés</label>
+      <label class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold"
+        >Keresés</label
+      >
       <input
         type="text"
         id="fSearch"
         placeholder="kérdés vagy válasz..."
-        class="font-body text-sm px-3 py-2 border border-border rounded-md bg-white text-fg outline-none transition-[border-color] duration-200 focus:border-accent w-45"
+        class="font-body text-sm px-3 py-2 border border-border rounded-md bg-white text-fg outline-none transition-[border-color] duration-200 focus:border-accent w-45 max-[480px]:w-full"
       />
     </div>
-    <button class="font-body text-[13px] px-4 py-2 border border-border rounded-md bg-white text-fg2 cursor-pointer transition-all duration-200 hover:bg-fg hover:text-white hover:border-fg" id="resetBtn">Szűrők törlése</button>
+    <button
+      class="filter-btn font-body text-[13px] px-3.5 py-2 rounded-md bg-bg2 text-fg2 cursor-pointer transition-all duration-200 hover:bg-fg hover:text-white flex items-center gap-1.5"
+      id="resetBtn"
+    >
+      <svg
+        width="13"
+        height="13"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"
+        ></path><path d="M3 3v5h5"></path></svg
+      >
+      <span>Szűrők törlése</span>
+    </button>
+    <button
+      class="filter-btn font-body text-[13px] px-3.5 py-2 rounded-md bg-bg2 text-fg2 cursor-pointer transition-all duration-200 hover:bg-fg hover:text-white flex items-center gap-1.5"
+      id="hideReadBtn"
+    >
+      <svg
+        width="13"
+        height="13"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"
+        ></path><circle cx="12" cy="12" r="3"></circle></svg
+      >
+      <span class="btn-label">Elolvasottak elrejtése</span>
+    </button>
+    <button
+      class="filter-btn font-body text-[13px] px-3.5 py-2 rounded-md bg-bg2 text-fg2 cursor-pointer transition-all duration-200 hover:bg-fg hover:text-white flex items-center gap-1.5"
+      id="unreadAllBtn"
+    >
+      <svg
+        width="13"
+        height="13"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        ><circle cx="12" cy="12" r="10"></circle><path d="m15 9-6 6m0-6 6 6"
+        ></path></svg
+      >
+      <span>Mind olvasatlan</span>
+    </button>
   </div>
 </div>
 
 <!-- Q&A -->
-<div class="max-w-300 mx-auto px-6 pt-8 pb-3">
+<div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-3">
   <h2 class="font-display text-2xl font-bold flex items-center gap-2.5">
-    Kérdések és válaszok <span class="font-mono text-sm font-normal text-fg3 bg-bg2 px-2.5 py-0.5 rounded-full" id="qCount"
-      >{qCount} / {qCount}</span
+    Kérdések és válaszok <span
+      class="font-mono text-sm font-normal text-fg3 bg-bg2 px-2.5 py-0.5 rounded-full"
+      id="qCount">{qCount} / {qCount}</span
     >
   </h2>
 </div>
-<div class="max-w-300 mx-auto px-6 pb-10" id="qaList">
+<div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-10" id="qaList">
   {
     conf.questions.map((q) => {
       const ytUrl = conf.meta.youtube_url
@@ -565,24 +547,40 @@ function timeToSeconds(t: string): number {
           data-host={q.hostility_percent}
           data-text={`${q.question} ${q.answer}`.toLowerCase()}
         >
-          <div class="flex items-center justify-between p-5 border-b border-[rgba(226,191,184,0.1)] max-[700px]:flex-col max-[700px]:items-start max-[700px]:gap-3 max-[700px]:p-4">
+          <div class="flex items-start justify-between p-5 border-b border-[rgba(226,191,184,0.1)] gap-3 max-[700px]:p-4">
             <div class="flex items-center gap-4 max-[700px]:flex-col max-[700px]:items-start max-[700px]:gap-2">
-              <span class="font-mono text-base font-medium text-accent">
-                {ytUrl ? (
-                  <a href={ytUrl} target="_blank" rel="noopener" class="text-accent no-underline transition-opacity duration-150 hover:opacity-70">
-                    {q.start_time}
-                  </a>
-                ) : (
-                  q.start_time
-                )}
-              </span>
+              {conf.meta.youtube_video_id ? (
+                <button
+                  class="ts-btn font-mono text-base font-medium text-accent bg-transparent border-none p-0 cursor-pointer transition-opacity duration-150 hover:opacity-70 hover:underline"
+                  data-seek={timeToSeconds(q.start_time)}
+                >
+                  {q.start_time}
+                </button>
+              ) : ytUrl ? (
+                <a
+                  href={ytUrl}
+                  target="_blank"
+                  rel="noopener"
+                  class="font-mono text-base font-medium text-accent no-underline transition-opacity duration-150 hover:opacity-70 hover:underline"
+                >
+                  {q.start_time}
+                </a>
+              ) : (
+                <span class="font-mono text-base font-medium text-accent">
+                  {q.start_time}
+                </span>
+              )}
               <div class="w-px h-4 bg-[rgba(226,191,184,0.4)] max-[700px]:hidden" />
               <div class="flex items-center gap-2">
-                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-[rgba(27,28,26,0.6)]">Újságíró:</span>
-                <span class="font-display italic text-[15px] text-fg">{q.reporter}</span>
+                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-[rgba(27,28,26,0.6)]">
+                  Újságíró:
+                </span>
+                <span class="font-display italic text-[15px] text-fg">
+                  {q.reporter}
+                </span>
               </div>
             </div>
-            <div>
+            <div class="flex items-center gap-3 shrink-0 max-[700px]:flex-col max-[700px]:items-end max-[700px]:gap-2">
               {(() => {
                 const c = outletColors[q.outlet];
                 return c ? (
@@ -593,20 +591,35 @@ function timeToSeconds(t: string): number {
                     {q.outlet}
                   </span>
                 ) : (
-                  <span class="bg-fg3 text-white px-3 py-1.5 rounded-xs text-[10px] font-mono font-black tracking-[2px] uppercase">{q.outlet}</span>
+                  <span class="bg-fg3 text-white px-3 py-1.5 rounded-xs text-[10px] font-mono font-black tracking-[2px] uppercase">
+                    {q.outlet}
+                  </span>
                 );
               })()}
+              <button
+                class="read-check max-[700px]:hidden font-mono text-[11px] px-2.5 py-1 rounded border border-border text-fg3 bg-transparent cursor-pointer transition-all duration-150 hover:border-accent hover:text-accent"
+                data-id={q.id}
+                title="Megjelölés elolvasottként"
+              >
+                Elolvastam
+              </button>
             </div>
           </div>
 
-          <div class="grid grid-cols-[2fr_1fr] max-[700px]:grid-cols-1 gap-8 max-[700px]:gap-5 p-5 max-[700px]:p-4">
+          <div class="qa-body grid grid-cols-[2fr_1fr] max-[700px]:grid-cols-1 gap-8 max-[700px]:gap-5 p-5 max-[700px]:p-4">
             <div class="min-w-0">
               <div class="mb-5">
-                <h3 class="font-body text-[22px] max-[700px]:text-[18px] font-bold leading-tight text-fg tracking-[-0.3px]">{q.question}</h3>
+                <h3 class="font-body text-[22px] max-[700px]:text-[18px] font-bold leading-tight text-fg tracking-[-0.3px]">
+                  {q.question}
+                </h3>
               </div>
               <div class="relative p-5 rounded-r-lg border-l-[5px] border-accent mb-3 [background:color-mix(in_srgb,var(--color-accent)_10%,transparent)]">
-                <div class="absolute -top-3 -left-[10px] bg-accent text-white font-mono text-[9px] px-[7px] py-[3px] font-bold">Válasz:</div>
-                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-[rgba(27,28,26,0.9)]">{q.answer}</p>
+                <div class="absolute -top-3 -left-[10px] bg-accent text-white font-mono text-[9px] px-[7px] py-[3px] font-bold">
+                  Válasz:
+                </div>
+                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-[rgba(27,28,26,0.9)]">
+                  {q.answer}
+                </p>
               </div>
               <div class="flex flex-wrap gap-1.5 mt-3">
                 {q.tags.map((t) => (
@@ -620,8 +633,9 @@ function timeToSeconds(t: string): number {
               </div>
             </div>
 
-            <div class="flex items-center justify-center border-l border-[rgba(226,191,184,0.1)] pl-5 max-[700px]:border-l-0 max-[700px]:border-t max-[700px]:border-[rgba(226,191,184,0.1)] max-[700px]:pl-0 max-[700px]:pt-5">
-              <div class="flex flex-col max-[700px]:flex-row items-center gap-8 max-[700px]:gap-6">
+            <div class="flex items-center justify-center border-l border-[rgba(226,191,184,0.1)] pl-5 max-[700px]:border-l-0 max-[700px]:border-t max-[700px]:border-[rgba(226,191,184,0.1)] max-[700px]:pl-0 max-[700px]:pt-4">
+              {/* Desktop: circular charts */}
+              <div class="flex flex-col items-center gap-5 max-[700px]:hidden">
                 <div class="flex flex-col items-center gap-2">
                   <div class="w-20 h-20 relative flex items-center justify-center">
                     <svg
@@ -655,7 +669,9 @@ function timeToSeconds(t: string): number {
                       <span class="text-xs">%</span>
                     </div>
                   </div>
-                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.7)]">KRIT. INDEX</div>
+                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.7)]">
+                    KRIT. INDEX
+                  </div>
                 </div>
 
                 <div class="flex flex-col items-center gap-2">
@@ -691,8 +707,49 @@ function timeToSeconds(t: string): number {
                       <span class="text-xs">%</span>
                     </div>
                   </div>
-                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.7)]">ELL. FAKTOR</div>
+                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.7)]">
+                    ELL. FAKTOR
+                  </div>
                 </div>
+              </div>
+
+              {/* Mobile: compact bar meters + read button */}
+              <div class="hidden max-[700px]:flex flex-col gap-2 w-full">
+                <div class="flex items-center gap-2">
+                  <span class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.5)] w-14 shrink-0">
+                    Krit.
+                  </span>
+                  <div class="flex-1 h-1.25 bg-bg3 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-blue rounded-full"
+                      style={`width:${q.criticism_percent}%`}
+                    />
+                  </div>
+                  <span class="font-mono text-[11px] font-bold text-right w-8 shrink-0">
+                    {q.criticism_percent}%
+                  </span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.5)] w-14 shrink-0">
+                    Ellen.
+                  </span>
+                  <div class="flex-1 h-1.25 bg-bg3 rounded-full overflow-hidden">
+                    <div
+                      class="h-full bg-accent rounded-full"
+                      style={`width:${q.hostility_percent}%`}
+                    />
+                  </div>
+                  <span class="font-mono text-[11px] font-bold text-right w-8 shrink-0">
+                    {q.hostility_percent}%
+                  </span>
+                </div>
+                <button
+                  class="read-check mt-1 w-full font-mono text-[11px] px-2.5 py-2 rounded border border-border text-fg3 bg-transparent cursor-pointer transition-all duration-150 hover:border-accent hover:text-accent"
+                  data-id={q.id}
+                  title="Megjelölés elolvasottként"
+                >
+                  Elolvastam
+                </button>
               </div>
             </div>
           </div>
@@ -702,28 +759,89 @@ function timeToSeconds(t: string): number {
   }
 </div>
 
-<div class="max-w-300 mx-auto text-center px-6 py-15 text-fg3" id="emptyState" style="display:none">
+<div
+  class="max-w-300 mx-auto text-center px-6 py-15 text-fg3"
+  id="emptyState"
+  style="display:none"
+>
   <div class="font-display text-2xl text-fg2 mb-2">Nincs találat</div>
   <div>Próbálj más szűrőket</div>
 </div>
 
 <script>
-  const state = { outlet: "", tag: "", search: "" };
+  import Chart from "chart.js/auto";
 
+  // ── Data ────────────────────────────────────────────────────────────────────
+  type ChartPoint = {
+    t: number;
+    crit: number;
+    host: number;
+    id: number;
+    reporter: string;
+    outlet: string;
+  };
+  type OutletStat = {
+    name: string;
+    avgCrit: number;
+    avgHost: number;
+    count: number;
+  };
+  type OutletColors = Record<string, { color: string; text_color: string }>;
+
+  const raw = document.getElementById("chart-data")!.textContent!;
+  const { chartPoints, outletStats, outletColors, videoId } = JSON.parse(
+    raw,
+  ) as {
+    chartPoints: ChartPoint[];
+    outletStats: OutletStat[];
+    outletColors: OutletColors;
+    videoId: string | null;
+  };
+
+  function fmtTime(s: number): string {
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    return `${m}:${String(sec).padStart(2, "0")}`;
+  }
+
+  // ── Filter state ─────────────────────────────────────────────────────────────
+  const state = { outlet: "", tag: "", search: "" };
   const cards = Array.from(document.querySelectorAll<HTMLElement>(".qa-card"));
-  const outletRows = Array.from(
-    document.querySelectorAll<HTMLElement>(".outlet-row[data-outlet]"),
-  );
   const qCountEl = document.getElementById("qCount")!;
   const emptyEl = document.getElementById("emptyState")!;
   const total = cards.length;
 
-  function syncOutletRows() {
-    for (const row of outletRows) {
-      row.classList.toggle(
-        "active",
-        row.dataset.outlet === state.outlet && state.outlet !== "",
-      );
+  // ── Read state ───────────────────────────────────────────────────────────────
+  const DATE_KEY = `read-${location.pathname.split("/").filter(Boolean).pop() ?? "unknown"}`;
+  const readSet = new Set<string>(
+    JSON.parse(localStorage.getItem(DATE_KEY) ?? "[]"),
+  );
+  let hideRead = false;
+
+  const progressFill = document.getElementById(
+    "readProgressFill",
+  ) as HTMLElement;
+  const progressLabel = document.getElementById(
+    "readProgressLabel",
+  ) as HTMLElement;
+  function updateProgress() {
+    const pct = total === 0 ? 0 : Math.round((readSet.size / total) * 100);
+    progressFill.style.width = `${pct}%`;
+    progressLabel.textContent = `${pct}%`;
+    progressLabel.style.opacity = pct >= 5 ? "1" : "0";
+  }
+
+  function applyRead() {
+    for (const card of cards) {
+      const id = card.id.replace("card-", "");
+      const isRead = readSet.has(id);
+      const body = card.querySelector<HTMLElement>(".qa-body");
+      for (const btn of card.querySelectorAll<HTMLElement>(".read-check")) {
+        btn.classList.toggle("is-read", isRead);
+        btn.textContent = isRead ? "✓ Elolvastam" : "Elolvastam";
+      }
+      if (body) body.style.display = isRead ? "none" : "";
+      card.style.opacity = isRead ? "0.55" : "";
     }
   }
 
@@ -733,21 +851,29 @@ function timeToSeconds(t: string): number {
       const outlet = card.dataset.outlet ?? "";
       const tags = card.dataset.tags?.split(",") ?? [];
       const text = card.dataset.text ?? "";
-
+      const id = card.id.replace("card-", "");
+      const isRead = readSet.has(id);
       const show =
         (!state.outlet || outlet === state.outlet) &&
         (!state.tag || tags.includes(state.tag)) &&
-        (!state.search || text.includes(state.search));
-
+        (!state.search || text.includes(state.search)) &&
+        (!hideRead || !isRead);
       card.style.display = show ? "" : "none";
       if (show) visible++;
     }
     qCountEl.textContent = `${visible} / ${total}`;
     emptyEl.style.display = visible === 0 ? "" : "none";
-    syncOutletRows();
   }
 
-  // Filter controls
+  function setOutletFilter(outlet: string) {
+    state.outlet = outlet;
+    (document.getElementById("fOutlet") as HTMLSelectElement).value = outlet;
+    applyFilters();
+    document
+      .getElementById("qaList")!
+      .scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   document.getElementById("fOutlet")!.addEventListener("change", (e) => {
     state.outlet = (e.target as HTMLSelectElement).value;
     applyFilters();
@@ -770,24 +896,6 @@ function timeToSeconds(t: string): number {
     applyFilters();
   });
 
-  // Outlet chart row clicks → filter
-  document.addEventListener("click", (e) => {
-    const row = (e.target as HTMLElement).closest<HTMLElement>(".outlet-row");
-    if (!row) return;
-    const outlet = row.dataset.outlet!;
-    if (state.outlet === outlet) {
-      state.outlet = "";
-      (document.getElementById("fOutlet") as HTMLSelectElement).value = "";
-    } else {
-      state.outlet = outlet;
-      (document.getElementById("fOutlet") as HTMLSelectElement).value = outlet;
-    }
-    applyFilters();
-    document
-      .getElementById("qaList")!
-      .scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-
   // Tag clicks (from opening cards and Q&A cards)
   document.addEventListener("click", (e) => {
     const btn = (e.target as HTMLElement).closest<HTMLButtonElement>(
@@ -804,58 +912,281 @@ function timeToSeconds(t: string): number {
       .scrollIntoView({ behavior: "smooth", block: "start" });
   });
 
-  // Timeline dot tooltip + click-to-scroll
-  const tlTooltip = document.getElementById("timeline-tooltip")!;
+  // ── Outlet bar charts ─────────────────────────────────────────────────────────
+  const outletLabels = outletStats.map((o) => o.name);
 
-  document.addEventListener("mouseover", (e) => {
-    const dot = (e.target as Element).closest<SVGCircleElement>(
-      ".timeline-dot",
-    );
-    if (!dot) return;
-    const valStr = dot.classList.contains("outlet-bar-seg")
-      ? dot.dataset.outlet!
-      : `${dot.dataset.val}%`;
-    tlTooltip.innerHTML = `<strong>${dot.dataset.reporter}</strong> · ${dot.dataset.outlet}<br>${dot.dataset.t} &nbsp;·&nbsp; ${valStr}`;
-    tlTooltip.style.display = "block";
-    if (dot.tagName === "circle") dot.setAttribute("r", "7");
-  });
+  function makeOutletChart(canvasId: string, data: number[], color: string) {
+    const canvas = document.getElementById(canvasId) as HTMLCanvasElement;
+    new Chart(canvas, {
+      type: "bar",
+      data: {
+        labels: outletLabels,
+        datasets: [
+          {
+            data,
+            backgroundColor: color + "cc",
+            borderColor: color,
+            borderWidth: 1,
+            borderRadius: 3,
+          },
+        ],
+      },
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: (item) => `  ${item.raw}%`,
+              afterLabel: (item) =>
+                `  ${outletStats[item.dataIndex].count} kérdés`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            min: 0,
+            max: 100,
+            ticks: {
+              callback: (v) => `${v}%`,
+              font: { family: "'JetBrains Mono', monospace", size: 11 },
+              color: "#7a756e",
+            },
+            grid: { color: "#e8e4db" },
+          },
+          y: {
+            ticks: {
+              font: { family: "'Source Sans 3', sans-serif", size: 13 },
+              color: "#1a1816",
+            },
+            grid: { display: false },
+          },
+        },
+        onClick: (_, elements) => {
+          if (!elements.length) return;
+          const outlet = outletLabels[(elements[0] as { index: number }).index];
+          setOutletFilter(state.outlet === outlet ? "" : outlet);
+        },
+      },
+    });
+  }
 
-  document.addEventListener("mouseout", (e) => {
-    const dot = (e.target as Element).closest<SVGCircleElement>(
-      ".timeline-dot",
-    );
-    if (!dot) return;
-    tlTooltip.style.display = "none";
-    if (dot.tagName === "circle") dot.setAttribute("r", "5");
-  });
+  makeOutletChart(
+    "outletCritChart",
+    outletStats.map((o) => o.avgCrit),
+    "#2a5fa5",
+  );
+  makeOutletChart(
+    "outletHostChart",
+    outletStats.map((o) => o.avgHost),
+    "#c23a22",
+  );
 
-  document.addEventListener("mousemove", (e) => {
-    if (tlTooltip.style.display === "none") return;
-    tlTooltip.style.left = `${e.clientX + 14}px`;
-    tlTooltip.style.top = `${e.clientY - 36}px`;
+  // ── Timeline charts ───────────────────────────────────────────────────────────
+  const maxT =
+    chartPoints.length > 0 ? Math.max(...chartPoints.map((p) => p.t)) : 0;
+
+  const pointColors = chartPoints.map(
+    (p) => outletColors[p.outlet]?.color ?? "#7a756e",
+  );
+
+  function makeTimelineChart(
+    canvasId: string,
+    yKey: "crit" | "host",
+    lineColor: string,
+  ) {
+    return new Chart(document.getElementById(canvasId) as HTMLCanvasElement, {
+      type: "line",
+      data: {
+        datasets: [
+          {
+            data: chartPoints.map((p) => ({ x: p.t, y: p[yKey] })),
+            borderColor: lineColor,
+            borderWidth: 1.5,
+            tension: 0.4,
+            pointRadius: 3,
+            pointHoverRadius: 5,
+            pointBackgroundColor: pointColors,
+            pointBorderColor: pointColors,
+            pointBorderWidth: 0,
+            segment: {
+              borderColor: (ctx: { p0DataIndex: number }) =>
+                outletColors[chartPoints[ctx.p0DataIndex]?.outlet]?.color ??
+                lineColor,
+            },
+          },
+        ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              title: (items) => {
+                const p = chartPoints[items[0].dataIndex];
+                return `${p.reporter} · ${p.outlet}`;
+              },
+              label: (item) =>
+                `  ${fmtTime((item.raw as { x: number }).x)}  ·  ${(item.raw as { y: number }).y}%`,
+            },
+          },
+        },
+        scales: {
+          x: {
+            type: "linear",
+            min: 0,
+            max: maxT,
+            ticks: {
+              callback: (v) => fmtTime(v as number),
+              font: { family: "'JetBrains Mono', monospace", size: 10 },
+              color: "#7a756e",
+              maxTicksLimit: 6,
+            },
+            grid: { color: "#e8e4db" },
+          },
+          y: {
+            min: 0,
+            max: 100,
+            ticks: {
+              callback: (v) => `${v}%`,
+              font: { family: "'JetBrains Mono', monospace", size: 10 },
+              color: "#7a756e",
+              stepSize: 25,
+            },
+            grid: { color: "#e8e4db" },
+          },
+        },
+        onClick: (_, elements) => {
+          if (!elements.length) return;
+          const p = chartPoints[(elements[0] as { index: number }).index];
+          document
+            .getElementById(`card-${p.id}`)
+            ?.scrollIntoView({ behavior: "smooth", block: "center" });
+        },
+      },
+    });
+  }
+
+  makeTimelineChart("timelineCritChart", "crit", "#2a5fa5");
+  makeTimelineChart("timelineHostChart", "host", "#c23a22");
+
+  // ── Read checkbox logic ───────────────────────────────────────────────────────
+  applyRead();
+  applyFilters();
+  updateProgress();
+
+  let lastClickY = 0;
+  document.addEventListener("mousedown", (e) => {
+    lastClickY = e.clientY;
   });
+  document.addEventListener(
+    "touchstart",
+    (e) => {
+      lastClickY = e.touches[0].clientY;
+    },
+    { passive: true },
+  );
 
   document.addEventListener("click", (e) => {
-    const dot = (e.target as Element).closest<SVGCircleElement>(
-      ".timeline-dot",
+    const check = (e.target as HTMLElement).closest<HTMLElement>(".read-check");
+    if (!check) return;
+    const id = String(check.dataset.id!);
+    const markingRead = !readSet.has(id);
+    const currentCard = check.closest<HTMLElement>(".qa-card")!;
+    if (markingRead) readSet.add(id);
+    else readSet.delete(id);
+    localStorage.setItem(DATE_KEY, JSON.stringify([...readSet]));
+    applyRead();
+    applyFilters();
+    updateProgress();
+    if (!markingRead) return;
+    // Scroll so the next card's read button center lands exactly under the cursor
+    const currentIdx = cards.indexOf(currentCard);
+    const nextCard = cards
+      .slice(currentIdx + 1)
+      .find((c) => c.style.display !== "none");
+    if (!nextCard) return;
+    const allChecks = nextCard.querySelectorAll<HTMLElement>(".read-check");
+    const nextCheck = Array.from(allChecks).find(
+      (el) => el.offsetParent !== null,
     );
-    if (!dot) return;
-    const card = document.getElementById(`card-${dot.dataset.id}`);
-    if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+    if (!nextCheck) return;
+    const r = nextCheck.getBoundingClientRect();
+    window.scrollBy({
+      top: r.top + r.height / 2 - lastClickY,
+      behavior: "instant",
+    });
   });
-</script>
 
-<style>
-  /* JS-toggled active state for outlet chart rows */
-  .outlet-row.active {
-    background-color: var(--color-blue-light);
-    outline: 2px solid var(--color-blue);
+  const hideReadBtn = document.getElementById("hideReadBtn")!;
+  function updateHideReadBtn() {
+    (hideReadBtn.querySelector(".btn-label") as HTMLElement).textContent =
+      hideRead ? "Elolvasottak elrejtve" : "Elolvasottak láthatók";
+    hideReadBtn.classList.toggle("active", hideRead);
   }
-  /* SVG rect hover opacity (can't be done inline on SVG elements) */
-  .outlet-bar-seg {
-    opacity: 0.85;
+  updateHideReadBtn();
+  hideReadBtn.addEventListener("click", () => {
+    hideRead = !hideRead;
+    updateHideReadBtn();
+    applyFilters();
+  });
+
+  document.getElementById("unreadAllBtn")?.addEventListener("click", () => {
+    readSet.clear();
+    localStorage.setItem(DATE_KEY, "[]");
+    applyRead();
+    applyFilters();
+    updateProgress();
+  });
+
+  // ── YouTube floating player ───────────────────────────────────────────────────
+  if (videoId) {
+    let player: any = null;
+
+    const tag = document.createElement("script");
+    tag.src = "https://www.youtube.com/iframe_api";
+    document.head.appendChild(tag);
+
+    (window as any).onYouTubeIframeAPIReady = () => {
+      player = new (window as any).YT.Player("ytTarget", {
+        videoId,
+        height: "100%",
+        width: "100%",
+        playerVars: { rel: 0, modestbranding: 1 },
+      });
+    };
+
+    // Timestamp seek
+    document.addEventListener("click", (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>(
+        ".ts-btn",
+      );
+      if (!btn) return;
+      const secs = parseInt(btn.dataset.seek ?? "0", 10);
+      if (!player?.seekTo) return;
+      player.seekTo(secs, true);
+      player.playVideo();
+      // Restore player if minimized
+      const embed = document.getElementById("ytEmbed")!;
+      if (embed.style.display === "none") embed.style.display = "";
+      document.getElementById("ytPlayer")!.style.display = "";
+    });
+
+    // Minimize toggle
+    document.getElementById("ytMinimize")?.addEventListener("click", () => {
+      const embed = document.getElementById("ytEmbed")!;
+      embed.style.display = embed.style.display === "none" ? "" : "none";
+    });
+
+    // Close
+    document.getElementById("ytClose")?.addEventListener("click", () => {
+      document.getElementById("ytPlayer")!.style.display = "none";
+      player?.pauseVideo?.();
+    });
   }
-  .outlet-bar-seg:hover {
-    opacity: 1;
-  }
-</style>
+</script>
+</Layout>

@@ -1,0 +1,21 @@
+{
+  "telex": { "color": "#113356", "text_color": "#ffffff" },
+  "atv": { "color": "#F8313F", "text_color": "#ffffff" },
+  "rtl": { "color": "#66E0C1", "text_color": "#ffffff" },
+  "index": { "color": "#FF9903", "text_color": "#ffffff" },
+  "magyar_nemzet": { "color": "#2d6a2d", "text_color": "#ffffff" },
+  "tv2": { "color": "#ED262B", "text_color": "#ffffff" },
+  "kozmedia": { "color": "#001224", "text_color": "#ffffff" },
+  "hirtv": { "color": "#22366D", "text_color": "#ffffff" },
+  "blikk": { "color": "#E20000", "text_color": "#ffffff" },
+  "444": { "color": "#FFF670", "text_color": "#1B1B1B" },
+  "pesti_sracok": { "color": "#FF8200", "text_color": "#1A1826" },
+  "economx": { "color": "#FE5252", "text_color": "#ffffff" },
+  "magyar_hirlap": { "color": "#5a3e8a", "text_color": "#ffffff" },
+  "heti_tv": { "color": "#0000FF", "text_color": "#ffffff" },
+  "m1": { "color": "#324BCF", "text_color": "#ffffff" },
+  "mandiner": { "color": "#D74929", "text_color": "#ffffff" },
+  "hvg": { "color": "#F26522", "text_color": "#ffffff" },
+  "partizan": { "color": "#FF4D42", "text_color": "#ffffff" },
+  "ismeretlen": { "color": "#6B7280", "text_color": "#ffffff" }
+}

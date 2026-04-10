@@ -1,0 +1,342 @@
+[
+  {
+    "id": "kozmedia_r01",
+    "name": "Csuhaj Ildikó",
+    "outlet": "Közmédia",
+    "outlet_id": "kozmedia",
+    "total_questions": 37,
+    "avg_criticism": 26.9,
+    "avg_hostility": 15.4,
+    "conferences_attended": 7
+  },
+  {
+    "id": "atv_r01",
+    "name": "Hazafi Zsolt",
+    "outlet": "ATV",
+    "outlet_id": "atv",
+    "total_questions": 32,
+    "avg_criticism": 55.5,
+    "avg_hostility": 18.0,
+    "conferences_attended": 6
+  },
+  {
+    "id": "magyar_nemzet_r01",
+    "name": "Máté Patrik",
+    "outlet": "Magyar Nemzet",
+    "outlet_id": "magyar_nemzet",
+    "total_questions": 30,
+    "avg_criticism": 7.3,
+    "avg_hostility": 9.3,
+    "conferences_attended": 6
+  },
+  {
+    "id": "index_r02",
+    "name": "Privacsek András",
+    "outlet": "Index",
+    "outlet_id": "index",
+    "total_questions": 22,
+    "avg_criticism": 28.0,
+    "avg_hostility": 8.2,
+    "conferences_attended": 5
+  },
+  {
+    "id": "hirtv_r03",
+    "name": "Szabó Réka",
+    "outlet": "HírTV",
+    "outlet_id": "hirtv",
+    "total_questions": 18,
+    "avg_criticism": 10.3,
+    "avg_hostility": 5.8,
+    "conferences_attended": 3
+  },
+  {
+    "id": "telex_r02",
+    "name": "Simor Dániel",
+    "outlet": "Telex",
+    "outlet_id": "telex",
+    "total_questions": 11,
+    "avg_criticism": 48.6,
+    "avg_hostility": 15.9,
+    "conferences_attended": 2
+  },
+  {
+    "id": "rtl_r01",
+    "name": "Kéri Barna",
+    "outlet": "RTL Híradó",
+    "outlet_id": "rtl",
+    "total_questions": 11,
+    "avg_criticism": 59.1,
+    "avg_hostility": 25.5,
+    "conferences_attended": 2
+  },
+  {
+    "id": "pesti_sracok_r01",
+    "name": "Susánszki Mátyás",
+    "outlet": "Pesti Srácok",
+    "outlet_id": "pesti_sracok",
+    "total_questions": 11,
+    "avg_criticism": 8.6,
+    "avg_hostility": 7.3,
+    "conferences_attended": 4
+  },
+  {
+    "id": "magyar_hirlap_r01",
+    "name": "Sütő-Nagy Zsolt",
+    "outlet": "Magyar Hírlap",
+    "outlet_id": "magyar_hirlap",
+    "total_questions": 11,
+    "avg_criticism": 15.9,
+    "avg_hostility": 6.8,
+    "conferences_attended": 4
+  },
+  {
+    "id": "hirtv_r01",
+    "name": "Hejter Dávid",
+    "outlet": "HírTV",
+    "outlet_id": "hirtv",
+    "total_questions": 10,
+    "avg_criticism": 12.0,
+    "avg_hostility": 8.0,
+    "conferences_attended": 2
+  },
+  {
+    "id": "rtl_r02",
+    "name": "Szondi Vanda",
+    "outlet": "RTL Híradó",
+    "outlet_id": "rtl",
+    "total_questions": 10,
+    "avg_criticism": 57.0,
+    "avg_hostility": 21.0,
+    "conferences_attended": 1
+  },
+  {
+    "id": "444_r01",
+    "name": "Herczeg Márk",
+    "outlet": "444",
+    "outlet_id": "444",
+    "total_questions": 10,
+    "avg_criticism": 57.0,
+    "avg_hostility": 24.0,
+    "conferences_attended": 2
+  },
+  {
+    "id": "hirtv_r02",
+    "name": "Adorján Kira",
+    "outlet": "HírTV",
+    "outlet_id": "hirtv",
+    "total_questions": 9,
+    "avg_criticism": 8.9,
+    "avg_hostility": 16.1,
+    "conferences_attended": 2
+  },
+  {
+    "id": "mandiner_r01",
+    "name": "Kovács András",
+    "outlet": "Mandiner",
+    "outlet_id": "mandiner",
+    "total_questions": 9,
+    "avg_criticism": 12.8,
+    "avg_hostility": 5.0,
+    "conferences_attended": 3
+  },
+  {
+    "id": "economx_r01",
+    "name": "Sarkadi-Illyés Csaba",
+    "outlet": "Economx",
+    "outlet_id": "economx",
+    "total_questions": 8,
+    "avg_criticism": 27.5,
+    "avg_hostility": 10.0,
+    "conferences_attended": 2
+  },
+  {
+    "id": "telex_r01",
+    "name": "Nyilas Gergely",
+    "outlet": "Telex",
+    "outlet_id": "telex",
+    "total_questions": 7,
+    "avg_criticism": 57.1,
+    "avg_hostility": 20.7,
+    "conferences_attended": 1
+  },
+  {
+    "id": "telex_r03",
+    "name": "Cseke Balázs",
+    "outlet": "Telex",
+    "outlet_id": "telex",
+    "total_questions": 7,
+    "avg_criticism": 72.1,
+    "avg_hostility": 15.7,
+    "conferences_attended": 1
+  },
+  {
+    "id": "tv2_r01",
+    "name": "Micheller Tamás",
+    "outlet": "TV2",
+    "outlet_id": "tv2",
+    "total_questions": 7,
+    "avg_criticism": 10.0,
+    "avg_hostility": 6.4,
+    "conferences_attended": 2
+  },
+  {
+    "id": "tv2_r02",
+    "name": "Sarner Félix",
+    "outlet": "TV2",
+    "outlet_id": "tv2",
+    "total_questions": 7,
+    "avg_criticism": 7.1,
+    "avg_hostility": 5.0,
+    "conferences_attended": 2
+  },
+  {
+    "id": "tv2_r03",
+    "name": "Milák Betina",
+    "outlet": "TV2",
+    "outlet_id": "tv2",
+    "total_questions": 6,
+    "avg_criticism": 6.7,
+    "avg_hostility": 1.7,
+    "conferences_attended": 2
+  },
+  {
+    "id": "hvg_r01",
+    "name": "Lengyel Tibor",
+    "outlet": "HVG",
+    "outlet_id": "hvg",
+    "total_questions": 6,
+    "avg_criticism": 55.8,
+    "avg_hostility": 8.3,
+    "conferences_attended": 1
+  },
+  {
+    "id": "partizan_r01",
+    "name": "Sarkadi Zsolt",
+    "outlet": "Partizán",
+    "outlet_id": "partizan",
+    "total_questions": 6,
+    "avg_criticism": 84.2,
+    "avg_hostility": 38.3,
+    "conferences_attended": 1
+  },
+  {
+    "id": "atv_r02",
+    "name": "Novák András",
+    "outlet": "ATV",
+    "outlet_id": "atv",
+    "total_questions": 5,
+    "avg_criticism": 48.0,
+    "avg_hostility": 21.0,
+    "conferences_attended": 1
+  },
+  {
+    "id": "index_r01",
+    "name": "Mucsi Viktor",
+    "outlet": "Index",
+    "outlet_id": "index",
+    "total_questions": 5,
+    "avg_criticism": 13.0,
+    "avg_hostility": 5.0,
+    "conferences_attended": 1
+  },
+  {
+    "id": "index_r03",
+    "name": "Szabó Gyula",
+    "outlet": "Index",
+    "outlet_id": "index",
+    "total_questions": 5,
+    "avg_criticism": 40.0,
+    "avg_hostility": 12.0,
+    "conferences_attended": 1
+  },
+  {
+    "id": "hvg_r02",
+    "name": "Galicza Dorina",
+    "outlet": "HVG",
+    "outlet_id": "hvg",
+    "total_questions": 5,
+    "avg_criticism": 60.0,
+    "avg_hostility": 16.0,
+    "conferences_attended": 1
+  },
+  {
+    "id": "heti_tv_r01",
+    "name": "Breuer Péter",
+    "outlet": "Heti TV / Breuer Press",
+    "outlet_id": "heti_tv",
+    "total_questions": 5,
+    "avg_criticism": 29.0,
+    "avg_hostility": 9.0,
+    "conferences_attended": 2
+  },
+  {
+    "id": "blikk_r01",
+    "name": "Vajta Zoltán",
+    "outlet": "Blikk",
+    "outlet_id": "blikk",
+    "total_questions": 4,
+    "avg_criticism": 32.5,
+    "avg_hostility": 18.8,
+    "conferences_attended": 1
+  },
+  {
+    "id": "blikk_r02",
+    "name": "Őri Panna",
+    "outlet": "Blikk",
+    "outlet_id": "blikk",
+    "total_questions": 4,
+    "avg_criticism": 15.0,
+    "avg_hostility": 7.5,
+    "conferences_attended": 1
+  },
+  {
+    "id": "blikk_r03",
+    "name": "Szigeti Sándor",
+    "outlet": "Blikk",
+    "outlet_id": "blikk",
+    "total_questions": 4,
+    "avg_criticism": 27.5,
+    "avg_hostility": 6.2,
+    "conferences_attended": 1
+  },
+  {
+    "id": "heti_tv_r02",
+    "name": "Osváth Sarolta",
+    "outlet": "Heti TV / Breuer Press",
+    "outlet_id": "heti_tv",
+    "total_questions": 4,
+    "avg_criticism": 23.8,
+    "avg_hostility": 7.5,
+    "conferences_attended": 1
+  },
+  {
+    "id": "m1_r01",
+    "name": "Lerch-Cserei Judit",
+    "outlet": "M1 Híradó",
+    "outlet_id": "m1",
+    "total_questions": 4,
+    "avg_criticism": 5.0,
+    "avg_hostility": 6.2,
+    "conferences_attended": 3
+  },
+  {
+    "id": "m1_r02",
+    "name": "Mészáros László",
+    "outlet": "M1 Híradó",
+    "outlet_id": "m1",
+    "total_questions": 3,
+    "avg_criticism": 13.3,
+    "avg_hostility": 6.7,
+    "conferences_attended": 2
+  },
+  {
+    "id": "m1_r03",
+    "name": "Lantos Csaba",
+    "outlet": "M1 Híradó",
+    "outlet_id": "m1",
+    "total_questions": 2,
+    "avg_criticism": 7.5,
+    "avg_hostility": 5.0,
+    "conferences_attended": 2
+  }
+]

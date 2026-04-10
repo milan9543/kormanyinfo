@@ -1,0 +1,434 @@
+{
+  "meta": {
+    "title": "Kormányinfó",
+    "date": "2026-04-02",
+    "youtube_url": "https://www.youtube.com/watch?v=TVzAwF7qkZg",
+    "youtube_video_id": "TVzAwF7qkZg",
+    "duration": "",
+    "location": "Budapest"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Gulyás Gergely",
+      "role": "miniszter",
+      "position": "Miniszterelnökséget vezető miniszter"
+    },
+    {
+      "id": "s_02",
+      "name": "Vitályos Eszter",
+      "role": "szóvivő",
+      "position": "Kormányszóvivő"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:00:57",
+      "end_time": "00:07:04",
+      "summary": "Gulyás: Az EB felszólította Magyarországot a védett üzemanyagár felfüggesztésére, amit a kormány visszautasít. Magyarországon a legolcsóbb az üzemanyag az EU-ban. Az EB életidegen Covid-szerű korlátozásokat javasol ahelyett, hogy megszüntetné a szankciókat. Zelenszki elnök önkényesen zárva tartja a Barátság kőolajvezetéket, ezért Magyarország semmilyen Ukrajnát támogató egyhangú uniós döntéshez nem járul hozzá. A Tisza EP-képviselői ötször szavazták meg a rezsienergia-támogatások eltörlését.",
+      "tags": [
+        "üzemanyagár",
+        "energiaellátás",
+        "európai-bizottság",
+        "barátság-kőolajvezeték",
+        "szankciók",
+        "tisza-párt",
+        "rezsicsökkentés"
+      ]
+    },
+    {
+      "speaker_id": "s_02",
+      "start_time": "00:07:05",
+      "end_time": "00:15:39",
+      "summary": "Vitályos Eszter ismerteti az elmúlt héten megkezdett vagy befejezett beruházásokat: Harman Becker, Homet Köfém, Mab Tarnóca, Tubex Mátra, BMW, Continental Dohányipari, Extractum Pharma, Kulacs Sped, Hódplast, Scrap Daddy, Tolna Tej, Sugofood, Medirádió Pharma; egészségügyi fejlesztések (kiskőrösi egészségügyi központ, Váci Jávorszki kórház, tüdőgondozó, gyermek-hospice); útfejlesztések, Visegrád fejlesztések, egyéb beruházások.",
+      "tags": [
+        "beruházás",
+        "munkahely",
+        "egészségügy",
+        "infrastruktúra",
+        "fejlesztés"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "start_time": "00:16:13",
+      "end_time": "00:17:13",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Közvélemény-kutatások eltérő eredményeket mutatnak a választás előtt. Nézőpont 66 mandátumot jósol Fidesznek. Hány mandátumot várnak?",
+      "answer": "Nem közvélemény-kutatásokat, hanem választásokat kell nyerni. A kormánypártoknak jó esélyük van a többség megszerzésére.",
+      "tags": ["választás", "közvélemény-kutatás", "mandátum"],
+      "criticism_percent": 20,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_02",
+      "start_time": "00:17:32",
+      "end_time": "00:18:24",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Kormánypárti kutatások 5-8%-os Fidesz-előnyt mutatnak. Ezeknek sem hisznek?",
+      "answer": "A végeredménynek fog hinni. Belső mérések szerint a parlamenti abszolút többség biztosított.",
+      "tags": ["választás", "közvélemény-kutatás"],
+      "criticism_percent": 25,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_03",
+      "start_time": "00:19:03",
+      "end_time": "00:20:08",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Meddig tartják fenn a védett benzinárat, ha győznek április 12-én?",
+      "answer": "Győzelem esetén Zelenszki kénytelen lesz megnyitni a Barátság-vezetéket, ami hosszú távon biztosítja az energiaellátást. A védett benzinár fenntartása elkötelezettség.",
+      "tags": [
+        "üzemanyagár",
+        "barátság-kőolajvezeték",
+        "választás",
+        "energiaellátás"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_04",
+      "start_time": "00:20:08",
+      "end_time": "00:26:40",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Volt-e a kormányülésen szó a Szabó Bence-ügyről? Ki kell-e vizsgálni a titkozatos Henry, VM és Mozaik személyek kilétét?",
+      "answer": "Nem volt napirenden. Az egész ügy azért van terítéken, hogy eltereljék a figyelmet Panyi Szabolcs ukrán érdekű tevékenységéről.",
+      "tags": ["titkosszolgálat", "panyi-szabolcs", "tisza-párt", "kémügy"],
+      "criticism_percent": 55,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_05",
+      "start_time": "00:25:06",
+      "end_time": "00:26:40",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Volt-e tárgyalás arról, hogy Mi Hazánk visszalépteti jelöltjeit a Fidesz javára az egyéni körzetekben?",
+      "answer": "Semmilyen tárgyalás nem volt. A cél 100 mandátum megszerzése, koalíciós elképzelések nincsenek.",
+      "tags": ["választás", "mi-hazánk", "koalíció"],
+      "criticism_percent": 30,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_06",
+      "start_time": "00:26:44",
+      "end_time": "00:28:50",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "2024 novemberben azt mondta, elmebaj azt állítani, hogy a titkosszolgálatok Tiszára dolgoznak. Ezt fenntartja, miközben az AH összevágott videót hozott nyilvánosságra egy tanúvallomásról?",
+      "answer": "Igen, fenntartja. A kémelhárításnak kémeket kell követni, az AH videó egy hazugságra adott válasz volt, nem politikai beavatkozás.",
+      "tags": ["titkosszolgálat", "ah", "tisza-párt", "kémügy"],
+      "criticism_percent": 85,
+      "hostility_percent": 45
+    },
+    {
+      "id": "q_07",
+      "start_time": "00:28:50",
+      "end_time": "00:31:40",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "Miért hozta az AH csak a megvágott videót nyilvánosságra? Miért nem az összeset? A pedofília-vád és az NNI összefügg az AH-val?",
+      "answer": "Hazugságot cáfolni kell. Senkit nem vádoltak pedofíliával, az állítás nem igaz. Az egész ügy a Panyi-botrány elsimítását szolgálja.",
+      "tags": ["titkosszolgálat", "ah", "nni", "kémügy", "tisza-párt"],
+      "criticism_percent": 90,
+      "hostility_percent": 55
+    },
+    {
+      "id": "q_08",
+      "start_time": "00:31:47",
+      "end_time": "00:32:50",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "Nyomozati irat szerint Vogel Evelin folyamatosan kapcsolatban állt Kubatov Gábor titkárával. Ellenőrizték ezt?",
+      "answer": "Nem tudok erről információt adni, Kubatov Gáborral sem beszélt erről. Vogel Evelin és a Fidesz között semmilyen kapcsolat nem volt.",
+      "tags": ["vogel-evelin", "kubatov", "fidesz", "tisza-párt"],
+      "criticism_percent": 85,
+      "hostility_percent": 35
+    },
+    {
+      "id": "q_09",
+      "start_time": "00:32:54",
+      "end_time": "00:35:45",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "Rógan Antal felügyeli az AH-t, és azt mondta, feladata Orbán Viktor választási győzelmeit segíteni. Nem logikus feltételezni, hogy az AH a Fidesz ellenfeleire dolgozik?",
+      "answer": "Teljesen alaptalan feltételezés. A szolgálatok működését kétharmados törvények szabályozzák. Rógan megjegyzése a kormánykommunikációra vonatkozott, nem a szolgálatokra.",
+      "tags": ["titkosszolgálat", "rógan-antal", "ah", "törvényesség"],
+      "criticism_percent": 90,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_10",
+      "start_time": "00:38:18",
+      "end_time": "00:41:51",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "Miért kért Szijjártó Péter Pavel Szorokin orosz energiaügyi miniszter-helyettestől érveket a szankciókkal kapcsolatban?",
+      "answer": "Természetes, hogy a miniszter konzultál. Az energetikai szankciók ellenzése Magyarország következetes, nyilvánosan képviselt álláspontja. Szijjártó Pétertől kell részleteket kérdezni.",
+      "tags": [
+        "szijjártó-péter",
+        "oroszország",
+        "szankciók",
+        "energiaellátás",
+        "lehallgatás"
+      ],
+      "criticism_percent": 80,
+      "hostility_percent": 40
+    },
+    {
+      "id": "q_11",
+      "start_time": "00:41:57",
+      "end_time": "00:45:26",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "A Göd-ügynél azt mondták, a kormánynak nincs rálátása hatósági ügyekre. Varga Judit mégis 10 perccel a Ryanair-bírság aláírása után posztolt róla. Ez nem ellentmondás?",
+      "answer": "Nincs ellentmondás. A miniszternek tudomása lehet egy nyilvánosan ismert ügyről. A bírságot nem rendelik meg, de jogszabálysértést szankcionálni kell.",
+      "tags": ["hatósági-eljárás", "ryanair", "göd", "samsung", "varga-judit"],
+      "criticism_percent": 75,
+      "hostility_percent": 25
+    },
+    {
+      "id": "q_12",
+      "start_time": "00:45:34",
+      "end_time": "00:49:32",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Csercsa Balázs dokumentuma szerint Tisza-kormány kivezeti az orosz energiát és megszünteti a benzin védett árát. Milyen következményei lennének ennek?",
+      "answer": "Áramszámla havi 16 ezer, gáz 31 ezer, benzin ~49 ezer forinttal emelkedne. A Tisza EP-képviselői ötször szavaztak a rezsitámogatások eltörlésére, ez az anyag csak megerősíti álláspontjukat.",
+      "tags": [
+        "tisza-párt",
+        "energiaellátás",
+        "rezsicsökkentés",
+        "üzemanyagár"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_13",
+      "start_time": "00:49:33",
+      "end_time": "00:51:02",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "A rendőrség is nyomoz Panyi Szabolcs ügyében. Van-e nyilvánosságra hozható eredmény, milyen lépések várhatók?",
+      "answer": "Nincs információja az igazságügyi miniszter feljelentésén túl. Az ügy fekete-fehér és tankönyvszerű.",
+      "tags": ["panyi-szabolcs", "kémügy", "nyomozás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_14",
+      "start_time": "00:51:02",
+      "end_time": "00:52:24",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "A XXI. Század Intézet szerint a Medián hamisított közvélemény-kutatási adatokat készült nyilvánosságra hozni. Mi lehet az oka?",
+      "answer": "Molnár Csaba DK-s politikus is elmondta, hogy a Medián nekik is felajánlott kedvező eredményt pénzért. Mindenki levonhatja a következtetést a Medián hitelességéről.",
+      "tags": ["közvélemény-kutatás", "medián", "választás", "dk"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_15",
+      "start_time": "00:51:13",
+      "end_time": "00:57:19",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Milyen visszajelzések érkeztek a védett benzinárról? Ha nem nyitják meg a Barátság-vezetéket, milyen eszközei vannak a fenntartásra?",
+      "answer": "Közel háromhónapnyi tartalék áll rendelkezésre. Zelenszki az EU-pénz nélkül nem tud működni, ezért győzelem esetén kénytelen lesz megnyitni a vezetéket.",
+      "tags": [
+        "üzemanyagár",
+        "barátság-kőolajvezeték",
+        "energiaellátás",
+        "ukrajna"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_16",
+      "start_time": "00:52:24",
+      "end_time": "00:54:45",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Az EB felszólította a benzin védett árának azonnali felfüggesztésére. Milyen lépések lehetségesek? A Tisza is lobbizik Brüsszelben az ár eltörléséért?",
+      "answer": "Az EB levelét nyilvánosságra hozzák. A felszólítást visszautasítják. A Tisza és DK valóban mindent megtett, hogy Magyarország ne kapjon EU-pénzeket és hogy szavazták meg az energiatámogatások eltörlését.",
+      "tags": ["európai-bizottság", "üzemanyagár", "tisza-párt", "dk", "eu"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_17",
+      "start_time": "00:54:56",
+      "end_time": "00:57:03",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Az EB Covid-szerű korlátozásokat készít elő az energiafogyasztás csökkentésére. Milyen következményei lennének, érvényes lenne Magyarországra?",
+      "answer": "Ezek az ideológiai alapú energiapolitika következményei. Magyarországon, ha az orosz energiahordozó elérhető, minimális az esélye a korlátozásoknak. A szankciókat meg kell szüntetni.",
+      "tags": [
+        "európai-bizottság",
+        "energiaellátás",
+        "szankciók",
+        "korlátozások"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_18",
+      "start_time": "00:57:26",
+      "end_time": "00:58:32",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Az otthonstart-kedvezményt kiterjesztik a külföldön élő fiatalokra. Mik a feltételek és mikor lép életbe?",
+      "answer": "A kormány az első félévben dönt erről. Célja a hazatérés megkönnyítése adminisztratív és gazdasági ösztönzőkkel.",
+      "tags": ["otthonstart", "hazatérés", "demográfia", "lakáspolitika"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_19",
+      "start_time": "00:58:42",
+      "end_time": "01:00:03",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Eljuthat-e oda Magyarország és Európa, hogy az EB életidegen javaslatait mégis meg kell fontolni, ha az energiaválság elhúzódik?",
+      "answer": "Magyarországon, ha az orosz kőolaj elérhető, minimális az esélye. Európában, akik lemondtak az orosz energiáról, ott sokkal rosszabb a helyzet.",
+      "tags": ["energiaellátás", "európai-bizottság", "korlátozások"],
+      "criticism_percent": 40,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_20",
+      "start_time": "01:00:03",
+      "end_time": "01:00:57",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Az ukránok szerint 20 hónap kell a kőolajvezeték helyreállításához. Mennyire reális ez?",
+      "answer": "Dezinformáció. A vezetéket semmilyen támadás nem érte, holnap meg lehetne nyitni. Zelenszki maga is elismerte, hogy politikai okokból állította le.",
+      "tags": ["barátság-kőolajvezeték", "ukrajna", "dezinformáció"],
+      "criticism_percent": 35,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_21",
+      "start_time": "01:01:05",
+      "end_time": "01:03:28",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Megerősíthető-e, hogy Trump alelnöke jövő héten Magyarországra érkezik, és részt vesz-e választási eseményen?",
+      "answer": "A sajtónak nagy találati pontossága van külföldi látogatásokban. Az amerikaiak majd bejelentik, de az esély elég komoly.",
+      "tags": ["trump", "usa", "választás", "diplomácia"],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_22",
+      "start_time": "01:03:59",
+      "end_time": "01:05:08",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Trump újra belengeette az USA kilépését a NATO-ból, mert Európa nem segített az iráni hadműveletekben. Valós veszély-e ez?",
+      "answer": "Magyarország erős NATO-t akar erős amerikai szövetséggel. Trump tegnap esti szózatában a NATO-ról negatívan nem szólt. A NATO nincs veszélyben.",
+      "tags": ["nato", "trump", "usa", "biztonságpolitika"],
+      "criticism_percent": 30,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_23",
+      "start_time": "01:05:15",
+      "end_time": "01:09:20",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Ha Szijjártó Péter lehallgatott beszélgetése az önök érveit erősíti meg, mi a baj Panyi Szabolcs tevékenységével?",
+      "answer": "Egy idegen állam érdekében végzett lehallgatás súlyos bűncselekmény, függetlenül attól, hogy mi hangzott el. A Külügyminisztérium már 2022-ben is megerősítette a közvetítési tevékenységet.",
+      "tags": ["panyi-szabolcs", "szijjártó-péter", "lehallgatás", "kémügy"],
+      "criticism_percent": 65,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_24",
+      "start_time": "01:09:20",
+      "end_time": "01:10:25",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Vezettek-e be új szabályokat a lehallgatás után? Volt-e következménye a titkosszolgálatoknál?",
+      "answer": "Nem vezettek be új szabályokat. A lehallgatás 6 évvel ezelőtt történt. A protokoll nem változott.",
+      "tags": ["titkosszolgálat", "lehallgatás", "szijjártó-péter"],
+      "criticism_percent": 55,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_25",
+      "start_time": "01:10:25",
+      "end_time": "01:14:43",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Az egyik koronatanú azt állítja, hazudott. Az AH-videó megvágott. Hogyan győzhetik meg a társadalmat, hogy nem a Tiszát tönkretenni akarták a titkosszolgálatokkal?",
+      "answer": "Az egész ügy a Panyi-botrány eltussolását szolgálja. A kémelhárítás a törvények szerint járt el, a felvételben tényállítások nem vannak megvágva.",
+      "tags": [
+        "titkosszolgálat",
+        "kémügy",
+        "ah",
+        "tisza-párt",
+        "panyi-szabolcs"
+      ],
+      "criticism_percent": 85,
+      "hostility_percent": 35
+    },
+    {
+      "id": "q_26",
+      "start_time": "01:14:43",
+      "end_time": "01:17:24",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Haag Péter szerint senki nem tudja megnyugtatóan tisztázni a Tisza elleni műveletet. Nem rossz-e ez az alkotmányos rendszer?",
+      "answer": "A bírság nem függ a kormánytól. Magyarországon független bíróság működik. A Tisza és ellenzék bizonyítékok nélkül támadja az állami szerveket.",
+      "tags": [
+        "alkotmányos-rendszer",
+        "igazságszolgáltatás",
+        "titkosszolgálat",
+        "tisza-párt"
+      ],
+      "criticism_percent": 75,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_27",
+      "start_time": "01:17:52",
+      "end_time": "01:22:36",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Az ukrán pénzszállító ügyében ki fog-e derülni a háttér a választásokig? Mikor adják vissza a lefoglalt vagyont?",
+      "answer": "Reméli, hogy minden kiderül. Nyomozás folyik, a hatóságokat kell kérdezni. A legnagyobb magyar bank sem szállít ennyi valutát egy évben.",
+      "tags": ["ukrajna", "pénzszállítás", "nyomozás", "választás"],
+      "criticism_percent": 65,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_28",
+      "start_time": "01:22:46",
+      "end_time": "01:24:24",
+      "reporter": "Lerch-Cserei Judit",
+      "outlet": "M1 Híradó",
+      "question": "Az EB Covid-szerű korlátozásokat sürget az energiafogyasztás csökkentésére. A kormányülésen szó volt-e ilyen intézkedésekről?",
+      "answer": "Nem. Magyarország tartalékai jók, mind benzin, mind gáz esetében. A korlátszatásokat alapvetően ellenezzük. Az ideológiai alapú energiapolitika káros.",
+      "tags": [
+        "energiaellátás",
+        "európai-bizottság",
+        "korlátozások",
+        "tartalékok"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    }
+  ]
+}

@@ -27,8 +27,12 @@ print(f"Video ID: {video_id}  Date: {date}")
 with open(srt_path, "r", encoding="utf-8") as f:
     srt_text = f.read()
 
+outlets_path = os.path.join(os.path.dirname(__file__), "../src/data/base_data/outlets.json")
+with open(outlets_path, "r", encoding="utf-8") as f:
+    outlets_data = f.read()
 
-SYSTEM_PROMPT = """You are analyzing Hungarian government press conference (Kormányinfó)
+
+SYSTEM_PROMPT = f"""You are analyzing Hungarian government press conference (Kormányinfó)
 auto-generated subtitles. Your job:
 
 1. Identify speaker changes using timing gaps, >> markers, and context
@@ -36,23 +40,37 @@ auto-generated subtitles. Your job:
 3. Separate every distinct question and its answer
 4. For opening statements: extract speaker, time range, summary, tags
 
+KNOWN OUTLETS AND REPORTERS
+The following JSON lists all known outlets and their regular reporters. Auto-generated subtitles
+often mishear or misspell names — if a name in the subtitles is close to one in this list,
+use the correct spelling from the list. It is also possible that a reporter or outlet appears
+that is not in this list — in that case use whatever the subtitles say as accurately as possible.
+
+{outlets_data}
+
 For each Q&A pair provide:
-- start_time, end_time (from subtitle timestamps) — start_time MUST be when the question begins, not the answer
-- reporter name and outlet
+- start_time, end_time (from subtitle timestamps) — use HH:MM:SS format with colons only, no milliseconds or commas (e.g. "00:01:23" not "00:01:23,456" or "00:01,23") — start_time MUST be when the question begins, not the answer
+- reporter name and outlet (use the canonical spelling from the list above when possible)
 - question (extremely short Hungarian summary, max ~15 words)
 - answer (extremely short Hungarian summary, max ~20 words)
 - tags (array of lowercase Hungarian topic keywords with hyphens)
-- criticism_percent (0-100: how critical the question is of the government)
-- hostility_percent (0-100: how hostile/dismissive the minister's reply is)
+- criticism_percent (0-100: how critical the question is TOWARD THE HUNGARIAN GOVERNMENT — measures the reporter's adversarialism against the government; 0 = friendly/supportive question, 100 = maximally adversarial)
+- hostility_percent (0-100: how hostile or dismissive the MINISTER'S REPLY is TOWARD THE REPORTER AND THEIR QUESTION — measures the minister's contempt for the journalist; 0 = respectful/cooperative answer, 100 = openly contemptuous or dismissive)
 
 Return ONLY valid JSON. No markdown fences. Schema:
-{
-  "speakers": [{"id": "s_01", "name": "...", "role": "miniszter|szóvivő", "position": "..."}],
-  "opening_statements": [{"speaker_id": "s_01", "start_time": "...", "end_time": "...", "summary": "...", "tags": [...]}],
-  "questions": [{"id": "q_01", "start_time": "...", "end_time": "...", "reporter": "...", "outlet": "...",
+{{
+  "speakers": [{{"id": "s_01", "name": "...", "role": "miniszter|szóvivő", "position": "..."}}],
+  "opening_statements": [{{"speaker_id": "s_01", "start_time": "HH:MM:SS", "end_time": "HH:MM:SS", "summary": "...", "tags": [...]}}],
+  "questions": [{{"id": "q_01", "start_time": "HH:MM:SS", "end_time": "HH:MM:SS", "reporter": "...", "outlet": "...",
                   "question": "...", "answer": "...", "tags": [...],
-                  "criticism_percent": N, "hostility_percent": N}]
-}
+                  "criticism_percent": N, "hostility_percent": N}}]
+}}
+
+TYPICAL CONFERENCE STRUCTURE:
+Most Kormányinfó press conferences follow this pattern:
+1. Gulyás Gergely (Miniszterelnökséget vezető miniszter) opens, delivers the main government statement, and answers all reporter questions
+2. Vitályos Eszter (Kormányszóvívő) then makes one or more statements about investments and regional development, occasionally answering a follow-up question
+This is the default — use it to resolve ambiguous speaker attribution. However, the structure can differ (different ministers, additional speakers, etc.), so always trust explicit self-introductions or clear context clues over this default.
 
 RULES:
 - Questions and answers must be EXTREMELY short — summaries, not transcriptions

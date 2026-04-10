@@ -1,0 +1,573 @@
+{
+  "meta": {
+    "title": "Kormányinfó",
+    "date": "2026-04-09",
+    "youtube_url": "https://www.youtube.com/watch?v=cvzw8BC7jg8",
+    "youtube_video_id": "cvzw8BC7jg8",
+    "duration": "",
+    "location": "Budapest"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Gulyás Gergely",
+      "role": "miniszter",
+      "position": "Miniszterelnökséget vezető miniszter"
+    },
+    {
+      "id": "s_02",
+      "name": "Vitályos Eszter",
+      "role": "szóvivő",
+      "position": "Kormányszóvívő"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:00:04",
+      "end_time": "00:09:18",
+      "summary": "Gulyás Gergely a 200. kormányinfóját tartja. Ismerteti az energiahelyzetet: a védett benzin- és gázolajár fennmarad, az EU felszólítása ellenére sem szüntetik meg a rezsicsökkentést. A bizottság követeléseinek teljesítése havonta 95 ezer forint többletterhet jelentene egy átlagos családnak. Kitér a Török Áramlat elleni merényletkísérletre, a biztonsági intézkedések megerősítésére, a Magyar Péter háborús hangfelvételre, valamint Vance alelnök magyarországi látogatására és a rekordmagas magyar-amerikai kereskedelmi forgalomra.",
+      "tags": [
+        "energiaár",
+        "rezsicsökkentés",
+        "eu-bizottság",
+        "török-áramlat",
+        "vance-látogatás",
+        "választás-2025",
+        "magyar-péter",
+        "energiabiztonság"
+      ]
+    },
+    {
+      "speaker_id": "s_02",
+      "start_time": "00:09:20",
+      "end_time": "00:15:38",
+      "summary": "Vitályos Eszter bejelentések sorozatát ismerteti: közel 400 milliárd forint értékű beruházások az elmúlt héten, köztük fémipari, klimatechnikai, energiahatékonysági és élelmiszeripari fejlesztések, új kórházi rendelők, a megújult Cittadella megnyitása, oktatási fejlesztések és infrastrukturális beruházások.",
+      "tags": [
+        "beruházás",
+        "munkahely",
+        "egészségügy",
+        "oktatás",
+        "infrastruktúra",
+        "fejlesztés"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "start_time": "00:15:52",
+      "end_time": "00:16:52",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "MOL 510 ezer tonna nyersolajat vásárol az USA-tól – mikor és hogyan?",
+      "answer": "Igaz, 510 ezer tonna olajat vesz a MOL 500 millió dollárért, a következő hetekben-hónapokban normál üzletmenet szerint.",
+      "tags": ["mol", "usa", "kőolaj", "vance-látogatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_02",
+      "start_time": "00:16:58",
+      "end_time": "00:19:00",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Magyar Péter szerint Vance látogatása után az USA elengedte Orbán kezét – hogyan kommentálja?",
+      "answer": "Épeszű ember ilyen következtetést nem von le: soha nem volt példa arra, hogy egy amerikai alelnök választás előtt 5 nappal Magyarországra jöjjön a kormányt támogatni.",
+      "tags": [
+        "vance-látogatás",
+        "usa-magyarország",
+        "választás-2025",
+        "magyar-péter"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_03",
+      "start_time": "00:19:09",
+      "end_time": "00:21:53",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "A Bloomberg szivárogtatás és Szijjártó-lehallgatások a kormányülés napirendjén voltak-e?",
+      "answer": "Nem. Ezek külföldi titkosszolgálati beavatkozások a választásokba; a lehallgatások jogsértők, de paradox módon csak azt bizonyítják, hogy a magyar diplomácia nemzeti érdeket képvisel.",
+      "tags": [
+        "lehallgatás",
+        "szijjártó",
+        "titkosszolgálat",
+        "választási-beavatkozás"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_04",
+      "start_time": "00:22:00",
+      "end_time": "00:23:26",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Nem rontja-e a Fidesz esélyeit, hogy Szijjártó sokat kommunikál az orosz külügyminiszterrel és Orbán barátjának nevezte Putyint?",
+      "answer": "Ez egy egyértelmű választási kérdés: az orosz energetikai együttműködés fenntartása vagy megszüntetése – ha megszűnik, a rezsicsökkentés is megszűnik.",
+      "tags": ["oroszország", "energiaár", "rezsicsökkentés", "választás-2025"],
+      "criticism_percent": 60,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_05",
+      "start_time": "00:23:33",
+      "end_time": "00:27:37",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Medián kutatás szerint a Tisza 140+ mandátumot szerez; a Fidesz mekkora eredménnyel számol?",
+      "answer": "A medián nem kutatás, hanem hamisítás – pénzért mér kedvező adatokat. A Fidesz célja a kormányalakításhoz szükséges többség. Kétharmad csodák világába tartozik, de lehetséges.",
+      "tags": ["közvélemény-kutatás", "választás-2025", "medián", "mandátum"],
+      "criticism_percent": 50,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_06",
+      "start_time": "00:28:11",
+      "end_time": "00:33:17",
+      "reporter": "Lantos Csaba",
+      "outlet": "M1 Híradó",
+      "question": "Magyar Péter hangfelvétele szerint nagy háború lesz, miközben nyilvánosan bagatellizálja; és ukrán szervezet magyarul tudó provokátorokat toboroz – mit gondol?",
+      "answer": "A hangfelvétel megerősíti, hogy háborús veszély van, de a Tisza ezt tagadja. A toborzás és a médián-hamisítás összefügg: a Tisza vereségére forgatókönyv készül zavarkeltésre.",
+      "tags": [
+        "magyar-péter",
+        "háborús-veszély",
+        "tisza",
+        "választási-beavatkozás",
+        "toborzás"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_07",
+      "start_time": "00:33:22",
+      "end_time": "00:35:28",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Magyar Péter cáfolja a hangfelvételt; ki hallgatta le Orbán-Putyin beszélgetést és mi következménye lesz?",
+      "answer": "Az Orbán-Putyin eset emlékeztető kiszivárogtatása, nem lehallgatás. Szijjártónál külföldi titkosszolgálat hallgatta le; az igazságügyi miniszter kémkedés miatt feljelentést tett.",
+      "tags": [
+        "lehallgatás",
+        "putyin",
+        "szijjártó",
+        "titkosszolgálat",
+        "kémkedés"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_08",
+      "start_time": "00:36:48",
+      "end_time": "00:41:14",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Vance-látogatáson kőolajon kívül megállapodtak-e valamiben, pl. pénzügyi védőpajzsban?",
+      "answer": "A védőpajzsról tárgyalások folynak; ma nincs szükség rá, de a megállapodás léte önmagában erősíti a magyar gazdaságot. Magyarország az USA-val a legszorosabb kapcsolatban van Európában.",
+      "tags": [
+        "vance-látogatás",
+        "usa-magyarország",
+        "pénzügyi-védőpajzs",
+        "gazdaság"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_09",
+      "start_time": "00:41:37",
+      "end_time": "00:42:33",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Ki helyezte el a robbanóanyagot a Török Áramlatnál, és szükség van-e további biztonsági intézkedésekre?",
+      "answer": "A nyomozás Szerbiában folyik; a Védelmi Tanács vasárnap meghozta a szükséges döntéseket, Magyarország megerősítette a vezeték védelmét.",
+      "tags": ["török-áramlat", "energiabiztonság", "merényletkísérlet"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_10",
+      "start_time": "00:42:34",
+      "end_time": "00:46:15",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Az aranykonvoj-ügyben az ukrán titkosszolgálati vezérőrnagy dokumentumhamisítást mutató videóról mit gondol; szükség van-e szigorúbb ellenőrzésre az Ukrajnának küldött pénzekre?",
+      "answer": "A videó figyelemre méltó és erősíti a jogsértés gyanúját; a nyomozás folyamatban van. Magyarország régóta szorgalmazza a béketörekvéseket az Ukrajna pénzelése helyett.",
+      "tags": ["aranykonvoj", "ukrajna", "korrupció", "nav", "pénzmosás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_11",
+      "start_time": "00:46:22",
+      "end_time": "00:47:24",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Az aranykonvoj ügyvédje nyíltan bevallotta tiszás aktivista – aggályt kelt-e ez?",
+      "answer": "Nem; egy ügyvéd politikai tevékenységet folytathat, de ezt tudni kell az ő nyilatkozatainak értékelésekor.",
+      "tags": ["aranykonvoj", "tisza", "ügyvéd"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_12",
+      "start_time": "00:46:51",
+      "end_time": "00:47:24",
+      "reporter": "Szabó Réka",
+      "outlet": "HírTV",
+      "question": "Számíthatnak-e arra, hogy Magyar Péter ismét megjelenik a Fidesz választási ünnepségén a Bálnában?",
+      "answer": "Nem kapott meghívót és valószínűleg nem fog táncolni; remélem, az ott lévőknek lesz okuk az örömre vasárnap.",
+      "tags": ["választás-2025", "magyar-péter", "fidesz"],
+      "criticism_percent": 15,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_13",
+      "start_time": "00:47:31",
+      "end_time": "00:49:46",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Az EU által küldött szakértői delegáció a Barátság-kőolajvezetékhez – hol bolyong, elkezdődhetnek-e a munkálatok?",
+      "answer": "Színjáték az egész; az ukránok politikai döntéssel állították le a vezetéket, amelyet bármikor újraindíthatnának. A bizottság delegáltjai sem tudnák tagadni, hogy a vezeték rendben van.",
+      "tags": [
+        "barátság-kőolajvezeték",
+        "ukrajna",
+        "eu-bizottság",
+        "energiabiztonság"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_14",
+      "start_time": "00:50:06",
+      "end_time": "00:52:44",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Ukrán sajtóhírek szerint a választások utáni héten megnyithatják a Barátság-vezetéket – kaptak-e erről értesítést?",
+      "answer": "Nem kaptak hivatalos értesítést, de a logika azt mutatja: ha a nemzeti kormány marad, az ukránok kénytelenek megnyitni, mert a blokkolt 90 milliárd euró nélkül nem tudnak kitartani.",
+      "tags": [
+        "barátság-kőolajvezeték",
+        "ukrajna",
+        "energiabiztonság",
+        "választás-2025"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_15",
+      "start_time": "00:52:50",
+      "end_time": "00:54:17",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Az USA tűzszünet és Hormuz-szoros megnyitása gyorsan rendezi-e az energiaválságot Európában?",
+      "answer": "Jó hír, de optimista feltételezés; a katari finomítók 4-5 év alatt állíthatók helyre, ármérséklés várható, de teljes visszaállás nem hamar.",
+      "tags": ["energiaválság", "hormuz", "irán", "olajár"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_16",
+      "start_time": "00:54:22",
+      "end_time": "00:54:59",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Mi lesz a miniszter úr programja a választásig, van-e babonája?",
+      "answer": "Babonák nincsenek; több választókerületbe megy (Csorna, Pápa, Várpalota, Jászberény, 12. kerület) és tévéműsorokba.",
+      "tags": ["választás-2025", "kampány"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_17",
+      "start_time": "00:55:07",
+      "end_time": "00:56:24",
+      "reporter": "Milák Betina",
+      "outlet": "TV2",
+      "question": "A Tisza agressziója egyre hevesebb, provokátorokkal zavarják az Orbán-nagygyűléseket – mi a cél?",
+      "answer": "A Tisza agresszív stílussal próbál sikert elérni; vasárnap kiderül, nyitottak-e erre a választók. Szólásszabadság van, de a gyűléseken mindenki biztonságban részt vehetne.",
+      "tags": ["tisza", "kampány", "erőszak", "választás-2025"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_18",
+      "start_time": "00:56:29",
+      "end_time": "00:59:17",
+      "reporter": "Milák Betina",
+      "outlet": "TV2",
+      "question": "Rekordszámú regisztráció a külképviseleti szavazásra – a DK elvennék a szavazati jogukat; mi a véleménye?",
+      "answer": "Mindenkit biztatok a részvételre; a jelenlegi rendszer lehetőséget ad a külföldön lakcímmel rendelkezőknek levélben, a külképviseleteken szavazni. Magasabb részvétel a demokrácia ereje.",
+      "tags": ["szavazati-jog", "külképviselet", "dk", "választás-2025"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_19",
+      "start_time": "00:59:20",
+      "end_time": "01:01:17",
+      "reporter": "Milák Betina",
+      "outlet": "TV2",
+      "question": "Ez a legerősebb kampány volt – hogy érte meg?",
+      "answer": "Nagyon érdekesnek élte meg; személyes tapasztalatai pozitívak, normálisan él, a magyar demokrácia érett.",
+      "tags": ["kampány", "választás-2025"],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_20",
+      "start_time": "01:01:22",
+      "end_time": "01:03:04",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Követett-e el hibát a kormány, hogy a lehallgatások megtörténhetek, és tudják-e, melyik titkosszolgálat csinálta?",
+      "answer": "Vizsgálat folyik; egyelőre nincs nyilvánosságra hozható eredmény.",
+      "tags": ["lehallgatás", "titkosszolgálat", "szijjártó"],
+      "criticism_percent": 60,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_21",
+      "start_time": "01:02:18",
+      "end_time": "01:05:25",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Szentiványi szerint Szijjártó uniós dokumentumokat juttatott Lavrovnak – adott-e ki titkos adatokat?",
+      "answer": "Szijjártó nyilatkozata egyértelmű: csak nem titkos, az adott relációban releváns információkat osztott meg; ez a nemzeti érdek képviselete.",
+      "tags": ["szijjártó", "lavrov", "titkos-dokumentumok", "kémkedés"],
+      "criticism_percent": 70,
+      "hostility_percent": 25
+    },
+    {
+      "id": "q_22",
+      "start_time": "01:04:08",
+      "end_time": "01:05:25",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Dobrev Klára kémkedő tiszapolitikusokról beszél, akik az Orbán-titkosszolgálat emberei – igazat mond?",
+      "answer": "Nincs Orbáni titkosszolgálat; konkrét esetben sem megerősíteni, sem cáfolni nem tudja az információt.",
+      "tags": ["titkosszolgálat", "dobrev", "tisza", "kémkedés"],
+      "criticism_percent": 50,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_23",
+      "start_time": "01:05:29",
+      "end_time": "01:07:01",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "2024 áprilisában azt mondta, ha köze lett volna Magyar Péterhez, hálásak lesznek – így gondolja-e ma is?",
+      "answer": "Az első állítás: semmi köze nincs. A vélemény, hogy ha lett volna, hálásak lennének, ettől független. Vasárnap kiderül.",
+      "tags": ["magyar-péter", "választás-2025"],
+      "criticism_percent": 55,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_24",
+      "start_time": "01:07:01",
+      "end_time": "01:09:44",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Mit rontott el a Fidesz, hogy két év alatt egy volt Fidesz-tag ekkora ellenzéki pártot épített?",
+      "answer": "Nem volt közös politikai szocializáció Magyar Péterrel. A végeredmény valószínűleg ellentétes lesz azzal, ami a kérdést indokolná. Választásokat vasárnap kell megnyerni.",
+      "tags": ["magyar-péter", "tisza", "fidesz", "választás-2025"],
+      "criticism_percent": 65,
+      "hostility_percent": 25
+    },
+    {
+      "id": "q_25",
+      "start_time": "01:09:54",
+      "end_time": "01:11:23",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Magyar Péter bevallotta, hogy nagy háború lesz, miközben a Tisza a kormánypártokat vádolja háborús uszítással – hogyan értékeli?",
+      "answer": "A hazugság természetes eleme a Tisza politikájának; tudják, hogy háborús veszély van, de ezt tagadják, mert Brüsszelnek nem tudnának nemet mondani.",
+      "tags": ["tisza", "háborús-veszély", "magyar-péter", "brüsszel"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_26",
+      "start_time": "01:12:45",
+      "end_time": "01:13:21",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Magyar Péter szerint a Török Áramlat-robbanóanyag ügye csak hamis zászlós művelet lenne – mit válaszol?",
+      "answer": "A szerb elnök válaszolt: épeszű ember ilyen vádat nem fogalmaz meg egy energiabiztonsági bűncselekménnyel kapcsolatban.",
+      "tags": ["török-áramlat", "merényletkísérlet", "magyar-péter"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_27",
+      "start_time": "01:13:25",
+      "end_time": "01:13:55",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Milyen veszélyt jelentene, ha a Török Áranlaton keresztül nem érkezne földgáz?",
+      "answer": "Óriási ellátási zavarokat okozna.",
+      "tags": ["török-áramlat", "energiabiztonság", "gázellátás"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_28",
+      "start_time": "01:13:40",
+      "end_time": "01:14:36",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Gajda Attila tiszás jelölt ellen kiskorú elleni szeméremsértés gyanúja miatt indult eljárás Szerbiában – mit gondol, vissza kellene-e lépnie?",
+      "answer": "Az illetőnek vagy hitelesen cáfolni kell, vagy el kell takarodni a közéletből.",
+      "tags": ["tisza", "pedofília", "jelölt", "választás-2025"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_29",
+      "start_time": "01:14:45",
+      "end_time": "01:15:19",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Hírszerint a Tisza lobbizik az EU Bizottságnál a védett benzinárak ellen – hogyan értékeli?",
+      "answer": "Kollár Kinga korábban nyíltan mondta, hogy érdekük, hogy a bizottság mindenben szankcionálja Magyarországot; nem lepne meg, ha valóság alapja lenne.",
+      "tags": ["tisza", "energiaár", "eu-bizottság", "benzinár"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_30",
+      "start_time": "01:15:25",
+      "end_time": "01:16:14",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Elfogadható-e morálisan, hogy egy tiszás jelölt Orbán kivégzését imitáló videóval kampányol?",
+      "answer": "Ha a Tisza demokrata lenne, az illető már nem lenne képviselőjelölt; a Tisza demokratikus meggyőződése megkérdőjelezhető, az erőszakot sem utasítja el.",
+      "tags": ["tisza", "erőszak", "kampány", "választás-2025"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_31",
+      "start_time": "01:16:19",
+      "end_time": "01:17:03",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Mit üzenne a bizonytalan választóknak, miért szavazzanak a Fidesz-KDNP-re?",
+      "answer": "Mindenkit részvételre bíztatok; a személyes és az ország jövője szempontjából a garanciát a kormánypártok jelentik.",
+      "tags": ["választás-2025", "fidesz", "kampány"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_32",
+      "start_time": "01:17:15",
+      "end_time": "01:18:05",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Kellett-e felhasználni a stratégiai kőolajkészletből, és mi a helyzet az Adria-vezetékkel?",
+      "answer": "Igen, kellett felhasználni, de nagy rész rendelkezésre áll. Az Adrián jött olaj, orosz olaj még nem érkezett, de a beszerzés folyamatban van.",
+      "tags": [
+        "kőolaj",
+        "stratégiai-készlet",
+        "adria-vezeték",
+        "energiabiztonság"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_33",
+      "start_time": "01:18:11",
+      "end_time": "01:18:36",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Hányan küldték vissza a nemzeti petíciót?",
+      "answer": "Közel 1,9 millió ember.",
+      "tags": ["petíció", "választás-2025"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_34",
+      "start_time": "01:18:30",
+      "end_time": "01:18:37",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Mikor indul a személyforgalom a Budapest–Belgrád vasútvonalon?",
+      "answer": "Próbaüzem zajlik, ha az eredményesen zárul, hamarosan indul.",
+      "tags": ["budapest-belgrád-vasút", "infrastruktúra"],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_35",
+      "start_time": "01:18:45",
+      "end_time": "01:19:53",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "Orbán a Bloomberg leírat szerint azt mondta Putyinnak: minél több barátunk, annál jobban ellenállunk ellenfeleinknek – kik ezek az ellenfelek, akikkel szemben Oroszország véd?",
+      "answer": "A leíratot félreértelmezi a kérdés; a kontextus a békecsúcs kezdeményezése volt; barátok azok, akik békét akarnak teremteni.",
+      "tags": ["orbán-putyin", "béketárgyalások", "bloomberg"],
+      "criticism_percent": 70,
+      "hostility_percent": 25
+    },
+    {
+      "id": "q_36",
+      "start_time": "01:20:01",
+      "end_time": "01:20:57",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "Az Orbán-Putyin kisegér-oroszlán hasonlatban Ukrajna és az EU milyen szereplő lenne?",
+      "answer": "Az USA biztosan Elefánt; az EU sajnos egyre kisebb lesz; Ukrajna meghatározását meghagyja az újságíróknak.",
+      "tags": ["orbán-putyin", "eu", "ukrajna", "hasonlat"],
+      "criticism_percent": 55,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_37",
+      "start_time": "01:20:57",
+      "end_time": "01:21:38",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "Kormányváltás esetén mennyi idő alatt zajlana le az átadás-átvétel, és részt venne-e benne a miniszterelnök?",
+      "answer": "Győzelemre készülnek; az alkotmányos szabályok szerint járnának el, ahogy korábban is.",
+      "tags": ["kormányváltás", "választás-2025", "alkotmányos-rend"],
+      "criticism_percent": 50,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_38",
+      "start_time": "01:21:44",
+      "end_time": "01:23:25",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "A Politico szerint decemberben Magyarország és Oroszország 12 pontos együttműködési tervet írt alá – megerősítik?",
+      "answer": "Az orosz-magyar gazdasági vegyesbizottság évtizedek óta működik, kormány-független. Az ülés zajlott, energetikai és nukleáris együttműködési megállapodások születtek.",
+      "tags": [
+        "magyarország-oroszország",
+        "együttműködés",
+        "vegyesbizottság",
+        "energetika"
+      ],
+      "criticism_percent": 65,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_39",
+      "start_time": "01:23:25",
+      "end_time": "01:24:15",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "Pálinkás Szilveszter azt állítja, a honvédelmi miniszter három ajánlatot tett neki, ha nem nyilatkozik – ez megtörtént?",
+      "answer": "Nem tud erről; a honvédelmi miniszterrel nem beszélt erről.",
+      "tags": ["honvédelem", "szalai-bobrovniczky", "pálinkás"],
+      "criticism_percent": 60,
+      "hostility_percent": 10
+    }
+  ]
+}

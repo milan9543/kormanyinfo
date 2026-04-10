@@ -83,6 +83,24 @@
 .site-nav a:hover { color: #e8624e; }
 .site-nav .links { display: flex; gap: 24px; }
 
+@media (max-width: 600px) {
+  .site-nav-inner {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 8px 16px;
+    gap: 6px 0;
+  }
+  .site-nav .brand {
+    flex: 1;
+  }
+  .site-nav .links {
+    width: 100%;
+    gap: 16px;
+    padding-bottom: 4px;
+    font-size: 11px;
+  }
+}
+
 /* ── SHARED TAG ── */
 .tag {
   font-size: 11px;

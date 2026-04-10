@@ -14,8 +14,8 @@ export function getConference(date: string): Conference | undefined {
   return getAllConferences().find((c) => c.meta.date === date);
 }
 
-import outletsData from "../data/outlets.json";
-import reportersData from "../data/reporters.json";
+import outletsData from "../data/generated/outlets_stats.json";
+import reportersData from "../data/generated/reporters.json";
 
 export const outlets: OutletStats[] = outletsData;
 export const reporters: ReporterStats[] = reportersData;

@@ -42,21 +42,26 @@ export interface Conference {
   questions: Question[];
 }
 
-export interface OutletStats {
+export interface ReporterStats {
+  id: string;
   name: string;
+  outlet?: string;
+  outlet_id?: string;
   total_questions: number;
   avg_criticism: number;
   avg_hostility: number;
   conferences_attended: number;
-  color: string;
-  text_color: string;
 }
 
-export interface ReporterStats {
+export interface OutletStats {
+  id: string;
   name: string;
-  outlet: string;
   total_questions: number;
   avg_criticism: number;
   avg_hostility: number;
   conferences_attended: number;
+  total_question_time_seconds: number;
+  color: string;
+  text_color: string;
+  reporters: ReporterStats[];
 }

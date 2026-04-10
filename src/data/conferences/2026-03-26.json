@@ -1,0 +1,811 @@
+{
+  "meta": {
+    "title": "Kormányinfó",
+    "date": "2026-03-26",
+    "youtube_url": "https://www.youtube.com/watch?v=6zQNbHOuVtM",
+    "youtube_video_id": "6zQNbHOuVtM",
+    "duration": "",
+    "location": "Budapest"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Gulyás Gergely",
+      "role": "miniszter",
+      "position": "Miniszterelnökséget vezető miniszter"
+    },
+    {
+      "id": "s_02",
+      "name": "Ismeretlen szóvivő",
+      "role": "szóvivő",
+      "position": "Kormányszóvivő"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:00:25",
+      "end_time": "00:07:48",
+      "summary": "Gulyás Gergely az ukrán kémtevékenységről szólt: Panyi Szabolcs elleni feljelentés kémkedés miatt, a Tisza párt két informatikusa ukrán kémként lelepleződött, a kiugrott rendőrtiszt kémelhárítási ügyet hozott nyilvánosságra. Zelenszky elnököt felszólítják az ügynökök visszahívására. Ismertette az Otthon Start program sikereit: 45 ezer fiatalnak segített otthonhoz jutni, 183 milliárd forint értékű szerződés januárban.",
+      "tags": [
+        "ukrán-kémkedés",
+        "panyi-szabolcs",
+        "tisza-párt",
+        "otthon-start",
+        "lakáshitel"
+      ]
+    },
+    {
+      "speaker_id": "s_02",
+      "start_time": "00:07:49",
+      "end_time": "00:15:37",
+      "summary": "A szóvivő ismertette az elmúlt heti beruházásokat: közel 123 milliárd forint értékű fejlesztések, köztük HILAX, Viatris, Flextronics, Kontrollsoft, Herendi Porcelán, Huntsman, Zoom Lion, Knaus Tabbert, Pannon Genetik kapacitásbővítések, egészségügyi és oktatási fejlesztések, infrastrukturális beruházások.",
+      "tags": [
+        "beruházás",
+        "gazdaságfejlesztés",
+        "munkahely",
+        "infrastruktúra"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "start_time": "00:15:46",
+      "end_time": "00:19:10",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Magyar Péter ukrán kémbeszervezést állít, Watergate-hez hasonlítja az ügyet – mit mond erre?",
+      "answer": "Kémelhárítási ügyről van szó, a Tiszának kellene megmagyarázni, miért dolgoznak náluk ukrán kémek. Összefüggéstelen hazugságokat hallunk tőlük.",
+      "tags": [
+        "ukrán-kémkedés",
+        "tisza-párt",
+        "kémelhárítás"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 40
+    },
+    {
+      "id": "q_02",
+      "start_time": "00:19:10",
+      "end_time": "00:20:32",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Panyi Szabolcs elleni feljelentés a kiszivárgott hangfelvételre alapul, ő oknyomozóként járt el szerinte.",
+      "answer": "Nem oknyomozás idegen állam számára átadni egy miniszter telefonszámát lehallgatás céljából. Ez kémkedés, bűncselekmény.",
+      "tags": [
+        "panyi-szabolcs",
+        "kémkedés",
+        "feljelentés"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 35
+    },
+    {
+      "id": "q_03",
+      "start_time": "00:20:47",
+      "end_time": "00:22:03",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "A háromszázalékos lakáshitel kiterjesztése mikor és milyen feltételekkel lép életbe?",
+      "answer": "Közigazgatási egyeztetés folyamatban, valószínűleg jövő héten kabinet elé kerül, döntés a választás előtt vagy után születhet.",
+      "tags": [
+        "otthon-start",
+        "lakáshitel",
+        "választás"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_04",
+      "start_time": "00:22:06",
+      "end_time": "00:22:58",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "A Medián 23%-os Tisza-előnyt mért a biztos szavazók között – mit mutatnak az önök mérései?",
+      "answer": "A Medián nem mér, hanem propagandának megfelelően rajzol. 91%-os részvételt mutató mérőintézet nem komoly.",
+      "tags": [
+        "közvélemény-kutatás",
+        "tisza-párt",
+        "választás"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 50
+    },
+    {
+      "id": "q_05",
+      "start_time": "00:23:08",
+      "end_time": "00:25:59",
+      "reporter": "Csuhaj Ildikó",
+      "outlet": "Közmédia",
+      "question": "Lehetséges-e Fidesz–Mi Hazánk koalíció? Mit szól a Tisza kötelező sorkatonai alapkiképzés-tervéhez?",
+      "answer": "Önállóan készülnek kormányt alakítani, koalíció nem tervezett. A kötelező sorkatonai szolgálatot a Fidesz ellenzi, az önkéntes változatot ők vezették be.",
+      "tags": [
+        "koalíció",
+        "mi-hazánk",
+        "sorkatonaság",
+        "választás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_06",
+      "start_time": "00:26:01",
+      "end_time": "00:29:48",
+      "reporter": "Lantos Csaba",
+      "outlet": "M1 Híradó",
+      "question": "Mit jelent az ukrán gáztranzit leállítása, milyen további eszközei vannak a kormánynak? J.D. Vance látogatásának részletei?",
+      "answer": "Ukrajna az olajvezetéket politikai okokból zárta el a választás előtt. Nincs szükség újabb eszközre, a 90 milliárd eurós EU-hitel blokkolása elegendő nyomás. Vance látogatásról az amerikaiak kommunikálnak.",
+      "tags": [
+        "ukrajna",
+        "gáztranzit",
+        "barátság-kőolajvezeték",
+        "jd-vance",
+        "eu-finanszírozás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_07",
+      "start_time": "00:29:52",
+      "end_time": "00:30:53",
+      "reporter": "Adorján Kira",
+      "outlet": "HírTV",
+      "question": "Érkezett-e ukrán válasz a gázszállítás leállítására?",
+      "answer": "Az ukránok a sajtóban és Brüsszelen keresztül kommunikálnak. Közvetlen kommunikáció nincs, kötelezettségeinknek eleget teszünk, új szerződést nem kötünk.",
+      "tags": [
+        "ukrajna",
+        "gáztranzit",
+        "diplomácia"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_08",
+      "start_time": "00:30:57",
+      "end_time": "00:32:16",
+      "reporter": "Adorján Kira",
+      "outlet": "HírTV",
+      "question": "Panyi Szabolcs ügye egyedi eset, vagy szélesebb hálózat része? Állhat külföldi érdek a Tisza mögött?",
+      "answer": "Két kémbotrányról van szó, mindkettő a Tiszapártnál. Panyi Szabolcs idegen állam ügynökeként befolyást ígért a külügyminisztériumra egy Tisza-kormány esetén.",
+      "tags": [
+        "panyi-szabolcs",
+        "ukrán-kémkedés",
+        "tisza-párt"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_09",
+      "start_time": "00:32:17",
+      "end_time": "00:34:36",
+      "reporter": "Adorján Kira",
+      "outlet": "HírTV",
+      "question": "Lesz-e további lépés a tiszás informatikusok kémügyében? Radnai Márk drogozással kapcsolatos hangfelvételéről miért hallgatnak a Tisza politikusai?",
+      "answer": "Büntetőeljárás folyamatban van. A hangfelvételek alapján a Tisza vezetése drogos partikba jár. Magyar Péter alvásszakértővel csináltatott drogtesztet.",
+      "tags": [
+        "tisza-párt",
+        "kémkedés",
+        "drog"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_10",
+      "start_time": "00:33:51",
+      "end_time": "00:36:23",
+      "reporter": "Adorján Kira",
+      "outlet": "HírTV",
+      "question": "Szükséges-e további biztonsági intézkedés a miniszterelnök országjárásain a Tisza-szimpatizánsok provokációi miatt?",
+      "answer": "Biztonsági intézkedések hatósági feladat. Mindenkit arra kér, hogy a választási gyűléseket ne zavarják meg, az emberi méltóságot tartsák tiszteletben.",
+      "tags": [
+        "választási-kampány",
+        "biztonság",
+        "tisza-párt"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_11",
+      "start_time": "00:36:27",
+      "end_time": "00:37:24",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Az ukrán külügy szerint Magyarország milliárd dolláros bevételkieséssel jár a gáztranzit leállításával – megalapozottak ezek a számok?",
+      "answer": "Semmilyen bevételkieséssel nem számolnak, a gázt fel tudják használni vagy máshol el tudják adni.",
+      "tags": [
+        "gáztranzit",
+        "ukrajna",
+        "energiapolitika"
+      ],
+      "criticism_percent": 45,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_12",
+      "start_time": "00:37:24",
+      "end_time": "00:38:52",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Több benzinkúton bevezettek korlátozást – hogyan látja az üzemanyag-helyzetet, veszélybe kerülhetnek a kisebb kutak?",
+      "answer": "Megfelelő mennyiségű üzemanyag áll rendelkezésre, a stratégiai készlet több mint 85%-a érintetlen. A kisebb kutak kereskedelmi árrésből működnek.",
+      "tags": [
+        "üzemanyag",
+        "energiabiztonság",
+        "benzinkút"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_13",
+      "start_time": "00:38:53",
+      "end_time": "00:39:32",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Donald Tusk szerint Litvánia 2019-ben kérte Magyarország kizárását egy NATO-megbeszélésről orosz szivárogtatás miatt – tudnak erről?",
+      "answer": "Nem tudnak erről, nem lett volna indokolt, Magyarország minden szövetségesi kötelezettségének eleget tesz.",
+      "tags": [
+        "nato",
+        "litvánia",
+        "magyarország",
+        "tusk"
+      ],
+      "criticism_percent": 60,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_14",
+      "start_time": "00:39:32",
+      "end_time": "00:40:21",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Mi a különbség és hasonlóság a Fidesz és a Mi Hazánk között Lázár János kijelentése kapcsán?",
+      "answer": "Szuverenitásvédelemben hasonlóak, de az EU- és NATO-tagság meghatározó különbség a két párt között.",
+      "tags": [
+        "mi-hazánk",
+        "fidesz",
+        "szuverenitás",
+        "eu",
+        "nato"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_15",
+      "start_time": "00:40:23",
+      "end_time": "00:41:07",
+      "reporter": "Sarner Félix",
+      "outlet": "TV2",
+      "question": "Pontosan mekkora gázmennyiségről van szó, amelyet az ukrajna felé nem szállítanak majd?",
+      "answer": "Az energetikai minisztérium tud részletes tájékoztatást adni, megküldi a pontos számokat.",
+      "tags": [
+        "gáztranzit",
+        "ukrajna",
+        "energiapolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_16",
+      "start_time": "00:41:08",
+      "end_time": "00:41:59",
+      "reporter": "Sarner Félix",
+      "outlet": "TV2",
+      "question": "Trump béketervet küldött Iránnak – mit gondol erről, mit mond ez Trumpról?",
+      "answer": "Magyarország érdekelt a béke mielőbbi helyreállításában, főleg energiaár-szempontból. Örülnek minden béketörekvésnek.",
+      "tags": [
+        "trump",
+        "irán",
+        "béke",
+        "energiapolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_17",
+      "start_time": "00:41:59",
+      "end_time": "00:43:50",
+      "reporter": "Sarner Félix",
+      "outlet": "TV2",
+      "question": "Érkezett-e ukrán válasz a barátságvezeték újranyitásával kapcsolatban?",
+      "answer": "Az ukránok a sajtóban és Brüsszelen kommunikálnak. Ukrajna jogi kötelezettségét megszegi, a barátságvezeték elzárása jogellenes.",
+      "tags": [
+        "ukrajna",
+        "barátság-kőolajvezeték",
+        "diplomácia"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_18",
+      "start_time": "00:43:51",
+      "end_time": "00:44:37",
+      "reporter": "Sarner Félix",
+      "outlet": "TV2",
+      "question": "Mi a kormány álláspontja az óraátállítás esetleges eltörléséről?",
+      "answer": "Személyes vélemény szerint ha el kell törölni, a nyári időszámítás jobb. De ez nem az ország 100 legfontosabb problémájának egyike.",
+      "tags": [
+        "óraátállítás",
+        "eu"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_19",
+      "start_time": "00:44:39",
+      "end_time": "00:45:42",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Várható-e újabb ukrán állampolgár kiutasítása Magyarországról a kémbotrány után?",
+      "answer": "A hatóságok a jogszabályok szerint járnak el. Külföldi állampolgár kémkedéséért kiutasítható, sőt bíróság is kiszabhatja.",
+      "tags": [
+        "ukrán-kémkedés",
+        "kiutasítás",
+        "hatóság"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_20",
+      "start_time": "00:45:42",
+      "end_time": "00:46:34",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Mennyi gázt spórol meg Magyarország az ukrán szállítás leállításával?",
+      "answer": "A második negyedév végéig futnak ki a szerződések. A pontos mennyiséget megküldi, de nagy jelentősége nincs, mert el is adható máshol.",
+      "tags": [
+        "gáztranzit",
+        "ukrajna",
+        "energiapolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_21",
+      "start_time": "00:46:39",
+      "end_time": "00:47:06",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Elképzelhető-e, hogy J.D. Vance részt vesz egy Fidesz-kampányrendezvényen Budapesten?",
+      "answer": "Amíg az amerikaiak semmit nem osztottak meg az útjukról, addig minden elképzelhető.",
+      "tags": [
+        "jd-vance",
+        "usa",
+        "választási-kampány"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_22",
+      "start_time": "00:47:09",
+      "end_time": "00:48:00",
+      "reporter": "Osváth Sarolta",
+      "outlet": "Heti TV / Breuer Press",
+      "question": "Gondolkodik-e a kormány béketanács összehívásán az iráni békefolyamat kapcsán?",
+      "answer": "A kormány ismeri Magyarország erejét és világpolitikai nagyságrendjét, ezért nem gondolják, hogy ebben közre tudnak működni.",
+      "tags": [
+        "béke",
+        "irán",
+        "külpolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_23",
+      "start_time": "00:48:00",
+      "end_time": "00:51:07",
+      "reporter": "Osváth Sarolta",
+      "outlet": "Heti TV / Breuer Press",
+      "question": "A makrogazdasági mutatók elmaradnak a várakozástól, egyes ágazatokban (építőipar, turizmus, agrár) vészhelyzet – van-e terv a segítségre?",
+      "answer": "A védett üzemanyagár a mezőgazdaságra és fuvarozókra is kiterjed. A kárnyújtási alapokat tavaly is kifizették. A helyzet az energiahordozók árától függ.",
+      "tags": [
+        "gazdaság",
+        "energiaár",
+        "agrár",
+        "üzemanyag"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_24",
+      "start_time": "00:51:07",
+      "end_time": "00:51:33",
+      "reporter": "Osváth Sarolta",
+      "outlet": "Heti TV / Breuer Press",
+      "question": "Milyen nyári turisztikai szezonra számít, lesz-e speciális vállalkozói segítség?",
+      "answer": "Nagyon jó turisztikai szezonra számít. Budapest vonzó célpont, közbiztonság jó, a háborús térség kevés turistát küld.",
+      "tags": [
+        "turizmus",
+        "gazdaság"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_25",
+      "start_time": "00:51:33",
+      "end_time": "00:53:21",
+      "reporter": "Osváth Sarolta",
+      "outlet": "Heti TV / Breuer Press",
+      "question": "Lakók nem kapják meg a földgáz számlákat, az NVM ügyfélszolgálata szerint április ban jönnek halmozottan – tud erről a kormány?",
+      "answer": "Számlázásban változást nem vezettek be. A januári rezsikedvezmény indokolhat két havi számlát. Az NVM tud tájékoztatást adni, utánanéznek.",
+      "tags": [
+        "rezsivédelem",
+        "földgáz",
+        "számlázás",
+        "mvm"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_26",
+      "start_time": "00:53:23",
+      "end_time": "00:54:07",
+      "reporter": "Novák András",
+      "outlet": "ATV",
+      "question": "Ha csak a Mi Hazánkkal van meg a kormánytöbbség, tesznek-e ajánlatot koalícióra?",
+      "answer": "Önálló kormánytöbbségre készülnek, száz mandátum elegendő. Semmilyen koalícióról nem kell tárgyalni.",
+      "tags": [
+        "koalíció",
+        "mi-hazánk",
+        "választás"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_27",
+      "start_time": "00:54:07",
+      "end_time": "00:55:55",
+      "reporter": "Novák András",
+      "outlet": "ATV",
+      "question": "Szabó Bence nyomozó szerint a titkosszolgálatok a Tisza informatikai rendszerét akarták bedönteni – hogyan kommentálja?",
+      "answer": "A tények: két kémet külföldön képeztek ki, ukrán nagykövetségre járkáltak, lehallgatóeszközeik voltak. Az ügy a Tisza párt létrejötte előtt kezdődött.",
+      "tags": [
+        "ukrán-kémkedés",
+        "tisza-párt",
+        "kémelhárítás",
+        "szabó-bence"
+      ],
+      "criticism_percent": 70,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_28",
+      "start_time": "00:55:55",
+      "end_time": "00:56:41",
+      "reporter": "Novák András",
+      "outlet": "ATV",
+      "question": "Ha Trump katonai jelenlétet kérne a Hormuzi-szorosnál, mit mondana – ugyanazt, mint egy héttel ezelőtt?",
+      "answer": "Ugyanazt mondaná: Magyarországnak nincs haditengerészete és nincs tengere, ezért a kérdés értelmetlen.",
+      "tags": [
+        "hormuzi-szoros",
+        "trump",
+        "usa",
+        "honvédelem"
+      ],
+      "criticism_percent": 50,
+      "hostility_percent": 25
+    },
+    {
+      "id": "q_29",
+      "start_time": "00:56:41",
+      "end_time": "00:57:20",
+      "reporter": "Novák András",
+      "outlet": "ATV",
+      "question": "Volt-e személyes beszélgetés Orbán Viktorral a Hormuzi-szoros kapcsán tett kijelentéséről?",
+      "answer": "Nem volt mit megbeszélni, Orbán Viktor is elismételte ugyanazt: haditengerészet és tenger hiányában értelmetlen felvetés.",
+      "tags": [
+        "hormuzi-szoros",
+        "orbán-viktor",
+        "külpolitika"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_30",
+      "start_time": "00:57:20",
+      "end_time": "00:58:16",
+      "reporter": "Novák András",
+      "outlet": "ATV",
+      "question": "Tudják-e, melyik titkosszolgálatnak adta át Panyi Szabolcs Szijjártó telefonszámát?",
+      "answer": "Panyi saját maga mondta, hogy idegen állammal működik együtt és átadta a telefonszámot. Melyik titkosszolgálat érintett – megosztható információja nincs.",
+      "tags": [
+        "panyi-szabolcs",
+        "kémkedés",
+        "szijjártó"
+      ],
+      "criticism_percent": 55,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_31",
+      "start_time": "00:58:18",
+      "end_time": "00:59:31",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Mi a kormány álláspontja a PDSZ tervezett sztrájkjáról a NOKS-dolgozók bérrendezése ügyében?",
+      "answer": "A NOKS-dolgozók bére valóban alacsony, emelték idén is, tovább kell emelni. A PDSZ jogellenes sztrájkot hirdet kampánycélból, a bíróság várhatóan megtiltja.",
+      "tags": [
+        "pedagógus",
+        "sztrájk",
+        "pdsz",
+        "bér"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_32",
+      "start_time": "00:59:31",
+      "end_time": "01:01:05",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Panyi Szabolcs arról beszélt, hogy Orbán-Anitán keresztül befolyást gyakorolhatna a külügyminisztériumra Tisza-kormány esetén – hogyan értékeli ezt?",
+      "answer": "Idegen állam ügynöke határozná meg, ki dolgozhat a külügyminisztériumban. Botrányos, hogy Orbán-Anita még a közéletben van és a Tisza nem vonta vissza jelölését.",
+      "tags": [
+        "panyi-szabolcs",
+        "orbán-anita",
+        "tisza-párt",
+        "kémkedés"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_33",
+      "start_time": "01:01:05",
+      "end_time": "01:02:11",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Lehetségesnek tartja, hogy a Tisza más külföldi titkosszolgálatokkal is együttműködhet?",
+      "answer": "Csak azt állítja, amit bizonyítani tud: ukrán kémtevékenység kézzelfoghatóan belenyúlik a Tisza pártba és aktívan segíti azt.",
+      "tags": [
+        "tisza-párt",
+        "kémkedés",
+        "külföldi-befolyás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_34",
+      "start_time": "01:02:11",
+      "end_time": "01:03:17",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "László András kormánybiztos szerint Washington helyét Brüsszel vette át a külföldi befolyásolásban – összefügg ez az ügynökbotránnyal?",
+      "answer": "Trump-kormány alatt a Soros-hálózat átteszi székhelyét Brüsszelbe, onnan végzik ugyanazt a tevékenységet a nemzeti jobboldali kormányok ellen.",
+      "tags": [
+        "külföldi-befolyás",
+        "brüsszel",
+        "soros",
+        "szuverenitás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_35",
+      "start_time": "01:03:17",
+      "end_time": "01:04:40",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Tervezi-e a kormány, hogy az EU vezetéséhez forduljon a kémbotrány kapcsán? Miért nem szólalnak meg ezügyben?",
+      "answer": "Nemzetbiztonsági ügyek tagállami hatáskörbe tartoznak. Brüsszel kétmércés, és ha egyáltalán nem szólna, az lenne a helyes.",
+      "tags": [
+        "eu",
+        "kémkedés",
+        "brüsszel",
+        "szuverenitás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_36",
+      "start_time": "01:05:46",
+      "end_time": "01:06:30",
+      "reporter": "Sütő-Nagy Zsolt",
+      "outlet": "Magyar Hírlap",
+      "question": "Tervezi-e a kormány, hogy segítséget nyújt a hatósági ár miatt nehéz helyzetbe került vidéki kisbenzinkutaknak?",
+      "answer": "A biztonsági kőolajkészlet felszabadításával a kis benzinkutak is üzemanyaghoz juthatnak olyan áron, amely mellett a működőképességük biztosított.",
+      "tags": [
+        "benzinkút",
+        "üzemanyag",
+        "hatósági-ár",
+        "energiapolitika"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_37",
+      "start_time": "01:06:30",
+      "end_time": "01:07:31",
+      "reporter": "Sütő-Nagy Zsolt",
+      "outlet": "Magyar Hírlap",
+      "question": "Az EU elhalasztotta az orosz olaj betiltásának javaslatát – mi a véleménye erről?",
+      "answer": "Az EU e téren nem hiteles. Valószínűleg az energiahiány miatt nem akarnak most népszerűtlen döntést hozni, de szándékuk nem változott.",
+      "tags": [
+        "eu",
+        "orosz-kőolaj",
+        "szankciók",
+        "energiapolitika"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_38",
+      "start_time": "01:07:31",
+      "end_time": "01:08:42",
+      "reporter": "Sütő-Nagy Zsolt",
+      "outlet": "Magyar Hírlap",
+      "question": "Egy néppárti EP-képviselő szerint ha az Orbán-kormány nyer, az EU Bírósághoz fordulnak – elképzelhető, hogy kétségbe vonják a választások eredményét?",
+      "answer": "Nincs jelentősége, az Európai Bíróságnak nincs hatásköre ebben. A magyar választások professzionális lebonyolítását soha nem vonták kétségbe.",
+      "tags": [
+        "választás",
+        "eu",
+        "eu-bíróság",
+        "választási-rendszer"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_39",
+      "start_time": "01:08:44",
+      "end_time": "01:10:06",
+      "reporter": "Susánszki Mátyás",
+      "outlet": "Pesti Srácok",
+      "question": "A titkosítás alól feloldott dokumentumban az egyik tiszás informatikus uniós nagykövetségekkel is kapcsolatban állt – kik ezek a tagállamok?",
+      "answer": "A feloldott dokumentumon túl nem tud megosztani információt. A minősítő, azaz a szakszolgálatok tudják feloldani a titkosítást.",
+      "tags": [
+        "ukrán-kémkedés",
+        "tisza-párt",
+        "titkosszolgálat"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_40",
+      "start_time": "01:10:06",
+      "end_time": "01:11:35",
+      "reporter": "Susánszki Mátyás",
+      "outlet": "Pesti Srácok",
+      "question": "A dokumentum szerint a tiszás informatikusnak fedőneveket használó személyek adtak feladatokat – ez az, amit Szabó rendőr hozott nyilvánosságra?",
+      "answer": "Ez az eljárás része. A kémelhárítás bevonja a rendőrséget, de csak annyit oszt meg velük, amennyi az adott cselekmény elvégzéséhez szükséges.",
+      "tags": [
+        "kémelhárítás",
+        "titkosszolgálat",
+        "szabó-bence",
+        "rendőrség"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_41",
+      "start_time": "01:11:38",
+      "end_time": "01:12:14",
+      "reporter": "Kéri Barna",
+      "outlet": "RTL Híradó",
+      "question": "Ha a kémelhárítás a Tisza párt megalakulása előtt indult, figyelmeztette-e a hatóság a Tiszát, hogy kémek épültek be?",
+      "answer": "Annál nagyobb figyelmeztetés, hogy eljárás indult, alig lehetséges, ezáltal a tevékenységet be kellett fejezzék.",
+      "tags": [
+        "kémelhárítás",
+        "tisza-párt",
+        "ukrán-kémkedés"
+      ],
+      "criticism_percent": 65,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_42",
+      "start_time": "01:12:14",
+      "end_time": "01:14:37",
+      "reporter": "Kéri Barna",
+      "outlet": "RTL Híradó",
+      "question": "Ha Ukrajna a Tiszát támogatja, miért épít bele kémeket? Mit akartak meg a Tiszánál kikémkedni?",
+      "answer": "Informatikai szolgáltatást nyújtottak, használni akartak a Tiszának. Nyomozás folyik arról, mire használták az eszközöket.",
+      "tags": [
+        "ukrán-kémkedés",
+        "tisza-párt",
+        "kémkedés"
+      ],
+      "criticism_percent": 70,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_43",
+      "start_time": "01:14:37",
+      "end_time": "01:16:04",
+      "reporter": "Kéri Barna",
+      "outlet": "RTL Híradó",
+      "question": "Szabó százados szerint az NNI-lefoglalt adathordozókról a szolgálatok lemásolták az adatokat, és ezután szivárogtak ki Tisza-adatok – lehet összefüggés?",
+      "answer": "Nem. A szolgálatok a kémelhárítási ügynek megfelelően jártak el. Ha bármi szivárgott, az máshonnan szivárgott.",
+      "tags": [
+        "kémelhárítás",
+        "tisza-párt",
+        "adatszivárgás",
+        "szabó-bence"
+      ],
+      "criticism_percent": 75,
+      "hostility_percent": 25
+    },
+    {
+      "id": "q_44",
+      "start_time": "01:16:36",
+      "end_time": "01:19:10",
+      "reporter": "Kéri Barna",
+      "outlet": "RTL Híradó",
+      "question": "A kiszivárgott hangfelvétel szerint Szijjártó az orosz külügyminisztert kérte, hogy fogadjon egy szlovák politikust – ez nem beavatkozás a szlovák belpolitikába?",
+      "answer": "A 2020-as hangfelvétel nem titok, két évvel ezelőtt közleményt adtak ki. Két állam közötti kapcsolattartásban való közreműködés a diplomácia természetes része.",
+      "tags": [
+        "szijjártó",
+        "diplomácia",
+        "szlovákia",
+        "oroszország",
+        "lehallgatás"
+      ],
+      "criticism_percent": 75,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_45",
+      "start_time": "01:19:11",
+      "end_time": "01:20:24",
+      "reporter": "Kéri Barna",
+      "outlet": "RTL Híradó",
+      "question": "A szerződések lejárta után leállítják az ukrajna felé szóló gáztranzitot – rontja-e ez Magyarország megbízhatóságát?",
+      "answer": "Szerződésszerűen járnak el, hatályos szerződést nem szegnek meg. Az a partner, aki elzárva tartja a barátságvezetéket, az jár el jogellenesen.",
+      "tags": [
+        "gáztranzit",
+        "ukrajna",
+        "barátság-kőolajvezeték",
+        "szerződés"
+      ],
+      "criticism_percent": 60,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_46",
+      "start_time": "01:20:24",
+      "end_time": "01:22:36",
+      "reporter": "Kéri Barna",
+      "outlet": "RTL Híradó",
+      "question": "Matolcsy György és családja Dubajba menekíti a vagyonát az MNB-üggyel összefüggésben – mit tenne a kormány, ha vagyonkimentésről derülne ki?",
+      "answer": "A hatóságok feladata megakadályozni a vagyonkimentést. A kormánynak nincs hatása a büntetőeljárásra. Elvárás a leggyorsabb, legalaposabb, legszigorúbb eljárás.",
+      "tags": [
+        "matolcsy",
+        "mnb",
+        "vagyon",
+        "büntetőeljárás"
+      ],
+      "criticism_percent": 55,
+      "hostility_percent": 15
+    }
+  ]
+}

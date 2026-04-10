@@ -1,0 +1,329 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { outlets } from "../lib/data";
+
+function formatDuration(seconds: number): string {
+  const h = Math.floor(seconds / 3600);
+  const m = Math.floor((seconds % 3600) / 60);
+  const s = seconds % 60;
+  if (h > 0) return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+  return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+const chartOrder = [...outlets].sort((a, b) => b.avg_criticism - a.avg_criticism);
+const maxTime = Math.max(...outlets.map(o => o.total_question_time_seconds));
+---
+
+<Layout title="Médiumok">
+
+  <header class="bg-fg text-bg">
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-10 pb-9">
+      <div class="font-mono text-xs tracking-[2px] uppercase text-[#999] mb-2">Kormányinfó · Médiumok</div>
+      <h1 class="font-display text-[clamp(28px,5vw,48px)] font-black leading-tight mb-2">Médiumok</h1>
+      <p class="text-[17px] font-light text-[#bbb] max-w-150">
+        <span class="text-[#e8624e] font-semibold">{outlets.length}</span> médium statisztikái a sajtótájékoztatókról
+      </p>
+    </div>
+  </header>
+
+  <div class="max-w-300 mx-auto px-6 max-[860px]:px-4 pt-8 pb-15 flex gap-6 items-start max-[860px]:flex-col">
+
+    <!-- Sidebar: buttons on desktop, select on mobile -->
+    <aside class="w-60 shrink-0 sticky top-17 max-[860px]:static max-[860px]:w-full">
+      <!-- Desktop button list -->
+      <div class="max-[860px]:hidden flex flex-col gap-1">
+        <!-- Summary button -->
+        <button
+          id="summary-btn"
+          class="w-full text-left rounded-md px-3 py-2.5 text-sm font-medium transition-colors duration-150 flex items-center gap-2.5 cursor-pointer border border-transparent"
+        >
+          <svg class="w-2.5 h-2.5 shrink-0 text-fg3" viewBox="0 0 10 10" fill="currentColor">
+            <rect x="0" y="6" width="3" height="4"/>
+            <rect x="3.5" y="3" width="3" height="7"/>
+            <rect x="7" y="0" width="3" height="10"/>
+          </svg>
+          <span class="flex-1 font-semibold">Összehasonlítás</span>
+        </button>
+        <div class="h-px bg-border my-1"></div>
+        {outlets.map((o, i) => (
+          <button
+            class="outlet-btn w-full text-left rounded-md px-3 py-2.5 text-sm font-medium transition-colors duration-150 flex items-center gap-2.5 cursor-pointer border border-transparent"
+            data-outlet={o.id}
+            data-index={i}
+          >
+            <span
+              class="w-2.5 h-2.5 rounded-full shrink-0"
+              style={`background:${o.color}`}
+            ></span>
+            <span class="truncate flex-1">{o.name}</span>
+            <span class="font-mono text-[11px] text-fg3 shrink-0">{o.total_questions}</span>
+          </button>
+        ))}
+      </div>
+      <!-- Mobile select -->
+      <select
+        id="mobile-select"
+        class="min-[861px]:hidden w-full rounded-md border border-border bg-white px-3 py-2.5 text-sm font-medium text-fg cursor-pointer"
+      >
+        <option value="__summary__">— Összehasonlítás —</option>
+        {outlets.map((o) => (
+          <option value={o.id}>{o.name} — {o.total_questions} kérdés</option>
+        ))}
+      </select>
+    </aside>
+
+    <!-- Detail panel -->
+    <main class="flex-1 min-w-0 max-[860px]:w-full">
+
+      <!-- Summary panel -->
+      <div id="summary-detail" style="display:none">
+        <div class="bg-fg text-bg rounded-lg px-6 py-5 mb-5 flex items-center gap-4">
+          <div class="flex-1">
+            <div class="font-mono text-xs opacity-60 uppercase tracking-[2px] mb-1">Összehasonlítás</div>
+            <h2 class="font-display text-3xl font-black leading-tight">Médiumok</h2>
+          </div>
+          <div class="text-right shrink-0">
+            <div class="font-display text-[42px] font-black leading-none">{outlets.length}</div>
+            <div class="text-xs uppercase tracking-[1.5px] opacity-70 font-semibold mt-0.5">médium</div>
+          </div>
+        </div>
+
+        <!-- Avg criticism chart -->
+        <div class="bg-white border border-border rounded-lg px-5 py-4 mb-4">
+          <div class="text-[11px] uppercase tracking-[1.5px] font-semibold text-blue mb-3">Átlagos kritikusság</div>
+          <div class="flex flex-col gap-2">
+            {chartOrder.map(o => (
+              <div class="flex items-center gap-3">
+                <span class="w-28 shrink-0 text-right text-xs text-fg2 truncate" title={o.name}>{o.name}</span>
+                <div class="flex-1 h-4 bg-bg2 rounded overflow-hidden">
+                  <div
+                    class="h-full rounded transition-all"
+                    style={`width:${o.avg_criticism}%; background:${o.color}`}
+                  ></div>
+                </div>
+                <span class="font-mono text-xs text-fg2 w-10 text-right shrink-0">{o.avg_criticism.toFixed(1)}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Avg hostility chart -->
+        <div class="bg-white border border-border rounded-lg px-5 py-4 mb-4">
+          <div class="text-[11px] uppercase tracking-[1.5px] font-semibold text-accent mb-3">Átlagos ellenségesség</div>
+          <div class="flex flex-col gap-2">
+            {chartOrder.map(o => (
+              <div class="flex items-center gap-3">
+                <span class="w-28 shrink-0 text-right text-xs text-fg2 truncate" title={o.name}>{o.name}</span>
+                <div class="flex-1 h-4 bg-bg2 rounded overflow-hidden">
+                  <div
+                    class="h-full rounded transition-all"
+                    style={`width:${o.avg_hostility}%; background:${o.color}`}
+                  ></div>
+                </div>
+                <span class="font-mono text-xs text-fg2 w-10 text-right shrink-0">{o.avg_hostility.toFixed(1)}%</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Total question time chart -->
+        <div class="bg-white border border-border rounded-lg px-5 py-4">
+          <div class="text-[11px] uppercase tracking-[1.5px] font-semibold text-fg mb-3">Összes kérdésidő</div>
+          <div class="flex flex-col gap-2">
+            {chartOrder.map(o => (
+              <div class="flex items-center gap-3">
+                <span class="w-28 shrink-0 text-right text-xs text-fg2 truncate" title={o.name}>{o.name}</span>
+                <div class="flex-1 h-4 bg-bg2 rounded overflow-hidden">
+                  <div
+                    class="h-full rounded transition-all"
+                    style={`width:${(o.total_question_time_seconds / maxTime) * 100}%; background:${o.color}`}
+                  ></div>
+                </div>
+                <span class="font-mono text-xs text-fg2 w-10 text-right shrink-0">{formatDuration(o.total_question_time_seconds)}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <!-- Outlet detail panels -->
+      {outlets.map((o, i) => (
+        <div
+          class="outlet-detail min-w-0"
+          data-outlet={o.id}
+          style={i === 0 ? "" : "display:none"}
+        >
+          <!-- Outlet header -->
+          <div
+            class="rounded-lg px-6 py-5 mb-5 flex items-center gap-4"
+            style={`background:${o.color}; color:${o.text_color}`}
+          >
+            <div class="flex-1">
+              <div class="font-mono text-xs opacity-60 uppercase tracking-[2px] mb-1">Médium</div>
+              <h2 class="font-display text-3xl font-black leading-tight">{o.name}</h2>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="font-display text-[42px] font-black leading-none">{o.total_questions}</div>
+              <div class="text-xs uppercase tracking-[1.5px] opacity-70 font-semibold mt-0.5">kérdés</div>
+            </div>
+          </div>
+
+          <!-- Stats row -->
+          <div class="grid grid-cols-4 max-[540px]:grid-cols-2 gap-3 mb-5">
+            <div class="bg-white border border-border rounded-lg px-4 py-4 text-center">
+              <div class="font-display text-[28px] font-bold text-blue leading-none">{o.avg_criticism.toFixed(1)}%</div>
+              <div class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold mt-1">Átl. kritikusság</div>
+            </div>
+            <div class="bg-white border border-border rounded-lg px-4 py-4 text-center">
+              <div class="font-display text-[28px] font-bold text-accent leading-none">{o.avg_hostility.toFixed(1)}%</div>
+              <div class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold mt-1">Átl. ellenségesség</div>
+            </div>
+            <div class="bg-white border border-border rounded-lg px-4 py-4 text-center">
+              <div class="font-display text-[28px] font-bold text-fg leading-none">{o.conferences_attended}</div>
+              <div class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold mt-1">Sajtótájékoztató</div>
+            </div>
+            <div class="bg-white border border-border rounded-lg px-4 py-4 text-center">
+              <div class="font-display text-[28px] font-bold text-fg leading-none">{formatDuration(o.total_question_time_seconds)}</div>
+              <div class="text-[11px] uppercase tracking-[1px] text-fg3 font-semibold mt-1">Kérdésidő</div>
+            </div>
+          </div>
+
+          <!-- Meter bars -->
+          <div class="bg-white border border-border rounded-lg px-5 py-4 mb-5 flex flex-col gap-3">
+            <div class="flex items-center gap-3 text-sm">
+              <span class="text-fg3 w-36 shrink-0">Átl. kritikusság</span>
+              <div class="flex-1 h-2 bg-bg2 rounded-full overflow-hidden">
+                <div class="h-full rounded-full bg-blue" style={`width:${o.avg_criticism}%`}></div>
+              </div>
+              <span class="font-mono text-xs text-fg2 w-10 text-right">{o.avg_criticism.toFixed(1)}%</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm">
+              <span class="text-fg3 w-36 shrink-0">Átl. ellenségesség</span>
+              <div class="flex-1 h-2 bg-bg2 rounded-full overflow-hidden">
+                <div class="h-full rounded-full bg-accent" style={`width:${o.avg_hostility}%`}></div>
+              </div>
+              <span class="font-mono text-xs text-fg2 w-10 text-right">{o.avg_hostility.toFixed(1)}%</span>
+            </div>
+          </div>
+
+          <!-- Reporters table -->
+          {o.reporters.filter(r => r.total_questions > 0).length > 0 && (
+            <div class="bg-white border border-border rounded-lg overflow-hidden">
+              <div class="px-5 py-3.5 border-b border-border">
+                <h3 class="font-semibold text-sm">Újságírók</h3>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="bg-bg2 text-left">
+                      <th class="px-5 py-2.5 font-semibold text-[11px] uppercase tracking-[1px] text-fg3">Név</th>
+                      <th class="px-4 py-2.5 font-semibold text-[11px] uppercase tracking-[1px] text-fg3 text-right">Kérdés</th>
+                      <th class="px-4 py-2.5 font-semibold text-[11px] uppercase tracking-[1px] text-fg3 text-right max-[540px]:hidden">Kritikusság</th>
+                      <th class="px-4 py-2.5 font-semibold text-[11px] uppercase tracking-[1px] text-fg3 text-right max-[540px]:hidden">Ellenségesség</th>
+                      <th class="px-4 py-2.5 font-semibold text-[11px] uppercase tracking-[1px] text-fg3 text-right min-[541px]:hidden">Krit. / Ellen.</th>
+                      <th class="px-4 py-2.5 font-semibold text-[11px] uppercase tracking-[1px] text-fg3 text-right max-[540px]:hidden">Konf.</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {o.reporters
+                      .filter(r => r.total_questions > 0)
+                      .sort((a, b) => b.total_questions - a.total_questions)
+                      .map((r, ri) => (
+                        <tr class={ri % 2 === 0 ? "bg-white" : "bg-bg"}>
+                          <td class="px-5 py-3 font-medium">{r.name}</td>
+                          <td class="px-4 py-3 font-mono text-right text-fg2">{r.total_questions}</td>
+                          <td class="px-4 py-3 text-right max-[540px]:hidden">
+                            <span class="inline-flex items-center gap-1.5">
+                              <span class="w-12 h-1.5 bg-bg2 rounded-full overflow-hidden inline-block">
+                                <span class="h-full rounded-full bg-blue block" style={`width:${r.avg_criticism}%`}></span>
+                              </span>
+                              <span class="font-mono text-xs text-fg2">{r.avg_criticism.toFixed(1)}%</span>
+                            </span>
+                          </td>
+                          <td class="px-4 py-3 text-right max-[540px]:hidden">
+                            <span class="inline-flex items-center gap-1.5">
+                              <span class="w-12 h-1.5 bg-bg2 rounded-full overflow-hidden inline-block">
+                                <span class="h-full rounded-full bg-accent block" style={`width:${r.avg_hostility}%`}></span>
+                              </span>
+                              <span class="font-mono text-xs text-fg2">{r.avg_hostility.toFixed(1)}%</span>
+                            </span>
+                          </td>
+                          <td class="px-4 py-3 text-right min-[541px]:hidden">
+                            <span class="flex flex-col items-end gap-1">
+                              <span class="font-mono text-xs text-blue">{r.avg_criticism.toFixed(1)}%</span>
+                              <span class="font-mono text-xs text-accent">{r.avg_hostility.toFixed(1)}%</span>
+                            </span>
+                          </td>
+                          <td class="px-4 py-3 font-mono text-right text-fg3 max-[540px]:hidden">{r.conferences_attended}</td>
+                        </tr>
+                      ))
+                    }
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </div>
+      ))}
+    </main>
+  </div>
+
+</Layout>
+
+<script>
+  const btns = document.querySelectorAll<HTMLButtonElement>(".outlet-btn");
+  const details = document.querySelectorAll<HTMLElement>(".outlet-detail");
+  const mobileSelect = document.getElementById("mobile-select") as HTMLSelectElement | null;
+  const summaryBtn = document.getElementById("summary-btn") as HTMLButtonElement | null;
+  const summaryDetail = document.getElementById("summary-detail") as HTMLElement | null;
+
+  function setSummaryBtnActive(active: boolean) {
+    if (!summaryBtn) return;
+    summaryBtn.classList.toggle("bg-bg2", active);
+    summaryBtn.classList.toggle("border-border", active);
+    summaryBtn.classList.toggle("text-fg", active);
+    summaryBtn.classList.toggle("text-fg2", !active);
+    summaryBtn.classList.toggle("hover:bg-bg", !active);
+  }
+
+  function selectOutlet(id: string) {
+    if (id === "__summary__") {
+      details.forEach(d => { (d as HTMLElement).style.display = "none"; });
+      if (summaryDetail) summaryDetail.style.display = "";
+      setSummaryBtnActive(true);
+      btns.forEach(b => {
+        b.classList.remove("bg-bg2", "border-border", "text-fg");
+        b.classList.add("text-fg2", "hover:bg-bg");
+      });
+      if (mobileSelect && mobileSelect.value !== "__summary__") mobileSelect.value = "__summary__";
+      return;
+    }
+
+    if (summaryDetail) summaryDetail.style.display = "none";
+    setSummaryBtnActive(false);
+
+    btns.forEach(b => {
+      const active = b.dataset.outlet === id;
+      b.classList.toggle("bg-bg2", active);
+      b.classList.toggle("border-border", active);
+      b.classList.toggle("text-fg", active);
+      b.classList.toggle("text-fg2", !active);
+      b.classList.toggle("hover:bg-bg", !active);
+    });
+    details.forEach(d => {
+      (d as HTMLElement).style.display = d.dataset.outlet === id ? "" : "none";
+    });
+    if (mobileSelect && mobileSelect.value !== id) mobileSelect.value = id;
+  }
+
+  // Initialise first outlet active
+  if (btns.length) selectOutlet(btns[0].dataset.outlet!);
+
+  summaryBtn?.addEventListener("click", () => selectOutlet("__summary__"));
+
+  btns.forEach(btn => {
+    btn.addEventListener("click", () => selectOutlet(btn.dataset.outlet!));
+  });
+
+  mobileSelect?.addEventListener("change", () => selectOutlet(mobileSelect.value));
+</script>
