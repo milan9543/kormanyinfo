@@ -1,4 +1,4 @@
-# Kormányinfó Tracker
+# Hangnem
 
 A static website tracking Hungarian government press conferences: who asked what, from which outlet, and how critical/hostile each exchange was.
 
@@ -26,23 +26,23 @@ The script runs all steps end-to-end and pushes to `main` when done.
 
 ## Prerequisites
 
-| Requirement | Notes |
-|---|---|
-| Python 3 | `pip install -r pipeline/requirements.txt` |
-| yt-dlp | `brew install yt-dlp` |
-| whisper.cpp | Built at `/Users/milanhorvath/code/fundev/whisper.cpp` with `models/ggml-large-v3-turbo.bin` |
-| `ANTHROPIC_API_KEY` | Export in your shell before running |
+| Requirement         | Notes                                                                                        |
+| ------------------- | -------------------------------------------------------------------------------------------- |
+| Python 3            | `pip install -r pipeline/requirements.txt`                                                   |
+| yt-dlp              | `brew install yt-dlp`                                                                        |
+| whisper.cpp         | Built at `/Users/milanhorvath/code/fundev/whisper.cpp` with `models/ggml-large-v3-turbo.bin` |
+| `ANTHROPIC_API_KEY` | Export in your shell before running                                                          |
 
 ## Pipeline steps
 
-| Step | Script | What it does |
-|---|---|---|
-| 1 | `run_pipeline.sh` | Downloads mp3 via yt-dlp |
-| 2 | `run_pipeline.sh` | Transcribes mp3 → SRT via whisper.cpp |
-| 3 | `process_srt.py` | Claude API: SRT → structured conference JSON |
-| 4 | `update_entities.py` | Claude API: merges any new reporters/outlets into `base_data/outlets.json` |
-| 5 | `build_stats.py` | Rebuilds aggregated `outlets_stats.json` + `reporters.json` |
-| 6 | `run_pipeline.sh` | Commits and pushes — triggers Cloudflare Pages deploy |
+| Step | Script               | What it does                                                               |
+| ---- | -------------------- | -------------------------------------------------------------------------- |
+| 1    | `run_pipeline.sh`    | Downloads mp3 via yt-dlp                                                   |
+| 2    | `run_pipeline.sh`    | Transcribes mp3 → SRT via whisper.cpp                                      |
+| 3    | `process_srt.py`     | Claude API: SRT → structured conference JSON                               |
+| 4    | `update_entities.py` | Claude API: merges any new reporters/outlets into `base_data/outlets.json` |
+| 5    | `build_stats.py`     | Rebuilds aggregated `outlets_stats.json` + `reporters.json`                |
+| 6    | `run_pipeline.sh`    | Commits and pushes — triggers Cloudflare Pages deploy                      |
 
 Steps 1–2 are skipped automatically if the output file already exists, so you can re-run safely after a failure.
 
@@ -92,8 +92,8 @@ Every push to `main` triggers an automatic deploy.
 
 ## Cost
 
-| Service          | Cost                         |
-| ---------------- | ---------------------------- |
-| Cloudflare Pages | Free                         |
-| Claude API       | ~$1–2 per conference         |
-| Custom domain    | ~$10/year (optional)         |
+| Service          | Cost                  |
+| ---------------- | --------------------- |
+| Cloudflare Pages | Free                  |
+| Claude API       | ~$0.5 per conference  |
+| Custom domain    | ~$7.5/year (optional) |

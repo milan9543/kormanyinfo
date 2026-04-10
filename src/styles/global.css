@@ -79,7 +79,7 @@
   text-decoration: none;
   transition: color 0.15s;
 }
-.site-nav .brand { color: #fff; font-weight: 500; }
+.site-nav .brand { color: #fff; font-weight: 500; display: flex; align-items: center; gap: 8px; }
 .site-nav a:hover { color: #e8624e; }
 .site-nav .links { display: flex; gap: 24px; }
 

@@ -1,15 +1,15 @@
 ---
 import "../styles/global.css";
 interface Props { title?: string; }
-const { title = "Kormányinfó" } = Astro.props;
+const { title = "Hangnem" } = Astro.props;
 ---
 
 <html lang="hu">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="/favicon.ico" />
-    <title>{title} — Kormányinfó</title>
+    <link rel="icon" href="/info.svg" type="image/svg+xml" />
+    <title>{title} — Hangnem</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
@@ -18,7 +18,10 @@ const { title = "Kormányinfó" } = Astro.props;
   <body>
     <nav class="site-nav">
       <div class="site-nav-inner">
-        <a href="/" class="brand">Kormányinfó</a>
+        <a href="/" class="brand">
+          <img src="/info.svg" alt="" width="20" height="20" aria-hidden="true" />
+          Hangnem
+        </a>
         <div class="links">
           <a href="/">Sajtótájékoztatók</a>
           <a href="/outlets">Médiumok</a>
@@ -31,7 +34,7 @@ const { title = "Kormányinfó" } = Astro.props;
 
         <!-- Brand + nav -->
         <div class="flex items-center justify-between gap-6 max-[540px]:flex-col max-[540px]:items-start mb-8">
-          <a href="/" class="font-display text-lg font-bold text-white no-underline">Kormányinfó</a>
+          <a href="/" class="font-display text-lg font-bold text-white no-underline">Hangnem</a>
           <div class="flex gap-6">
             <a href="/" class="font-mono text-[11px] uppercase tracking-[1px] text-[#aaa] hover:text-[#e8624e] transition-colors no-underline">Sajtótájékoztatók</a>
             <a href="/outlets" class="font-mono text-[11px] uppercase tracking-[1px] text-[#aaa] hover:text-[#e8624e] transition-colors no-underline">Médiumok</a>
