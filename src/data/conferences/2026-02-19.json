@@ -1,0 +1,770 @@
+{
+  "meta": {
+    "title": "Kormányinfó",
+    "date": "2026-02-19",
+    "youtube_url": "https://www.youtube.com/watch?v=2Ryd6IxsbIw",
+    "youtube_video_id": "2Ryd6IxsbIw",
+    "duration": "",
+    "location": "Budapest"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Gulyás Gergely",
+      "role": "miniszter",
+      "position": "Miniszterelnökséget vezető miniszter"
+    }
+  ],
+  "opening_statements": [],
+  "questions": [
+    {
+      "id": "q_01",
+      "start_time": "00:02:05",
+      "end_time": "00:03:38",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Tud-e az ukrán fél tájékoztatást adni a barátságkőolajvezeték helyreállításáról?",
+      "answer": "Az ukránok folyamatosan ígérgetek (1-2 nap, február 12.), de azóta sem adtak újabb tájékoztatást; politikai döntés született a leállításról.",
+      "tags": [
+        "barátságkőolajvezeték",
+        "ukrajna",
+        "energiaellátás"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_02",
+      "start_time": "00:03:55",
+      "end_time": "00:05:02",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Leállíthatja-e Magyarország az áramexportot Ukrajna felé?",
+      "answer": "A lehetőséget vizsgálják, Szlovákiával koordinálva; a négy vezeték leállítása az egyik lehetséges válaszlépés.",
+      "tags": [
+        "ukrajna",
+        "áramexport",
+        "válaszintézkedés",
+        "energiaellátás"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_03",
+      "start_time": "00:05:02",
+      "end_time": "00:05:44",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Tervez-e a kormány benzinárkövédelmet, ha az ár 600-700 forintra emelkedik?",
+      "answer": "Egyenlőre nem látszik szükségesnek, de ha az áremelkedés indokolja, minden eszközt megfontolnak.",
+      "tags": [
+        "benzinár",
+        "üzemanyag",
+        "árkövédelem"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_04",
+      "start_time": "00:05:44",
+      "end_time": "00:07:34",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Rubio budapesti látogatásán elhangzott-e, hogy az USA nyomást gyakorol Orbánra Ukrajna EU-csatlakozása ügyében?",
+      "answer": "Nem hangzott el ilyen, és Washingtonban sem várható; Magyarország határozottan ellene van az ukrán EU-csatlakozási tárgyalások megkezdésének.",
+      "tags": [
+        "ukrajna",
+        "eu-csatlakozás",
+        "usa",
+        "rubio",
+        "béketanács"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_05",
+      "start_time": "00:07:37",
+      "end_time": "00:10:30",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Hogyan jellemzi a kampányt, illetve épít-e a Fidesz stratégiát a Magyar Péterrel kapcsolatos droggyanús videóra?",
+      "answer": "Csak két felvételt ismernek: Magyar Péter beismerése drogos buliról és a feleségéről készített felvétel; nem kampányfegyverekben gondolkodnak.",
+      "tags": [
+        "magyar-péter",
+        "tisza-párt",
+        "kampány",
+        "drog"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_06",
+      "start_time": "00:09:38",
+      "end_time": "00:10:30",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Mi a válasz a Fidesz háborúellenes MI-videójára, amelyet Magyar Péter gyomorforgatónak nevezett?",
+      "answer": "A háború borzalmas, naponta több mint ezer ember hal meg vagy válik harcképtelenné; ez a háború valósága.",
+      "tags": [
+        "háború",
+        "kampány",
+        "fidesz-videó",
+        "magyar-péter"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_07",
+      "start_time": "00:10:34",
+      "end_time": "00:12:12",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "Folytathatja-e miniszteri poszton Gulyás a munkáját Fidesz-győzelem esetén, illetve mi igaz Lázár kijelentéséről Pintér nyugdíjazásáról?",
+      "answer": "Erről nem tárgyaltak, a miniszterelnök a választások előtt nem szól ilyenről; kormányt a miniszterelnök alakít.",
+      "tags": [
+        "kormányalakítás",
+        "pintér-sándor",
+        "lázár-jános",
+        "kampány"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_08",
+      "start_time": "00:12:13",
+      "end_time": "00:15:09",
+      "reporter": "Lerch-Cserei Judit",
+      "outlet": "M1 Híradó",
+      "question": "Igaz-e, hogy a Müncheni Fórumon az ukránok tájékoztatták a Tisza pártot, hogy nem tervezik újraindítani a barátságvezetéket, mekkora drágulást hozhat az alternatív ellátás?",
+      "answer": "A Tisza párt összejátszik Ukrajnával, nyilvánosan is megígérték az orosz energiáról való leválást; az alternatív energiabeszerzés 30-100%-os drágulással járna.",
+      "tags": [
+        "barátságkőolajvezeték",
+        "ukrajna",
+        "tisza-párt",
+        "energia-drágulás",
+        "müncheni-fórum"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_09",
+      "start_time": "00:15:09",
+      "end_time": "00:21:04",
+      "reporter": "Adorján Kira",
+      "outlet": "HírTV",
+      "question": "Hogyan változik a magyar-ukrán kapcsolatrendszer a dízelszállítás leállítása után, mit szól az ukrán külügyi szóvivő drogfüggő-hasonlatához, és jelent-e nemzetbiztonsági kockázatot Magyar Péter droggyanús bulin való megjelenése?",
+      "answer": "A kapcsolatok erősen terheltek; az ukrán nyilatkozat gyáva; politikai szerepre pályázóknak nem helyes drogos partikba járni.",
+      "tags": [
+        "ukrajna",
+        "diplomácia",
+        "dízelexport",
+        "magyar-péter",
+        "drog"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_10",
+      "start_time": "00:17:53",
+      "end_time": "00:21:04",
+      "reporter": "Adorján Kira",
+      "outlet": "HírTV",
+      "question": "Mekkora jelentősége van annak, hogy Magyarország a béketanács alapítói között szerepel, és átveheti-e az ENSZ szerepét?",
+      "answer": "Nagy lehetőség, mert a szervezet célja megegyezik a magyar kormány négy éve képviselt békeálláspontjával; az ENSZ-t nem váltja fel, de hatékonyabb lehet.",
+      "tags": [
+        "béketanács",
+        "trump",
+        "ensz",
+        "béke",
+        "külpolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_11",
+      "start_time": "00:21:06",
+      "end_time": "00:28:08",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Mi volt a kormány reakciója a müncheni tájékoztatókra, mit tehet jogilag Magyarország Ukrajna ellen, és lesz-e diplomáciai megoldás a közeljövőben?",
+      "answer": "Tagjelölti státuszból eredő kötelezettségeit megsértette Ukrajna; az EB nem védi a tagállamokat; diplomáciai megoldásnak a választások előtt nincs realitása, mert Ukrajna a Tisza pártra tett.",
+      "tags": [
+        "ukrajna",
+        "barátságkőolajvezeték",
+        "jogi-lépés",
+        "diplomácia",
+        "tisza-párt"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_12",
+      "start_time": "00:27:38",
+      "end_time": "00:28:08",
+      "reporter": "Privacsek András",
+      "outlet": "Index",
+      "question": "Magyarország vállal-e pénzügyi hozzájárulást vagy békefenntartókat küld a béketanácsba?",
+      "answer": "Nem vállalt pénzügyi kötelezettséget, és nem tervez békefenntartók küldését.",
+      "tags": [
+        "béketanács",
+        "pénzügyi-kötelezettség",
+        "békefenntartó"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_13",
+      "start_time": "00:28:10",
+      "end_time": "00:29:32",
+      "reporter": "Kövesi Viktória",
+      "outlet": "TV2",
+      "question": "Hogy halad a nemzeti petíció visszaküldése, és mikor lesz a békemenet?",
+      "answer": "270 ezer felett a visszaküldött petíciók száma; a békemenet március 15-én lesz, civil szervezetek szervezik, kormány koordinál velük.",
+      "tags": [
+        "petíció",
+        "békemenet",
+        "kampány"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_14",
+      "start_time": "00:29:38",
+      "end_time": "00:32:00",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Van-e ultimátum az áram- és gázszállítás leállítására, és lehet-e büntetőjogi következménye a Tisza párt és Ukrajna összejátszásának?",
+      "answer": "Nincs konkrét ultimátum; az orosz energiáról való leválás politikai döntés, nem büntetőjogi kategória, de drágulással járna.",
+      "tags": [
+        "ukrajna",
+        "tisza-párt",
+        "energiaexport",
+        "büntetőjog"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_15",
+      "start_time": "00:32:01",
+      "end_time": "00:34:50",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Mit lépett Ukrajna a dízelszállítás leállítása óta, és mi a vélemény a DK határon túli magyarok elleni kampányáról?",
+      "answer": "Csak gyávászkodás és szitkozódás érkezett Ukrajna részéről; a DK hű magyargyűlölő hagyományaihoz.",
+      "tags": [
+        "ukrajna",
+        "dízelexport",
+        "dk",
+        "határon-túli-magyarok",
+        "kampány"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_16",
+      "start_time": "00:33:00",
+      "end_time": "00:34:50",
+      "reporter": "Kovács András",
+      "outlet": "Mandiner",
+      "question": "Szóba került-e a főváros anyagi helyzete a kormányülésen, indít-e vizsgálatot a kormány?",
+      "answer": "A főváros évek óta fenyeget csőddel, de sosem megy csődbe; a kormány törvényi garanciát adott a bérek kifizetésére.",
+      "tags": [
+        "főváros",
+        "budapest",
+        "csőd",
+        "önkormányzat"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_17",
+      "start_time": "00:35:20",
+      "end_time": "00:52:10",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Nem hiba-e, hogy Zelenszki plakáton szerepel ellenségként, miközben a vezeték-leállítás oka vitatott; nem lenne jobb Orbánnak leülni Zelenszkivel?",
+      "answer": "Tényszerű tudásuk van, hogy a barátságvezeték holnap újraindítható lenne; Zelenszky nem győzhető meg az EU-csatlakozás feladásáról, ez az alapvető nézeteltérés.",
+      "tags": [
+        "ukrajna",
+        "zelenszky",
+        "barátságkőolajvezeték",
+        "diplomácia",
+        "kampány"
+      ],
+      "criticism_percent": 65,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_18",
+      "start_time": "00:40:30",
+      "end_time": "00:43:00",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Nyilvánosságra hozzák-e azt a titkosszolgálati jelentést, amely szerint a Tisza párt ígéretet tett Ukrajnának az orosz energiáról való leválásra?",
+      "answer": "Nem kell titkos anyag: a Tisza párt nyilvánosan is többször elmondta, hogy le akar válni az orosz energiáról; Ukrajna nyíltan ellenérdekelté is nyilatkozik erről.",
+      "tags": [
+        "tisza-párt",
+        "ukrajna",
+        "energiapolitika",
+        "titkosszolgálat"
+      ],
+      "criticism_percent": 60,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_19",
+      "start_time": "00:44:59",
+      "end_time": "00:47:12",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Csúszik-e a Paks 2 beruházás a Siemens kizárása miatt, és miért dobták ki a Siemenst?",
+      "answer": "Nem csúszik; a Siemens helyett franciák vagy amerikaiak veszik át a feladatot; a Siemens részvételének akadálya a Scholz-kormány megtagadott hozzájárulása volt.",
+      "tags": [
+        "paks-2",
+        "siemens",
+        "atomenergia",
+        "beruházás"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_20",
+      "start_time": "00:47:35",
+      "end_time": "00:51:46",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Miért nem egyeztett a Magyar Orvosi Kamarával a vényírás-bővítésről?",
+      "answer": "Volt egyeztetés háziokrvasokkal, gyógyszerészekkel, most is tart a társadalmi egyeztetés; a gyógyszerészeknek van igaza, a betegbarát intézkedésről van szó.",
+      "tags": [
+        "vényírás",
+        "gyógyszerész",
+        "orvosi-kamara",
+        "egészségügy"
+      ],
+      "criticism_percent": 45,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_21",
+      "start_time": "00:51:46",
+      "end_time": "00:52:10",
+      "reporter": "Hazafi Zsolt",
+      "outlet": "ATV",
+      "question": "Mekkora esélyt ad arra, hogy Trump meglátogatja Magyarországot kampányerősítés céljából?",
+      "answer": "Lendületes a kampány így is; a látogatásra vonatkozó prognózis változatlan.",
+      "tags": [
+        "trump",
+        "kampány",
+        "usa",
+        "orbán"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_22",
+      "start_time": "00:52:10",
+      "end_time": "00:54:40",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Érkezett-e EU-reakció a barátságkőolajvezeték ügyében, és tervez-e a kormány Brüsszelhez fordulni?",
+      "answer": "Egyelőre nem érkezett reakció; természetesen fordulnak Brüsszelhez, mert Ukrajna tagjelölti kötelezettségeit sérti meg.",
+      "tags": [
+        "barátságkőolajvezeték",
+        "eu",
+        "brüsszel",
+        "ukrajna"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_23",
+      "start_time": "00:52:52",
+      "end_time": "00:56:54",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Mit szól Tal Zoltán új felvételéhez, és hogyan helyezi el a Tisza-Ukrajna összejátszás vádját?",
+      "answer": "A felvétel igazolja, hogy a Tisza pártnak titkos tervei vannak, amelyeket a választás előtt elrejtenek; Tal Zoltán nyilatkozatai bizonyítják, hogy hazudni érdem náluk.",
+      "tags": [
+        "tisza-párt",
+        "tal-zoltán",
+        "ukrajna",
+        "kampány"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_24",
+      "start_time": "00:54:36",
+      "end_time": "00:56:54",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Hogyan értékeli, hogy Magyar Péter botránynál mindig titkosszolgálati akciót emleget a Tisza párt?",
+      "answer": "Nevetségesnek tartja, főleg egy olyan pártnál, ahol természetes a magánbeszélgetések rögzítése; Magyar Péter saját feleségét vette fel.",
+      "tags": [
+        "magyar-péter",
+        "tisza-párt",
+        "titkosszolgálat",
+        "kampány"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_25",
+      "start_time": "00:55:25",
+      "end_time": "00:56:54",
+      "reporter": "Máté Patrik",
+      "outlet": "Magyar Nemzet",
+      "question": "Egy tanulmány szerint 2,5 millió forintot vesztett átlagosan egy magyar háztartás a háború miatt; hogyan változna ez a nagyobb bevonódással?",
+      "answer": "A tanulmány számításai helytállók lehetnek az ország szintjén; az energiaárak emelkedése sok ezer milliárdba kerül, de a rezsivelső 80%-nak nem kellett éreznie.",
+      "tags": [
+        "háború",
+        "energiaárak",
+        "rezsi",
+        "gazdaság"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_26",
+      "start_time": "00:56:56",
+      "end_time": "01:01:19",
+      "reporter": "Susánszki Mátyás",
+      "outlet": "Pesti Srácok",
+      "question": "Előkerült-e a kormányülésen Nagymarton kijelentése a bankokról, és mit gondol az EU keleti határok megerősítéséről szóló programjáról?",
+      "answer": "A bankok ügye nem volt napirenden; a határvédelem generális kérdés, a migráció is veszély, nem csak a háború; Oroszország nem akar Európára támadni.",
+      "tags": [
+        "bankok",
+        "határvédelem",
+        "eu",
+        "migráció",
+        "biztonságpolitika"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_27",
+      "start_time": "01:01:20",
+      "end_time": "01:02:19",
+      "reporter": "Susánszki Mátyás",
+      "outlet": "Pesti Srácok",
+      "question": "Élne-e Magyarország az EU keleti határ-megerősítési programjával?",
+      "answer": "Minden határerősítést fontosnak tartanak; a konkrét programról és részvételi kritériumokról még nem döntöttek.",
+      "tags": [
+        "határvédelem",
+        "eu",
+        "biztonságpolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_28",
+      "start_time": "01:02:21",
+      "end_time": "01:07:32",
+      "reporter": "Sarkadi-Illyés Csaba",
+      "outlet": "Economx",
+      "question": "Mikor születik döntés a széphitelkeretről, és mi volt az Orbán-Rubio sajtótájékoztatón a barátságvezeték ügye szempontjából a lehetőség?",
+      "answer": "Hétfőn várható döntés a hitelkeretről, 60 napon belül érkezhet előleg; Orbán ma találkozik Trumppal, ott is szóba hozható az ügy.",
+      "tags": [
+        "hitelkeret",
+        "eu-forrás",
+        "usa",
+        "trump",
+        "orbán",
+        "barátságkőolajvezeték"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_29",
+      "start_time": "01:04:59",
+      "end_time": "01:07:32",
+      "reporter": "Sarkadi-Illyés Csaba",
+      "outlet": "Economx",
+      "question": "Mi tartalmaz az amerikai-magyar nukleáris megállapodás, amelyet hétfőn írtak alá?",
+      "answer": "A kis atomerőművek fejlesztésében való magyar érdeklődés rögzítése; Magyarország érdekelt ezek esetleges létesítésében, ha megfelelnek a kritériumoknak.",
+      "tags": [
+        "atomenergia",
+        "usa",
+        "nukleáris-megállapodás",
+        "kis-atomerőmű"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_30",
+      "start_time": "01:06:06",
+      "end_time": "01:07:32",
+      "reporter": "Sarkadi-Illyés Csaba",
+      "outlet": "Economx",
+      "question": "Van-e bizonyíték arra, hogy Ukrajna finanszírozza az ellenzéket?",
+      "answer": "A Tisza applikációt ukrán fejlesztők készítik, ez önmagában bizonyíték; a finanszírozásnak nem csak pénzátutalás a módja.",
+      "tags": [
+        "ukrajna",
+        "tisza-párt",
+        "ellenzék-finanszírozás",
+        "applikáció"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_31",
+      "start_time": "01:06:45",
+      "end_time": "01:07:32",
+      "reporter": "Sarkadi-Illyés Csaba",
+      "outlet": "Economx",
+      "question": "Meddig csökkenhet a kőolajtartalék, mikor kell beavatkozni?",
+      "answer": "Nem kell korlátozásra számítani, mert mire szükséges lenne, az Adria-vezetéken megérkezik az orosz kőolaj.",
+      "tags": [
+        "kőolajtartalék",
+        "energiaellátás",
+        "adria-vezeték"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_32",
+      "start_time": "01:07:34",
+      "end_time": "01:13:24",
+      "reporter": "Szigeti Sándor",
+      "outlet": "Blikk",
+      "question": "Tervezi-e a kormány a Shell-szerződés felmondását, Navracics 65,3%-os egyetértéséről mit gondol, és ön hány százalékban ért egyet a Fidesz politikájával?",
+      "answer": "Magyar állam főként MOL-tól vásárol, nem Shell-től; Navracics kiemelkedő kormánytag; maga körülbelül 90%-ban ért egyet.",
+      "tags": [
+        "shell",
+        "navracics-tibor",
+        "fidesz",
+        "energiapolitika"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_33",
+      "start_time": "01:10:48",
+      "end_time": "01:16:12",
+      "reporter": "Imre Előd",
+      "outlet": "M4 Privatbankár",
+      "question": "Mekkora a MOL bevétele a dízelexportból Ukrajna felé, és ha újraindul a kőolajszállítás, azonnal újraindul-e a dízelexport?",
+      "answer": "Magyar állam fizet az olajért, nem keres rajta; ha újraindul a barátságvezeték, nincs ok a dízelkorlátozás fenntartására.",
+      "tags": [
+        "dízelexport",
+        "mol",
+        "ukrajna",
+        "barátságkőolajvezeték"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_34",
+      "start_time": "01:12:05",
+      "end_time": "01:15:39",
+      "reporter": "Imre Előd",
+      "outlet": "M4 Privatbankár",
+      "question": "Kik a Dunaújvárosi vasmű potenciális befektetői, és mi a helyzet az Alföldi TEI ügyében?",
+      "answer": "Nyílt pályázat van a vasműre, csak külföldi érdeklődők vannak; az Alföldi TEI-nél tárgyalások zajlanak, görög céggel is.",
+      "tags": [
+        "dunaújvárosi-vasmű",
+        "alföldi-tei",
+        "befektetés",
+        "ipar"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_35",
+      "start_time": "01:13:54",
+      "end_time": "01:16:12",
+      "reporter": "Imre Előd",
+      "outlet": "M4 Privatbankár",
+      "question": "Meg lesznek-e hosszabbítva a rendkívüli jogrendhez kapcsolódó rendeletek a választások után is?",
+      "answer": "A rendkívüli jogrend május közepéig tart; Fidesz-győzelem esetén csak az orosz-ukrán háború végével függne össze a megszüntetés.",
+      "tags": [
+        "rendkívüli-jogrend",
+        "kormányzás",
+        "választás"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_36",
+      "start_time": "01:15:47",
+      "end_time": "01:16:12",
+      "reporter": "Imre Előd",
+      "outlet": "M4 Privatbankár",
+      "question": "Tervezi-e a Fidesz az euró bevezetését, ha nyer?",
+      "answer": "Egyenlőre nincs napirenden; az euró bevezetése minden országban drágulással járt.",
+      "tags": [
+        "euró",
+        "gazdaságpolitika",
+        "fidesz"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_37",
+      "start_time": "01:16:16",
+      "end_time": "01:24:45",
+      "reporter": "Lengyel Tibor",
+      "outlet": "HVG",
+      "question": "Mivel vette rá a kormány a MOL-t a dízelexport leállítására, és mi a helyzet az ukrán személyek szankciós listájáról való lehúzásával?",
+      "answer": "Nincs alkú: ha nincs elég kőolaj, a MOL az exportot mondja le, nem a hazai ellátást; egyháziakat és sportolókat rendszeresen lehúznak a listáról.",
+      "tags": [
+        "mol",
+        "dízelexport",
+        "szankciók",
+        "ukrajna"
+      ],
+      "criticism_percent": 45,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_38",
+      "start_time": "01:20:12",
+      "end_time": "01:22:42",
+      "reporter": "Lengyel Tibor",
+      "outlet": "HVG",
+      "question": "Hogyan lehet jogilag a béketanács ülésén részt venni, ha a parlament még nem ratifikálta a csatlakozást?",
+      "answer": "Ez a normál eljárás: felhatalmazás, aláírás, majd parlamenti ratifikáció; ez minden nemzetközi egyezménynél így működik.",
+      "tags": [
+        "béketanács",
+        "ratifikáció",
+        "parlament",
+        "külpolitika"
+      ],
+      "criticism_percent": 55,
+      "hostility_percent": 30
+    },
+    {
+      "id": "q_39",
+      "start_time": "01:22:53",
+      "end_time": "01:24:45",
+      "reporter": "Lengyel Tibor",
+      "outlet": "HVG",
+      "question": "A Szőlő utcai ügyben a gyámhivatal jóváhagyta a fiatalkorúak házasságát; nem kellene ezeket az eljárásokat vizsgálni?",
+      "answer": "A folyamatban lévő nyomozás minden részletre kiterjed; konkrét gyámhatósági eljárásra vonatkozó kritikát is meg lehet vizsgálni.",
+      "tags": [
+        "szőlő-utca",
+        "gyámhivatal",
+        "nyomozás",
+        "kiskorú"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_40",
+      "start_time": "01:24:07",
+      "end_time": "01:24:45",
+      "reporter": "Lengyel Tibor",
+      "outlet": "HVG",
+      "question": "Változott-e a Paks 2 szerződés összege vagy kamatmértéke, és mennyit vettünk fel eddig?",
+      "answer": "A szerződés változatlan; a felvett hiteleket rögtön vissza is fizették, Oroszország felé nincs jelentős tartozás.",
+      "tags": [
+        "paks-2",
+        "hitel",
+        "atomenergia"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_41",
+      "start_time": "01:24:47",
+      "end_time": "01:28:12",
+      "reporter": "Jelinek Anna",
+      "outlet": "444",
+      "question": "Mi indokolja, hogy a Nemzetgazdasági Minisztérium ausztriai szállodában tartott meetinget, és méltányos-e, hogy a munkatársak saját pénzükből állják a foglalási büntetést?",
+      "answer": "A miniszter döntött, mindenki saját pénzéből fizette; az egyik esetben a miniszter nyilatkozott erről; a méltányosság magánviszony köztük.",
+      "tags": [
+        "nagymarton",
+        "minisztérium",
+        "meeting",
+        "közkiadás"
+      ],
+      "criticism_percent": 60,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_42",
+      "start_time": "01:28:17",
+      "end_time": "01:29:33",
+      "reporter": "Jelinek Anna",
+      "outlet": "444",
+      "question": "Hogyan lehet a putyinozás komolytalan, miközben százezrek maradnak energia nélkül orosz támadások miatt?",
+      "answer": "A miniszterelnök mondata arra vonatkozott, hogy Angela Merkel szerint is primitív butaság azzal vádolni Orbánt, hogy orosz érdekeket szolgál.",
+      "tags": [
+        "putyinozás",
+        "orbán",
+        "oroszország",
+        "angela-merkel"
+      ],
+      "criticism_percent": 65,
+      "hostility_percent": 20
+    },
+    {
+      "id": "q_43",
+      "start_time": "01:29:33",
+      "end_time": "01:31:52",
+      "reporter": "Jelinek Anna",
+      "outlet": "444",
+      "question": "Hogyan értékeli a budapesti Fidesz MI-kampányvideóját, amelyben egy magyar embert fejbe lőnek?",
+      "answer": "Még nem látta a konkrét videót; a háború borzalmainak ábrázolása a valóságban még szörnyűbb; naponta ezer ember hal meg.",
+      "tags": [
+        "kampányvideó",
+        "fidesz",
+        "háború",
+        "mesterséges-intelligencia"
+      ],
+      "criticism_percent": 55,
+      "hostility_percent": 15
+    },
+    {
+      "id": "q_44",
+      "start_time": "01:31:52",
+      "end_time": "01:37:42",
+      "reporter": "Jelinek Anna",
+      "outlet": "444",
+      "question": "Miért sorolja fel a Szőlő utcaiak és Lázár-fórumozók bűntetteit, de a miniszterelnök támogatóiét nem; és hogyan kerültek a Fideszhez a monogramok?",
+      "answer": "Ő személyhez nem köthető összesített statisztikát mondott; a büntető ítélet nyilvános adat; a Magyar Nemzetben olvasta először a monogramokat.",
+      "tags": [
+        "szőlő-utca",
+        "lázár-jános",
+        "fidesz-kommunikáció",
+        "személyiségi-jog"
+      ],
+      "criticism_percent": 70,
+      "hostility_percent": 25
+    }
+  ]
+}

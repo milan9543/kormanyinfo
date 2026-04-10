@@ -3,77 +3,157 @@
     "id": "telex",
     "name": "Telex",
     "reporters": [
-      { "id": "telex_r01", "name": "Nyilas Gergely" },
-      { "id": "telex_r02", "name": "Simor Dániel" },
-      { "id": "telex_r03", "name": "Cseke Balázs" }
+      {
+        "id": "telex_r01",
+        "name": "Nyilas Gergely"
+      },
+      {
+        "id": "telex_r02",
+        "name": "Simor Dániel"
+      },
+      {
+        "id": "telex_r03",
+        "name": "Cseke Balázs"
+      }
     ]
   },
   {
     "id": "atv",
     "name": "ATV",
     "reporters": [
-      { "id": "atv_r01", "name": "Hazafi Zsolt" },
-      { "id": "atv_r02", "name": "Novák András" }
+      {
+        "id": "atv_r01",
+        "name": "Hazafi Zsolt"
+      },
+      {
+        "id": "atv_r02",
+        "name": "Novák András"
+      }
     ]
   },
   {
     "id": "rtl",
     "name": "RTL Híradó",
     "reporters": [
-      { "id": "rtl_r01", "name": "Kéri Barna" },
-      { "id": "rtl_r02", "name": "Szondi Vanda" }
+      {
+        "id": "rtl_r01",
+        "name": "Kéri Barna"
+      },
+      {
+        "id": "rtl_r02",
+        "name": "Szondi Vanda"
+      }
     ]
   },
   {
     "id": "index",
     "name": "Index",
     "reporters": [
-      { "id": "index_r01", "name": "Mucsi Viktor" },
-      { "id": "index_r02", "name": "Privacsek András" },
-      { "id": "index_r03", "name": "Szabó Gyula" }
+      {
+        "id": "index_r01",
+        "name": "Mucsi Viktor"
+      },
+      {
+        "id": "index_r02",
+        "name": "Privacsek András"
+      },
+      {
+        "id": "index_r03",
+        "name": "Szabó Gyula"
+      }
     ]
   },
   {
     "id": "magyar_nemzet",
     "name": "Magyar Nemzet",
-    "reporters": [{ "id": "magyar_nemzet_r01", "name": "Máté Patrik" }]
+    "reporters": [
+      {
+        "id": "magyar_nemzet_r01",
+        "name": "Máté Patrik"
+      }
+    ]
   },
   {
     "id": "tv2",
     "name": "TV2",
     "reporters": [
-      { "id": "tv2_r01", "name": "Micheller Tamás" },
-      { "id": "tv2_r02", "name": "Sarner Félix" },
-      { "id": "tv2_r03", "name": "Milák Betina" }
+      {
+        "id": "tv2_r01",
+        "name": "Micheller Tamás"
+      },
+      {
+        "id": "tv2_r02",
+        "name": "Sarner Félix"
+      },
+      {
+        "id": "tv2_r03",
+        "name": "Milák Betina"
+      },
+      {
+        "id": "tv2_r04",
+        "name": "Kövesi Viktória"
+      }
     ]
   },
   {
     "id": "kozmedia",
     "name": "Közmédia",
-    "reporters": [{ "id": "kozmedia_r01", "name": "Csuhaj Ildikó" }]
+    "reporters": [
+      {
+        "id": "kozmedia_r01",
+        "name": "Csuhaj Ildikó"
+      }
+    ]
   },
   {
     "id": "hirtv",
     "name": "HírTV",
     "reporters": [
-      { "id": "hirtv_r01", "name": "Hejter Dávid" },
-      { "id": "hirtv_r02", "name": "Adorján Kira" },
-      { "id": "hirtv_r03", "name": "Szabó Réka" }
+      {
+        "id": "hirtv_r01",
+        "name": "Hejter Dávid"
+      },
+      {
+        "id": "hirtv_r02",
+        "name": "Adorján Kira"
+      },
+      {
+        "id": "hirtv_r03",
+        "name": "Szabó Réka"
+      }
     ]
   },
   {
     "id": "blikk",
     "name": "Blikk",
     "reporters": [
-      { "id": "blikk_r01", "name": "Vajta Zoltán" },
-      { "id": "blikk_r02", "name": "Őri Panna" },
-      { "id": "blikk_r03", "name": "Szigeti Sándor" }
+      {
+        "id": "blikk_r01",
+        "name": "Vajta Zoltán"
+      },
+      {
+        "id": "blikk_r02",
+        "name": "Őri Panna"
+      },
+      {
+        "id": "blikk_r03",
+        "name": "Szigeti Sándor"
+      }
     ]
   },
   {
     "id": "444",
     "name": "444",
-    "reporters": [{ "id": "444_r01", "name": "Herczeg Márk" }]
+    "reporters": [
+      {
+        "id": "444_r01",
+        "name": "Herczeg Márk"
+      },
+      {
+        "id": "444_r02",
+        "name": "Jelinek Anna"
+      }
+    ]
   },
   {
     "id": "pesti_sracok",
@@ -88,7 +168,12 @@
   {
     "id": "economx",
     "name": "Economx",
-    "reporters": [{ "id": "economx_r01", "name": "Sarkadi-Illyés Csaba" }]
+    "reporters": [
+      {
+        "id": "economx_r01",
+        "name": "Sarkadi-Illyés Csaba"
+      }
+    ]
   },
   {
     "id": "magyar_hirlap",
@@ -117,32 +202,66 @@
   {
     "id": "m1",
     "name": "M1 Híradó",
-    "aliases": ["M1"],
+    "aliases": [
+      "M1"
+    ],
     "reporters": [
       {
         "id": "m1_r01",
         "name": "Lerch-Cserei Judit"
       },
-      { "id": "m1_r02", "name": "Mészáros László" },
-      { "id": "m1_r03", "name": "Lantos Csaba" }
+      {
+        "id": "m1_r02",
+        "name": "Mészáros László"
+      },
+      {
+        "id": "m1_r03",
+        "name": "Lantos Csaba"
+      }
     ]
   },
   {
     "id": "mandiner",
     "name": "Mandiner",
-    "reporters": [{ "id": "mandiner_r01", "name": "Kovács András" }]
+    "reporters": [
+      {
+        "id": "mandiner_r01",
+        "name": "Kovács András"
+      }
+    ]
   },
   {
     "id": "hvg",
     "name": "HVG",
     "reporters": [
-      { "id": "hvg_r01", "name": "Lengyel Tibor" },
-      { "id": "hvg_r02", "name": "Galicza Dorina" }
+      {
+        "id": "hvg_r01",
+        "name": "Lengyel Tibor"
+      },
+      {
+        "id": "hvg_r02",
+        "name": "Galicza Dorina"
+      }
     ]
   },
   {
     "id": "partizan",
     "name": "Partizán",
-    "reporters": [{ "id": "partizan_r01", "name": "Sarkadi Zsolt" }]
+    "reporters": [
+      {
+        "id": "partizan_r01",
+        "name": "Sarkadi Zsolt"
+      }
+    ]
+  },
+  {
+    "id": "m4_privatbankar",
+    "name": "M4 Privatbankár",
+    "reporters": []
+  },
+  {
+    "id": "ismeretlen",
+    "name": "ismeretlen",
+    "reporters": []
   }
 ]
