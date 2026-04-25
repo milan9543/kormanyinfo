@@ -12,9 +12,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.0.8",
     "chart.js": "^4.5.1",
+    "satori": "^0.26.0",
     "tailwindcss": "^4.2.2"
   }
 }
