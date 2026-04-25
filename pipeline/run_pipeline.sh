@@ -82,7 +82,7 @@ fi
 # ---------------------------------------------------------------------------
 echo ""
 echo "=== Step 3: Processing SRT → conference JSON ==="
-python pipeline/process_srt.py "$SRT_PATH"
+python pipeline/process_srt_generic.py "$SRT_PATH"
 
 # ---------------------------------------------------------------------------
 # Step 4: Merge any new reporters/outlets into base_data/outlets.json

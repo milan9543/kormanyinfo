@@ -47,7 +47,8 @@ function timeAgo(dateStr: string): string {
       const avgHost = avg(hosts);
       const outlets = [...new Set(conf.questions.map(q => q.outlet))];
       const maxCrit = crits.length ? Math.max(...crits) : 0;
-      const speaker = conf.speakers.find(s => s.role === "miniszter")?.name;
+      const speakerObj = conf.speakers.find(s => s.role === "miniszter") ?? conf.speakers[0];
+      const speaker = speakerObj?.name;
 
       return (
         <a
@@ -58,15 +59,22 @@ function timeAgo(dateStr: string): string {
           <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
 
             <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2.5 mb-1.5">
-                <h2 class="font-mono text-[22px] font-bold leading-none tracking-tight">{conf.meta.date}</h2>
-                <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-bg2 text-fg3 leading-none">{timeAgo(conf.meta.date)}</span>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="font-mono text-[11px] text-fg3">{conf.meta.date.replace(/-/g, ". ")}</span>
+                <span class="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-bg2 text-fg3 leading-none">{timeAgo(conf.meta.date)}</span>
+                {conf.meta.location && <span class="text-[11px] text-fg3">· {conf.meta.location}</span>}
               </div>
-              <div class="text-[13px] text-fg3 leading-snug">
-                {conf.meta.title}
-                {speaker && <> · <span class="text-fg2">{speaker}</span></>}
-                {conf.meta.location && <> · {conf.meta.location}</>}
-              </div>
+              <h2 class="font-display text-[22px] font-bold leading-tight tracking-[-0.3px] text-fg mb-2">{conf.meta.title}</h2>
+              {speaker && (
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0">
+                    <span class="font-display font-black text-white text-[9px]">
+                      {speaker.split(" ").map((w: string) => w[0]).join("").slice(0, 2)}
+                    </span>
+                  </div>
+                  <span class="font-display text-[15px] font-bold text-fg2">{speaker}</span>
+                </div>
+              )}
             </div>
 
             <div class="flex items-center gap-5 shrink-0 max-[600px]:gap-6">

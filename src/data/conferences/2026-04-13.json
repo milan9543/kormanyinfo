@@ -1,0 +1,788 @@
+{
+  "meta": {
+    "title": "Nemzetközi sajtótájékoztató",
+    "date": "2026-04-13",
+    "youtube_url": "https://www.youtube.com/watch?v=6WvjfTsBlZ4",
+    "youtube_video_id": "6WvjfTsBlZ4",
+    "duration": "03:08:17",
+    "location": "Budapest"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Magyar Péter",
+      "role": "Tisza párt elnöke, miniszterelnök-jelölt",
+      "position": "ellenzéki pártelnök"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:11:19",
+      "end_time": "00:45:28",
+      "summary": "Magyar Péter bejelentette a Tisza győzelmét a választásokon (138-141 mandátum, ~3,3 millió szavazat), kétharmados felhatalmazást kaptak. Felszólította Sulyok Tamás köztársasági elnököt lemondásra, gyors alakuló ülést és kormányalakítási megbízást kért. Orbán propagandagépezetét, iratmegsemmisítést és titkos szerződéseket emelt ki. Vázolta az EU-val való konstruktív együttműködési szándékot, a béke melletti elkötelezettséget, a korrupcióellenes és jogállami reformokat, és a Tisza kormányzási elveit.",
+      "tags": [
+        "választási-eredmény",
+        "kétharmad",
+        "tisza",
+        "rendszerváltás",
+        "korrupcióellenes",
+        "eu",
+        "nato",
+        "béke",
+        "jogállam",
+        "kormányalakítás",
+        "sulyok-tamás"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "start_time": "00:47:17",
+      "end_time": "00:47:55",
+      "reporter": "Itzés Ambrus",
+      "outlet": "Partizán",
+      "question": "Ha Sulyok nem mond le, milyen konkrét lépésekkel éri el a távozását?",
+      "answer": "Kétharmados felhatalmazással az alaptörvény módosítható, de inkább maradék méltóságából lemondást remél tőle.",
+      "tags": [
+        "sulyok-tamás",
+        "köztársasági-elnök",
+        "lemondás",
+        "kétharmad",
+        "alaptörvény"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_02",
+      "start_time": "00:47:37",
+      "end_time": "00:53:28",
+      "reporter": "Itzés Ambrus",
+      "outlet": "Partizán",
+      "question": "Miniszterelnökként mikor indul először újra országjárásra?",
+      "answer": "A 30 napos kormányalakítás után folytatja az emberek közötti jelenlétet, akár nyilvános kormányüléseket is tervez.",
+      "tags": [
+        "országjárás",
+        "kormányalakítás",
+        "részvételiség",
+        "miniszterelnök"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_03",
+      "start_time": "00:53:48",
+      "end_time": "00:57:05",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "Bejelenti-e, hogy Orbán Viktor nem lesz többé miniszterelnök, és ő maga is csak két ciklusig marad?",
+      "answer": "Igen, az alaptörvénybe kerül a 8 éves korlát, ami Orbánra is vonatkozik, aki így nem lehet újra miniszterelnök.",
+      "tags": [
+        "miniszterelnöki-ciklus",
+        "alaptörvény",
+        "orbán-viktor",
+        "kétharmad"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_04",
+      "start_time": "00:54:54",
+      "end_time": "01:04:56",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "Mit tud elmondani a kormány minisztériumi szerkezetéről és a leendő miniszterekről?",
+      "answer": "Szakminisztériumok lesznek csúcsminisztériumok helyett, néhány név ismert (Kármán András, Hegedűs Zsolt), heteken belül bemutatják őket.",
+      "tags": [
+        "kormányszerkezet",
+        "miniszterek",
+        "szakminisztérium",
+        "tisza-kormány"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_05",
+      "start_time": "00:58:53",
+      "end_time": "01:04:56",
+      "reporter": "Horváth Csaba László",
+      "outlet": "24.hu",
+      "question": "Melyek az első korrupcióellenes intézkedések, mikor áll fel a Vagyonvisszaszerzési Hivatal és mi lesz az első ügyek köre?",
+      "answer": "Júniusban felállhat a hivatal, nyomozati jogkörrel; első ügyek: Nemzeti Bank, autópálya-koncessziók, Paks, MET, közbeszerzések és egyéb vagyon-átruházások.",
+      "tags": [
+        "korrupcióellenes",
+        "vagyonvisszaszerzés",
+        "hivatal",
+        "európai-ügyészség",
+        "rendőrség",
+        "ügyészség"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_06",
+      "start_time": "01:05:43",
+      "end_time": "01:09:12",
+      "reporter": "Simár Dánia",
+      "outlet": "Telex",
+      "question": "Hogyan zajlott az Orbán Viktor-telefonbeszélgetés tegnap?",
+      "answer": "Gulyás Gergely közvetítésével zajlott, rövid volt; Magyar köszönetet mondott, közös felelősséget említett, Orbán jó éjszakával zárta.",
+      "tags": [
+        "orbán-viktor",
+        "telefonbeszélgetés",
+        "kormányváltás",
+        "átadás-átvétel"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_07",
+      "start_time": "01:07:24",
+      "end_time": "01:13:20",
+      "reporter": "Simár Dánia",
+      "outlet": "Telex",
+      "question": "Miért hagyta ki Varga Mihály MNB-elnököt a lemondásra felszólítottak köréből?",
+      "answer": "Nehéz gazdasági helyzetben fontos az együttműködés a jegybank és a kormány között; ha törvényesen dolgozik, nem kell konfliktus.",
+      "tags": [
+        "varga-mihály",
+        "mnb",
+        "jegybank",
+        "gazdaságpolitika",
+        "kormányváltás"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_08",
+      "start_time": "01:10:02",
+      "end_time": "01:13:20",
+      "reporter": "Magyar Jó",
+      "outlet": "RTL Híradó",
+      "question": "Honnan származik a Szijártó-darálásra vonatkozó információ, van-e rá bizonyíték?",
+      "answer": "Megbízható belső forrástól; sokan osztanak meg információkat a minisztériumokban zajló bűncselekményekről.",
+      "tags": [
+        "szijártó-péter",
+        "iratmegsemmisítés",
+        "külügyminisztérium",
+        "belső-forrás"
+      ],
+      "criticism_percent": 30,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_09",
+      "start_time": "01:13:01",
+      "end_time": "01:16:03",
+      "reporter": "Magyar Jó",
+      "outlet": "RTL Híradó",
+      "question": "Mi a terv az orosz olajjal, le tud-e válni Magyarország?",
+      "answer": "Diverzifikáció a cél biztonsági és gazdasági okokból, de a földrajzot nem lehet felülírni; a háború végével a szankciók is oldódhatnak.",
+      "tags": [
+        "orosz-olaj",
+        "energiadiverzifikáció",
+        "energiabiztonság",
+        "szankciók"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_10",
+      "start_time": "01:17:01",
+      "end_time": "01:20:16",
+      "reporter": "Jacek Tadszik",
+      "outlet": "TVN (Lengyelország)",
+      "question": "Van-e dátum a varsói látogatásra, és találkozik-e az Orbánt támogató lengyel elnökkel?",
+      "answer": "Május elején várható varsói látogatás Tusk meghívására; a lengyel elnökkel is szívesen találkozna, bár gratuláció nem érkezett tőle.",
+      "tags": ["lengyelország", "varsó", "tusk", "külpolitika", "diplomácia"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_11",
+      "start_time": "01:19:00",
+      "end_time": "01:20:16",
+      "reporter": "Jacek Tadszik",
+      "outlet": "TVN (Lengyelország)",
+      "question": "Mikor adják ki Lengyelországnak Romanowskit és Zsibrót?",
+      "answer": "Magyarország nem lesz körözött bűnözők menedéke; megtalálják a módját a kiadásnak, ha még Budapesten vannak.",
+      "tags": [
+        "romanowski",
+        "zsibro",
+        "kiadatás",
+        "lengyelország",
+        "menedék",
+        "bűnüldözés"
+      ],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_12",
+      "start_time": "01:21:11",
+      "end_time": "01:22:56",
+      "reporter": "Paul Krissaj",
+      "outlet": "Osztrák köztévé (ORF)",
+      "question": "Milyen kapcsolatot tervez Ausztriával és a közép-európai együttműködéssel?",
+      "answer": "Szoros osztrák-magyar kapcsolatot és bővített V4 együttműködést szeretne, Ausztriával, Szlovéniával, Horvátországgal.",
+      "tags": [
+        "ausztria",
+        "visegrádi-négyek",
+        "közép-európa",
+        "külpolitika",
+        "együttműködés"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_13",
+      "start_time": "01:22:57",
+      "end_time": "01:25:32",
+      "reporter": "Paul Krissaj",
+      "outlet": "Osztrák köztévé (ORF)",
+      "question": "Mi a véleménye az Ukrajna számára tervezett 90 milliárdos hitelről?",
+      "answer": "Magyarország decemberi opt-outja érvényes, Orbán álláspontváltoztatásait bírálta, Ukrajna gyorsított EU-csatlakozását nem támogatja.",
+      "tags": ["ukrajna", "eu-hitel", "opt-out", "orbán", "eu-csatlakozás"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_14",
+      "start_time": "01:26:46",
+      "end_time": "01:28:00",
+      "reporter": "Facsar Fanni",
+      "outlet": "Deutsche Welle (DW)",
+      "question": "Visszavonja-e Magyarország ICC-kilépési folyamatát és felülvizsgálja-e Izraellel való kapcsolatot?",
+      "answer": "ICC-tagságot visszaállítják; Izraellel pragmatikus viszony, antiszemitizmus-ellenes politika, EU-döntéseket esetenként vizsgálják.",
+      "tags": ["icc", "izrael", "külpolitika", "antiszemitizmus", "eu"],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_15",
+      "start_time": "01:28:00",
+      "end_time": "01:30:09",
+      "reporter": "Facsar Fanni",
+      "outlet": "Deutsche Welle (DW)",
+      "question": "Milyen lesz Magyarország és Németország, illetve Merz kancellár kapcsolata?",
+      "answer": "Merz meghívta Berlinbe; szoros politikai kapcsolatot szeretne, külföldi befektetőknek egyenlő feltételeket biztosítanának.",
+      "tags": ["németország", "merz", "befektetők", "külpolitika", "gazdaság"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_16",
+      "start_time": "01:31:05",
+      "end_time": "01:33:02",
+      "reporter": "Katja Adler",
+      "outlet": "BBC",
+      "question": "Mit várhat tőle a világ – milyen elvek mentén fog kormányozni?",
+      "answer": "Jogállam, emberi jogok, megbízható EU/NATO-partner, kőkeményen képviseli a magyar érdekeket, de őszintén kommunikál.",
+      "tags": ["jogállam", "külpolitika", "nato", "eu", "emberi-jogok"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_17",
+      "start_time": "01:32:31",
+      "end_time": "01:33:02",
+      "reporter": "Katja Adler",
+      "outlet": "BBC",
+      "question": "Egyértelmű választ kér: feloldja-e a magyar vétót az ukrajnai hitel ügyében?",
+      "answer": "Magyarország kimarad az elfogadott döntés alapján, ez változatlan marad.",
+      "tags": ["ukrajna", "eu-hitel", "vétó", "opt-out"],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_18",
+      "start_time": "01:33:40",
+      "end_time": "01:36:13",
+      "reporter": "Iva Bennett",
+      "outlet": "Sky News",
+      "question": "Orbán Viktor börtönbe kerülhet-e a korrupció miatt?",
+      "answer": "Nem politikus feladata ítélkezni; igazságszolgáltatás függetlenségét biztosítják, Mészáros vagyonszerzése valószínűleg nem legális.",
+      "tags": [
+        "korrupció",
+        "orbán",
+        "igazságszolgáltatás",
+        "mészáros",
+        "jogállam"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_19",
+      "start_time": "01:36:19",
+      "end_time": "01:37:59",
+      "reporter": "Iva Bennett",
+      "outlet": "Sky News",
+      "question": "Milyen viszonyt alakít ki Putyinnal, beszél-e vele?",
+      "answer": "Pragmatikus viszony Oroszországgal; ha Putyin hív, felveszi – háború befejezését kérné tőle.",
+      "tags": ["oroszország", "putyin", "külpolitika", "ukrajna", "háború"],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_20",
+      "start_time": "01:39:12",
+      "end_time": "01:40:48",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "Kyiv Independent",
+      "question": "Konkrétan miben lesz más a TISZA Ukrajna-politikája a Fidesz oroszbarát politikájánál?",
+      "answer": "Minden szomszédos országgal szövetségesi viszonyt épít; Ukrajna az áldozat, a kárpátaljai magyar kisebbség jogainak rendezése előfeltétel.",
+      "tags": ["ukrajna", "külpolitika", "kisebbségek", "kárpátalja", "eu"],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_21",
+      "start_time": "01:40:49",
+      "end_time": "01:43:40",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "Kyiv Independent",
+      "question": "Milyen békét lát reálisnak Ukrajnában Trump nyomásgyakorlása mellett?",
+      "answer": "Ukrajna területi integritáshoz joga van; erős nemzetközi garanciák kellenek, Budapest-memorandum kudarca tanulság.",
+      "tags": [
+        "ukrajna",
+        "béke",
+        "trump",
+        "területi-integritás",
+        "budapest-memorandum"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_22",
+      "start_time": "01:44:28",
+      "end_time": "01:46:09",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "Bloomberg",
+      "question": "Mikor és hogyan csatlakozna Magyarország az euróövezethez?",
+      "answer": "Először szakmai egyeztetés, majd döntés; 2030-2031 körüli dátum lehetséges, maastrichti kritériumok betartásával.",
+      "tags": ["eurozóna", "gazdaság", "maastricht", "költségvetés"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_23",
+      "start_time": "01:46:14",
+      "end_time": "01:48:21",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "Bloomberg",
+      "question": "Mikor oldják fel a befagyasztott 20 milliárd eurós uniós forrást?",
+      "answer": "Négy területen vállalnak reformot (antikorrupció, igazságszolgáltatás, sajtószabadság, akadémiai szabadság); minél gyorsabb feloldást szeretnének.",
+      "tags": [
+        "eu-források",
+        "antikorrupció",
+        "sajtószabadság",
+        "igazságszolgáltatás",
+        "akadémiai-szabadság"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_24",
+      "start_time": "01:48:15",
+      "end_time": "01:49:07",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "Bloomberg",
+      "question": "Orbán blokkolta a 90 milliárdos hitelt annak ellenére, hogy Magyarország nem vesz részt – változtatnak-e ezen?",
+      "answer": "Ez meghozott döntés, Magyarország kimarad; Orbán ügyvezető, egyeztet majd az uniós vezetőkkel.",
+      "tags": ["ukrajna", "eu-hitel", "vétó", "orbán", "eu"],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_25",
+      "start_time": "01:49:56",
+      "end_time": "01:52:11",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "TVP / TVN (lengyel közszolgálati)",
+      "question": "Konkrétan milyen területeken mélyíti el a lengyel-magyar együttműködést?",
+      "answer": "Infrastruktúra, gazdaság, kulturális intézetek fejlesztése; erős V4 és magyar-lengyel szövetség a cél.",
+      "tags": [
+        "lengyelország",
+        "visegrádi-négyek",
+        "együttműködés",
+        "infrastruktúra",
+        "külpolitika"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_26",
+      "start_time": "01:52:16",
+      "end_time": "01:53:31",
+      "reporter": "ismeretlen újságíró",
+      "outlet": "TVP / TVN (lengyel közszolgálati)",
+      "question": "Tervezi-e Trump felhívását a győzelem után?",
+      "answer": "Nem fogja felhívni Trumpot, de fogadja az amerikai kezdeményezést; október 23-án világvezetőket vár Budapestre.",
+      "tags": ["trump", "usa", "külpolitika", "nato", "1956"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_27",
+      "start_time": "01:54:20",
+      "end_time": "01:57:58",
+      "reporter": "Melisabelle",
+      "outlet": "CNN",
+      "question": "Mit jelent Orbán globális populista vezető szerepének elvesztése?",
+      "answer": "Nagy vereség a populista mozgalomnak; Orbán mindig valaki ellen harcolt ahelyett, hogy a magyar emberek életét javította volna.",
+      "tags": ["populizmus", "orbán", "külpolitika", "eu", "választás"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_28",
+      "start_time": "01:57:59",
+      "end_time": "01:58:49",
+      "reporter": "Melisabelle",
+      "outlet": "CNN",
+      "question": "Az MCC és hasonló think tank-ek kapnak-e továbbra is állami finanszírozást?",
+      "answer": "Nem finanszírozzák állami pénzből; a pártfinanszírozás és költségvetési kiadások összekeverése bűncselekmény volt, ki fogják vizsgálni.",
+      "tags": [
+        "mcc",
+        "állami-finanszírozás",
+        "korrupció",
+        "pártfinanszírozás",
+        "oktatás"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_29",
+      "start_time": "02:00:06",
+      "end_time": "02:05:33",
+      "reporter": "Terekai",
+      "outlet": "France 24",
+      "question": "Milyen hatása van a tegnapi eseményeknek az európai szélsőjobb előretörésére?",
+      "answer": "A szélsőségek erősödésének valódi okait kell keresni; európai vezetőknek közvetlenül kell kommunikálni az emberekkel, nem seb tapaszokat alkalmazni.",
+      "tags": [
+        "szélsőjobb",
+        "európai-politika",
+        "populizmus",
+        "migráció",
+        "eu"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_30",
+      "start_time": "02:05:57",
+      "end_time": "02:07:33",
+      "reporter": "Terekai",
+      "outlet": "France 24",
+      "question": "Oroszország biztonsági kockázatot jelent-e Európának?",
+      "answer": "Igen, biztonsági kockázat; Szijjártó NATO-érzékeny adatokat adott át oroszoknak, ez elfogadhatatlan volt.",
+      "tags": ["oroszország", "biztonság", "nato", "szijjártó", "külpolitika"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_31",
+      "start_time": "02:08:24",
+      "end_time": "02:13:26",
+      "reporter": "Duszomla Genović",
+      "outlet": "N1 / CNN társult Szerbia",
+      "question": "Kivizsgálják-e Vucic és Orbán állítólagos hamis zászlós műveletét, és hogyan alakítja a szerb-magyar kapcsolatokat?",
+      "answer": "A húsvéti gázvezeték-incidenst kivizsgálják; Szerbiával jó kapcsolatot tart fenn a vajdasági magyarok miatt, de nem szól bele belügyeikbe.",
+      "tags": [
+        "szerbia",
+        "vucic",
+        "orbán",
+        "hamis-zászlós",
+        "kisebbségek",
+        "vajdaság"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_32",
+      "start_time": "02:14:21",
+      "end_time": "02:16:08",
+      "reporter": "Andrea Borboros",
+      "outlet": "CNN România",
+      "question": "Miért mondja, hogy Orbán elárulta az erdélyi magyarokat Simeon támogatásával?",
+      "answer": "Simeon magyar sírokat gyalázott, ezért magyar miniszterelnök nem támogathatja. Orbán mégis megtette, ez árulás volt.",
+      "tags": ["erdélyi-magyarok", "románia", "orbán", "simeon", "külpolitika"],
+      "criticism_percent": 20,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_33",
+      "start_time": "02:16:08",
+      "end_time": "02:17:45",
+      "reporter": "Andrea Borboros",
+      "outlet": "CNN România",
+      "question": "Van üzenete a romániai magyaroknak?",
+      "answer": "Mindenben támogatja a határon túli magyarokat, nem sértődős, Kelemen Hunorral hamarosan beszél.",
+      "tags": ["határon-túli-magyarok", "románia", "rmdsz", "kelemen-hunor"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_34",
+      "start_time": "02:17:45",
+      "end_time": "02:18:36",
+      "reporter": "Andrea Borboros",
+      "outlet": "CNN România",
+      "question": "Mik a tervei a román-magyar politikai és gazdasági kapcsolatokra, RMDSZ-szel?",
+      "answer": "Javítani szeretné a román-magyar gazdasági és kulturális kapcsolatokat, akár V8-as együttműködéssel Románia bevonásával.",
+      "tags": [
+        "román-magyar-kapcsolatok",
+        "gazdaság",
+        "v4",
+        "rmdsz",
+        "együttműködés"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_35",
+      "start_time": "02:19:13",
+      "end_time": "02:21:29",
+      "reporter": "Tom Kington",
+      "outlet": "The Times",
+      "question": "Mik a tervei az EU napi 1 millió eurós menedékügyi büntetésével kapcsolatban?",
+      "answer": "Más országok megoldották az uniós jog betartását illegális migráció nélkül. Magyarország is megoldja, megszünteti a bírságfizetést.",
+      "tags": ["migráció", "eu-bírság", "menekültügy", "határvédelem", "orbán"],
+      "criticism_percent": 20,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_36",
+      "start_time": "02:22:06",
+      "end_time": "02:23:06",
+      "reporter": "ismeretlen",
+      "outlet": "Rusztavi (Grúzia)",
+      "question": "Folytatják-e a grúz-magyar stratégiai együttműködést?",
+      "answer": "Nem rontanak le semmilyen meglévő kapcsolatot. Nyitottak az együttműködésre, nem szólnak bele más ország belügyeibe.",
+      "tags": [
+        "grúzia",
+        "külpolitika",
+        "kétoldalú-kapcsolatok",
+        "együttműködés"
+      ],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_37",
+      "start_time": "02:24:44",
+      "end_time": "02:26:05",
+      "reporter": "ismeretlen",
+      "outlet": "N1 (Horvátország)",
+      "question": "Eltávolítja-e az akadályokat Hernádi Zsolt horvátországi kiadatása elől?",
+      "answer": "Meg kell néznie az aktát. A korábbi nem kiadás oka az volt, hogy nem volt biztosított a pártatlan eljárás.",
+      "tags": [
+        "hernádi-zsolt",
+        "horvátország",
+        "kiadatás",
+        "igazságszolgáltatás",
+        "ina-mol"
+      ],
+      "criticism_percent": 35,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_38",
+      "start_time": "02:26:05",
+      "end_time": "02:28:40",
+      "reporter": "ismeretlen",
+      "outlet": "N1 (Horvátország)",
+      "question": "Nagy-Magyarország térkép Orbán irodájában: leveszi-e, és milyen horvát-magyar kapcsolatokat vár?",
+      "answer": "A térkép nem revizionizmus, a közös történelmet nem tagadja le. Javítani szeretné a fagyos horvát-magyar viszonyt.",
+      "tags": [
+        "horvátország",
+        "nagy-magyarország",
+        "történelem",
+        "kétoldalú-kapcsolatok",
+        "plankovics"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_39",
+      "start_time": "02:29:29",
+      "end_time": "02:34:03",
+      "reporter": "Bárbara Siselakova",
+      "outlet": "360.sk (Szlovákia)",
+      "question": "Beszélt-e Ficóval, és romlani fognak-e a szlovák-magyar kapcsolatok a Tisza győzelmével?",
+      "answer": "Nem beszélt Ficóval. Jó viszonyt akar, de rendezni kell a Beneš-dekrétumokat és a magyarok földelrablását.",
+      "tags": [
+        "szlovákia",
+        "fico",
+        "felvidéki-magyarok",
+        "benes-dekretumok",
+        "kétoldalú-kapcsolatok"
+      ],
+      "criticism_percent": 20,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_40",
+      "start_time": "02:35:21",
+      "end_time": "02:40:29",
+      "reporter": "ismeretlen",
+      "outlet": "Dán TV2",
+      "question": "Hogyan állítja helyre a sajtószabadságot, mit tesz az állami médiával?",
+      "answer": "Megszünteti a propagandafinanszírozást, felfüggeszti a közmédia hírszolgáltatását, amíg nem biztosított a pártatlanság.",
+      "tags": ["sajtószabadság", "közmédia", "propaganda", "média", "tisza"],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_41",
+      "start_time": "02:40:52",
+      "end_time": "02:42:28",
+      "reporter": "Valentina Bignyekim",
+      "outlet": "ANZA (Olaszország)",
+      "question": "Hogyan reagáltak a fiai arra, hogy apjukból miniszterelnök lesz?",
+      "answer": "Nehéz volt, keveset tölthetett velük, de gratuláltak és megértették. A propaganda hazudott a kapcsolatukról.",
+      "tags": ["személyes", "család", "fiak", "kampány"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_42",
+      "start_time": "02:42:58",
+      "end_time": "02:44:26",
+      "reporter": "Valentina Bignyekim",
+      "outlet": "ANZA (Olaszország)",
+      "question": "Beszélt-e Melonival, és hogyan alakulnak a magyar-olasz kapcsolatok?",
+      "answer": "Még nem beszélt Melonival, de szívesen találkozna. Erős magyar-olasz kapcsolatokat akar, Olaszország fontos partner.",
+      "tags": ["olaszország", "meloni", "kétoldalú-kapcsolatok", "külpolitika"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_43",
+      "start_time": "02:45:26",
+      "end_time": "02:49:07",
+      "reporter": "ismeretlen",
+      "outlet": "South China Morning Post",
+      "question": "Mi lesz a kínai befektetésekkel, megvizsgálják-e a szerződéseket, kész-e Pekingbe menni?",
+      "answer": "Nyitottak Kínára, de a befektetőknek be kell tartani a környezetvédelmi és munkajogi szabályokat. Szívesen megy Pekingbe.",
+      "tags": ["kína", "befektetések", "byd", "környezetvédelem", "gazdaság"],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_44",
+      "start_time": "02:49:59",
+      "end_time": "02:54:21",
+      "reporter": "ismeretlen",
+      "outlet": "The Economist",
+      "question": "Ha a kinevezett vezetők nem mondanak le, kétharmaddal kikényszeríti? Nem sérti-e ez a jogállamot?",
+      "answer": "Kétharmados felhatalmazás alapján átalakítják az állami rendszereket. Nem jogállam-ellenes módszerekkel, de a bábokat számon kérik.",
+      "tags": [
+        "jogállam",
+        "kétharmad",
+        "alkotmány",
+        "intézményi-reform",
+        "rendszerváltás"
+      ],
+      "criticism_percent": 45,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_45",
+      "start_time": "02:54:47",
+      "end_time": "02:55:22",
+      "reporter": "ismeretlen",
+      "outlet": "BBC World Service",
+      "question": "Ha Trump felhívja, mit fog mondani neki?",
+      "answer": "Örülne, megerősítené a NATO-szövetséget, és meghívná Trumpot október 23-ra, az '56-os forradalom 70. évfordulójára.",
+      "tags": ["trump", "usa", "nato", "külpolitika"],
+      "criticism_percent": 5,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_46",
+      "start_time": "02:56:02",
+      "end_time": "02:57:12",
+      "reporter": "ismeretlen",
+      "outlet": "Kyodo News (Japán)",
+      "question": "A keleti nyitás politikája változik-e, hogyan érinti a japán-magyar kapcsolatokat?",
+      "answer": "Az ázsiai kapcsolatok megmaradnak, de az EU keretei kötelezőek. Nyitottak az ázsiai befektetőkre.",
+      "tags": [
+        "japán",
+        "keleti-nyitás",
+        "ázsiai-kapcsolatok",
+        "eu",
+        "külpolitika"
+      ],
+      "criticism_percent": 10,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_47",
+      "start_time": "02:57:46",
+      "end_time": "03:00:18",
+      "reporter": "James Crisp",
+      "outlet": "The Telegraph",
+      "question": "Konzervatív, volt fideszes: miben különbözik Orbántól – abortusz, LMBTQ, Pride-tilalom?",
+      "answer": "A gyülekezési jog mindenkit megillet, az abortusz rendezett. Mindenki úgy él, ahogy akar, amíg nem árt másnak.",
+      "tags": [
+        "lmbtq",
+        "abortusz",
+        "polgári-szabadságjogok",
+        "orbán",
+        "konzervatív"
+      ],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_48",
+      "start_time": "03:01:11",
+      "end_time": "03:01:43",
+      "reporter": "Alex Foller",
+      "outlet": "The Irish Times",
+      "question": "Az EU migrációs paktumot elutasítják – a kvótát és a szolidaritási hozzájárulást is?",
+      "answer": "Mindkettőt elutasítják, de a harmadik opciót – határőrök küldését – vállalják. Nem egyedül az EU-ban.",
+      "tags": ["migráció", "eu-migrációs-paktum", "kvóta", "határvédelem"],
+      "criticism_percent": 15,
+      "hostility_percent": 0
+    },
+    {
+      "id": "q_49",
+      "start_time": "03:02:44",
+      "end_time": "03:06:57",
+      "reporter": "Bogdán Bochila",
+      "outlet": "Digi24 (Románia)",
+      "question": "Mi garantálja, hogy Magyar Péter nem válik ugyanolyan autoritér vezetővé, mint Orbán?",
+      "answer": "A Tisza 50 ezer önkéntese és a fékek-ellensúlyok visszaépítése garancia. A közösség nem engedne hatalmi visszaélést.",
+      "tags": [
+        "demokrácia",
+        "jogállam",
+        "tisza",
+        "önkéntesek",
+        "garancia",
+        "orbán"
+      ],
+      "criticism_percent": 40,
+      "hostility_percent": 5
+    }
+  ]
+}

@@ -14,6 +14,10 @@
       {
         "id": "telex_r03",
         "name": "Cseke Balázs"
+      },
+      {
+        "id": "telex_r04",
+        "name": "Presinszky Judit"
       }
     ]
   },
@@ -28,6 +32,10 @@
       {
         "id": "atv_r02",
         "name": "Novák András"
+      },
+      {
+        "id": "atv_r03",
+        "name": "Nagy Angéla"
       }
     ]
   },
@@ -42,6 +50,10 @@
       {
         "id": "rtl_r02",
         "name": "Szondi Vanda"
+      },
+      {
+        "id": "rtl_r03",
+        "name": "Magyar Jó"
       }
     ]
   },
@@ -152,6 +164,10 @@
       {
         "id": "444_r02",
         "name": "Jelinek Anna"
+      },
+      {
+        "id": "444_r03",
+        "name": "Kaufmann Balázs"
       }
     ]
   },
@@ -249,6 +265,14 @@
       {
         "id": "partizan_r01",
         "name": "Sarkadi Zsolt"
+      },
+      {
+        "id": "partizan_r02",
+        "name": "Szurovetz Illés"
+      },
+      {
+        "id": "partizan_r03",
+        "name": "Itzés Ambrus"
       }
     ]
   },
@@ -259,6 +283,320 @@
       {
         "id": "m4_privatbankar_r01",
         "name": "Imre Lőrinc"
+      }
+    ]
+  },
+  {
+    "id": "euronews",
+    "name": "Euronews",
+    "reporters": [
+      {
+        "id": "euronews_r01",
+        "name": "Siposhegyi Zoltán"
+      }
+    ]
+  },
+  {
+    "id": "financial_times",
+    "name": "Financial Times",
+    "reporters": [
+      {
+        "id": "financial_times_r01",
+        "name": "Dunai Márton"
+      }
+    ]
+  },
+  {
+    "id": "gulyasagyu_media",
+    "name": "Gulyáságyú Média",
+    "reporters": [
+      {
+        "id": "gulyasagyu_media_r01",
+        "name": "Gulyás Balázs"
+      }
+    ]
+  },
+  {
+    "id": "klub_radio",
+    "name": "Klub Rádió",
+    "reporters": [
+      {
+        "id": "klub_radio_r01",
+        "name": "Selmeci János"
+      }
+    ]
+  },
+  {
+    "id": "kontroll",
+    "name": "Kontroll",
+    "reporters": [
+      {
+        "id": "kontroll_r01",
+        "name": "Unyatyinszki György"
+      }
+    ]
+  },
+  {
+    "id": "magyar_hang",
+    "name": "Magyar Hang",
+    "reporters": [
+      {
+        "id": "magyar_hang_r01",
+        "name": "Albert Enikő"
+      }
+    ]
+  },
+  {
+    "id": "nepszava",
+    "name": "Népszava",
+    "reporters": [
+      {
+        "id": "nepszava_r01",
+        "name": "Derseny Dávid"
+      }
+    ]
+  },
+  {
+    "id": "parameter",
+    "name": "Paraméter",
+    "reporters": [
+      {
+        "id": "parameter_r01",
+        "name": "Czímer Gábor"
+      },
+      {
+        "id": "parameter_r02",
+        "name": "Renczes Ágoston"
+      }
+    ]
+  },
+  {
+    "id": "reuters",
+    "name": "Reuters",
+    "reporters": [
+      {
+        "id": "reuters_r01",
+        "name": "Szakács Gergely"
+      }
+    ]
+  },
+  {
+    "id": "ismeretlen",
+    "name": "ismeretlen",
+    "reporters": [
+      {
+        "id": "ismeretlen_r01",
+        "name": "ismeretlen"
+      }
+    ]
+  },
+  {
+    "id": "24hu",
+    "name": "24.hu",
+    "reporters": [
+      {
+        "id": "24hu_r01",
+        "name": "Horváth Csaba László"
+      }
+    ]
+  },
+  {
+    "id": "360sk",
+    "name": "360.sk (Szlovákia)",
+    "reporters": [
+      {
+        "id": "360sk_r01",
+        "name": "Bárbara Siselakova"
+      }
+    ]
+  },
+  {
+    "id": "anza",
+    "name": "ANZA (Olaszország)",
+    "reporters": [
+      {
+        "id": "anza_r01",
+        "name": "Valentina Bignyekim"
+      }
+    ]
+  },
+  {
+    "id": "bbc",
+    "name": "BBC",
+    "reporters": [
+      {
+        "id": "bbc_r01",
+        "name": "Katja Adler"
+      }
+    ]
+  },
+  {
+    "id": "bbc_world_service",
+    "name": "BBC World Service",
+    "reporters": []
+  },
+  {
+    "id": "bloomberg",
+    "name": "Bloomberg",
+    "reporters": []
+  },
+  {
+    "id": "cnn",
+    "name": "CNN",
+    "reporters": [
+      {
+        "id": "cnn_r01",
+        "name": "Melisabelle"
+      }
+    ]
+  },
+  {
+    "id": "cnn_romania",
+    "name": "CNN România",
+    "reporters": [
+      {
+        "id": "cnn_romania_r01",
+        "name": "Andrea Borboros"
+      }
+    ]
+  },
+  {
+    "id": "deutsche_welle",
+    "name": "Deutsche Welle (DW)",
+    "reporters": [
+      {
+        "id": "deutsche_welle_r01",
+        "name": "Facsar Fanni"
+      }
+    ]
+  },
+  {
+    "id": "digi24",
+    "name": "Digi24 (Románia)",
+    "reporters": [
+      {
+        "id": "digi24_r01",
+        "name": "Bogdán Bochila"
+      }
+    ]
+  },
+  {
+    "id": "dan_tv2",
+    "name": "Dán TV2",
+    "reporters": []
+  },
+  {
+    "id": "france24",
+    "name": "France 24",
+    "reporters": [
+      {
+        "id": "france24_r01",
+        "name": "Terekai"
+      }
+    ]
+  },
+  {
+    "id": "kyiv_independent",
+    "name": "Kyiv Independent",
+    "reporters": []
+  },
+  {
+    "id": "kyodo_news",
+    "name": "Kyodo News (Japán)",
+    "reporters": []
+  },
+  {
+    "id": "n1_horvat",
+    "name": "N1 (Horvátország)",
+    "reporters": []
+  },
+  {
+    "id": "n1_szerbia",
+    "name": "N1 / CNN társult Szerbia",
+    "reporters": [
+      {
+        "id": "n1_szerbia_r01",
+        "name": "Duszomla Genović"
+      }
+    ]
+  },
+  {
+    "id": "orf",
+    "name": "Osztrák köztévé (ORF)",
+    "reporters": [
+      {
+        "id": "orf_r01",
+        "name": "Paul Krissaj"
+      }
+    ]
+  },
+  {
+    "id": "rusztavi",
+    "name": "Rusztavi (Grúzia)",
+    "reporters": []
+  },
+  {
+    "id": "sky_news",
+    "name": "Sky News",
+    "reporters": [
+      {
+        "id": "sky_news_r01",
+        "name": "Iva Bennett"
+      }
+    ]
+  },
+  {
+    "id": "scmp",
+    "name": "South China Morning Post",
+    "reporters": []
+  },
+  {
+    "id": "tvn",
+    "name": "TVN (Lengyelország)",
+    "reporters": [
+      {
+        "id": "tvn_r01",
+        "name": "Jacek Tadszik"
+      }
+    ]
+  },
+  {
+    "id": "tvp_tvn",
+    "name": "TVP / TVN (lengyel közszolgálati)",
+    "reporters": []
+  },
+  {
+    "id": "the_economist",
+    "name": "The Economist",
+    "reporters": []
+  },
+  {
+    "id": "the_irish_times",
+    "name": "The Irish Times",
+    "reporters": [
+      {
+        "id": "the_irish_times_r01",
+        "name": "Alex Foller"
+      }
+    ]
+  },
+  {
+    "id": "the_telegraph",
+    "name": "The Telegraph",
+    "reporters": [
+      {
+        "id": "the_telegraph_r01",
+        "name": "James Crisp"
+      }
+    ]
+  },
+  {
+    "id": "the_times",
+    "name": "The Times",
+    "reporters": [
+      {
+        "id": "the_times_r01",
+        "name": "Tom Kington"
       }
     ]
   }

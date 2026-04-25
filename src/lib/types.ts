@@ -1,5 +1,6 @@
 export interface Question {
   id: string;
+  question_start_time?: string;
   start_time: string;
   end_time: string;
   reporter: string;
