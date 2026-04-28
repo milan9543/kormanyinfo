@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const faqs = [
+  {
+    q: "Miért jött létre ez az oldal?",
+    a: "Egy kis hobbiprojekt, ami a hosszú kormányzati sajtótájékoztatókat fogyaszthatóvá teszi: kiszedi belőlük a kérdéseket és a válaszokat, hogy ne kelljen órákat ülni egy-egy esemény előtt. Eredetileg a kormányinfókhoz készült, de mivel azokból nem lesz új, most a többi közéleti sajtótájékoztatóra fókuszál.",
+  },
+  {
+    q: "Honnan származnak az adatok?",
+    a: 'A nyilvánosan elérhető videókból (jellemzően YouTube-ról). A hangsávot a <a href="https://github.com/ggerganov/whisper.cpp" target="_blank" rel="noopener" class="underline hover:text-accent">whisper.cpp</a> írja át szöveggé - ez érezhetően pontosabb, mint a YouTube automatikus felirata, főleg neveknél és magyar szövegnél. Az így kapott átiratból dolgozik a Claude.',
+  },
+  {
+    q: 'Mit jelent a „kritikusság"?',
+    a: "Azt mutatja, hogy a kérdés mennyire volt kihívó, számonkérő vagy provokatív - szemben egy semleges vagy barátságos kérdéssel. 0% = teljesen semleges/barátságos, 100% = maximálisan számonkérő. Korábbi kormányinfóknál ez gyakran beszédes volt.",
+  },
+  {
+    q: 'Mit jelent az „ellenségesség"?',
+    a: "Azt mutatja, hogy a válaszadó mennyire volt elutasító, lekezelő vagy támadó a kérdezővel szemben. 0% = együttműködő, érdemi válasz, 100% = nyíltan ellenséges, kitérő vagy személyeskedő.",
+  },
+  {
+    q: "Mennyire megbízhatóak ezek a számok?",
+    a: "Annyira, amennyire egy nyelvi modell ítélete megbízható - szóval nem kőbe vésett. Trendekre, összehasonlításra jók, de egy-egy konkrét százalékot ne vegyél abszolút igazságnak. Iróniánál, hosszabb vitáknál pláne tévedhet.",
+  },
+  {
+    q: "Lehetnek benne hibák?",
+    a: "Igen. Pontatlanságok főleg neveknél, rövidítéseknél és rosszul érthető részeknél fordulhatnak elő. Néhány helyen kézzel utánanéztem, de nem mindenhol - ezért érdemes a forrásra is rákattintani, ha valami furcsának tűnik.",
+  },
+  {
+    q: "Mire jók az időbélyegek?",
+    a: "Minden kérdés mellett ott a kezdési időpont, ami közvetlenül az eredeti videó adott pillanatára ugrik. Ha valami gyanús, egy kattintás és ellenőrizheted az eredetiben.",
+  },
+  {
+    q: "Frissül még?",
+    a: "Igen, tervezem új sajtótájékoztatókkal feltölteni, ahogy kijönnek.",
+  },
+  {
+    q: "Politikai célja van?",
+    a: "Nincs. Csak az volt a cél, hogy a már nyilvános anyagok kereshető, gyorsan átfutható formában elérhetők legyenek. Az adatokat mindenki maga értelmezheti.",
+  },
+];
+---
+
+<Layout
+  title="GYIK"
+  description="Hogyan működik a Hangnem? Honnan jönnek az adatok, mit jelent a kritikusság és az ellenségesség?"
+>
+  <header class="bg-fg text-bg">
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-10 pb-9">
+      <div class="font-mono text-xs tracking-[2px] uppercase text-[#999] mb-2">
+        Hangnem · Tudnivalók
+      </div>
+      <h1
+        class="font-display text-[clamp(28px,5vw,48px)] font-black leading-tight mb-2"
+      >
+        Hogyan működik?
+      </h1>
+      <p class="text-[17px] font-light text-[#bbb] max-w-150">
+        Gyakori kérdések az oldalról, az adatokról és az elemzés módszeréről.
+      </p>
+    </div>
+  </header>
+
+  <div
+    class="max-w-200 mx-auto px-6 max-[480px]:px-4 pt-10 pb-15 flex flex-col gap-3"
+  >
+    {
+      faqs.map((item) => (
+        <details class="group bg-white border border-border rounded-lg overflow-hidden transition-colors hover:border-accent">
+          <summary class="cursor-pointer list-none px-5 py-4 flex items-start gap-4 select-none">
+            <span class="font-display text-[17px] font-bold leading-snug text-fg flex-1">
+              {item.q}
+            </span>
+            <span
+              class="font-mono text-fg3 text-xl leading-none mt-0.5 transition-transform duration-200 group-open:rotate-45 shrink-0"
+              aria-hidden="true"
+            >
+              +
+            </span>
+          </summary>
+          <div class="px-5 pb-5 pt-0 text-[15px] leading-relaxed text-fg2 border-t border-border">
+            <p class="pt-4" set:html={item.a} />
+          </div>
+        </details>
+      ))
+    }
+  </div>
+</Layout>
