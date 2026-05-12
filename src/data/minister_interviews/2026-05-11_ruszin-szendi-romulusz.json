@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "type": "minister_interview",
+    "title": "Dr. Ruszin-Szendi Romulusz miniszterjelölti meghallgatása",
+    "date": "2026-05-11",
+    "candidate": "Dr. Ruszin-Szendi Romulusz",
+    "position": "Honvédelmi miniszter",
+    "youtube_url": "https://www.youtube.com/watch?v=S6hF43qWawc",
+    "youtube_video_id": "S6hF43qWawc",
+    "duration": "",
+    "location": ""
+  },
+  "expose": {
+    "start_time": "00:01:26",
+    "end_time": "00:15:06",
+    "content_markdown": "## Személyes bevezető\n\nA jelölt meghatottan szólt arról, hogy a Hazaisamu-teremben ül, ahol volt főnökei, kollégái és beosztottjai is jelen vannak. Hangsúlyozta, hogy bízik benne: a bizottság valóban szakmai kérdésekről fog tárgyalni.\n\n## Szakmai háttér\n\nTöbb mint három évtizedet töltött egyenruhában, szolgált itthon és külföldön. Missziót vezetett parancsnokként két hadműveleti területen. Betöltött beosztásai: szakaszparancsnok, zászlóaljparancsnok, dandárparancsnok, vezérkari főnök, törzsőrnök, megbízott hadműveleti főnök. Kiemelte, hogy nemcsak parancsnoki, hanem törzsmunkában is komoly tapasztalatot szerzett.\n\n## A honvédelem mint nemzeti ügy\n\nA jelölt leszögezte, hogy a honvédelem nemzeti ügy, és reméli, hogy az ismét nemzeti minimum lesz. Cél, hogy a haderőfejlesztés a társadalom minden rétegének megelégedésére szolgáljon.\n\n## Azonosított problémák\n\n**Szövetségesek bizalmának megrendülése:** Magyarországot nem hívják meg minden NATO-értekezletre, a keleti drónfal tervezésekor sem volt ott elsőként az ország politikai szinten. A szövetségesek bizalmát vissza kell állítani.\n\n**A katonák elhanyagolása:** Az előző kormány olyan jogszabályokat hozott, amelyek nem vették figyelembe a szolgálati kultúrát: büntetett előéletűek és külföldi állampolgárok is lehetnek katonák, pénzért lehet rendfokozatot venni. A katonák morálja és önbizalma megtört az indokolás nélküli elbocsátások és az igazságtalan illetménykülönbségek miatt.\n\n**Utánpótlás és infrastruktúra:** A toborzás sikerét nem reklámokra kell alapozni, hanem az elégedett katonára. Az infrastrukturális fejlesztések elmaradtak.\n\n**Védelemipar problémái:** A haderőfejlesztési program alapelve az volt, hogy állami részesedéssel, know-how átadással fejlesszék a védelmi ipart. Az elmúlt években azonban a hadiipar jelentős részét nem NATO-tagállamok befektetőit is magában foglaló magáncégekbe szervezték ki, ami tovább rontja a szövetségesek bizalmát.\n\n**Kibervédelem:** A külügyminisztérium szervereinek feltörése és a VBÜ anyagainak darkweben való megjelenése súlyos kibervédelmi hiányosságokra utal.\n\n## Vállalások és tervek\n\n**Béke és biztonság:** A Tisza-kormány békepárti: nem küldenek katonát az orosz–ukrán háborúba, és nem állítják vissza a sorozást. Fegyvert sem szállítanak a konfliktuszónába.\n\n**Haderőfejlesztés fókusza:** Az embert helyezik a fókuszba. Illetményrendezés, a szolgálati kultúrát sértő jogszabályok eltörlése, méltó életpálya megalkotása és lezárása. A 2012-ben elvett jogokat visszaadják a nyugdíjas katonáknak. Visszafogadják azokat is, akik egyszer elmentek, feltéve, hogy megfelelnek a követelményeknek.\n\n**Védelmipar és szerződések:** A magyar vagyon visszakerül az állam kezébe, a profitot nem oligarchák zsebelik majd le. Az összes meglévő és tervezett szerződést áttekintik, a túlárazást kivizsgálják. A jövőbeni fejlesztéseket magyar kis- és középvállalkozásokra alapozzák, előtérbe kerülnek a kettős felhasználású (dual-use) eszközök.\n\n**NATO 5%-os cél:** A szövetségi kötelezettséget teljesítik, 2035-ig elérik az 5%-ot a gazdasági teljesítőképesség függvényében. Az összeg nem csak lőszerre és bakancsra megy, hanem infrastruktúrára, egészségügyre, közlekedésre is – a kettős felhasználás elvén.\n\n**Kibervédelem:** Kiemelt cél a negyedik és ötödik hadszíntéren (kiber és űr) a képességek fejlesztése."
+  },
+  "committee_members": [
+    {
+      "id": "c_01",
+      "name": "Simicskó István",
+      "party": "KDNP/Fidesz",
+      "role": "alelnök, korábbi honvédelmi miniszter"
+    },
+    {
+      "id": "c_02",
+      "name": "Takács Márton",
+      "party": "Fidesz",
+      "role": "alelnök"
+    },
+    {
+      "id": "c_03",
+      "name": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "role": "képviselő"
+    },
+    {
+      "id": "c_04",
+      "name": "Ismeretlen képviselő (kormányoldal)",
+      "party": "Tisza/kormányoldal",
+      "role": "képviselő"
+    },
+    {
+      "id": "c_05",
+      "name": "Ismeretlen képviselő 2",
+      "party": "ismeretlen",
+      "role": "képviselő"
+    },
+    {
+      "id": "c_06",
+      "name": "Ismeretlen képviselő 3",
+      "party": "ismeretlen",
+      "role": "képviselő"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:15:09",
+      "answer_start_time": "00:27:52",
+      "end_time": "00:28:42",
+      "questioner": "Simicskó István",
+      "party": "KDNP/Fidesz",
+      "question": "Milyen stábbal tervezi a munkáját?",
+      "answer": "Lesz stáb, neveket még nem mond, de ahol bizottsági meghallgatás szükséges, oda el fognak jönni."
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:16:58",
+      "answer_start_time": "00:28:28",
+      "end_time": "00:29:09",
+      "questioner": "Simicskó István",
+      "party": "KDNP/Fidesz",
+      "question": "Folytatja-e a Zrínyi programot, tervez-e harcidrón fejlesztést?",
+      "answer": "A Zrínyi nevet nem vette el soha, az évszámot vitatta. A haderőfejlesztés folyamatos legyen, ne mérföldkövekhez kötött. Drónbeszerzés a titkos védelmi tervek alapján dől el."
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "00:17:44",
+      "answer_start_time": "00:33:08",
+      "end_time": "00:34:51",
+      "questioner": "Simicskó István",
+      "party": "KDNP/Fidesz",
+      "question": "Tervezi-e a HVT és HJT módosítását, a katonák jogainak visszaállítását?",
+      "answer": "Igen, a büntetett előéletűek és külföldi állampolgárok honvédségbe engedését törvénnyel szüntetik meg. A jogállásról szóló törvénnyel védik meg a katonákat a politikai tisztogatástól. Egyeztetés lesz katonákkal, tartalékosokkal, nyugdíjasokkal."
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "00:19:04",
+      "answer_start_time": "00:34:56",
+      "end_time": "00:35:17",
+      "questioner": "Takács Márton",
+      "party": "Fidesz",
+      "question": "Küldenek-e fegyverszállítmányt az orosz-ukrán konfliktusba?",
+      "answer": "Nem szállítanak fegyvert az orosz-ukrán háborúba. Ez határozott vállalás."
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "00:19:12",
+      "answer_start_time": "00:35:02",
+      "end_time": "00:36:16",
+      "questioner": "Takács Márton",
+      "party": "Fidesz",
+      "question": "Elérik-e a NATO által elvárt 5%-os védelmi kiadási szintet?",
+      "answer": "A vállalás 2035-ig elérni az 5%-ot. Az összeg nem csak fegyverre megy, hanem infrastruktúrára, kettős felhasználású beruházásokra is, pl. hidak, egészségügy."
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "00:19:40",
+      "answer_start_time": "00:36:22",
+      "end_time": "00:37:00",
+      "questioner": "Takács Márton",
+      "party": "Fidesz",
+      "question": "Vonják-e a polgári védelmi kötelezettséget a honvédelmi tárca alá?",
+      "answer": "Hisz a teljes kormányzati megközelítésben. A különleges jogrendi helyzetektől függ, ki mikor mit csinál. A hátország védelmével a honvédelemnek kell foglalkoznia."
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "00:20:02",
+      "answer_start_time": "00:36:49",
+      "end_time": "00:42:00",
+      "questioner": "Takács Márton",
+      "party": "Fidesz",
+      "question": "Tervezik-e a tartalékos rendszer továbbfejlesztését, mik a prioritások?",
+      "answer": "A tartalékos rendszer megmarad és fejlődik, de valós tartalommal kell feltölteni. Jelenleg 10-16 ezer tartalékos van, de a korábbi miniszter számháborút folytatott. A tényleges állomány az elsődleges prioritás, a tartalékos a követő lépcső. Celeb tartalékosokra nincs szükség."
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "00:20:37",
+      "answer_start_time": "00:40:10",
+      "end_time": "00:42:00",
+      "questioner": "Takács Márton",
+      "party": "Fidesz",
+      "question": "Bővítik-e a katonai középiskolákat és megfelelő-e a kadétprogram?",
+      "answer": "Négy katonai középiskola van jelenleg, szeretnék bővíteni a Dunántúlra is. A kadétrendszer büszkesége a jelöltnek, bővíteni kívánják. Az 1-2-es rendszert felül kell vizsgálni, mert elszaladt a létszám."
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "00:20:43",
+      "answer_start_time": "00:43:03",
+      "end_time": "00:44:10",
+      "questioner": "Takács Márton",
+      "party": "Fidesz",
+      "question": "Megtörténik-e a vezérkar átalakítása, marad-e vezérkar vagy parancsnokság lesz?",
+      "answer": "A vezérkar mint elnevezés és önálló entitás megmarad. Nem szeretne integrált minisztériumot. A minisztérium célt határoz, feltételeket biztosít és ellenőriz; a vezérkari főnök szakmailag hajt végre."
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "00:21:36",
+      "answer_start_time": "00:44:11",
+      "end_time": "00:46:02",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Elszámol-e az egymilliárd forintos luxusvillával, és ki hagyta jóvá?",
+      "answer": "A vezérkari főnöknek méltó rezidenciára van szüksége külföldi delegációk fogadásához. Kivizsgálják, ki írta alá. A jelölt nem írt alá semmit. A villa kompromittálódott, ki fogják vizsgálni, ki engedte be a sajtót. Állami tulajdon marad, hasznosítani fogják."
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "00:22:35",
+      "answer_start_time": "00:46:41",
+      "end_time": "00:47:32",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Orvosolja-e a honvédségi létszámhiányt, várható-e javadalmazásrendezés?",
+      "answer": "Látni fogja a pontos létszámhiányt. A 37.650 fős engedélyezett létszám elérése hosszú út. A létszámhoz fegyver, felszerelés, infrastruktúra kell. Nem tart tömeges jelentkezéstől, de ha az ígéreteket betartják, egyre többen vállalják majd a szolgálatot."
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "00:23:04",
+      "answer_start_time": "00:48:07",
+      "end_time": "00:49:44",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Várható-e elszámoltatás a VBÜ kiszivárgott túlárazási adatok ügyében?",
+      "answer": "Minden szerződést átnéznek. A vezérkari főnöknek nincs hatása a költségvetésre, azt a minisztérium kezeli. Információkkal látják el a vagyonvisszaszerzési hivatalt a nyomozásokhoz. Szakmai, nem politikai vizsgálatot ígér."
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "00:23:18",
+      "answer_start_time": "00:49:56",
+      "end_time": "00:50:46",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Mi az álláspontja a védelmi ipar privatizációjáról?",
+      "answer": "Az állami vagyonrészt vissza kell szerezni. Nem fogadható el, hogy nem NATO-tagállamok befektetői is tulajdonosok. A profit a magyar GDP-t erősítse, ne oligarchákat."
+    },
+    {
+      "id": "q_14",
+      "question_start_time": "00:23:30",
+      "answer_start_time": "00:33:08",
+      "end_time": "00:33:56",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Büntetett előéletűek és külföldi állampolgárok ezután is lehetnek-e honvédek?",
+      "answer": "Nem. Ezeket a jogszabályi módosításokat törvénnyel szüntetik meg."
+    },
+    {
+      "id": "q_15",
+      "question_start_time": "00:23:39",
+      "answer_start_time": "00:50:55",
+      "end_time": "00:53:10",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Honnan kaphatunk információkat minisztersége alatt? Transzparens lesz-e?",
+      "answer": "Nem akar titkolózni. Ami minősített, azt zárt ülésen mondja el; ami a társadalomra tartozik, azt nyilvánosan. A kézigránát baleset, a MIG-29 lopás és a VBÜ ügyek transzparensen kerülnek nyilvánosságra záros határidőn belül."
+    },
+    {
+      "id": "q_16",
+      "question_start_time": "00:23:59",
+      "answer_start_time": "00:53:33",
+      "end_time": "00:56:08",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Biztos-e, hogy soha nem küldenek katonát Ukrajnába? Folytatják-e a missziózást?",
+      "answer": "Nem küldenek katonát az ukrán háborúba. A missziók szükségesek a szövetségi hitelességhez és a tapasztalatszerzéshez. Magyar katonák NATO és EU legnagyobb szárazföldi műveletét vezették, ez nagy erőt ad szövetségekben."
+    },
+    {
+      "id": "q_17",
+      "question_start_time": "00:24:10",
+      "answer_start_time": "00:56:49",
+      "end_time": "00:57:34",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Mi a véleménye a Petőfi laktanya Mária Teréziára való átnevezéséről?",
+      "answer": "Nem fogadja el az átnevezést. Az egyik első intézkedésük a Petőfi név visszaadása lesz. A katonák nem dobták ki a Petőfi táblát, már festik újra."
+    },
+    {
+      "id": "q_18",
+      "question_start_time": "00:25:02",
+      "answer_start_time": "01:05:05",
+      "end_time": "01:11:02",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Visszakerül-e a Zrínyi név a haderőfejlesztési programba?",
+      "answer": "A Zrínyi program 2026-ban véget ér. Nem indítanak új elnevezésű programot, hanem folyamatos haderőfejlesztést folytatnak. Nem szükséges teátrális programnév, folyamatos munkára van szükség nemzeti konszenzussal."
+    },
+    {
+      "id": "q_19",
+      "question_start_time": "00:25:10",
+      "answer_start_time": "01:06:40",
+      "end_time": "01:09:10",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Mikor számol el Fidesz-kormánybeli helyettes államtitkári tevékenységével, mit ott asszisztált?",
+      "answer": "A vezérkari főnöknek el kell dönteni, hogy feláll vagy csinálja tovább. Ha akkor feláll, azonnal hoznak egy engedékenyebbet. Felemelte hangját egyénekért és a rendszerért is, végül ezért kellett mennie. Lelkiismerete tiszta."
+    },
+    {
+      "id": "q_20",
+      "question_start_time": "00:25:23",
+      "answer_start_time": "01:01:05",
+      "end_time": "01:01:45",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Rehabilitálják-e a COVID-oltás visszautasítása miatt eltávolított katonákat?",
+      "answer": "Visszaveszi őket, de nem feltétlenül egyenruhában. Katonai döntésként nem engedte őket szolgálni; az ezt követő politikai bánásmód helyre lesz állítva. Hosszabb vitát ígér erről."
+    },
+    {
+      "id": "q_21",
+      "question_start_time": "00:25:43",
+      "answer_start_time": "00:51:52",
+      "end_time": "00:52:50",
+      "questioner": "Ismeretlen képviselő (kormányoldal)",
+      "party": "Tisza/kormányoldal",
+      "question": "Mi történt a tavalyi kézigránát-balesetnél, és milyen szabályozást vezetnek be?",
+      "answer": "Záros határidőn belül nyilvánosan elmondják, mi történt és ki a felelős. Ha a vérrel írt kiképzési szabályokat betartják, az ilyen balesetek minimálisak. Valószínűsíti, hogy a szabályokat nem tartották be, de ez még vizsgálandó."
+    },
+    {
+      "id": "q_22",
+      "question_start_time": "00:26:12",
+      "answer_start_time": "00:57:42",
+      "end_time": "00:58:52",
+      "questioner": "Ismeretlen képviselő 2",
+      "party": "ismeretlen",
+      "question": "Várhatóak-e tömeges leszerelések a veszélyhelyzet megszűnése után?",
+      "answer": "Igen, sok papír van bent, a katonák csalódottak. Az önkéntes haderő ereje éppen az önkéntességben van. Ha látják, hogy az ígéreteket betartják, kevesebben mennek el. Türelmet kér a katonáktól."
+    },
+    {
+      "id": "q_23",
+      "question_start_time": "00:26:45",
+      "answer_start_time": "00:51:36",
+      "end_time": "00:52:00",
+      "questioner": "Ismeretlen képviselő 3",
+      "party": "ismeretlen",
+      "question": "Kivizsgálják-e a kecskeméti repülőtérről ellopott MIG-29 alkatrészek ügyét?",
+      "answer": "Igen, ezt transzparensen ki fogják tenni nyilvánosan, ahogy a többi ügyet is."
+    },
+    {
+      "id": "q_24",
+      "question_start_time": "00:59:28",
+      "answer_start_time": "01:03:57",
+      "end_time": "01:04:29",
+      "questioner": "Simicskó István",
+      "party": "KDNP/Fidesz",
+      "question": "Mi lesz a Hadtörténeti Múzeum sorsa és hol lesz a miniszter elhelyezése?",
+      "answer": "Nem költözik a várba. A minisztérium a Balaton utca 5-7-ben marad (HM1), ahol hagyományosan a honvédelmi miniszter és a vezérkari főnök egymás követő szinten van. A vár a hadtörténelemé, nem a miniszteré."
+    },
+    {
+      "id": "q_25",
+      "question_start_time": "01:01:32",
+      "answer_start_time": "01:04:33",
+      "end_time": "01:06:31",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Mikor rendezik a honvédek javadalmazását és hogyan?",
+      "answer": "A teljes illetményrendszert át kell dolgozni, senkitől nem vesznek el. A belépő 737 ezer forintos illetményhez kell szintezni a többieket. 40-30-30 arány az elv (humán-fenntartás-fejlesztés), jelenleg 50%-nál több megy fejlesztésre. Elsődleges cél, hogy ne kelljen másodállást vállalni."
+    },
+    {
+      "id": "q_26",
+      "question_start_time": "01:02:14",
+      "answer_start_time": "01:10:05",
+      "end_time": "01:11:02",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Számíthatunk-e a Zrínyi név visszavételére a haderőfejlesztési programban?",
+      "answer": "A Zrínyi program 2026-ban formálisan véget ér. Nem indítanak új nevű programot, hanem folyamatos fejlesztést folytatnak. A névnek akkor volt szerepe, amikor startot kellett adni évtizedes stagnálás után."
+    },
+    {
+      "id": "q_27",
+      "question_start_time": "01:02:44",
+      "answer_start_time": "01:12:05",
+      "end_time": "01:13:27",
+      "questioner": "Nováki Márton",
+      "party": "Mi Hazánk Mozgalom",
+      "question": "Részletesebb elszámolást kér a villa ügyéről és a COVID-os katonák visszavételéről katonaként.",
+      "answer": "A villa ügyét kivizsgálják részletesen. A COVID-os katonákat visszavárja; a katonai döntést fenntartja, de a politikai következményeket helyre állítja. A részletekről hosszabb vita következik majd."
+    }
+  ]
+}
