@@ -17,6 +17,7 @@
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.0.8",
     "chart.js": "^4.5.1",
+    "marked": "^18.0.3",
     "satori": "^0.26.0",
     "tailwindcss": "^4.2.2"
   }

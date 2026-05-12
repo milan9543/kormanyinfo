@@ -43,6 +43,49 @@ export interface Conference {
   questions: Question[];
 }
 
+export interface MinisterInterviewMeta {
+  type: "minister_interview";
+  title: string;
+  date: string;
+  candidate: string;
+  position: string;
+  youtube_url: string;
+  youtube_video_id: string;
+  duration: string;
+  location: string;
+}
+
+export interface Expose {
+  start_time: string;
+  end_time: string;
+  content_markdown: string;
+}
+
+export interface CommitteeMember {
+  id: string;
+  name: string;
+  party: string;
+  role: string;
+}
+
+export interface MinisterQuestion {
+  id: string;
+  question_start_time: string;
+  answer_start_time: string;
+  end_time: string;
+  questioner: string;
+  party: string;
+  question: string;
+  answer: string;
+}
+
+export interface MinisterInterview {
+  meta: MinisterInterviewMeta;
+  expose: Expose;
+  committee_members: CommitteeMember[];
+  questions: MinisterQuestion[];
+}
+
 export interface ReporterStats {
   id: string;
   name: string;

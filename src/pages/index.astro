@@ -1,129 +1,353 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { getAllConferences } from "../lib/data";
+import {
+  getAllConferences,
+  getAllMinisterInterviews,
+  ministerInterviewSlug,
+} from "../lib/data";
 
 const conferences = getAllConferences();
+const ministerInterviews = getAllMinisterInterviews();
+
+type ListItem =
+  | { type: "conference"; date: string; data: (typeof conferences)[number] }
+  | {
+      type: "minister_interview";
+      date: string;
+      data: (typeof ministerInterviews)[number];
+    };
+
+const allItems: ListItem[] = [
+  ...conferences.map((c) => ({
+    type: "conference" as const,
+    date: c.meta.date,
+    data: c,
+  })),
+  ...ministerInterviews.map((m) => ({
+    type: "minister_interview" as const,
+    date: m.meta.date,
+    data: m,
+  })),
+].sort((a, b) => b.date.localeCompare(a.date));
 
 function avg(arr: number[]) {
-  return arr.length ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length) : 0;
+  return arr.length
+    ? Math.round(arr.reduce((a, b) => a + b, 0) / arr.length)
+    : 0;
 }
 
 function timeAgo(dateStr: string): string {
-  const days = Math.round((Date.now() - new Date(dateStr).getTime()) / 86_400_000);
-  if (days <= 1) return "ma";
+  const days = Math.floor(
+    (Date.now() - new Date(dateStr).getTime()) / 86_400_000,
+  );
+  if (days === 0) return "ma";
+  if (days === 1) return "tegnap";
   if (days < 7) return `${days} napja`;
   const weeks = Math.floor(days / 7);
   if (days < 30) return weeks === 1 ? "1 hete" : `${weeks} hete`;
   const months = Math.floor(days / 30);
   return months === 1 ? "1 hónapja" : `${months} hónapja`;
 }
+
+function isNew(dateStr: string): boolean {
+  return (
+    Math.floor((Date.now() - new Date(dateStr).getTime()) / 86_400_000) <= 2
+  );
+}
 ---
 
 <Layout title="Sajtótájékoztatók">
-
   <!-- Masthead -->
   <header class="bg-fg text-bg">
     <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-10 pb-9">
-      <div class="font-mono text-xs tracking-[2px] uppercase text-[#999] mb-2">Hangnem · Adatbázis</div>
-      <h1 class="font-display text-[clamp(28px,5vw,48px)] font-black leading-tight mb-2">Sajtótájékoztatók</h1>
-      <p class="text-[17px] font-light text-[#bbb] max-w-150 mb-4">A kormány sajtótájékoztatóinak teljes Q&A feldolgozása — kérdések, kritikusság és ellenségesség elemzéssel</p>
+      <div class="font-mono text-xs tracking-[2px] uppercase text-[#999] mb-2">
+        Hangnem · Adatbázis
+      </div>
+      <h1
+        class="font-display text-[clamp(28px,5vw,48px)] font-black leading-tight mb-2"
+      >
+        Sajtótájékoztatók
+      </h1>
+      <p class="text-[17px] font-light text-[#bbb] max-w-150 mb-4">
+        A kormány sajtótájékoztatóinak teljes Q&A feldolgozása — kérdések,
+        kritikusság és ellenségesség elemzéssel
+      </p>
       <div class="flex gap-3 flex-wrap">
-        <div class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]">
+        <div
+          class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]"
+        >
           <span class="text-[#e8624e] font-semibold">{conferences.length}</span> sajtótájékoztató
         </div>
-        <div class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]">
-          <span class="text-[#e8624e] font-semibold">{conferences.reduce((s, c) => s + c.questions.length, 0)}</span> kérdés összesen
+        <div
+          class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]"
+        >
+          <span class="text-[#e8624e] font-semibold"
+            >{conferences.reduce((s, c) => s + c.questions.length, 0)}</span
+          > kérdés összesen
         </div>
+        {
+          ministerInterviews.length > 0 && (
+            <div class="text-[13px] font-medium px-3 py-1 rounded-full bg-white/8 text-[#ccc]">
+              <span class="text-[#a78bfa] font-semibold">
+                {ministerInterviews.length}
+              </span>{" "}
+              meghallgatás
+            </div>
+          )
+        }
       </div>
     </div>
   </header>
 
-  <!-- Conference list -->
-  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-15 flex flex-col gap-3">
-    {conferences.map((conf) => {
-      const crits = conf.questions.map(q => q.criticism_percent);
-      const hosts = conf.questions.map(q => q.hostility_percent);
-      const avgCrit = avg(crits);
-      const avgHost = avg(hosts);
-      const outlets = [...new Set(conf.questions.map(q => q.outlet))];
-      const maxCrit = crits.length ? Math.max(...crits) : 0;
-      const speakerObj = conf.speakers.find(s => s.role === "miniszter") ?? conf.speakers[0];
-      const speaker = speakerObj?.name;
+  <!-- Combined list -->
+  <div
+    class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-15 flex flex-col gap-3"
+  >
+    {
+      allItems.map((item) => {
+        if (item.type === "conference") {
+          const conf = item.data;
+          const crits = conf.questions.map((q) => q.criticism_percent);
+          const hosts = conf.questions.map((q) => q.hostility_percent);
+          const avgCrit = avg(crits);
+          const avgHost = avg(hosts);
+          const confOutlets = [...new Set(conf.questions.map((q) => q.outlet))];
+          const maxCrit = crits.length ? Math.max(...crits) : 0;
+          const speakerObj =
+            conf.speakers.find((s) => s.role === "miniszter") ??
+            conf.speakers[0];
+          const speaker = speakerObj?.name;
 
-      return (
-        <a
-          href={`/conferences/${conf.meta.date}`}
-          class="flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-accent hover:shadow-[0_4px_20px_rgba(194,58,34,0.09)]"
-        >
-          {/* Top: identity + counts */}
-          <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
+          return (
+            <a
+              href={`/conferences/${conf.meta.date}`}
+              class="flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-accent hover:shadow-[0_4px_20px_rgba(194,58,34,0.09)]"
+            >
+              {/* Top: identity + counts */}
+              <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-center gap-2 mb-2">
+                    <span class="font-mono text-[11px] text-fg3">
+                      {conf.meta.date.replace(/-/g, ". ")}
+                    </span>
+                    <span class="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-bg2 text-fg3 leading-none">
+                      {timeAgo(conf.meta.date)}
+                    </span>
+                    {isNew(conf.meta.date) && (
+                      <span class="inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 leading-none">
+                        <span class="relative flex h-1.5 w-1.5">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
+                          <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-600" />
+                        </span>
+                        Új
+                      </span>
+                    )}
+                    {conf.meta.location && (
+                      <span class="text-[11px] text-fg3">
+                        · {conf.meta.location}
+                      </span>
+                    )}
+                  </div>
+                  <h2 class="font-display text-[22px] font-bold leading-tight tracking-[-0.3px] text-fg mb-2">
+                    {conf.meta.title}
+                  </h2>
+                  {speaker && (
+                    <div class="flex items-center gap-2">
+                      <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0">
+                        <span class="font-display font-black text-white text-[9px]">
+                          {speaker
+                            .split(" ")
+                            .map((w: string) => w[0])
+                            .join("")
+                            .slice(0, 2)}
+                        </span>
+                      </div>
+                      <span class="font-display text-[15px] font-bold text-fg2">
+                        {speaker}
+                      </span>
+                    </div>
+                  )}
+                </div>
 
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 mb-2">
-                <span class="font-mono text-[11px] text-fg3">{conf.meta.date.replace(/-/g, ". ")}</span>
-                <span class="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-bg2 text-fg3 leading-none">{timeAgo(conf.meta.date)}</span>
-                {conf.meta.location && <span class="text-[11px] text-fg3">· {conf.meta.location}</span>}
+                <div class="flex items-center gap-5 shrink-0 max-[600px]:gap-6">
+                  <div>
+                    <div class="font-display text-[30px] font-bold text-accent leading-none">
+                      {conf.questions.length}
+                    </div>
+                    <div class="text-[10px] uppercase tracking-[1.5px] text-fg3 font-semibold mt-1">
+                      kérdés
+                    </div>
+                  </div>
+                  <div class="w-px h-8 bg-border" />
+                  <div>
+                    <div class="font-display text-[30px] font-bold text-accent leading-none">
+                      {confOutlets.length}
+                    </div>
+                    <div class="text-[10px] uppercase tracking-[1.5px] text-fg3 font-semibold mt-1">
+                      médium
+                    </div>
+                  </div>
+                </div>
               </div>
-              <h2 class="font-display text-[22px] font-bold leading-tight tracking-[-0.3px] text-fg mb-2">{conf.meta.title}</h2>
-              {speaker && (
+
+              {/* Outlet tags */}
+              <div class="px-6 pb-4 flex flex-wrap gap-1">
+                {confOutlets.map((o) => (
+                  <span class="tag cursor-default">{o}</span>
+                ))}
+              </div>
+
+              {/* Metrics strip */}
+              <div class="border-t border-border bg-bg px-6 py-3 flex gap-x-8 gap-y-2 flex-wrap">
+                <div class="flex items-center gap-2.5 min-w-45 flex-1">
+                  <span class="text-[11px] text-fg3 w-32 shrink-0">
+                    Átl. kritikusság
+                  </span>
+                  <div class="flex-1 h-1 bg-bg3 rounded-full overflow-hidden">
+                    <div
+                      class="h-full rounded-full bg-blue"
+                      style={`width:${avgCrit}%`}
+                    />
+                  </div>
+                  <span class="font-mono text-[11px] text-fg2 w-7 text-right">
+                    {avgCrit}%
+                  </span>
+                </div>
+                <div class="flex items-center gap-2.5 min-w-45 flex-1">
+                  <span class="text-[11px] text-fg3 w-32 shrink-0">
+                    Átl. ellenségesség
+                  </span>
+                  <div class="flex-1 h-1 bg-bg3 rounded-full overflow-hidden">
+                    <div
+                      class="h-full rounded-full bg-accent"
+                      style={`width:${avgHost}%`}
+                    />
+                  </div>
+                  <span class="font-mono text-[11px] text-fg2 w-7 text-right">
+                    {avgHost}%
+                  </span>
+                </div>
+                <div class="flex items-center gap-2.5 min-w-45 flex-1">
+                  <span class="text-[11px] text-fg3 w-32 shrink-0">
+                    Max kritikusság
+                  </span>
+                  <div class="flex-1 h-1 bg-bg3 rounded-full overflow-hidden">
+                    <div
+                      class="h-full rounded-full bg-blue opacity-50"
+                      style={`width:${maxCrit}%`}
+                    />
+                  </div>
+                  <span class="font-mono text-[11px] text-fg2 w-7 text-right">
+                    {maxCrit}%
+                  </span>
+                </div>
+              </div>
+            </a>
+          );
+        }
+
+        // Minister interview card
+        const interview = item.data;
+        const slug = ministerInterviewSlug(interview);
+        const initials = interview.meta.candidate
+          .split(" ")
+          .map((w: string) => w[0])
+          .join("")
+          .slice(0, 2);
+
+        return (
+          <a
+            href={`/minister-interviews/${slug}`}
+            class="flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-[#7c3aed] hover:shadow-[0_4px_20px_rgba(124,58,237,0.09)]"
+          >
+            {/* Top: identity + counts */}
+            <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-2">
+                  <span class="font-mono text-[11px] text-fg3">
+                    {interview.meta.date.replace(/-/g, ". ")}
+                  </span>
+                  <span class="text-[10px] font-medium px-1.5 py-0.5 rounded-full bg-bg2 text-fg3 leading-none">
+                    {timeAgo(interview.meta.date)}
+                  </span>
+                  {isNew(interview.meta.date) && (
+                    <span class="inline-flex items-center gap-1 text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-green-100 text-green-700 leading-none">
+                      <span class="relative flex h-1.5 w-1.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
+                        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-600" />
+                      </span>
+                      Új
+                    </span>
+                  )}
+                  <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 leading-none">
+                    Meghallgatás
+                  </span>
+                </div>
+                <h2 class="font-display text-[22px] font-bold leading-tight tracking-[-0.3px] text-fg mb-2">
+                  {interview.meta.title}
+                </h2>
                 <div class="flex items-center gap-2">
-                  <div class="w-6 h-6 rounded-full bg-accent flex items-center justify-center shrink-0">
+                  <div class="w-6 h-6 rounded-full bg-[#7c3aed] flex items-center justify-center shrink-0">
                     <span class="font-display font-black text-white text-[9px]">
-                      {speaker.split(" ").map((w: string) => w[0]).join("").slice(0, 2)}
+                      {initials}
                     </span>
                   </div>
-                  <span class="font-display text-[15px] font-bold text-fg2">{speaker}</span>
+                  <span class="font-display text-[15px] font-bold text-fg2">
+                    {interview.meta.candidate}
+                  </span>
+                  {interview.meta.position && (
+                    <span class="text-[13px] text-fg3">
+                      · {interview.meta.position}
+                    </span>
+                  )}
                 </div>
-              )}
+              </div>
+
+              <div class="flex items-center gap-5 shrink-0 max-[600px]:gap-6">
+                <div>
+                  <div class="font-display text-[30px] font-bold text-[#7c3aed] leading-none">
+                    {interview.questions.length}
+                  </div>
+                  <div class="text-[10px] uppercase tracking-[1.5px] text-fg3 font-semibold mt-1">
+                    kérdés
+                  </div>
+                </div>
+                <div class="w-px h-8 bg-border" />
+                <div>
+                  <div class="font-display text-[30px] font-bold text-[#7c3aed] leading-none">
+                    {interview.committee_members.length}
+                  </div>
+                  <div class="text-[10px] uppercase tracking-[1.5px] text-fg3 font-semibold mt-1">
+                    képviselő
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="flex items-center gap-5 shrink-0 max-[600px]:gap-6">
-              <div>
-                <div class="font-display text-[30px] font-bold text-accent leading-none">{conf.questions.length}</div>
-                <div class="text-[10px] uppercase tracking-[1.5px] text-fg3 font-semibold mt-1">kérdés</div>
-              </div>
-              <div class="w-px h-8 bg-border"></div>
-              <div>
-                <div class="font-display text-[30px] font-bold text-accent leading-none">{outlets.length}</div>
-                <div class="text-[10px] uppercase tracking-[1.5px] text-fg3 font-semibold mt-1">médium</div>
-              </div>
+            {/* Committee party tags */}
+            <div class="px-6 pb-4 flex flex-wrap gap-1">
+              {[
+                ...new Set(
+                  interview.committee_members
+                    .map((m: any) => m.party)
+                    .filter(Boolean),
+                ),
+              ].map((party: any) => (
+                <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-violet-50 text-violet-700 border border-violet-200">
+                  {party}
+                </span>
+              ))}
             </div>
 
-          </div>
-
-          {/* Outlet tags */}
-          <div class="px-6 pb-4 flex flex-wrap gap-1">
-            {outlets.map(o => <span class="tag cursor-default">{o}</span>)}
-          </div>
-
-          {/* Metrics strip */}
-          <div class="border-t border-border bg-bg px-6 py-3 flex gap-x-8 gap-y-2 flex-wrap">
-            <div class="flex items-center gap-2.5 min-w-45 flex-1">
-              <span class="text-[11px] text-fg3 w-32 shrink-0">Átl. kritikusság</span>
-              <div class="flex-1 h-1 bg-bg3 rounded-full overflow-hidden">
-                <div class="h-full rounded-full bg-blue" style={`width:${avgCrit}%`}></div>
-              </div>
-              <span class="font-mono text-[11px] text-fg2 w-7 text-right">{avgCrit}%</span>
+            {/* Bottom strip */}
+            <div class="border-t border-border bg-bg px-6 py-3">
+              <span class="text-[11px] text-fg3">
+                Expozé + bizottsági meghallgatás
+              </span>
             </div>
-            <div class="flex items-center gap-2.5 min-w-45 flex-1">
-              <span class="text-[11px] text-fg3 w-32 shrink-0">Átl. ellenségesség</span>
-              <div class="flex-1 h-1 bg-bg3 rounded-full overflow-hidden">
-                <div class="h-full rounded-full bg-accent" style={`width:${avgHost}%`}></div>
-              </div>
-              <span class="font-mono text-[11px] text-fg2 w-7 text-right">{avgHost}%</span>
-            </div>
-            <div class="flex items-center gap-2.5 min-w-45 flex-1">
-              <span class="text-[11px] text-fg3 w-32 shrink-0">Max kritikusság</span>
-              <div class="flex-1 h-1 bg-bg3 rounded-full overflow-hidden">
-                <div class="h-full rounded-full bg-blue opacity-50" style={`width:${maxCrit}%`}></div>
-              </div>
-              <span class="font-mono text-[11px] text-fg2 w-7 text-right">{maxCrit}%</span>
-            </div>
-          </div>
-
-        </a>
-      );
-    })}
+          </a>
+        );
+      })
+    }
   </div>
-
 </Layout>

@@ -1,0 +1,366 @@
+---
+import { marked } from "marked";
+import Layout from "../../layouts/Layout.astro";
+import {
+  getAllMinisterInterviews,
+  getMinisterInterview,
+  ministerInterviewSlug,
+} from "../../lib/data";
+
+export async function getStaticPaths() {
+  return getAllMinisterInterviews().map((m) => ({
+    params: { slug: ministerInterviewSlug(m) },
+  }));
+}
+
+const { slug } = Astro.params;
+const interview = getMinisterInterview(slug!);
+if (!interview) return Astro.redirect("/");
+
+const exposeHtml = marked(interview.expose.content_markdown ?? "");
+
+function timeToSeconds(t: string): number {
+  if (!t) return 0;
+  const parts = t.split(":").map(Number);
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return 0;
+}
+
+const qCount = interview.questions.length;
+const initials = interview.meta.candidate
+  .split(" ")
+  .map((w) => w[0])
+  .join("")
+  .slice(0, 2);
+
+const videoId = interview.meta.youtube_video_id ?? null;
+---
+
+<Layout title={interview.meta.title}>
+
+  <!-- Masthead -->
+  <header class="bg-fg text-bg">
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-8">
+      <a
+        href="/"
+        class="inline-block font-mono text-[11px] tracking-[1px] uppercase text-[#777] no-underline mb-5 transition-colors duration-150 hover:text-[#a78bfa]"
+      >← Összes esemény</a>
+      <div class="flex items-center gap-2 mb-3">
+        <span class="font-mono text-xs tracking-[2px] uppercase text-[#888]">
+          {interview.meta.date.replace(/-/g, ". ")}
+          {interview.meta.location ? ` · ${interview.meta.location}` : ""}
+        </span>
+        <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-violet-900/60 text-violet-300 leading-none">Meghallgatás</span>
+      </div>
+      <h1 class="font-display text-[clamp(32px,6vw,60px)] font-black leading-tight mb-5 tracking-[-1px]">
+        {interview.meta.title}
+      </h1>
+      <div class="flex items-center gap-3 mb-5">
+        <div class="w-8 h-8 rounded-full bg-[#7c3aed] flex items-center justify-center shrink-0">
+          <span class="font-display font-black text-white text-[13px]">{initials}</span>
+        </div>
+        <div>
+          <div class="font-display text-[20px] font-bold text-white leading-tight">{interview.meta.candidate}</div>
+          {interview.meta.position && (
+            <div class="font-mono text-[10px] uppercase tracking-[1.5px] text-[#999] mt-0.5">{interview.meta.position}</div>
+          )}
+        </div>
+      </div>
+      <div class="flex gap-2 flex-wrap">
+        {interview.meta.duration && (
+          <div class="text-[12px] font-medium px-2.5 py-1 rounded-full bg-white/8 text-[#aaa]">
+            {interview.meta.duration}
+          </div>
+        )}
+        <a
+          href={interview.meta.youtube_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-[12px] font-medium px-2.5 py-1 rounded-full bg-white/8 text-[#aaa] no-underline transition-colors duration-150 hover:bg-white/15 hover:text-white flex items-center gap-1.5"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 16 11">
+            <path d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z" fill="#FF0000"/>
+            <path d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z" fill="#fff"/>
+          </svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Stats bar -->
+  <div class="bg-bg2 border-b border-border">
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 py-5 grid grid-cols-[repeat(auto-fit,minmax(120px,1fr))] max-[700px]:grid-cols-3 gap-4">
+      <div class="text-center">
+        <div class="font-display text-[32px] font-bold text-[#7c3aed]">{qCount}</div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Kérdés</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-[32px] font-bold text-[#7c3aed]">{interview.committee_members.length}</div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Képviselő</div>
+      </div>
+      <div class="text-center">
+        <div class="font-display text-[32px] font-bold text-[#7c3aed]">
+          {[...new Set(interview.questions.map(q => q.party).filter(Boolean))].length}
+        </div>
+        <div class="text-xs uppercase tracking-[1px] text-fg3 font-semibold">Párt</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating YouTube player -->
+  {videoId && (
+    <div
+      id="ytPlayer"
+      class="fixed bottom-4 left-4 z-999 shadow-2xl rounded-lg overflow-hidden border border-border max-[480px]:bottom-3 max-[480px]:left-3"
+      style="width:min(320px,calc(100vw - 2rem));background:#000"
+    >
+      <div class="flex items-center justify-between px-3 py-2 bg-fg text-bg select-none cursor-default">
+        <div class="flex items-center gap-2 min-w-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="13" viewBox="0 0 16 11" class="shrink-0">
+            <path d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z" fill="#FF0000"/>
+            <path d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z" fill="#fff"/>
+          </svg>
+          <span class="text-xs font-mono text-[#aaa] truncate">Hangnem · {interview.meta.date}</span>
+        </div>
+        <div class="flex gap-1 items-center shrink-0">
+          <button
+            id="ytMinimize"
+            title="Minimalizál"
+            class="text-[#888] hover:text-white transition-colors text-lg leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-white/10"
+          >−</button>
+          <button
+            id="ytClose"
+            title="Bezár"
+            class="text-[#888] hover:text-white transition-colors text-sm leading-none w-7 h-7 flex items-center justify-center rounded hover:bg-white/10"
+          >✕</button>
+        </div>
+      </div>
+      <div id="ytEmbed" style="aspect-ratio:16/9;background:#000">
+        <div id="ytTarget" style="width:100%;height:100%" />
+      </div>
+    </div>
+  )}
+
+  <style>
+    @media (max-width: 480px) {
+      #ytPlayer { width: min(220px, calc(100vw - 1.5rem)) !important; }
+    }
+  </style>
+
+  <!-- Exposé -->
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-3">
+    <h2 class="font-display text-2xl font-bold flex items-center gap-2.5">
+      Expozé
+      {interview.expose.start_time && (
+        <button
+          class="ts-btn font-mono text-sm font-normal text-[#7c3aed] bg-transparent border-none p-0 cursor-pointer transition-opacity duration-150 hover:opacity-70 hover:underline flex items-center gap-1"
+          data-seek={timeToSeconds(interview.expose.start_time)}
+        >
+          <svg width="10" height="10" viewBox="0 0 16 11" class="shrink-0"><path d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z" fill="currentColor"/><path d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z" fill="white"/></svg>
+          {interview.expose.start_time}
+        </button>
+      )}
+    </h2>
+  </div>
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-6">
+    <div class="bg-white border border-[rgba(124,58,237,0.15)] rounded-lg px-8 py-7 max-[600px]:px-5 max-[600px]:py-5 expose-prose">
+      <Fragment set:html={exposeHtml} />
+    </div>
+  </div>
+
+  <!-- Committee members -->
+  {interview.committee_members.length > 0 && (
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-6">
+      <h2 class="font-display text-2xl font-bold mb-4">Bizottsági tagok</h2>
+      <div class="flex flex-wrap gap-2">
+        {interview.committee_members.map((m) => (
+          <div class="flex items-center gap-2 bg-white border border-border rounded-full px-3 py-1.5 shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
+            <div class="w-5 h-5 rounded-full bg-violet-100 flex items-center justify-center shrink-0">
+              <span class="font-display font-black text-violet-700 text-[8px]">
+                {m.name.split(" ").map((w: string) => w[0]).join("").slice(0, 2)}
+              </span>
+            </div>
+            <span class="text-[13px] font-medium text-fg">{m.name}</span>
+            {m.party && <span class="text-[11px] text-fg3">· {m.party}</span>}
+          </div>
+        ))}
+      </div>
+    </div>
+  )}
+
+  <!-- Q&A -->
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-4 pb-3">
+    <h2 class="font-display text-2xl font-bold flex items-center gap-2.5">
+      Kérdések és válaszok
+      <span class="font-mono text-sm font-normal text-fg3 bg-bg2 px-2.5 py-0.5 rounded-full">{qCount}</span>
+    </h2>
+  </div>
+
+  <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-10">
+    {interview.questions.map((q) => {
+      const qSecs = timeToSeconds(q.question_start_time);
+      const aSecs = timeToSeconds(q.answer_start_time);
+      return (
+        <div
+          class="qa-card bg-white border border-[rgba(124,58,237,0.15)] rounded-lg mb-6 overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.05)]"
+          id={`card-${q.id}`}
+        >
+          <!-- Card header: questioner + party -->
+          <div class="flex items-start justify-between p-5 border-b border-[rgba(124,58,237,0.08)] gap-3 max-[700px]:p-4">
+            <div class="flex items-center gap-4 max-[700px]:flex-col max-[700px]:items-start max-[700px]:gap-2">
+              <div class="flex items-center gap-2">
+                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-[rgba(27,28,26,0.6)]">Képviselő:</span>
+                <span class="font-display italic text-[15px] text-fg">{q.questioner}</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 shrink-0 max-[700px]:flex-col max-[700px]:items-end max-[700px]:gap-2">
+              {q.party && (
+                <span class="px-3 py-1.5 rounded-xs text-[10px] font-mono font-black tracking-[2px] uppercase bg-violet-100 text-violet-800">
+                  {q.party}
+                </span>
+              )}
+            </div>
+          </div>
+
+          <!-- Card body: question + answer -->
+          <div class="p-5 max-[700px]:p-4">
+            <div class="min-w-0">
+              <div class="mb-5">
+                {videoId ? (
+                  <button
+                    class="ts-btn mb-1.5 font-mono text-[10px] font-medium text-fg3 bg-transparent border-none p-0 cursor-pointer transition-colors duration-150 hover:text-[#7c3aed] hover:underline flex items-center gap-1"
+                    data-seek={qSecs}
+                  >
+                    <svg width="9" height="9" viewBox="0 0 16 11" class="shrink-0"><path d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z" fill="currentColor"/><path d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z" fill="white"/></svg>
+                    {q.question_start_time}
+                  </button>
+                ) : (
+                  <span class="mb-1.5 font-mono text-[10px] font-medium text-fg3 flex items-center gap-1">
+                    {q.question_start_time}
+                  </span>
+                )}
+                <h3 class="font-body text-[22px] max-[700px]:text-[18px] font-bold leading-tight text-fg tracking-[-0.3px]">
+                  {q.question}
+                </h3>
+              </div>
+              <div class="relative p-5 rounded-r-lg border-l-[5px] border-[#7c3aed] mb-3 bg-violet-50/60">
+                <div class="absolute -top-3 -left-[10px] bg-[#7c3aed] text-white font-mono text-[9px] px-[7px] py-[3px] font-bold rounded-sm">
+                  Válasz:
+                </div>
+                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-[rgba(27,28,26,0.9)]">
+                  {q.answer}
+                </p>
+                <div class="flex justify-end mt-3">
+                  {videoId ? (
+                    <button
+                      class="ts-btn font-mono text-[11px] font-medium text-[#7c3aed] bg-transparent border-none p-0 cursor-pointer transition-opacity duration-150 hover:opacity-70 hover:underline flex items-center gap-1"
+                      data-seek={aSecs}
+                    >
+                      <svg width="10" height="10" viewBox="0 0 16 11" class="shrink-0"><path d="M15.67 1.72A2 2 0 0 0 14.26.3C13.01 0 8 0 8 0S2.99 0 1.74.3A2 2 0 0 0 .33 1.72C0 2.98 0 5.5 0 5.5s0 2.52.33 3.78a2 2 0 0 0 1.41 1.42C2.99 11 8 11 8 11s5.01 0 6.26-.3a2 2 0 0 0 1.41-1.42C16 8.02 16 5.5 16 5.5s0-2.52-.33-3.78z" fill="currentColor"/><path d="M6.4 7.86V3.14L10.55 5.5 6.4 7.86z" fill="white"/></svg>
+                      {q.answer_start_time}
+                    </button>
+                  ) : (
+                    <span class="font-mono text-[11px] font-medium text-[#7c3aed] flex items-center gap-1">
+                      {q.answer_start_time}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+  <script define:vars={{ videoId }} is:inline>
+    if (videoId) {
+      let player = null;
+
+      const tag = document.createElement("script");
+      tag.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(tag);
+
+      window.onYouTubeIframeAPIReady = () => {
+        player = new window.YT.Player("ytTarget", {
+          videoId,
+          height: "100%",
+          width: "100%",
+          playerVars: { rel: 0, modestbranding: 1 },
+        });
+      };
+
+      document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".ts-btn");
+        if (!btn) return;
+        const secs = parseInt(btn.dataset.seek ?? "0", 10);
+        if (!player?.seekTo) return;
+        player.seekTo(secs, true);
+        player.playVideo();
+        const embed = document.getElementById("ytEmbed");
+        if (embed.style.display === "none") embed.style.display = "";
+        document.getElementById("ytPlayer").style.display = "";
+      });
+
+      document.getElementById("ytMinimize")?.addEventListener("click", () => {
+        const embed = document.getElementById("ytEmbed");
+        embed.style.display = embed.style.display === "none" ? "" : "none";
+      });
+
+      document.getElementById("ytClose")?.addEventListener("click", () => {
+        document.getElementById("ytPlayer").style.display = "none";
+        player?.pauseVideo?.();
+      });
+    }
+  </script>
+
+</Layout>
+
+<style>
+  .expose-prose :global(h2) {
+    font-family: var(--font-display, serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-fg);
+  }
+  .expose-prose :global(h3) {
+    font-family: var(--font-display, serif);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-fg);
+  }
+  .expose-prose :global(p) {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: var(--color-fg2);
+  }
+  .expose-prose :global(ul) {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-fg2);
+    list-style-type: disc;
+  }
+  .expose-prose :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-fg2);
+    list-style-type: decimal;
+  }
+  .expose-prose :global(li) {
+    margin-bottom: 0.25rem;
+    line-height: 1.6;
+  }
+  .expose-prose :global(strong) {
+    color: var(--color-fg);
+    font-weight: 600;
+  }
+  .expose-prose :global(h2:first-child) {
+    margin-top: 0;
+  }
+</style>
