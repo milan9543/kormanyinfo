@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "type": "minister_interview",
+    "title": "dr. Orbán Anita miniszterjelölti meghallgatása",
+    "date": "2026-05-11",
+    "candidate": "dr. Orbán Anita",
+    "position": "Külügyminiszter",
+    "youtube_url": "https://www.youtube.com/watch?v=SVY6MHrP74M",
+    "youtube_video_id": "SVY6MHrP74M",
+    "duration": "",
+    "location": ""
+  },
+  "expose": {
+    "start_time": "00:00:33",
+    "end_time": "00:15:22",
+    "content_markdown": "## A külpolitika feladata és a választói felhatalmazás\n\nA külpolitika elsődleges feladata a nemzeti érdekek következetes képviselete és érvényesítése a nemzetközi térben. A diplomácia ennek eszköze: hidakat épít országok és kontinensek között, konfliktusokat kezel, szövetségeket erősít, és biztosítja Magyarország biztonságát, gazdasági érdekeit és polgárainak jólétét.\n\nA 21. század összetett, egymásra utalt világában a külpolitika nem elszigetelődésről szól, hanem tudatos jelenlétről, együttműködésről és befolyásról. Magyarország értékeit és érdekeit saját szuverenitásunk megőrzésével leghatékonyabban az európai együttműködésben tudjuk érvényesíteni.\n\nAz április 12-i parlamenti választáson a TISZA hatalmas többségű felhatalmazást kapott: a választópolgárok Európát választották a keleti irányú külpolitika helyett. Az új magyar külpolitika ezért egyértelműen Európát helyezi középpontba, és a nyugati szövetségi rendszer keretein belül biztosítja a nemzeti érdekek hatékony érvényesítését. A Szent Istváni Államalapítás örökségéhez igazodva Magyarország helye Európában, az Unióban és a NATO-ban van.\n\n## Intézményi prioritások és a külügyminisztérium megújítása\n\nEgy tisztán külpolitikai fókuszú intézményt fognak létrehozni, és megújítják a magyar diplomácia működését. A külügyminisztérium szerepe a 21. században a koordináció és az integráció: egy szolgáltató jellegű külügyi struktúra kialakítása a cél.\n\nErős diplomáciai kart építenek, ahol a szakmaiság és az integritás lesz az alap. Ennek érdekében átfogó diplomáciai életpálya-modellt dolgoznak ki, megújítják a belső képzési rendszert, teljesítménymutatókat vezetnek be, visszavezetik a versenybizsgai intézményét, és megerősítik a diplomataképzést a felsőoktatásban.\n\nA külgazdasági terület leválasztásra kerül, és számos energetikai üggyel együtt átkerül a gazdasági és energetikai minisztériumhoz. A külgazdasági ügynökség hálózatát fenntartják. A Magyar Külügyi Intézet visszakerül a Külügyi Minisztériumhoz, fő feladatai: EU-tagországok politikai elemzése, Balkán–posztszovjet térség és Európán kívüli világ kutatása. Az Információs Hivatal szintén visszakerül a Külügyminisztérium felügyelete alá.\n\n## Európai kapcsolatok és uniós prioritások\n\nMagyarország célja a bizalomhelyreállítás az Európai Unióban és a tagállamokban. Kiemelt feladat az uniós forrásokhoz való hozzáférés biztosítása, amelyhez elengedhetetlen a korrupció elleni fellépés, az intézményi garanciák megerősítése és az Európai Ügyészséghez való csatlakozás. Célunk, hogy Magyarország ismét együttműködő partnerként az EU 27-ek részeként működjön.\n\n## Transatlanti kapcsolatok és Oroszország\n\nA transatlanti kapcsolatok meghatározóak maradnak. A NATO vezető erejeként az Egyesült Államok kulcsszereplő a biztonságpolitikai együttműködésben, ugyanakkor az európai kapacitások erősítése elengedhetetlen. Oroszország vonatkozásában az új kormány átlátható megközelítést alkalmaz: a kapcsolat nem alapulhat egyoldalú függőségen, és Oroszország politikája biztonsági kihívást jelent Magyarország és Európa számára.\n\n## Regionális és szomszédságpolitika\n\nRegionális szinten a visegrádi együttműködés a magyar külpolitika egyik alapköve. Cél a V4 partnerségi viszony helyreállítása, különösen a magyar–lengyel kapcsolatok rendezése. A miniszterelnök első útja Varsóba vezet.\n\nA szomszédságpolitikában a határon túli magyar közösségek jogainak maradéktalan tiszteletben tartása alapvető feltétel. Ukrajna szuverenitását és területi integritását Magyarország elismeri, elsődleges feladat a kárpátaljai magyar közösség jogainak újbóli biztosítása. Szlovákia esetében elfogadhatatlan a kollektív bűnösség elvén alapuló bánásmód a magyar kisebbséggel szemben.\n\n## Összefoglalás\n\nA cél a vitás ügyek rendezése valamennyi relációban, a valódi magyar érdek — a magyar emberek, vállalatok és Magyarország érdekének — következetes és kiszámítható képviselete. A külpolitikát nem pártérdek vagy harmadik ország érdeke, hanem a szuverén Magyarország érdeke fogja vezérelni."
+  },
+  "committee_members": [
+    {
+      "id": "c_01",
+      "name": "dr. Szabó Alexandra",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_02",
+      "name": "dr. Juhász Hajnalka",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_03",
+      "name": "Sztanková Viktória",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_04",
+      "name": "Ballai Mihály",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_05",
+      "name": "Sóthi Anikó Zsuzsa",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_06",
+      "name": "Németh Zsolt",
+      "party": "Fidesz",
+      "role": "alelnök"
+    },
+    {
+      "id": "c_07",
+      "name": "Berki Ákos",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_08",
+      "name": "Pásztor Anett",
+      "party": "TISZA",
+      "role": "alelnök"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:15:51",
+      "answer_start_time": "00:28:46",
+      "end_time": "00:30:58",
+      "questioner": "dr. Szabó Alexandra",
+      "party": "TISZA",
+      "question": "Mi lesz a külügyminisztérium feladata az uniós pénzek hazahozatalában?",
+      "answer": "Összkormányzati feladat, koordináció az EU-s államtitkárságon át; külügy feladata a tagállami támogatások biztosítása."
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:16:55",
+      "answer_start_time": "00:30:58",
+      "end_time": "00:31:45",
+      "questioner": "dr. Juhász Hajnalka",
+      "party": "TISZA",
+      "question": "Netanyahu meghívása és az ICC-tagság feszültsége – hogyan oldható fel?",
+      "answer": "Az 56/70 évfordulóra minden demokratikusan választott kormányfőt meghívtak; Izraelben hamarosan választás lesz; nem lát egyensúlytalanságot."
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "00:17:34",
+      "answer_start_time": "00:31:45",
+      "end_time": "00:32:14",
+      "questioner": "dr. Juhász Hajnalka",
+      "party": "TISZA",
+      "question": "Megmarad-e a Hungary Helps program az üldözött keresztények megsegítésére?",
+      "answer": "Az üldözött keresztények támogatása prioritás marad; a Hungary Helps és kapcsolódó intézmények áttekintésre kerülnek."
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "00:18:21",
+      "answer_start_time": "00:32:14",
+      "end_time": "00:33:21",
+      "questioner": "Sztanková Viktória",
+      "party": "TISZA",
+      "question": "Milyen szomszédságpolitikát szeretne meghonosítani?",
+      "answer": "A Kárpát-medencét megoldások és együttműködések jellemezzék; szomszédok végiglátogatása, határon átnyúló együttműködések erősítése."
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "00:18:36",
+      "answer_start_time": "00:32:47",
+      "end_time": "00:33:21",
+      "questioner": "Sztanková Viktória",
+      "party": "TISZA",
+      "question": "Felszólal-e majd a szlovákiai magyarok védelmében?",
+      "answer": "A kollektív bűnösség elvén alapuló fenyegetés elfogadhatatlan; a miniszterelnök Ficóval már megegyezett egy brüsszeli találkozóban."
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "00:19:07",
+      "answer_start_time": "00:33:21",
+      "end_time": "00:34:06",
+      "questioner": "Ballai Mihály",
+      "party": "TISZA",
+      "question": "Milyen kapcsolatokat szeretnének kialakítani Kínával?",
+      "answer": "Pragmatikus együttműködés, kölcsönös érdekek alapján; kínai cégeknek ugyanazokat a szabályokat kell betartani, mint bármely másnak."
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "00:20:18",
+      "answer_start_time": "00:34:29",
+      "end_time": "00:36:10",
+      "questioner": "Sóthi Anikó Zsuzsa",
+      "party": "TISZA",
+      "question": "Hogyan lehet gyorsan visszaszerezni az európai szövetségesek bizalmát?",
+      "answer": "Tagállamokban erős diplomáciai jelenlét, szövetségépítés, az uniós pénzek hazahozatalán keresztüli bizalomépítés."
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "00:20:30",
+      "answer_start_time": "00:47:15",
+      "end_time": "00:47:43",
+      "questioner": "Sóthi Anikó Zsuzsa",
+      "party": "TISZA",
+      "question": "Támogatja-e a nyugat-balkáni bővítést?",
+      "answer": "A Nyugat-Balkán bővítés kiemelt cél marad, érdem alapon; Magyarország politikai és szakértői támogatást kíván adni."
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "00:24:34",
+      "answer_start_time": "00:34:29",
+      "end_time": "00:36:50",
+      "questioner": "Németh Zsolt",
+      "party": "Fidesz",
+      "question": "Tervez-e intézményes hátteret a külpolitikai stratégiaalkotásnak?",
+      "answer": "Külügyi stratégiát alkotnak, a parlamenttel és társadalommal megvitatják; szélesebb közeget vonnak be, beleértve a Külügyi Intézetet."
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "00:25:19",
+      "answer_start_time": "00:36:50",
+      "end_time": "00:37:26",
+      "questioner": "Németh Zsolt",
+      "party": "Fidesz",
+      "question": "Hogyan látja a külföldi beavatkozás (foreign interference) veszélyét?",
+      "answer": "A külső beavatkozást elutasítják; Magyarország szuverenitását helyreállítják, az érintett intézményeket megvizsgálják."
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "00:25:50",
+      "answer_start_time": "00:37:03",
+      "end_time": "00:37:44",
+      "questioner": "Németh Zsolt",
+      "party": "Fidesz",
+      "question": "Hogyan minősíti a külpolitikai jellegű szivárogtatásokban való magyar szerepvállalást és Panyi Szabolcs személyzeti politikába való beleszólását?",
+      "answer": "Hatáskörükbe tartozó intézményeket megvizsgálják; személyi kérdésekben a miniszter dönt, nem újságírók."
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "00:27:27",
+      "answer_start_time": "00:37:44",
+      "end_time": "00:38:42",
+      "questioner": "Berki Ákos",
+      "party": "TISZA",
+      "question": "Hogyan képzeli el a magyar–lengyel kapcsolatok helyreállítását?",
+      "answer": "Ezeréves barátság; Lengyelország minta az uniós pénzek felhasználásában és a diaszpóra hazahívásában; együtt kívánnak dolgozni."
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "00:27:45",
+      "answer_start_time": "00:38:42",
+      "end_time": "00:39:53",
+      "questioner": "Berki Ákos",
+      "party": "TISZA",
+      "question": "Támogatja-e az orosz szankciók bővítését, és felhagy-e a vétópolitikával?",
+      "answer": "Magyar érdeket sértő tételt nem engednek, harmadik ország érdekében nem vétóznak; a vétó utolsó eszköz, a diplomácia korábbi szakaszban hat."
+    },
+    {
+      "id": "q_14",
+      "question_start_time": "00:42:21",
+      "answer_start_time": "00:46:29",
+      "end_time": "00:46:41",
+      "questioner": "Pásztor Anett",
+      "party": "TISZA",
+      "question": "Hozzájárul-e a titkosított kínai szerződések bizottsági megismeréséhez?",
+      "answer": "Minden titkosított szerződésnél jogszerűen járnak el, megvizsgálják a titkosítás feloldásának lehetőségét."
+    },
+    {
+      "id": "q_15",
+      "question_start_time": "00:43:08",
+      "answer_start_time": "00:46:41",
+      "end_time": "00:47:43",
+      "questioner": "dr. Juhász Hajnalka",
+      "party": "TISZA",
+      "question": "Mely nyugat-balkáni országok közeledhetnek az EU-hoz?",
+      "answer": "Montenegro a legelőrehaladottabb; kontinuitás lesz a magyar külpolitikában, érdem alapon támogatják a bővítést."
+    },
+    {
+      "id": "q_16",
+      "question_start_time": "00:43:43",
+      "answer_start_time": "00:47:43",
+      "end_time": "00:48:43",
+      "questioner": "ismeretlen bizottsági tag",
+      "party": "TISZA",
+      "question": "Milyen migrációs politikát fog folytatni a külügyminisztérium?",
+      "answer": "Kétoldalú kapcsolatokban együttműködés a migrációs nyomás forrásországaival; diplomácia eszközeivel segítik a szaktárcákat."
+    },
+    {
+      "id": "q_17",
+      "question_start_time": "00:45:28",
+      "answer_start_time": "00:48:43",
+      "end_time": "00:49:15",
+      "questioner": "Sztanková Viktória",
+      "party": "TISZA",
+      "question": "Támogatja-e a kormány Ukrajna EU-s csatlakozását, és hogyan védi a kárpátaljai magyarokat?",
+      "answer": "Gyorsított csatlakozást nem támogatnak; csatlakozási feltételeket teljesíteni kell; elsődleges a kárpátaljai magyarok jogainak rendezése."
+    },
+    {
+      "id": "q_18",
+      "question_start_time": "00:45:55",
+      "answer_start_time": "00:49:15",
+      "end_time": "00:50:07",
+      "questioner": "dr. Szabó Alexandra",
+      "party": "TISZA",
+      "question": "Hogyan látja az amerikai–magyar kapcsolatok jövőjét és a béketanácsi tagságot?",
+      "answer": "Amerika kiemelt stratégiai partner marad; béketanács feltételeit még nem ismerik, azok ismeretében nyilatkoznak."
+    }
+  ]
+}
