@@ -1,0 +1,194 @@
+{
+  "meta": {
+    "type": "minister_interview",
+    "title": "Tanács Zoltán miniszterjelölti meghallgatása",
+    "date": "2026-05-11",
+    "candidate": "Tanács Zoltán",
+    "position": "Tudományos és Technológiai Miniszter",
+    "youtube_url": "https://www.youtube.com/watch?v=b9pSmyqRhuY",
+    "youtube_video_id": "b9pSmyqRhuY",
+    "duration": "",
+    "location": ""
+  },
+  "expose": {
+    "start_time": "00:01:33",
+    "end_time": "00:21:40",
+    "content_markdown": "## Bevezető gondolatok\n\nTanács Zoltán miniszterjelölt történelmi lehetőségként értékeli, hogy egy tárcában összpontosul majd a tudomány, a technológia, a digitális állam kialakítása, a kutatásfejlesztés és az innováció felelőssége.\n\n## Szakmai háttér\n\n27 éve dolgozik az üzleti életben vezetési és informatikai tanácsadóként, több kontinensen, több száz vállalatnál, közigazgatásban, szinte minden minisztériumban, önkormányzatoknál, egyetemeknél és kórházakban. Jól ismeri a hazai állapotokat a digitalizáció és működés szempontjából. Személyesen mindig is érdeklődött az innováció, a robotika és a mesterséges intelligencia iránt.\n\n## Személyes érintettség az oktatásban\n\nHárom gyermeke van: a legnagyobb külföldön egyetemista, a második most érettségizik, a harmadik hetedikes. Meggyőződése, hogy jó oktatás nélkül nincs sikeres állam, és minden tárcának mindent meg kell tennie egy jövőálló nemzet kineveléséért.\n\n## A Tudományos és Technológiai Minisztérium feladatai\n\n### Tudománypolitika és kutatásfejlesztés\n\nA tárca elsősorban a tudománypolitika, a kutatásfejlesztés és az innováció portfólióját kezeli. Az elmúlt időszakban sok vihar zajlott: 2019 óta a kutatóhálózatot erőszakosan kiszervezték az MTA alól, HUN-REN-né alakították, majd négy társadalomtudományi intézetet kiszakítottak. A kutatói bérek alacsonyak (átlag ~800 ezer forint), a kutatók 42%-a kénytelen másodállást vállalni. A GDP mintegy 1,3-4%-át fordítják K+F-re, ami messze elmarad az uniós ~2%-os átlagtól. A ciklus végére legalább az uniós átlagot szeretnék elérni, hosszabb távon meghaladni azt.\n\n### Digitális állam kiépítése\n\nA minisztérium másik nagy területe a kormányzati informatika és a digitális állam. Három fő témakör köré szervezik a munkát:\n\n1. **Közigazgatási digitális alapszolgáltatások fejlesztése** – az egymással összekapcsolt, interoperábilis rendszerek kiépítése, ahol az adatokat csak egyszer kell megadni. Felgyorsítandó fejlesztések: e-ingatlan-nyilvántartás, jogi személyek egységes nyilvántartása.\n\n2. **Kiberbiztonság** – a kibervédelemmel foglalkozó szervek jelenleg szét vannak aprózva. A szabályozást, felügyeletet és irányítást egységesíteni kell. Az incidensek (külügy rendszerének feltörése, EESZT leállása, KRÉTA adatszivárgás) után azonnali, következetes kivizsgálásra és tanulási folyamatra van szükség.\n\n3. **Mesterséges intelligencia** – az EU AI Act-tel harmonikusan, ésszel implementálva, biztonságos módon kell használhatóvá tenni a technológiát. Felelősen kell bánni vele, mivel egyszerre lehet áldás és átok.\n\n## Kapcsolódás az oktatáshoz\n\nMagyarország a magánemberek digitális kompetenciaszintje tekintetében néhány százalékponttal az uniós átlag felett van, az e-government indexekben is előrelépés történt. Azonban a vállalkozási szektorban jelentős elmaradás van. A pedagógusok adminisztrációs terheit csökkenteni kell, mesterséges intelligencia alapú eszközökkel kell támogatni munkájukat (órarend, tanmenet, egyéni tanulási utak). A közoktatás digitálisan elmaradott, érdemes visszahozni a versenyt és a sokszínűséget a rendszerbe.\n\n## Felsőoktatás, szuperszámítógépek és nemzetközi együttműködés\n\nA felsőoktatás és a tudománypolitika között szoros átjárás van, különösen a PhD-hallgatók világában. A hazai szuperszámítógépek (pl. Komondor, ~5-6 petaflops) messze elmaradnak a világ élvonalától, de fontos, hogy saját szuverén fejlesztési tér legyen a magyar kutatók és vállalkozók számára.\n\nSürgős feladat a Horizon és Erasmus programokhoz való visszacsatlakozás, mivel a kizárás nemcsak pénzügyi, hanem kutatási együttműködési és versenyképességi szempontból is súlyos hiba volt.\n\n## Foresight funkció\n\nMagyarországon hiányzik egy kormányzati előretekintő (foresight/horizon scanning) egység, amely a feltörekvő technológiákat és társadalmi kihívásokat monitorozza. Ilyen funkciót kell létrehozni, a hazai felsőoktatás, kutatóhálózat és MTA tudásának bevonásával, hosszú távú stratégiai szemlélettel."
+  },
+  "committee_members": [
+    {
+      "id": "c_01",
+      "name": "Hankó Balázs",
+      "party": "Fidesz-KDNP",
+      "role": "bizottsági tag, volt miniszter"
+    },
+    {
+      "id": "c_02",
+      "name": "Dr. Kincse Csongor",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_03",
+      "name": "Müller Anna",
+      "party": "ismeretlen",
+      "role": "alnökasszony"
+    },
+    {
+      "id": "c_04",
+      "name": "Dr. Bugia László",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_05",
+      "name": "Kaproncai Balázs",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_06",
+      "name": "Czirbus Gábor",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_07",
+      "name": "Radics Béla",
+      "party": "Fidesz-KDNP",
+      "role": "bizottsági tag"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:22:08",
+      "answer_start_time": "00:42:54",
+      "end_time": "00:45:05",
+      "questioner": "Hankó Balázs",
+      "party": "Fidesz-KDNP",
+      "question": "Mi a HUN-REN jövőképe, bevonják-e az irányító testületet?",
+      "answer": "Párbeszédben kell rendezni; egyeztet az MTA új elnökével és a főigazgatókkal; a rugalmas gazdálkodást megőrzik."
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:22:08",
+      "answer_start_time": "00:45:05",
+      "end_time": "00:48:18",
+      "questioner": "Hankó Balázs",
+      "party": "Fidesz-KDNP",
+      "question": "Fenntartják-e a hat éves közfeladat-finanszírozást és a kutatási alaprészt?",
+      "answer": "Nem szeretnének kevesebb finanszírozást; az alapfinanszírozást emelni kell; politika ne szóljon bele a pályázati döntésekbe."
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "00:22:08",
+      "answer_start_time": "00:48:38",
+      "end_time": "00:52:31",
+      "questioner": "Hankó Balázs",
+      "party": "Fidesz-KDNP",
+      "question": "Honnan teremtik elő a 2%-os GDP-arányhoz szükséges 650-700 milliárdot?",
+      "answer": "A pazarlás megszüntetéséből, pl. a digitális közbeszerzési ügynökség szabálytalan szerződéseiből várható megtakarításokból fedezik."
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "00:26:04",
+      "answer_start_time": "00:38:48",
+      "end_time": "00:40:10",
+      "questioner": "Hankó Balázs",
+      "party": "Fidesz-KDNP",
+      "question": "A Horizon-pótló konzorciumi modellt folytatják-e?",
+      "answer": "Visszacsatlakozás a Horizonhoz a cél; a pótlék források nem helyettesítik a valódi nemzetközi vérkeringést."
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "00:27:01",
+      "answer_start_time": "00:45:48",
+      "end_time": "00:48:18",
+      "questioner": "Dr. Kincse Csongor",
+      "party": "ismeretlen",
+      "question": "Hogyan tervez kiszámítható kutatói életpályát biztosítani Magyarországon?",
+      "answer": "Stabilitást és emelt alapfinanszírozást kell biztosítani; külön figyelmet érdemelnek a középkarrieres kutatók."
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "00:27:48",
+      "answer_start_time": "00:45:48",
+      "end_time": "00:48:18",
+      "questioner": "Müller Anna",
+      "party": "ismeretlen",
+      "question": "Mi a stratégia az alacsony PhD-ösztöndíj és a fiatal kutatók elvándorlása ellen?",
+      "answer": "Az ösztöndíjak emelése szükséges; a PhD-s és a középkarrieres kutatók helyzetét is javítani kell célzott programokkal."
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "00:28:28",
+      "answer_start_time": "00:42:54",
+      "end_time": "00:45:05",
+      "questioner": "Dr. Bugia László",
+      "party": "ismeretlen",
+      "question": "Milyen jövőt lát az MTA és HUN-REN viszonyában, hogyan erősíti a tudományos autonómiát?",
+      "answer": "Párbeszéddel rendezi; az MTA-t és HUN-REN-t érintő döntéseket az érintettekkel közösen kell meghozni."
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "00:29:08",
+      "answer_start_time": "00:40:10",
+      "end_time": "00:42:54",
+      "questioner": "Kaproncai Balázs",
+      "party": "ismeretlen",
+      "question": "Milyen jövőképet fogalmaz meg, hogyan hangolja össze a tudomány, felsőoktatás és technológia együttműködését?",
+      "answer": "A cél gazdag, tudásalapú társadalom; a tudásból valódi gazdasági érték kell, ehhez független finanszírozás és kooperáció szükséges."
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "00:30:57",
+      "answer_start_time": "00:31:24",
+      "end_time": "00:36:22",
+      "questioner": "Czirbus Gábor",
+      "party": "ismeretlen",
+      "question": "Hogyan segítheti a tudományinnováció az oktatást, mi a véleménye a Nemzeti Tudós Képző Akadémiáról?",
+      "answer": "A tudomány az oktatást digitális eszközökkel és MI-alapú támogatással segítheti; a Nemzeti Tudós Képző Akadémiáról nem nyilatkozott külön."
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "00:30:57",
+      "answer_start_time": "00:36:22",
+      "end_time": "00:40:10",
+      "questioner": "Czirbus Gábor",
+      "party": "ismeretlen",
+      "question": "Hogyan lehet \"magyar\" a mesterséges intelligencia?",
+      "answer": "Magyar nyelvű korpusz fejlesztésével és szuverén, hazai kontroll alatt álló AI-infrastruktúrával; a technológiát biztonságosan kell elérhetővé tenni."
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "00:30:57",
+      "answer_start_time": "00:45:48",
+      "end_time": "00:48:18",
+      "questioner": "Czirbus Gábor",
+      "party": "ismeretlen",
+      "question": "A 400 ezer forintra emelt PhD-ösztöndíjat hogyan vinnék tovább?",
+      "answer": "Az ösztöndíjak emelése folytatandó; a teljes kutatói alapfinanszírozást emelni kell, nem elegendő a pályázati rendszer."
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "00:31:44",
+      "answer_start_time": "00:35:24",
+      "end_time": "00:36:22",
+      "questioner": "Radics Béla",
+      "party": "Fidesz-KDNP",
+      "question": "Pázmány-ügy: a tudomány szabadsága vagy az egyházi fenntartói jog az erősebb?",
+      "answer": "A független igazságszolgáltatás döntése a mérvadó; politikusnak nem feladata megmondani, mi a tudomány."
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "00:34:56",
+      "answer_start_time": "00:35:24",
+      "end_time": "00:36:22",
+      "questioner": "Radics Béla",
+      "party": "Fidesz-KDNP",
+      "question": "Önálló tudományágnak tekinti-e a gender studies-t, és hogyan valósítaná meg Magyarországon?",
+      "answer": "A tudomány független; politikus nem mondhatja meg, mi számít tudománynak – ez nem az ő feladata."
+    }
+  ]
+}
