@@ -1,0 +1,374 @@
+{
+  "meta": {
+    "type": "minister_interview",
+    "title": "Dr. Ruf Bálint György miniszterjelölti meghallgatása",
+    "date": "2026-05-12",
+    "candidate": "Dr. Ruf Bálint György",
+    "position": "Miniszterelnökséget vezető miniszter",
+    "youtube_url": "https://www.youtube.com/watch?v=eFu4g5brPyc",
+    "youtube_video_id": "eFu4g5brPyc",
+    "duration": "",
+    "location": ""
+  },
+  "expose": {
+    "start_time": "00:01:57",
+    "end_time": "00:34:44",
+    "content_markdown": "## Bevezető és csapatbemutató\n\nRuf Bálint György megköszönte a meghívást, majd bemutatta munkatársait: jobbján Csontos Bence, a Tisza párt parlamenti képviselője, bajai körzet győztese, nemzetközi szakértő és filozófiai diplomával rendelkező, aki politikai-parlamenti államtitkárjelölt lesz; balján Dr. Biró Nagy András politikatudomány doktora, aki szakpolitikai államtitkár lesz a miniszterelnökségen.\n\n## Történeti visszatekintés: 1990, 2010, 2026\n\nHárom kulcsdátumot emelt ki: 1990-ben Magyarország óriási lehetőséget kapott a nyugati, demokratikus útra lépésre, részben külső körülmények (szovjet összeomlás) következtében. 2010-ben Orbán Viktor és a Fidesz-KDNP kétharmados felhatalmazást kapott egy működő, polgári Magyarország megteremtésére. A jelölt értékelése szerint ez nem sikerült: szerinte Gyurcsány Ferenc és Orbán Viktor együttesen tette tönkre Magyarország elmúlt 20 évét. Az ország 2010-ben az újracsatlakozók között az egyik legfejlettebb volt, 16 évvel később a legszegényebb és legkorruptabb lett.\n\n## A Karmelita és a minisztériumi épületek tapasztalatai\n\nElmesélte, hogy a kormányátvétel előestéjén bejárta a Karmelita-palotát, a miniszterelnöki kabinettirodát és a Belügyminisztériumot. Részletesen leírta az ott tapasztalt luxust: márvány asztalok, szivarszoba panorámás kilátóval, az ország legszebb magánkilátójával, ahol Rogán Antal és munkatársai dolgoztak, miközben a kórházakban nem volt WC-papír. A belügyminisztérium felújítása 100 milliárd forintba került. Mindez szerinte azt jelképezi, miért vesztette el a Fidesz-KDNP kormány a nép bizalmát.\n\n## A felhatalmazás értelmezése\n\nA Tisza párt 3,21 millió szavazatot kapott a Fideszes választási törvények mellett, ami szerinte soha nem látott, kétharmados felhatalmazás. Ez a felhatalmazás a jogállam visszaállítására, az állami propaganda megszüntetésére, az állam szolgáló szerepének helyreállítására szól. Az ország saját magát mentette meg az utolsó pillanatban.\n\n## A minisztérium tervezett működése\n\nA minisztérium politikai elemző és javaslattevő szerv lesz, nem fog jogszabályokat kezdeményezni, nem készít elő törvényeket – az a szakminisztériumok feladata. A titkosszolgálatok felügyelete visszakerül a Belügyminisztériumhoz, a Honvédelmi Minisztériumhoz és az Igazságügyi Minisztériumhoz. A KSH szakmai kontrollja visszakerül a pénzügyminiszterhez, majd önálló intézmény lesz.\n\nLesz politikai-parlamenti, stratégiai, szakpolitikai és kommunikációs államtitkárság. Az uniós tükörreferatúra leképezi a minisztériumi struktúrát. Három szóvivő fogja tájékoztatni a sajtót a kormánydöntésekről.\n\n## Prioritások és kötelezettségvállalások\n\nTörvénybe iktatják, hogy a magyar állam nem folytathat gyűlöletkeltést, lejáratást, megbélyegzést. A Tisza párt kampányígéreteit mind megvalósítják. A valaha volt legnagyobb átvilágítást rendeli el a minisztériumban – politikait, gazdaságit és egyéb területeken is.\n\nNem lesznek bosszúra, elszámoltatásra törekvő lépések a minisztériumból; a jóvátétel és a megfelelő hatalmi ágak munkájának lehetővé tétele a cél. A nemzeti visszaszerzési és védelmi hivatal felállítása 141 országgyűlési képviselő által benyújtott törvénnyel történik majd, jogállami keretek között, júliustól kezdve.\n\n## Záró gondolatok\n\nHangsúlyozta, hogy tévedni emberi dolog, és a Tisza-kormány – szemben az Orbán-kormánnyal – be fogja ismerni a tévedéseit. Feladatának tekinti, hogy az elmúlt 16 év bűneit, sebeit megpróbálják orvosolni, és soha többé ne ismétlődhessen meg, ami történt. Célként fogalmazta meg, hogy október 23-án, az 56-os forradalom 70. évfordulóján az egész ország – beleértve az ellenzéki szavazókat is – együtt ünnepeljen egy szabad, európai, demokratikus Magyarországban."
+  },
+  "committee_members": [
+    {
+      "id": "c_01",
+      "name": "Miskolci Orsolya",
+      "party": "Tisza",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_02",
+      "name": "Tuzson Bence",
+      "party": "Fidesz-KDNP",
+      "role": "volt igazságügyi miniszter, bizottsági tag"
+    },
+    {
+      "id": "c_03",
+      "name": "Boka Zsolt",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_04",
+      "name": "Csúszda Gábor",
+      "party": "Fidesz-KDNP",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_05",
+      "name": "Kismáté Zsolt",
+      "party": "Tisza",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_06",
+      "name": "Szűcs Gábor",
+      "party": "Fidesz-KDNP",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_07",
+      "name": "Tóth Norbert",
+      "party": "Tisza",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_08",
+      "name": "Apáti István",
+      "party": "Mi Hazánk",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_09",
+      "name": "Stumf István",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_10",
+      "name": "Juhász Hajnalka",
+      "party": "KDNP",
+      "role": "bizottsági tag, Európai Ügyek Bizottságának delegáltja"
+    },
+    {
+      "id": "c_11",
+      "name": "Hallerné Nagy Anikó",
+      "party": "Tisza",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_12",
+      "name": "Simon Krisztián Márk",
+      "party": "Tisza",
+      "role": "bizottsági tag"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:35:14",
+      "answer_start_time": "01:37:29",
+      "end_time": "01:39:13",
+      "questioner": "Miskolci Orsolya",
+      "party": "Tisza",
+      "question": "Mi garantálja a múlttal való szembenézés jogállami keretek közötti lefolytatását?",
+      "answer": "A nemzet egységes; jóváltétel, átvilágítás és a megfelelő hatalmi ágak munkájának biztosítása a cél, nem bosszú."
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:36:38",
+      "answer_start_time": "01:07:21",
+      "end_time": "01:08:00",
+      "questioner": "Tuzson Bence",
+      "party": "Fidesz-KDNP",
+      "question": "Belefér-e a jogállamiságba a köztársasági elnök, ügyészség, bíróság, AB lemondásra szólítása?",
+      "answer": "A hatalmi ágak elválasztásánál Polt Pétert és az ügyészséget hozta példaként, jelezve, hogy az előző rendszer sem tartotta be ezt az elvet."
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "00:36:38",
+      "answer_start_time": "01:20:58",
+      "end_time": "01:22:00",
+      "questioner": "Tuzson Bence",
+      "party": "Fidesz-KDNP",
+      "question": "Folytatja-e a migrációs ügyben indított EU bírósági pert Magyarország?",
+      "answer": "Nem adott közvetlen választ; az EU-s pénzek hazahozatalát és az Európai Ügyészséghez való csatlakozást jelölte meg elsődleges lépésként."
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "00:36:38",
+      "answer_start_time": "01:19:16",
+      "end_time": "01:20:00",
+      "questioner": "Tuzson Bence",
+      "party": "Fidesz-KDNP",
+      "question": "Tisztában van-e azzal, hogy az EU szerint a magyar közbeszerzési rendszer Európa legjobb?",
+      "answer": "Ironikusan reagált: azt leszögezte, az EU-s pénzek felét ellopták, és a közbeszerzések felén egyetlen ajánlattevő indult."
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "00:41:24",
+      "answer_start_time": "01:09:34",
+      "end_time": "01:09:52",
+      "questioner": "Boka Zsolt",
+      "party": "ismeretlen",
+      "question": "Fejtse ki a tervezett antikorrupciós intézkedéseket.",
+      "answer": "A minisztériumban külön csapat végzi az átvilágítást, jogállami keretek között, példátlanul kemény törvénycsomaggal szüntetik meg a korrupciót."
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "00:41:47",
+      "answer_start_time": "01:09:52",
+      "end_time": "01:10:17",
+      "questioner": "Csúszda Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Megtartják-e az egyablakos ügyintézést (kormányablakok) és az ügyfélkapu-alkalmazást?",
+      "answer": "Komplex kérdés; a főispáni rendszert felülvizsgálják, az eredményes megoldások megmaradnak, a területfejlesztés Lőrincz Viktória miniszterhez kerül."
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "00:41:47",
+      "answer_start_time": "01:09:34",
+      "end_time": "01:14:25",
+      "questioner": "Csúszda Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Hogyan tudnak az egyéni Fideszes képviselők együttműködni a kormánnyal a kerületeikért?",
+      "answer": "Megválasztott képviselőként kötelező őt és szavazóit segíteni; nem lesz különbség kormánypárti és ellenzéki képviselő között, mindenki szavazóit szolgálják."
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "00:41:47",
+      "answer_start_time": "01:24:55",
+      "end_time": "01:26:08",
+      "questioner": "Csúszda Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Miért nem érkeztek meg az EU-s források, ha a 27 feltétel teljesült?",
+      "answer": "A miniszterelnök magához vonta az uniós ügyek felügyeletét, hogy a lehető leggyorsabban hazahozzák a pénzeket; meg kell felelni négy területen."
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "00:41:47",
+      "answer_start_time": "01:07:21",
+      "end_time": "01:08:00",
+      "questioner": "Csúszda Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Belefér-e a bírói függetlenségbe, ha aktív politikus bírót kritizál?",
+      "answer": "Nem; a jogállam helyreállításának egyik legfontosabb eleme a bírói függetlenség, az előző rendszer maga sem tartotta be."
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "00:44:33",
+      "answer_start_time": "01:37:29",
+      "end_time": "01:38:30",
+      "questioner": "Kismáté Zsolt",
+      "party": "Tisza",
+      "question": "Miért fontos a közhatalmat gyakorló személyek megbízatásának időbeli korlátozása?",
+      "answer": "Az örök hatalomban lévők hibrid állapotba kerülnek; a fékek és ellensúlyok rendszere éppen ezért létezik, hogy megakadályozza ezt."
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "00:45:22",
+      "answer_start_time": "01:01:07",
+      "end_time": "01:07:21",
+      "questioner": "Szűcs Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Az önéletrajza szerint Ön a Gyurcsány-kormány alatt jogi tanácsadó és kabinettfőnök volt – miért kritizálja azt az időszakot?",
+      "answer": "Elismerte, hogy ott volt; azt gondolta akkor is, hogy az SZDSZ hibát követett el a Bajnai-kormány támogatásával, és ezért felállt. Elszámolt a múltjával, bocsánatkérést tart emberi erénynek."
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "00:45:22",
+      "answer_start_time": "01:29:51",
+      "end_time": "01:33:06",
+      "questioner": "Szűcs Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Szükséges-e jogharmonizáció az EU Bírósága gyermekvédelmi törvény elleni ítélete miatt?",
+      "answer": "Visszautasította a kérdést: az előző kormány fedde el a szőlő utcai ügyet; gyermekvédelemről előbb bocsánatkérés kellene Önöktől."
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "00:45:22",
+      "answer_start_time": "01:33:33",
+      "end_time": "01:35:00",
+      "questioner": "Szűcs Gábor",
+      "party": "Fidesz-KDNP",
+      "question": "Megváltoztatja-e az anya=nő, apa=férfi alapvetést?",
+      "answer": "Nem válaszolt közvetlenül; a gyermekvédelmi ügyet a Fidesz felelőssége miatt firtatta vissza."
+    },
+    {
+      "id": "q_14",
+      "question_start_time": "00:49:11",
+      "answer_start_time": "01:37:29",
+      "end_time": "01:38:30",
+      "questioner": "Tóth Norbert",
+      "party": "Tisza",
+      "question": "Hogyan lehet begyógyítani az állami propagandagépezet által okozott társadalmi sebeket?",
+      "answer": "Jóváltétel minden szinten: a propaganda leállítása, az idősek megnyugtatása, a normális kommunikáció helyreállítása az első lépések."
+    },
+    {
+      "id": "q_15",
+      "question_start_time": "00:49:11",
+      "answer_start_time": "01:37:29",
+      "end_time": "01:38:30",
+      "questioner": "Tóth Norbert",
+      "party": "Tisza",
+      "question": "Mit tervez a kormányzati kommunikáció eredeti szerepének visszaállítása érdekében?",
+      "answer": "Kommunikációs államtitkárság jön létre, törvénybe iktatják, hogy az állam nem folytathat gyűlöletkeltést; három szóvivő tájékoztat."
+    },
+    {
+      "id": "q_16",
+      "question_start_time": "00:50:17",
+      "answer_start_time": "01:10:17",
+      "end_time": "01:11:00",
+      "questioner": "Apáti István",
+      "party": "Mi Hazánk",
+      "question": "Szuverén nemzetállamokon alapuló Európa vagy Európai Egyesült Államok koncepcióban dolgozik?",
+      "answer": "Magyarország 1100 éve a nyugathoz tartozik; az EU és NATO tagságot a nép népszavazáson erősítette meg, ezt nem kérdőjelezik meg."
+    },
+    {
+      "id": "q_17",
+      "question_start_time": "00:50:17",
+      "answer_start_time": "01:32:23",
+      "end_time": "01:33:06",
+      "questioner": "Apáti István",
+      "party": "Mi Hazánk",
+      "question": "Engedi-e be a bevándorlókat Magyarországra?",
+      "answer": "Nem; Magyar Péter sokszor elmondta, hogy szigorú migrációs politikát folytatnak, és júniustól betiltják a harmadik országból érkező vendégmunkásokat."
+    },
+    {
+      "id": "q_18",
+      "question_start_time": "00:50:17",
+      "answer_start_time": "01:10:17",
+      "end_time": "01:11:00",
+      "questioner": "Apáti István",
+      "party": "Mi Hazánk",
+      "question": "Mit változtat a kínai-német gyárak kapcsán fennálló helyzeten?",
+      "answer": "A főispánok nem azért lesznek, hogy külföldi gyárak érdekeit szolgálják; Gajdos László miniszter a legszigorúbban lép fel ezek ellen."
+    },
+    {
+      "id": "q_19",
+      "question_start_time": "00:50:17",
+      "answer_start_time": "01:11:00",
+      "end_time": "01:12:30",
+      "questioner": "Apáti István",
+      "party": "Mi Hazánk",
+      "question": "Milyen határidővel vállalják az átvilágítást és mi az elszámoltatás módszere – erőből vagy ésszel?",
+      "answer": "Szépen haladnak; nem vendetta, hanem jóvátétel a cél; vagyonvisszaszerzés és büntetőjogi igényérvényesítés együtt; nincs elég jogász mindent egyszerre vizsgálni."
+    },
+    {
+      "id": "q_20",
+      "question_start_time": "00:50:17",
+      "answer_start_time": "01:21:40",
+      "end_time": "01:24:40",
+      "questioner": "Apáti István",
+      "party": "Mi Hazánk",
+      "question": "Elfogad-e egy Mi Hazánkos javaslatot a stratégiai állami vagyon négyötödös parlamenti védelembe helyezéséről?",
+      "answer": "A magyar állam vagyonát meg kell tartani és vissza kell szerezni, amit elherdáltak; a vagyonvédelem politikailag fontos, de nem az ő tárcájának feladata."
+    },
+    {
+      "id": "q_21",
+      "question_start_time": "00:55:05",
+      "answer_start_time": "01:14:55",
+      "end_time": "01:20:50",
+      "questioner": "Stumf István",
+      "party": "ismeretlen",
+      "question": "Hogyan változik az ügynökakták nyilvánossága a jelenlegi rendszerhez képest?",
+      "answer": "Széles szakmai konszenzus alapján, modern technológiával az adatbázisokat összekapcsolják; kb. 10% még titkos, azt a szolgálatok őrzik; az országgyűlés hozza meg a végső döntést."
+    },
+    {
+      "id": "q_22",
+      "question_start_time": "00:55:05",
+      "answer_start_time": "01:20:50",
+      "end_time": "01:21:40",
+      "questioner": "Stumf István",
+      "party": "ismeretlen",
+      "question": "Van-e szándék a párt- és kampányfinanszírozás újraszabályozására?",
+      "answer": "Igen; a példátlanul kemény antikorrupciós törvénycsomag részeként ez is napirenden van."
+    },
+    {
+      "id": "q_23",
+      "question_start_time": "00:55:53",
+      "answer_start_time": "01:24:55",
+      "end_time": "01:29:51",
+      "questioner": "Juhász Hajnalka",
+      "party": "KDNP",
+      "question": "Milyen felelősségi rendszerben működik az Európa-politika koordinációja és az EU melletti állandó képviselet?",
+      "answer": "A miniszterelnök magához vonta az uniós koordinációt; az operatív forrásfelhasználás Lőrincz Viktória miniszterhez kerül, hogy ne legyen egykézben."
+    },
+    {
+      "id": "q_24",
+      "question_start_time": "00:55:53",
+      "answer_start_time": "01:29:51",
+      "end_time": "01:33:06",
+      "questioner": "Juhász Hajnalka",
+      "party": "KDNP",
+      "question": "Mi a Tisza-kormány álláspontja a migrációs paktum végrehajtásáról, befogadásról, relokációról?",
+      "answer": "Szigorú migrációs politika marad; nem engedik be az illegális migrációt; 2026 júniustól harmadik országból érkező vendégmunkásokat betiltják."
+    },
+    {
+      "id": "q_25",
+      "question_start_time": "00:55:53",
+      "answer_start_time": "01:33:20",
+      "end_time": "01:37:18",
+      "questioner": "Juhász Hajnalka",
+      "party": "KDNP",
+      "question": "Támogatja-e a Tisza-kormány Ukrajna csatlakozási klasztereinek megnyitását és az egyhangúságról minősített többségre való áttérést?",
+      "answer": "Ukrajna gyorsított csatlakozását nem támogatják; rendes ütemű csatlakozásnál ügydöntő népszavazás lesz; a 11 pontos kisebbségvédelmi feltételrendszer külügyi szinten érvényesítendő."
+    },
+    {
+      "id": "q_26",
+      "question_start_time": "00:55:53",
+      "answer_start_time": "01:24:55",
+      "end_time": "01:25:20",
+      "questioner": "Juhász Hajnalka",
+      "party": "KDNP",
+      "question": "Mi a Tisza-kormány álláspontja a védett benzinárra és az export-irányumra vonatkozó kötelezettségszegési eljárásban?",
+      "answer": "Nem adott részletes választ; az EU-s forrásokhoz való mielőbbi hozzájutás érdekében négy területen lépnek."
+    },
+    {
+      "id": "q_27",
+      "question_start_time": "00:57:37",
+      "answer_start_time": "01:14:55",
+      "end_time": "01:20:50",
+      "questioner": "Hallerné Nagy Anikó",
+      "party": "Tisza",
+      "question": "Az ügynökakták nyilvánossága mennyiben lesz más, mint a jelenlegi, különös tekintettel a személyiségi jogi kockázatokra?",
+      "answer": "Szakmai konszenzus alapján, levéltárosok, pszichológusok, történészek bevonásával; a megfigyeltek érdekeit is védik; kb. 10% még titkos, az adatbázisok összekapcsolása modern technikával gyorsan megoldható."
+    },
+    {
+      "id": "q_28",
+      "question_start_time": "00:59:14",
+      "answer_start_time": "01:38:45",
+      "end_time": "01:41:16",
+      "questioner": "Simon Krisztián Márk",
+      "party": "Tisza",
+      "question": "Mit csinálna másképp egy nagyobb társadalmi felhatalmazású, nemzetet egyesítő alkotmányozási folyamatban?",
+      "answer": "A cél minden magyar ember kormánya lenni; jóváltétel, átvilágítás, az alapvető normák helyreállítása szükséges; az alkotmányozás széles szakmai és társadalmi párbeszéddel kell hogy történjen."
+    }
+  ]
+}
