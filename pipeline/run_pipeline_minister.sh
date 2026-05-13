@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Full local pipeline for minister candidate hearings:
-# YouTube URL → mp3 → whisper SRT → Claude JSON → git push
+# YouTube URL → mp3 → whisper SRT → Claude JSON
 #
 # Usage: ./pipeline/run_pipeline_minister.sh <youtube_url> <YYYY-MM-DD> <"Firstname Lastname">
 #
@@ -93,16 +93,7 @@ echo ""
 echo "=== Step 3: Processing SRT → minister interview JSON ==="
 python pipeline/process_srt_minister.py "$SRT_PATH"
 
-# ---------------------------------------------------------------------------
-# Step 4: Commit and push
-# ---------------------------------------------------------------------------
-echo ""
-echo "=== Step 4: Committing and pushing ==="
-git add src/data/minister_interviews/
-git commit -m "Add minister interview ${DATE} — ${CANDIDATE_NAME}"
-git push
-
 echo ""
 echo "================================================"
-echo "  Done! Interview ${DATE} / ${CANDIDATE_NAME} is live."
+echo "  Done! Interview ${DATE} / ${CANDIDATE_NAME} processed."
 echo "================================================"

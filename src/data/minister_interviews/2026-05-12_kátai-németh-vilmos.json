@@ -1,0 +1,332 @@
+{
+  "meta": {
+    "type": "minister_interview",
+    "title": "Kátai-Németh Vilmos miniszterjelölti meghallgatása",
+    "date": "2026-05-12",
+    "candidate": "Kátai-Németh Vilmos",
+    "position": "Szociális- és Családügyi Miniszter",
+    "youtube_url": "https://www.youtube.com/watch?v=pPBBqHHiMqA",
+    "youtube_video_id": "pPBBqHHiMqA",
+    "duration": "",
+    "location": ""
+  },
+  "expose": {
+    "start_time": "00:14:05",
+    "end_time": "00:30:04",
+    "content_markdown": "## Személyes háttér\n\nKétgyermekes édesapa és egy unoka nagyapája. 16 éves korában retinasorvadás következtében elveszítette látását. Édesanyja szavai vezérelték egész életén át: \"Nem az a szégyen, ha elbukunk, hanem az, ha nem tudunk felállni.\" Ezt követően gyógymasszőr képesítést szerzett, 2005-ben feketeöves aikidó mesterré vált, majd 2007-ben elkezdett jogi egyetemet. Látássérülteknek önvédelmi rendszert fejlesztett ki \"Fehér Kard\" névvel, tágósedző lett, Parakarate Európa-bajnok.\n\n## Fogyatékosügy és esélyegyenlőség\n\nA KSH 2022-es adatai szerint 1,8 millió ember él valamilyen funkcionális korlátozással Magyarországon, 640 ezer ember súlyos fogyatékkal. Az esélyegyenlőség és akadálymentesítés terén komoly lemaradások vannak: gyógyászati segédeszközök elérhetősége, közlekedés, tanulás, egészségügy. Tankönyvek akadálymentesítése nem megoldott, a sajátos nevelési igényű gyermekek integrált, inkluzív oktatása nem elégséges. A munkaerőpiaci helyzeten is javítani kell a fogyatékkal élők esetében.\n\n## Gyermekvédelem\n\nAz Orbán-kormány cinikus és lekezelő volt a gyermekvédelem területén. A jelzőrendszer súlyos hibákban szenvedett, a problémákat az asztalról söpörték. A Szöllős utcai eset kapcsán az átvilágítási rendszer átengedte Juhász Péter Pált. Az áldozatokat hibáztatták. A TISZA vállalása: teljes körű kivizsgálás szakemberek bevonásával, a felelősök felelősségre vonása. Párbeszéd a gyermekvédelmi szakemberekkel, széles körű társadalmi egyeztetés. A kampányt ki kell zárni a gyermekvédelemből, a gyermekek nem tárgyak, hanem jogalanyok.\n\n## Szociális ágazat\n\nMagyarország az EU legkorruptabb és legszegényebb országa. 3 millió ember él mélyszegénység kockázatában, 500 ezer gyermek él mélyszegénységben. Évente több mint 200 ember fagy meg, legtöbbjük otthonában. A szociális hálót át kell világítani, hatalmas ellátási sivatagok vannak. Hiányoznak a családmegtartó szolgáltatások, óriásiak a várólisták. Az idős gondozás rendszerét meg kell erősíteni, az otthonápolást fejleszteni kell. A szociális támogatások rendszerét úgy kell megváltoztatni, hogy a rászorulókat szolgálja. Tanévkezdés előtt megkezdik a rászoruló gyermekek tanévkezdési segélyének folyósítását.\n\n## Esélyegyenlőség és nők szerepvállalása\n\nA TISZA erősíteni kívánja a nők szerepvállalását a politikai és közéletben – a frakciójában 44 női képviselő ül. Az egyenlő bánásmód hatóságát és ombudsman intézményét újjáélesztik. Az egyszülős családok helyzetét jogszabály-alkotással javítani kell. 5 roma polgár tett országgyűlési képviselői esküt.\n\n## Munkaerőpolitika\n\nA Fidesz gazdasági migránsokat zúdított az országra, amelyek kiszorították a magyar munkaerőt. A TISZA 2026. június 1-től megtiltja az unión kívüli harmadik országbeli gazdasági migránsok bevándorlását. A közmunkaprogram kudarc: a benne dolgozók a minimálbér 50%-át kapják, nincs esélyük visszatérni az elsődleges munkaerőpiacra. A közfoglalkoztatást megtartják, de megreformálják. A munkajogi szabályokat a munkavállalók védelmére fogják módosítani, a szakszervezeteket megerősítik. Egészségkárosító gyárakat ellenőrizni kell."
+  },
+  "committee_members": [
+    {
+      "id": "c_01",
+      "name": "ismeretlen (elnökasszony)",
+      "party": "ismeretlen",
+      "role": "bizottság elnöke (ideiglenes)"
+    },
+    {
+      "id": "c_02",
+      "name": "ismeretlen (házi orvos képviselő)",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_03",
+      "name": "Szekeres Pál",
+      "party": "ismeretlen",
+      "role": "EP-képviselő, tanácskozási joggal részt vevő"
+    },
+    {
+      "id": "c_04",
+      "name": "ismeretlen (borsodi képviselő)",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_05",
+      "name": "ismeretlen (Túró Dóra / Dúró Dóra)",
+      "party": "Mi Hazánk",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_06",
+      "name": "Orbán Balázs",
+      "party": "Fidesz",
+      "role": "bizottság leendő tagja, tanácskozási joggal"
+    },
+    {
+      "id": "c_07",
+      "name": "Zsigó Róbert",
+      "party": "Fidesz",
+      "role": "bizottság leendő elnöke, tanácskozási joggal"
+    },
+    {
+      "id": "c_08",
+      "name": "Várgányi Benedek",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_09",
+      "name": "ismeretlen (családbólozó képviselő)",
+      "party": "TISZA",
+      "role": "bizottsági tag"
+    },
+    {
+      "id": "c_10",
+      "name": "ismeretlen (Csilla elnökasszony helyett szóló)",
+      "party": "ismeretlen",
+      "role": "bizottsági tag"
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:30:49",
+      "answer_start_time": "00:58:57",
+      "end_time": "01:01:08",
+      "questioner": "ismeretlen házi orvos képviselő",
+      "party": "TISZA",
+      "question": "Hogyan javít a szociális otthonok helyzetén és az otthoni ellátáson?",
+      "answer": "Az idősek méltóságát helyre kell állítani, bentlakásos intézményeket kell fejleszteni, a TISZA vállalásait fokozatosan teljesítik."
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:31:59",
+      "answer_start_time": "01:01:08",
+      "end_time": "01:01:40",
+      "questioner": "Szekeres Pál",
+      "party": "ismeretlen",
+      "question": "Marad-e a fogyatékosságügyi államtitkárság struktúrája, és hogyan működik a civil együttműködés?",
+      "answer": "A fogyatékosságügyi államtitkársági struktúra megmarad."
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "00:32:30",
+      "answer_start_time": "01:01:40",
+      "end_time": "01:05:08",
+      "questioner": "Szekeres Pál",
+      "party": "ismeretlen",
+      "question": "Hogyan felelnek meg a CRPD-egyezménynek, és mik a konkrét fogyatékos-foglalkoztatási tervek?",
+      "answer": "Teljes jogharmonizáció szükséges, a FOD-ba az alapelveket át kell ültetni. Az akreditált foglalkoztatásban visszaélések vannak, ezeket orvosolni kell."
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "00:36:39",
+      "answer_start_time": "01:06:38",
+      "end_time": "01:06:45",
+      "questioner": "ismeretlen borsodi képviselő",
+      "party": "TISZA",
+      "question": "Mi fog történni a kórházban hagyott, haza nem adható csecsemőkkel?",
+      "answer": "Az örökbefogadást gyorsítani kell, hogy minden gyermek szerető családban nőhessen fel."
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "00:37:53",
+      "answer_start_time": "00:59:01",
+      "end_time": "01:00:38",
+      "questioner": "ismeretlen (Dúró Dóra)",
+      "party": "Mi Hazánk",
+      "question": "Elegendő-e a meglévő gyermekvédelmi törvény módosítása, vagy új törvény kell?",
+      "answer": "Az 1997-es törvény elavult, új korszerű gyermekvédelmi törvényt kell alkotni széles egyeztetéssel."
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "00:38:10",
+      "answer_start_time": "01:05:19",
+      "end_time": "01:06:10",
+      "questioner": "ismeretlen (Dúró Dóra)",
+      "party": "Mi Hazánk",
+      "question": "Milyen konkrét intézkedésekkel kívánják megállítani a népességfogyást 2035-re?",
+      "answer": "Nem elég a pénzbeli támogatás; a népességelvándorlást is csökkenteni kell, a visszatérő fiatalok és jobb millió növeli a termékenységi rátát."
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "00:40:28",
+      "answer_start_time": "01:06:15",
+      "end_time": "01:06:38",
+      "questioner": "ismeretlen (Dúró Dóra)",
+      "party": "Mi Hazánk",
+      "question": "Csökkentik-e az állami gondozásban nevelkedők számát, és hogyan vonzzák a nevelőszülőket?",
+      "answer": "A családból kiemelés csak végső eszköz lehet, az örökbefogadást gyorsítani kell."
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "00:41:12",
+      "answer_start_time": "01:10:05",
+      "end_time": "01:10:48",
+      "questioner": "ismeretlen (Dúró Dóra)",
+      "party": "Mi Hazánk",
+      "question": "Mikor és milyen ütemben lesz a 25%-os béremelés a gyermekvédelmi dolgozóknak?",
+      "answer": "A szektor átvilágítása és egyeztetés után fokozatosan bevezetik a béremelést a TISZA programja szerint."
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "00:44:23",
+      "answer_start_time": "01:00:24",
+      "end_time": "01:00:57",
+      "questioner": "Orbán Balázs",
+      "party": "Fidesz",
+      "question": "Milyen statisztikákra támaszkodnak a szegénység mérésekor, elfogadják-e az Eurostat adatait?",
+      "answer": "Elsősorban saját mérésekre támaszkodnak; az ország bejárásával egyértelműen látható volt a 3 millió mélyszegénységi kockázatban élő."
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "00:46:34",
+      "answer_start_time": "01:11:43",
+      "end_time": "01:12:30",
+      "questioner": "Orbán Balázs",
+      "party": "Fidesz",
+      "question": "A közfoglalkoztatás foglalkoztatáspolitikai vagy szociális segélyezési alapú legyen-e?",
+      "answer": "A közfoglalkoztatást nem szüntetik meg, hanem fejlesztik, hogy az emberek át tudjanak lépni az elsődleges munkaerőpiacra."
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "00:47:51",
+      "answer_start_time": "01:06:42",
+      "end_time": "01:07:12",
+      "questioner": "Orbán Balázs",
+      "party": "Fidesz",
+      "question": "Fenntartják-e a Nők 40 programot, és biztosítják-e a törvénybe írt adómentességi intézkedések hatályba lépését?",
+      "answer": "Szerzett jogokat nem vesznek el, a Nők 40 megmarad, a meglévő kedvezményeket fenntartják."
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "00:49:07",
+      "answer_start_time": "01:07:17",
+      "end_time": "01:07:42",
+      "questioner": "Orbán Balázs",
+      "party": "Fidesz",
+      "question": "Végrehajtják-e az Európai Bíróság genderérzékenyítéssel kapcsolatos döntését?",
+      "answer": "Az EU Bíróság döntését végrehajtják; a genderpropaganda vád alaptalan, a gyermekvédelemben a propagandának nincs helye."
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "00:49:23",
+      "answer_start_time": "01:00:24",
+      "end_time": "01:00:57",
+      "questioner": "ismeretlen (TISZA képviselő)",
+      "party": "TISZA",
+      "question": "Hogyan tervezik az átvilágítást és a felelősségre vonást a gyermekvédelmi bántalmazások ügyében?",
+      "answer": "Teljes körű kivizsgálás, pszichológusok és nyomozóhatóságok bevonásával, senki nem maradhat büntetlen."
+    },
+    {
+      "id": "q_14",
+      "question_start_time": "00:49:43",
+      "answer_start_time": "01:00:24",
+      "end_time": "01:01:00",
+      "questioner": "ismeretlen (TISZA képviselő)",
+      "party": "TISZA",
+      "question": "Mit tesz a roma közösség esélyegyenlőségéért?",
+      "answer": "A romák magyar állampolgárok, megkülönböztetni nem kell és nem szabad; horizontálisan, mindenkit érintő felzárkóztatási programok szükségesek."
+    },
+    {
+      "id": "q_15",
+      "question_start_time": "00:51:52",
+      "answer_start_time": "01:01:08",
+      "end_time": "01:01:58",
+      "questioner": "Zsigó Róbert",
+      "party": "Fidesz",
+      "question": "Fennmarad-e a gyermekek utáni adókedvezmény rendszere?",
+      "answer": "Szerzett kedvezményeket nem vesznek el, a rendszert megvizsgálják és ahol lehet, javítanak rajta."
+    },
+    {
+      "id": "q_16",
+      "question_start_time": "00:52:44",
+      "answer_start_time": "01:07:52",
+      "end_time": "01:08:19",
+      "questioner": "Zsigó Róbert",
+      "party": "Fidesz",
+      "question": "Folytatják-e a gyermekes édesanyák munkavállalásának elősegítését (GYED, GYES fejlesztése)?",
+      "answer": "A nők foglalkoztatásának emelése cél, a TISZA teljeskörűen megbecsüli a nőket a munkaerőpiacon."
+    },
+    {
+      "id": "q_17",
+      "question_start_time": "00:53:14",
+      "answer_start_time": "01:08:24",
+      "end_time": "01:08:42",
+      "questioner": "Zsigó Róbert",
+      "party": "Fidesz",
+      "question": "Fennmaradnak-e az ingyenes tankönyv és étkeztetés programok?",
+      "answer": "A meglévő kedvezményeket nem veszik el, 20-szor is ugyanezt mondja."
+    },
+    {
+      "id": "q_18",
+      "question_start_time": "00:54:02",
+      "answer_start_time": "01:06:42",
+      "end_time": "01:07:12",
+      "questioner": "Zsigó Róbert",
+      "party": "Fidesz",
+      "question": "Fenntartják-e a Nők 40 programot?",
+      "answer": "A Nők 40 megmarad, szerzett jogokat nem vesznek el."
+    },
+    {
+      "id": "q_19",
+      "question_start_time": "00:54:21",
+      "answer_start_time": "01:08:42",
+      "end_time": "01:09:12",
+      "questioner": "Zsigó Róbert",
+      "party": "Fidesz",
+      "question": "Fennmarad-e a CSOK, CSOK Plusz, falusi CSOK, babaváró hitel?",
+      "answer": "A TISZA vállalásait tartja, szerzett kedvezményeket nem vesz el, a programokat fokozatosan teljesítik."
+    },
+    {
+      "id": "q_20",
+      "question_start_time": "00:54:49",
+      "answer_start_time": "01:01:58",
+      "end_time": "01:02:17",
+      "questioner": "Zsigó Róbert",
+      "party": "Fidesz",
+      "question": "Ebben a ciklusban hány ígéretüket tartják be?",
+      "answer": "A TISZA-nak volt programja, szemben a Fidesszel; a TISZA összes vállalását tartani fogja."
+    },
+    {
+      "id": "q_21",
+      "question_start_time": "00:55:11",
+      "answer_start_time": "01:09:12",
+      "end_time": "01:09:51",
+      "questioner": "Várgányi Benedek",
+      "party": "TISZA",
+      "question": "Milyen problémák merülnek fel a hajléktalanság területén és hogyan javítanak rajta?",
+      "answer": "A hajléktalanok penalizálása szégyenletes volt; nem büntetni, hanem felemelni kell őket, a hajléktalanság szociális, nem büntetőjogi kérdés."
+    },
+    {
+      "id": "q_22",
+      "question_start_time": "00:55:58",
+      "answer_start_time": "01:10:05",
+      "end_time": "01:10:48",
+      "questioner": "ismeretlen (családbólozó képviselő)",
+      "party": "TISZA",
+      "question": "Hogyan segíti a gyermekvédelmi szakembereket a túlterheltség csökkentésében?",
+      "answer": "Le kell ülni a szakemberekkel, meg kell hallgatni őket és közösen dolgozzák ki a programokat."
+    },
+    {
+      "id": "q_23",
+      "question_start_time": "00:57:02",
+      "answer_start_time": "01:10:48",
+      "end_time": "01:11:28",
+      "questioner": "ismeretlen (Csilla / elnöki pozícióból kérdező)",
+      "party": "ismeretlen",
+      "question": "Honnan lesz fedezet a 20 ezer új férőhelyre és a 25%-os béremelésre, tervezik-e a szektor privatizációját?",
+      "answer": "Az új költségvetés figyelembevételével fokozatosan bevezetik; a privatizációról az átvilágítás után döntenek."
+    },
+    {
+      "id": "q_24",
+      "question_start_time": "00:58:04",
+      "answer_start_time": "01:11:24",
+      "end_time": "01:12:42",
+      "questioner": "ismeretlen (Csilla / elnöki pozícióból kérdező)",
+      "party": "ismeretlen",
+      "question": "Mit gondol az emberi élet kezdetéről/végéről, a biológiai nem megváltoztathatóságáról és a házasság fogalmáról?",
+      "answer": "Személyes véleményét megtartja magának; ezekben a kérdésekben széles körű társadalmi egyeztetést tart szükségesnek."
+    },
+    {
+      "id": "q_25",
+      "question_start_time": "01:15:36",
+      "answer_start_time": "01:17:08",
+      "end_time": "01:18:44",
+      "questioner": "ismeretlen (Csilla / elnöki pozícióból kérdező)",
+      "party": "ismeretlen",
+      "question": "Mikor lesz a 25%-os béremelés és miből, privatizálják-e a szektort? (ismételt kérdés)",
+      "answer": "Az új költségvetés után fokozatosan; az átvilágítás után döntenek a privatizációról."
+    }
+  ]
+}
