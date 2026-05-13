@@ -211,13 +211,13 @@ const videoId = interview.meta.youtube_video_id ?? null;
           <div class="flex items-start justify-between p-5 border-b border-[rgba(124,58,237,0.08)] gap-3 max-[700px]:p-4">
             <div class="flex items-center gap-4 max-[700px]:flex-col max-[700px]:items-start max-[700px]:gap-2">
               <div class="flex items-center gap-2">
-                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-[rgba(27,28,26,0.6)]">Képviselő:</span>
+                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-fg3">Képviselő:</span>
                 <span class="font-display italic text-[15px] text-fg">{q.questioner}</span>
               </div>
             </div>
             <div class="flex items-center gap-3 shrink-0 max-[700px]:flex-col max-[700px]:items-end max-[700px]:gap-2">
               {q.party && (
-                <span class="px-3 py-1.5 rounded-xs text-[10px] font-mono font-black tracking-[2px] uppercase bg-violet-100 text-violet-800">
+                <span class="px-3 py-1.5 rounded-xs text-[10px] font-mono font-black tracking-[2px] uppercase party-badge">
                   {q.party}
                 </span>
               )}
@@ -245,11 +245,11 @@ const videoId = interview.meta.youtube_video_id ?? null;
                   {q.question}
                 </h3>
               </div>
-              <div class="relative p-5 rounded-r-lg border-l-[5px] border-[#7c3aed] mb-3 bg-violet-50/60">
+              <div class="relative p-5 rounded-r-lg border-l-[5px] border-[#7c3aed] mb-3 answer-bg">
                 <div class="absolute -top-3 -left-[10px] bg-[#7c3aed] text-white font-mono text-[9px] px-[7px] py-[3px] font-bold rounded-sm">
                   Válasz:
                 </div>
-                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-[rgba(27,28,26,0.9)]">
+                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-fg">
                   {q.answer}
                 </p>
                 <div class="flex justify-end mt-3">
@@ -362,5 +362,28 @@ const videoId = interview.meta.youtube_video_id ?? null;
   }
   .expose-prose :global(h2:first-child) {
     margin-top: 0;
+  }
+  .answer-bg {
+    background: color-mix(in srgb, #7c3aed 8%, transparent);
+  }
+  .party-badge {
+    background: #ede9fe;
+    color: #5b21b6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .answer-bg {
+      background: color-mix(in srgb, #7c3aed 12%, var(--color-bg2));
+    }
+    :root:not([data-theme="light"]) .party-badge {
+      background: #2e1a5e;
+      color: #c4b5fd;
+    }
+  }
+  [data-theme="dark"] .answer-bg {
+    background: color-mix(in srgb, #7c3aed 12%, var(--color-bg2));
+  }
+  [data-theme="dark"] .party-badge {
+    background: #2e1a5e;
+    color: #c4b5fd;
   }
 </style>

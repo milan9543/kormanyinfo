@@ -605,7 +605,7 @@ function timeToSeconds(t: string): number {
           <div class="flex items-start justify-between p-5 border-b border-[rgba(226,191,184,0.1)] gap-3 max-[700px]:p-4">
             <div class="flex items-center gap-4 max-[700px]:flex-col max-[700px]:items-start max-[700px]:gap-2">
               <div class="flex items-center gap-2">
-                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-[rgba(27,28,26,0.6)]">
+                <span class="font-mono text-[10px] uppercase font-bold tracking-[1.5px] text-fg3">
                   Újságíró:
                 </span>
                 <span class="font-display italic text-[15px] text-fg">
@@ -679,7 +679,7 @@ function timeToSeconds(t: string): number {
                 <div class="absolute -top-3 -left-[10px] bg-accent text-white font-mono text-[9px] px-[7px] py-[3px] font-bold">
                   Válasz:
                 </div>
-                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-[rgba(27,28,26,0.9)]">
+                <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-fg">
                   {q.answer}
                 </p>
                 <div class="flex justify-end mt-3">
@@ -711,7 +711,7 @@ function timeToSeconds(t: string): number {
               <div class="flex flex-wrap gap-1.5 mt-3">
                 {q.tags.map((t) => (
                   <button
-                    class="qa-tag text-[10px] font-semibold px-3 py-1 rounded-[3px] bg-bg2 text-fg2 border border-transparent transition-all duration-150 cursor-pointer hover:bg-blue-light hover:text-blue hover:border-blue hover:-translate-y-px"
+                    class="qa-tag text-[10px] font-semibold px-3 py-1 rounded-[3px] bg-bg2 text-fg2 border border-border transition-all duration-150 cursor-pointer hover:bg-blue-light hover:text-blue hover:border-blue hover:-translate-y-px"
                     data-tag={t}
                   >
                     {t}
@@ -736,7 +736,7 @@ function timeToSeconds(t: string): number {
                         cy="40"
                         r="34"
                         fill="none"
-                        stroke="#e8e4db"
+                        stroke="var(--color-border)"
                         stroke-width="5"
                       />
                       <circle
@@ -756,7 +756,7 @@ function timeToSeconds(t: string): number {
                       <span class="text-xs">%</span>
                     </div>
                   </div>
-                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.7)]">
+                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-fg3">
                     KRIT. INDEX
                   </div>
                 </div>
@@ -774,7 +774,7 @@ function timeToSeconds(t: string): number {
                         cy="40"
                         r="34"
                         fill="none"
-                        stroke="#e8e4db"
+                        stroke="var(--color-border)"
                         stroke-width="5"
                       />
                       <circle
@@ -794,7 +794,7 @@ function timeToSeconds(t: string): number {
                       <span class="text-xs">%</span>
                     </div>
                   </div>
-                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.7)]">
+                  <div class="font-mono text-[9px] uppercase tracking-[1px] font-black text-fg3">
                     ELL. FAKTOR
                   </div>
                 </div>
@@ -803,7 +803,7 @@ function timeToSeconds(t: string): number {
               {/* Mobile: compact bar meters + read button */}
               <div class="hidden max-[700px]:flex flex-col gap-2 w-full">
                 <div class="flex items-center gap-2">
-                  <span class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.5)] w-14 shrink-0">
+                  <span class="font-mono text-[9px] uppercase tracking-[1px] font-black text-fg3 w-14 shrink-0">
                     Krit.
                   </span>
                   <div class="flex-1 h-1.25 bg-bg3 rounded-full overflow-hidden">
@@ -817,7 +817,7 @@ function timeToSeconds(t: string): number {
                   </span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="font-mono text-[9px] uppercase tracking-[1px] font-black text-[rgba(27,28,26,0.5)] w-14 shrink-0">
+                  <span class="font-mono text-[9px] uppercase tracking-[1px] font-black text-fg3 w-14 shrink-0">
                     Ellen.
                   </span>
                   <div class="flex-1 h-1.25 bg-bg3 rounded-full overflow-hidden">
@@ -884,6 +884,11 @@ function timeToSeconds(t: string): number {
     outletColors: OutletColors;
     videoId: string | null;
   };
+
+  const cs = getComputedStyle(document.documentElement);
+  const clrFg = cs.getPropertyValue("--color-fg").trim() || "#1a1816";
+  const clrFg3 = cs.getPropertyValue("--color-fg3").trim() || "#7a756e";
+  const clrBorder = cs.getPropertyValue("--color-border").trim() || "#e8e4db";
 
   function fmtTime(s: number): string {
     const m = Math.floor(s / 60);
@@ -1039,14 +1044,14 @@ function timeToSeconds(t: string): number {
             ticks: {
               callback: (v) => `${v}%`,
               font: { family: "'JetBrains Mono', monospace", size: 11 },
-              color: "#7a756e",
+              color: clrFg3,
             },
-            grid: { color: "#e8e4db" },
+            grid: { color: clrBorder },
           },
           y: {
             ticks: {
               font: { family: "'Source Sans 3', sans-serif", size: 13 },
-              color: "#1a1816",
+              color: clrFg,
             },
             grid: { display: false },
           },
@@ -1130,10 +1135,10 @@ function timeToSeconds(t: string): number {
             ticks: {
               callback: (v) => fmtTime(v as number),
               font: { family: "'JetBrains Mono', monospace", size: 10 },
-              color: "#7a756e",
+              color: clrFg3,
               maxTicksLimit: 6,
             },
-            grid: { color: "#e8e4db" },
+            grid: { color: clrBorder },
           },
           y: {
             min: 0,
@@ -1141,10 +1146,10 @@ function timeToSeconds(t: string): number {
             ticks: {
               callback: (v) => `${v}%`,
               font: { family: "'JetBrains Mono', monospace", size: 10 },
-              color: "#7a756e",
+              color: clrFg3,
               stepSize: 25,
             },
-            grid: { color: "#e8e4db" },
+            grid: { color: clrBorder },
           },
         },
         onClick: (_, elements) => {

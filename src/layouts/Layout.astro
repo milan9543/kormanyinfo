@@ -19,6 +19,18 @@ const ogTitle = title === "Hangnem" ? "Hangnem" : `${title} — Hangnem`;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script is:inline>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var dark = stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        if (dark) {
+          document.documentElement.setAttribute("data-theme", "dark");
+          document.documentElement.style.background = "#141210";
+        } else if (stored === "light") {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
     <link rel="icon" href="/info.svg" type="image/svg+xml" />
     <link rel="canonical" href={canonicalUrl} />
     <title>{ogTitle}</title>
@@ -52,6 +64,10 @@ const ogTitle = title === "Hangnem" ? "Hangnem" : `${title} — Hangnem`;
         <div class="links">
           <a href="/">Sajtótájékoztatók</a>
           <a href="/gyik">GYIK</a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Téma váltása" title="Téma váltása">
+            <span class="icon-sun">☀︎</span>
+            <span class="icon-moon">☽</span>
+          </button>
         </div>
       </div>
     </nav>
@@ -99,6 +115,21 @@ const ogTitle = title === "Hangnem" ? "Hangnem" : `${title} — Hangnem`;
     btn.classList.toggle("visible", window.scrollY > 400);
   }, { passive: true });
   btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+  const themeToggle = document.getElementById("themeToggle")!;
+  function getEffectiveTheme(): "dark" | "light" {
+    const stored = localStorage.getItem("theme");
+    if (stored === "dark" || stored === "light") return stored;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  function applyTheme(theme: "dark" | "light") {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }
+  themeToggle.addEventListener("click", () => {
+    const current = getEffectiveTheme();
+    applyTheme(current === "dark" ? "light" : "dark");
+  });
 </script>
 
 <style>
@@ -106,5 +137,30 @@ const ogTitle = title === "Hangnem" ? "Hangnem" : `${title} — Hangnem`;
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+  }
+
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    font-size: 14px;
+    color: #aaa;
+    transition: color 0.15s;
+    display: flex;
+    align-items: center;
+  }
+  .theme-toggle:hover { color: #e8624e; }
+
+  /* Show sun in dark mode, moon in light mode */
+  .icon-sun { display: none; }
+  .icon-moon { display: inline; }
+  :global([data-theme="dark"]) .icon-sun { display: inline; }
+  :global([data-theme="dark"]) .icon-moon { display: none; }
+
+  @media (prefers-color-scheme: dark) {
+    :global(:root:not([data-theme="light"])) .icon-sun { display: inline; }
+    :global(:root:not([data-theme="light"])) .icon-moon { display: none; }
   }
 </style>

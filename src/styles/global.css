@@ -56,9 +56,80 @@
   --radius: 6px;
 }
 
+/* ── DARK MODE ── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #141210;
+    --color-bg2: #1e1c19;
+    --color-bg3: #282420;
+    --color-fg: #f0ece4;
+    --color-fg2: #b8b2a8;
+    --color-fg3: #7a756e;
+    --color-accent: #e8624e;
+    --color-accent2: #c23a22;
+    --color-accent-light: #2a1a17;
+    --color-blue: #6a9fd4;
+    --color-blue-light: #151e2a;
+    --color-green: #5aad7a;
+    --color-amber: #d4a017;
+    --color-border: #2e2b27;
+    --color-border2: #3a3630;
+
+    --bg: var(--color-bg);
+    --bg2: var(--color-bg2);
+    --bg3: var(--color-bg3);
+    --fg: var(--color-fg);
+    --fg2: var(--color-fg2);
+    --fg3: var(--color-fg3);
+    --accent: var(--color-accent);
+    --accent2: var(--color-accent2);
+    --accent-light: var(--color-accent-light);
+    --blue: var(--color-blue);
+    --blue-light: var(--color-blue-light);
+    --green: var(--color-green);
+    --amber: var(--color-amber);
+    --border: var(--color-border);
+    --border2: var(--color-border2);
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #141210;
+  --color-bg2: #1e1c19;
+  --color-bg3: #282420;
+  --color-fg: #f0ece4;
+  --color-fg2: #b8b2a8;
+  --color-fg3: #7a756e;
+  --color-accent: #e8624e;
+  --color-accent2: #c23a22;
+  --color-accent-light: #2a1a17;
+  --color-blue: #6a9fd4;
+  --color-blue-light: #151e2a;
+  --color-green: #5aad7a;
+  --color-amber: #d4a017;
+  --color-border: #2e2b27;
+  --color-border2: #3a3630;
+
+  --bg: var(--color-bg);
+  --bg2: var(--color-bg2);
+  --bg3: var(--color-bg3);
+  --fg: var(--color-fg);
+  --fg2: var(--color-fg2);
+  --fg3: var(--color-fg3);
+  --accent: var(--color-accent);
+  --accent2: var(--color-accent2);
+  --accent-light: var(--color-accent-light);
+  --blue: var(--color-blue);
+  --blue-light: var(--color-blue-light);
+  --green: var(--color-green);
+  --amber: var(--color-amber);
+  --border: var(--color-border);
+  --border2: var(--color-border2);
+}
+
 /* ── SITE NAV ── */
 .site-nav {
-  background-color: var(--color-fg);
+  background-color: #1a1816;
   border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 .site-nav-inner {
@@ -112,8 +183,16 @@
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.15s;
-  border: 1px solid transparent;
+  border: 1px solid var(--color-border);
   font-family: var(--font-family-body);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .tag {
+    background: var(--color-bg3);
+  }
+}
+[data-theme="dark"] .tag {
+  background: var(--color-bg3);
 }
 .tag:hover {
   background: var(--color-accent-light);
@@ -123,6 +202,55 @@
 .tag.active {
   background: var(--color-accent);
   color: white;
+}
+
+/* ── DARK MODE SURFACE OVERRIDES ── */
+/*
+  In light mode, bg-fg = dark (#1a1816) and text-bg = light (#faf8f4) — correct for inverted headers/footer.
+  In dark mode, fg/bg flip, so bg-fg would become light. Lock these surfaces to true dark instead.
+*/
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .bg-fg {
+    background-color: #0d0c0b !important;
+  }
+  :root:not([data-theme="light"]) .text-bg {
+    color: #f0ece4 !important;
+  }
+  :root:not([data-theme="light"]) .hover\:bg-fg2:hover {
+    background-color: #1e1c19 !important;
+  }
+}
+[data-theme="dark"] .bg-fg {
+  background-color: #0d0c0b !important;
+}
+[data-theme="dark"] .text-bg {
+  color: #f0ece4 !important;
+}
+[data-theme="dark"] .hover\:bg-fg2:hover {
+  background-color: #1e1c19 !important;
+}
+
+/* ── DARK MODE CARD OVERRIDES ── */
+/* Cards use bg-white in markup; remap to bg token in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .bg-white {
+    background-color: var(--color-bg2) !important;
+  }
+  :root:not([data-theme="light"]) .bg-green-100 {
+    background-color: #14301e !important;
+  }
+  :root:not([data-theme="light"]) .text-green-700 {
+    color: #5aad7a !important;
+  }
+}
+[data-theme="dark"] .bg-white {
+  background-color: var(--color-bg2) !important;
+}
+[data-theme="dark"] .bg-green-100 {
+  background-color: #14301e !important;
+}
+[data-theme="dark"] .text-green-700 {
+  color: #5aad7a !important;
 }
 
 /* ── SCROLLBAR ── */

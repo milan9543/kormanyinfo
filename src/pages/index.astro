@@ -132,6 +132,9 @@ function isNew(dateStr: string): boolean {
               <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2 mb-2">
+                    <span class="badge-press text-[10px] font-semibold px-1.5 py-0.5 rounded-full leading-none">
+                      Sajtótájékoztató
+                    </span>
                     <span class="font-mono text-[11px] text-fg3">
                       {conf.meta.date.replace(/-/g, ". ")}
                     </span>
@@ -270,6 +273,9 @@ function isNew(dateStr: string): boolean {
             <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-2 mb-2">
+                  <span class="badge-interview text-[10px] font-semibold px-1.5 py-0.5 rounded-full leading-none">
+                    Meghallgatás
+                  </span>
                   <span class="font-mono text-[11px] text-fg3">
                     {interview.meta.date.replace(/-/g, ". ")}
                   </span>
@@ -285,9 +291,6 @@ function isNew(dateStr: string): boolean {
                       Új
                     </span>
                   )}
-                  <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded-full bg-violet-100 text-violet-700 leading-none">
-                    Meghallgatás
-                  </span>
                 </div>
                 <h2 class="font-display text-[22px] font-bold leading-tight tracking-[-0.3px] text-fg mb-2">
                   {interview.meta.title}
@@ -339,9 +342,7 @@ function isNew(dateStr: string): boolean {
                     .filter(Boolean),
                 ),
               ].map((party: any) => (
-                <span class="text-[11px] font-medium px-2 py-0.5 rounded-full bg-violet-50 text-violet-700 border border-violet-200">
-                  {party}
-                </span>
+                <span class="tag cursor-default">{party}</span>
               ))}
             </div>
 
@@ -387,3 +388,33 @@ function isNew(dateStr: string): boolean {
     }
   </script>
 </Layout>
+
+<style>
+  .badge-press {
+    background: #fde8e3;
+    color: #b83318;
+  }
+  .badge-interview {
+    background: #ede9fe;
+    color: #6d28d9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .badge-press {
+      background: #3a1a10;
+      color: #f4926e;
+    }
+    :root:not([data-theme="light"]) .badge-interview {
+      background: #2e1a5e;
+      color: #c4b5fd;
+    }
+  }
+  [data-theme="dark"] .badge-press {
+    background: #3a1a10;
+    color: #f4926e;
+  }
+  [data-theme="dark"] .badge-interview {
+    background: #2e1a5e;
+    color: #c4b5fd;
+  }
+</style>
+
