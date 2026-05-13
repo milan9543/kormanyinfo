@@ -104,10 +104,11 @@ function isNew(dateStr: string): boolean {
 
   <!-- Combined list -->
   <div
-    class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-15 flex flex-col gap-3"
+    id="items-list"
+    class="max-w-300 mx-auto px-6 max-[480px]:px-4 pt-8 pb-4 flex flex-col gap-3"
   >
     {
-      allItems.map((item) => {
+      allItems.map((item, index) => {
         if (item.type === "conference") {
           const conf = item.data;
           const crits = conf.questions.map((q) => q.criticism_percent);
@@ -124,7 +125,8 @@ function isNew(dateStr: string): boolean {
           return (
             <a
               href={`/conferences/${conf.meta.date}`}
-              class="flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-accent hover:shadow-[0_4px_20px_rgba(194,58,34,0.09)]"
+              data-index={index}
+              class={`flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-accent hover:shadow-[0_4px_20px_rgba(194,58,34,0.09)]${index >= 10 ? " hidden" : ""}`}
             >
               {/* Top: identity + counts */}
               <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
@@ -261,7 +263,8 @@ function isNew(dateStr: string): boolean {
         return (
           <a
             href={`/minister-interviews/${slug}`}
-            class="flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-[#7c3aed] hover:shadow-[0_4px_20px_rgba(124,58,237,0.09)]"
+            data-index={index}
+            class={`flex flex-col bg-white border border-border rounded-lg overflow-hidden no-underline text-inherit transition-all duration-200 hover:border-[#7c3aed] hover:shadow-[0_4px_20px_rgba(124,58,237,0.09)]${index >= 10 ? " hidden" : ""}`}
           >
             {/* Top: identity + counts */}
             <div class="flex items-start gap-6 px-6 pt-5 pb-4 max-[600px]:flex-col max-[600px]:gap-2">
@@ -353,4 +356,34 @@ function isNew(dateStr: string): boolean {
       })
     }
   </div>
+
+  {allItems.length > 10 && (
+    <div class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-15 flex justify-center">
+      <button
+        id="show-more-btn"
+        class="px-6 py-2.5 rounded-lg border border-border bg-white text-fg2 text-[14px] font-medium hover:border-accent hover:text-accent transition-colors duration-150"
+      >
+        Mutass többet ({allItems.length - 10} további)
+      </button>
+    </div>
+  )}
+
+  <script>
+    const btn = document.getElementById("show-more-btn");
+    if (btn) {
+      let shown = 10;
+      const PAGE = 10;
+      btn.addEventListener("click", () => {
+        const items = document.querySelectorAll<HTMLElement>("#items-list [data-index]");
+        const next = shown + PAGE;
+        items.forEach((el) => {
+          const idx = Number(el.dataset.index);
+          if (idx >= shown && idx < next) el.classList.remove("hidden");
+        });
+        shown = next;
+        if (shown >= items.length) btn.remove();
+        else (btn as HTMLButtonElement).textContent = `Mutass többet (${items.length - shown} további)`;
+      });
+    }
+  </script>
 </Layout>
