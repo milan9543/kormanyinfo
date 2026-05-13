@@ -36,6 +36,10 @@
       {
         "id": "atv_r03",
         "name": "Nagy Angéla"
+      },
+      {
+        "id": "atv_r04",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -54,6 +58,10 @@
       {
         "id": "rtl_r03",
         "name": "Magyar Jó"
+      },
+      {
+        "id": "rtl_r04",
+        "name": "Zalavári Noémi"
       }
     ]
   },
@@ -168,6 +176,10 @@
       {
         "id": "444_r03",
         "name": "Kaufmann Balázs"
+      },
+      {
+        "id": "444_r04",
+        "name": "Molnár Kristóf"
       }
     ]
   },
@@ -273,6 +285,10 @@
       {
         "id": "partizan_r03",
         "name": "Itzés Ambrus"
+      },
+      {
+        "id": "partizan_r04",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -313,6 +329,10 @@
       {
         "id": "gulyasagyu_media_r01",
         "name": "Gulyás Balázs"
+      },
+      {
+        "id": "gulyasagyu_media_r02",
+        "name": "ismeretlen"
       }
     ]
   },

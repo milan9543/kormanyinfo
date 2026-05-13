@@ -1,4 +1,5 @@
 ---
+import { marked } from "marked";
 import Layout from "../../layouts/Layout.astro";
 import {
   getAllConferences,
@@ -233,7 +234,7 @@ function timeToSeconds(t: string): number {
     </h2>
   </div>
   <div
-    class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-3 grid grid-cols-[repeat(auto-fit,minmax(400px,1fr))] max-[700px]:grid-cols-1 gap-4"
+    class="max-w-300 mx-auto px-6 max-[480px]:px-4 pb-3 flex flex-col gap-4"
   >
     {
       conf.opening_statements.map((stmt) => {
@@ -242,11 +243,16 @@ function timeToSeconds(t: string): number {
           ? `${conf.meta.youtube_url}&t=${timeToSeconds(stmt.start_time)}`
           : null;
         return (
-          <div class="bg-white border border-[rgba(226,191,184,0.3)] rounded-lg overflow-hidden shadow-[0_1px_3px_rgba(0,0,0,0.05)]">
-            <div class="flex items-center gap-4 p-5 border-b border-[rgba(226,191,184,0.1)] max-[700px]:p-4">
+          <div class="bg-white border border-[rgba(226,191,184,0.3)] rounded-lg overflow-hidden">
+            <div class="flex items-center gap-3 px-8 pt-6 pb-4 max-[600px]:px-5 max-[600px]:pt-5">
+              <div class="font-bold text-[15px]">
+                {sp?.name}{" "}
+                <span class="font-normal text-fg3">· {sp?.role}</span>
+              </div>
+              <div class="w-px h-4 bg-[rgba(226,191,184,0.4)]" />
               {conf.meta.youtube_video_id ? (
                 <button
-                  class="ts-btn font-mono text-base font-medium text-accent bg-transparent border-none p-0 cursor-pointer transition-opacity duration-150 hover:opacity-70 hover:underline"
+                  class="ts-btn font-mono text-sm font-medium text-accent bg-transparent border-none p-0 cursor-pointer transition-opacity duration-150 hover:opacity-70 hover:underline"
                   data-seek={timeToSeconds(stmt.start_time)}
                 >
                   {stmt.start_time}
@@ -256,24 +262,23 @@ function timeToSeconds(t: string): number {
                   href={stmtYtUrl}
                   target="_blank"
                   rel="noopener"
-                  class="font-mono text-base font-medium text-accent no-underline transition-opacity duration-150 hover:opacity-70 hover:underline"
+                  class="font-mono text-sm font-medium text-accent no-underline transition-opacity duration-150 hover:opacity-70 hover:underline"
                 >
                   {stmt.start_time}
                 </a>
               ) : (
-                <span class="font-mono text-base font-medium text-accent">
+                <span class="font-mono text-sm font-medium text-accent">
                   {stmt.start_time}
                 </span>
               )}
-              <div class="w-px h-4 bg-[rgba(226,191,184,0.4)]" />
-              <div class="font-bold text-[15px]">
-                {sp?.name}{" "}
-                <span class="font-normal text-fg3">· {sp?.role}</span>
-              </div>
             </div>
-            <div class="p-5 max-[700px]:p-4">
-              <div class="text-sm text-fg2 leading-relaxed">{stmt.summary}</div>
-              <div class="flex flex-wrap gap-1 mt-2.5">
+            <div class="expose-prose px-8 pb-6 max-[600px]:px-5 max-[600px]:pb-5">
+              {stmt.summary.includes("\n") ? (
+                <Fragment set:html={marked(stmt.summary)} />
+              ) : (
+                <p>{stmt.summary}</p>
+              )}
+              <div class="flex flex-wrap gap-1 mt-3">
                 {stmt.tags.map((t) => (
                   <button class="open-tag tag" data-tag={t}>
                     {t}
@@ -416,6 +421,50 @@ function timeToSeconds(t: string): number {
     #ytPlayer {
       width: min(220px, calc(100vw - 1.5rem)) !important;
     }
+  }
+  .expose-prose :global(h2) {
+    font-family: var(--font-display, serif);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-fg);
+  }
+  .expose-prose :global(h3) {
+    font-family: var(--font-display, serif);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1.25rem;
+    margin-bottom: 0.4rem;
+    color: var(--color-fg);
+  }
+  .expose-prose :global(p) {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+    color: var(--color-fg2);
+  }
+  .expose-prose :global(ul) {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-fg2);
+    list-style-type: disc;
+  }
+  .expose-prose :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-fg2);
+    list-style-type: decimal;
+  }
+  .expose-prose :global(li) {
+    margin-bottom: 0.25rem;
+    line-height: 1.6;
+  }
+  .expose-prose :global(strong) {
+    color: var(--color-fg);
+    font-weight: 600;
+  }
+  .expose-prose :global(h2:first-child) {
+    margin-top: 0;
   }
   .read-check.is-read {
     border-color: var(--color-green);

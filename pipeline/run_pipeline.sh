@@ -98,15 +98,6 @@ echo ""
 echo "=== Step 5: Rebuilding stats ==="
 python pipeline/build_stats.py
 
-# ---------------------------------------------------------------------------
-# Step 6: Commit and push
-# ---------------------------------------------------------------------------
-echo ""
-echo "=== Step 6: Committing and pushing ==="
-git add src/data/
-git commit -m "Add conference ${DATE} (${VIDEO_ID})"
-git push
-
 echo ""
 echo "================================================"
 echo "  Done! Conference ${DATE} is live."

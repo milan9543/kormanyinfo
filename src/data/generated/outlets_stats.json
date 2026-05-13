@@ -1,35 +1,14 @@
 [
   {
-    "id": "kozmedia",
-    "name": "Közmédia",
-    "color": "#001224",
-    "text_color": "#ffffff",
-    "total_questions": 44,
-    "avg_criticism": 27.4,
-    "avg_hostility": 14.4,
-    "conferences_attended": 8,
-    "total_question_time_seconds": 5190,
-    "reporters": [
-      {
-        "id": "kozmedia_r01",
-        "name": "Csuhaj Ildikó",
-        "total_questions": 44,
-        "avg_criticism": 27.4,
-        "avg_hostility": 14.4,
-        "conferences_attended": 8
-      }
-    ]
-  },
-  {
     "id": "atv",
     "name": "ATV",
     "color": "#F8313F",
     "text_color": "#ffffff",
-    "total_questions": 43,
-    "avg_criticism": 52.7,
-    "avg_hostility": 17.6,
-    "conferences_attended": 9,
-    "total_question_time_seconds": 6007,
+    "total_questions": 45,
+    "avg_criticism": 50.9,
+    "avg_hostility": 17.0,
+    "conferences_attended": 10,
+    "total_question_time_seconds": 6182,
     "reporters": [
       {
         "id": "atv_r01",
@@ -48,12 +27,41 @@
         "conferences_attended": 1
       },
       {
+        "id": "atv_r04",
+        "name": "ismeretlen",
+        "total_questions": 2,
+        "avg_criticism": 12.5,
+        "avg_hostility": 5.0,
+        "conferences_attended": 1
+      },
+      {
         "id": "atv_r03",
         "name": "Nagy Angéla",
         "total_questions": 1,
         "avg_criticism": 15.0,
         "avg_hostility": 5.0,
         "conferences_attended": 1
+      }
+    ]
+  },
+  {
+    "id": "kozmedia",
+    "name": "Közmédia",
+    "color": "#001224",
+    "text_color": "#ffffff",
+    "total_questions": 44,
+    "avg_criticism": 27.4,
+    "avg_hostility": 14.4,
+    "conferences_attended": 8,
+    "total_question_time_seconds": 5190,
+    "reporters": [
+      {
+        "id": "kozmedia_r01",
+        "name": "Csuhaj Ildikó",
+        "total_questions": 44,
+        "avg_criticism": 27.4,
+        "avg_hostility": 14.4,
+        "conferences_attended": 8
       }
     ]
   },
@@ -157,19 +165,19 @@
     "name": "Telex",
     "color": "#113356",
     "text_color": "#ffffff",
-    "total_questions": 29,
-    "avg_criticism": 52.8,
-    "avg_hostility": 15.3,
-    "conferences_attended": 6,
-    "total_question_time_seconds": 3114,
+    "total_questions": 31,
+    "avg_criticism": 50.6,
+    "avg_hostility": 14.7,
+    "conferences_attended": 7,
+    "total_question_time_seconds": 3322,
     "reporters": [
       {
         "id": "telex_r02",
         "name": "Simor Dániel",
-        "total_questions": 11,
-        "avg_criticism": 48.6,
-        "avg_hostility": 15.9,
-        "conferences_attended": 2
+        "total_questions": 13,
+        "avg_criticism": 44.2,
+        "avg_hostility": 14.2,
+        "conferences_attended": 3
       },
       {
         "id": "telex_r01",
@@ -202,11 +210,11 @@
     "name": "RTL Híradó",
     "color": "#66E0C1",
     "text_color": "#ffffff",
-    "total_questions": 27,
-    "avg_criticism": 49.6,
-    "avg_hostility": 19.1,
-    "conferences_attended": 5,
-    "total_question_time_seconds": 3043,
+    "total_questions": 29,
+    "avg_criticism": 47.4,
+    "avg_hostility": 18.3,
+    "conferences_attended": 6,
+    "total_question_time_seconds": 3347,
     "reporters": [
       {
         "id": "rtl_r02",
@@ -231,6 +239,14 @@
         "avg_criticism": 20.0,
         "avg_hostility": 2.5,
         "conferences_attended": 1
+      },
+      {
+        "id": "rtl_r04",
+        "name": "Zalavári Noémi",
+        "total_questions": 2,
+        "avg_criticism": 17.5,
+        "avg_hostility": 7.5,
+        "conferences_attended": 1
       }
     ]
   },
@@ -239,26 +255,26 @@
     "name": "TV2",
     "color": "#ED262B",
     "text_color": "#ffffff",
-    "total_questions": 21,
-    "avg_criticism": 7.9,
-    "avg_hostility": 4.5,
-    "conferences_attended": 7,
-    "total_question_time_seconds": 1368,
+    "total_questions": 23,
+    "avg_criticism": 7.6,
+    "avg_hostility": 4.6,
+    "conferences_attended": 8,
+    "total_question_time_seconds": 1503,
     "reporters": [
+      {
+        "id": "tv2_r02",
+        "name": "Sarner Félix",
+        "total_questions": 9,
+        "avg_criticism": 6.7,
+        "avg_hostility": 5.0,
+        "conferences_attended": 3
+      },
       {
         "id": "tv2_r01",
         "name": "Micheller Tamás",
         "total_questions": 7,
         "avg_criticism": 10.0,
         "avg_hostility": 6.4,
-        "conferences_attended": 2
-      },
-      {
-        "id": "tv2_r02",
-        "name": "Sarner Félix",
-        "total_questions": 7,
-        "avg_criticism": 7.1,
-        "avg_hostility": 5.0,
         "conferences_attended": 2
       },
       {
@@ -284,11 +300,11 @@
     "name": "444",
     "color": "#FFF670",
     "text_color": "#1B1B1B",
-    "total_questions": 16,
-    "avg_criticism": 52.2,
-    "avg_hostility": 20.0,
-    "conferences_attended": 4,
-    "total_question_time_seconds": 2312,
+    "total_questions": 18,
+    "avg_criticism": 49.4,
+    "avg_hostility": 18.6,
+    "conferences_attended": 5,
+    "total_question_time_seconds": 2665,
     "reporters": [
       {
         "id": "444_r01",
@@ -313,6 +329,14 @@
         "avg_criticism": 7.5,
         "avg_hostility": 0.0,
         "conferences_attended": 1
+      },
+      {
+        "id": "444_r04",
+        "name": "Molnár Kristóf",
+        "total_questions": 2,
+        "avg_criticism": 27.5,
+        "avg_hostility": 7.5,
+        "conferences_attended": 1
       }
     ]
   },
@@ -321,11 +345,11 @@
     "name": "HVG",
     "color": "#F26522",
     "text_color": "#ffffff",
-    "total_questions": 16,
-    "avg_criticism": 51.6,
-    "avg_hostility": 12.2,
-    "conferences_attended": 4,
-    "total_question_time_seconds": 1515,
+    "total_questions": 18,
+    "avg_criticism": 48.6,
+    "avg_hostility": 11.4,
+    "conferences_attended": 5,
+    "total_question_time_seconds": 1565,
     "reporters": [
       {
         "id": "hvg_r01",
@@ -338,10 +362,10 @@
       {
         "id": "hvg_r02",
         "name": "Galicza Dorina",
-        "total_questions": 6,
-        "avg_criticism": 53.3,
-        "avg_hostility": 14.2,
-        "conferences_attended": 2
+        "total_questions": 8,
+        "avg_criticism": 46.2,
+        "avg_hostility": 11.9,
+        "conferences_attended": 3
       }
     ]
   },
@@ -467,6 +491,51 @@
     ]
   },
   {
+    "id": "partizan",
+    "name": "Partizán",
+    "color": "#FF4D42",
+    "text_color": "#ffffff",
+    "total_questions": 11,
+    "avg_criticism": 51.8,
+    "avg_hostility": 22.3,
+    "conferences_attended": 4,
+    "total_question_time_seconds": 1860,
+    "reporters": [
+      {
+        "id": "partizan_r01",
+        "name": "Sarkadi Zsolt",
+        "total_questions": 6,
+        "avg_criticism": 84.2,
+        "avg_hostility": 38.3,
+        "conferences_attended": 1
+      },
+      {
+        "id": "partizan_r02",
+        "name": "Szurovetz Illés",
+        "total_questions": 2,
+        "avg_criticism": 17.5,
+        "avg_hostility": 5.0,
+        "conferences_attended": 1
+      },
+      {
+        "id": "partizan_r03",
+        "name": "Itzés Ambrus",
+        "total_questions": 2,
+        "avg_criticism": 10.0,
+        "avg_hostility": 0.0,
+        "conferences_attended": 1
+      },
+      {
+        "id": "partizan_r04",
+        "name": "ismeretlen",
+        "total_questions": 1,
+        "avg_criticism": 10.0,
+        "avg_hostility": 5.0,
+        "conferences_attended": 1
+      }
+    ]
+  },
+  {
     "id": "m1",
     "name": "M1 Híradó",
     "color": "#324BCF",
@@ -500,43 +569,6 @@
         "avg_criticism": 7.5,
         "avg_hostility": 5.0,
         "conferences_attended": 2
-      }
-    ]
-  },
-  {
-    "id": "partizan",
-    "name": "Partizán",
-    "color": "#FF4D42",
-    "text_color": "#ffffff",
-    "total_questions": 10,
-    "avg_criticism": 56.0,
-    "avg_hostility": 24.0,
-    "conferences_attended": 3,
-    "total_question_time_seconds": 1741,
-    "reporters": [
-      {
-        "id": "partizan_r01",
-        "name": "Sarkadi Zsolt",
-        "total_questions": 6,
-        "avg_criticism": 84.2,
-        "avg_hostility": 38.3,
-        "conferences_attended": 1
-      },
-      {
-        "id": "partizan_r02",
-        "name": "Szurovetz Illés",
-        "total_questions": 2,
-        "avg_criticism": 17.5,
-        "avg_hostility": 5.0,
-        "conferences_attended": 1
-      },
-      {
-        "id": "partizan_r03",
-        "name": "Itzés Ambrus",
-        "total_questions": 2,
-        "avg_criticism": 10.0,
-        "avg_hostility": 0.0,
-        "conferences_attended": 1
       }
     ]
   },
@@ -587,6 +619,35 @@
         "avg_criticism": 23.0,
         "avg_hostility": 6.0,
         "conferences_attended": 2
+      }
+    ]
+  },
+  {
+    "id": "gulyasagyu_media",
+    "name": "Gulyáságyú Média",
+    "color": "#F6EFE9",
+    "text_color": "#251612",
+    "total_questions": 4,
+    "avg_criticism": 13.8,
+    "avg_hostility": 5.0,
+    "conferences_attended": 2,
+    "total_question_time_seconds": 622,
+    "reporters": [
+      {
+        "id": "gulyasagyu_media_r02",
+        "name": "ismeretlen",
+        "total_questions": 3,
+        "avg_criticism": 13.3,
+        "avg_hostility": 5.0,
+        "conferences_attended": 1
+      },
+      {
+        "id": "gulyasagyu_media_r01",
+        "name": "Gulyás Balázs",
+        "total_questions": 1,
+        "avg_criticism": 15.0,
+        "avg_hostility": 5.0,
+        "conferences_attended": 1
       }
     ]
   },
@@ -754,6 +815,27 @@
         "avg_criticism": 17.5,
         "avg_hostility": 5.0,
         "conferences_attended": 1
+      }
+    ]
+  },
+  {
+    "id": "ismeretlen",
+    "name": "ismeretlen",
+    "color": "#6B7280",
+    "text_color": "#ffffff",
+    "total_questions": 2,
+    "avg_criticism": 17.5,
+    "avg_hostility": 5.0,
+    "conferences_attended": 2,
+    "total_question_time_seconds": 281,
+    "reporters": [
+      {
+        "id": "ismeretlen_r01",
+        "name": "ismeretlen",
+        "total_questions": 2,
+        "avg_criticism": 17.5,
+        "avg_hostility": 5.0,
+        "conferences_attended": 2
       }
     ]
   },
@@ -962,27 +1044,6 @@
     "reporters": []
   },
   {
-    "id": "gulyasagyu_media",
-    "name": "Gulyáságyú Média",
-    "color": "#F6EFE9",
-    "text_color": "#251612",
-    "total_questions": 1,
-    "avg_criticism": 15.0,
-    "avg_hostility": 5.0,
-    "conferences_attended": 1,
-    "total_question_time_seconds": 252,
-    "reporters": [
-      {
-        "id": "gulyasagyu_media_r01",
-        "name": "Gulyás Balázs",
-        "total_questions": 1,
-        "avg_criticism": 15.0,
-        "avg_hostility": 5.0,
-        "conferences_attended": 1
-      }
-    ]
-  },
-  {
     "id": "nepszava",
     "name": "Népszava",
     "color": "#167EFC",
@@ -1017,27 +1078,6 @@
       {
         "id": "reuters_r01",
         "name": "Szakács Gergely",
-        "total_questions": 1,
-        "avg_criticism": 20.0,
-        "avg_hostility": 5.0,
-        "conferences_attended": 1
-      }
-    ]
-  },
-  {
-    "id": "ismeretlen",
-    "name": "ismeretlen",
-    "color": "#6B7280",
-    "text_color": "#ffffff",
-    "total_questions": 1,
-    "avg_criticism": 20.0,
-    "avg_hostility": 5.0,
-    "conferences_attended": 1,
-    "total_question_time_seconds": 112,
-    "reporters": [
-      {
-        "id": "ismeretlen_r01",
-        "name": "ismeretlen",
         "total_questions": 1,
         "avg_criticism": 20.0,
         "avg_hostility": 5.0,

@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "title": "",
+    "date": "2026-05-13",
+    "youtube_url": "https://www.youtube.com/watch?v=lmEafAvUN7M",
+    "youtube_video_id": "lmEafAvUN7M",
+    "duration": "01:32:24",
+    "location": "Ópusztaszer"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Magyar Péter",
+      "role": "Miniszterelnök",
+      "position": "Miniszterelnök"
+    },
+    {
+      "id": "s_02",
+      "name": "Szondi Vanda",
+      "role": "Kormányszóvivő",
+      "position": "Kormányszóvivő"
+    },
+    {
+      "id": "s_03",
+      "name": "Magyar Éva",
+      "role": "Kormányszóvivő",
+      "position": "Kormányszóvivő"
+    },
+    {
+      "id": "s_04",
+      "name": "Gacsai József",
+      "role": "Szakértő",
+      "position": "Országos Vízügyi Főigazgatóság főigazgatóhelyettese"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_02",
+      "start_time": "00:16:08",
+      "end_time": "00:17:55",
+      "summary": "Szondi Vanda bemutatkozik, új, partnerségi alapú kormányzati tájékoztatást ígér, ahol valódi kérdésekre valódi válaszokat kapnak az újságírók.",
+      "tags": ["média", "belpolitika"]
+    },
+    {
+      "speaker_id": "s_03",
+      "start_time": "00:17:55",
+      "end_time": "00:19:17",
+      "summary": "A harmadik szóvivő ismerteti a tájékoztatók rendszerét: kormányülések utáni napon lesz sajtótájékoztató, meghívott miniszterrel, most szerkesztőségenként két kérdés lehetséges.",
+      "tags": ["média", "belpolitika"]
+    },
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:19:17",
+      "end_time": "00:56:52",
+      "summary": "**Köszöntő, háttér**\n- Köszönti a sajtót és a három szóvivőt; jelzi, hogy a kormányülés még tart, az idő korlátozott.\n\n**Kárpátalja – orosz dróntámadás**\n- A háború eddigi leghevesebb dróntámadása érte Kárpátalját; a MÁV vasutasokat biztonságba helyezték; holnap az orosz nagykövetet berendelik a külügyminisztériumba.\n\n**Kormányülés – napirend, helyszín**\n- A mai napirend: statútumrendelet elfogadása, holnap átadás-átvétel, jövő héten újabb kormányülés várható.\n- Bejelenti jövő heti külföldi útjait (Lengyelország, Ausztria); ismerteti az opusztaszeri helyszín szimbolikus jelentőségét és a statútumrendelet kihirdetésének menetét.\n\n**Aszálykérdés**\n- A kormányülés az aszályhelyzettel is foglalkozik; bemutatja Gacsai József főigazgatóhelyettest, aki részletes tájékoztatást ad.\n\n**MOL – üzemanyagellátás**\n- A MOL elnök-vezérigazgatója tájékoztatta a kormányt: az üzemanyag- és nyersolajellátás zavartalan, a stratégiai készlet kb. 80 napra elegendő, a védettáras ellátás folytatódik.\n- Kitér a 480 Ft-os benzinár kampányígéretre; megjegyzi, hogy a világpiaci olajár azóta megváltozott.\n\n**EU-s pénzek**\n- Jövő héten brüsszeli delegáció érkezik; május 25-én Brüsszelben politikai megállapodást szeretne von der Leyennel 10+ milliárd euróról.\n\n**Az előző kormány öröksége**\n- 44 ezer milliárd forintos adósságnövekedés, luxusminisztériumok, infláció, kórházi ágyak megszüntetése, lakásárak, népességcsökkenés, szegénység, lopás.\n\n**Mai kormányhatározatok**\n- Kiadások befagyasztása\n- Bicskei gyermekotthon kivizsgálása\n- Kegyelmi botrány dossziéjának nyilvánosságra hozatala\n- Gyermekvédelmi átvilágítás\n- Ügynökakták megnyitása\n- Propagandakiadások leállítása\n- Titkos szerződések felülvizsgálata\n- Csatlakozás az Európai Ügyészséghez\n- ICC-kilépési folyamat leállítása\n- Kormányülési emlékeztetők nyilvánosságra hozatala\n- Kiemelt beruházások felülvizsgálata\n- Kórházi klímaaudit\n- Vagyonadó előkészítése\n- Tóth Péter kinevezése nemzetbiztonsági főtanácsadóvá",
+      "tags": [
+        "belpolitika",
+        "külpolitika",
+        "honvédelem",
+        "energia",
+        "gazdaság",
+        "eu",
+        "korrupció",
+        "egészségügy",
+        "környezet"
+      ]
+    },
+    {
+      "speaker_id": "s_04",
+      "start_time": "00:27:49",
+      "end_time": "00:34:52",
+      "summary": "Gacsai József részletezi az ötéves aszályciklust, a talajvízkészlet csökkenését, azonnali és rövid távú intézkedési terveket, koordinációs központ felállítását, 2 milliárd forintos beavatkozást és vízimajor bejelentését.",
+      "tags": ["környezet", "gazdaság"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:57:58",
+      "start_time": "00:58:44",
+      "end_time": "01:00:30",
+      "reporter": "Molnár Kristóf",
+      "outlet": "444",
+      "question": "Ha Sulyok Tamás és más állami vezetők nem mondanak le május 31-ig, milyen lépések következnek?",
+      "answer": "Megvárják a határidőt, bíznak önkéntes lemondásban; ha nem, alaptörvény-módosítással távolítják el őket.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:58:25",
+      "start_time": "01:00:30",
+      "end_time": "01:03:07",
+      "reporter": "Molnár Kristóf",
+      "outlet": "444",
+      "question": "Miért nem problémás, hogy a párt volt kampányfőnöke, Tóth Péter lesz a nemzetbiztonsági főtanácsadó?",
+      "answer": "Tóth Péter nem párttag, szakmai feladatot lát el; garancia a törvény, pártcélokra nem használhatja a szolgálatokat.",
+      "tags": ["belpolitika", "honvédelem"],
+      "criticism_percent": 35,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "01:03:51",
+      "start_time": "01:04:37",
+      "end_time": "01:06:44",
+      "reporter": "ismeretlen",
+      "outlet": "ATV",
+      "question": "Tanulmányozzák-e a közérdekű alapítványok (pl. egyetemi alapítványok) visszaszerzésének lehetőségét?",
+      "answer": "Tárgyalnak róla, több verzió van; az országgyűlés dönt, de nem lesz egyszerű. Nemzeti vagyonvisszaszerzési hivatal tervezett.",
+      "tags": ["belpolitika", "gazdaság"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "01:03:51",
+      "start_time": "01:05:20",
+      "end_time": "01:06:44",
+      "reporter": "ismeretlen",
+      "outlet": "ATV",
+      "question": "Mi lesz a luxusminisztériumokkal (Karmelita, Rogán-, Pintér-féle épületek)?",
+      "answer": "Keresik az optimális megoldást; a Rogán-féle épületbe a szociális és családügyi minisztérium kerül.",
+      "tags": ["belpolitika", "korrupció"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "01:06:48",
+      "start_time": "01:07:32",
+      "end_time": "01:08:32",
+      "reporter": "ismeretlen",
+      "outlet": "Partizán",
+      "question": "Milyen konkrét témákban módosítják az alaptörvényt, és lesz-e átfogó alkotmányozási folyamat?",
+      "answer": "Például miniszterelnöki ciklus korlátozása 2×4 évre, szuverenitásvédelmi hivatal megszüntetése; majd átfogó alkotmányozás népszavazással zárva.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "01:08:41",
+      "start_time": "01:09:31",
+      "end_time": "01:12:16",
+      "reporter": "Zalavári Noémi",
+      "outlet": "RTL Híradó",
+      "question": "Mi a menetrend a közmédia hírszolgáltatásának felfüggesztésére és megújítására?",
+      "answer": "Több opció vizsgálata folyik; tárgyalások az MTVA-vezetéssel, ha nem sikerül, jogalkotással állítják le a propagandát, majd paritásos alapon új médiatanács.",
+      "tags": ["média", "belpolitika"],
+      "criticism_percent": 20,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "01:08:41",
+      "start_time": "01:09:31",
+      "end_time": "01:12:16",
+      "reporter": "Zalavári Noémi",
+      "outlet": "RTL Híradó",
+      "question": "Kis benzinkutak arról panaszkodnak, hogy a MOL nem tud nekik nyomott áron üzemanyagot adni – tud-e erről a kormány?",
+      "answer": "Újabb tartalékok kerülnek felszabadításra gazdasági miniszteri rendelettel, valószínűleg hétfőtől; az ellátásbiztonság addig is fennáll.",
+      "tags": ["energia", "gazdaság"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "01:14:07",
+      "start_time": "01:14:35",
+      "end_time": "01:17:18",
+      "reporter": "Simor Dániel",
+      "outlet": "Telex",
+      "question": "Milyen vitás feltételek vannak a 10+ milliárd eurós uniós pénzek lehívása körül?",
+      "answer": "Projekt-kiválasztás és adóreform (különadók kivezetése) a fő vitapont; holnap levelet küld von der Leyennek, megállapodás várható.",
+      "tags": ["eu", "gazdaság"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "01:14:26",
+      "start_time": "01:15:47",
+      "end_time": "01:17:18",
+      "reporter": "Simor Dániel",
+      "outlet": "Telex",
+      "question": "Mire számít, mi derülhet ki a kegyelmi ügy dossziéjából?",
+      "answer": "A dosszié az igazságügyi minisztériumban és a Sándor Palotában van; teljes nyilvánosságra hozatal várható, részletek hamarosan kiderülnek.",
+      "tags": ["igazságszolgáltatás", "belpolitika"],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "01:17:31",
+      "start_time": "01:18:03",
+      "end_time": "01:18:10",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "Elképzelhető-e összefüggés a kárpátaljai dróntámadás és a kormányalakítás időpontja között?",
+      "answer": "Nem hiszi, hogy van összefüggés, és reméli, hogy nincs.",
+      "tags": ["külpolitika", "honvédelem"],
+      "criticism_percent": 30,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "01:17:31",
+      "start_time": "01:18:03",
+      "end_time": "01:18:10",
+      "reporter": "Galicza Dorina",
+      "outlet": "HVG",
+      "question": "Van-e volt miniszter, aki mégis mérlegeli a végkielégítés felvételét?",
+      "answer": "Nincs – senki nem fogja megkapni, mert miniszterelnöki aláírás szükséges hozzá.",
+      "tags": ["belpolitika", "korrupció"],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "01:18:14",
+      "start_time": "01:18:53",
+      "end_time": "01:20:24",
+      "reporter": "ismeretlen",
+      "outlet": "ismeretlen",
+      "question": "A szegedi városvezetés javasolja, hogy a szolidaritási adó max. az iparűzési adó 15%-a legyen – gondolkodnak-e ilyen módosításon, és visszatér-e a gépjárműadó az önkormányzatokhoz?",
+      "answer": "Hamarosan megkezdődnek az egyeztetések az önkormányzatokkal; a helyzet nem tartható, de a pontos döntések a költségvetési felmérés után születnek.",
+      "tags": ["gazdaság", "belpolitika"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "01:20:31",
+      "start_time": "01:21:42",
+      "end_time": "01:23:12",
+      "reporter": "ismeretlen",
+      "outlet": "Gulyáságyú Média",
+      "question": "Terveznek-e a holnapi nagykövetbehíváson túl keményebb lépést Oroszország ellen a kárpátaljai támadás miatt?",
+      "answer": "Holnap okosabbak lesznek; a cél a béke elősegítése, nem az eszkaláció. Az összes diplomáciai eszközt bevetik.",
+      "tags": ["külpolitika", "honvédelem"],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_14",
+      "question_start_time": "01:20:56",
+      "start_time": "01:23:25",
+      "end_time": "01:26:50",
+      "reporter": "ismeretlen",
+      "outlet": "Gulyáságyú Média",
+      "question": "Lehetséges-e az akkumulátorgyárakhoz vezető csövekből vizet levenni öntözési célokra az aszály ellen?",
+      "answer": "Az ötlet ismert, korábban a gazdák kérték a leágazásokat, de elutasították; most megvizsgálják a lehetőséget.",
+      "tags": ["környezet", "gazdaság"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_15",
+      "question_start_time": "01:21:51",
+      "start_time": "01:22:04",
+      "end_time": "01:22:18",
+      "reporter": "ismeretlen",
+      "outlet": "Gulyáságyú Média",
+      "question": "Az EP-mandátumokat ki kapja meg a most kormányba kerülők helyett?",
+      "answer": "A héten dönt a pártelnökség arról, ki váltja Tart Zoltánt és Magyar Pétert az Európai Parlamentben.",
+      "tags": ["belpolitika", "eu"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_16",
+      "question_start_time": "01:27:08",
+      "start_time": "01:27:52",
+      "end_time": "01:29:37",
+      "reporter": "Sarner Félix",
+      "outlet": "TV2",
+      "question": "Hogyan tud a kormány segíteni a kárpátaljai magyar családoknak a dróntámadás után?",
+      "answer": "A főkonzul és diplomaták felmérik a károkat; a kormány azonnal felajánlott segítséget (pl. aggregátor), és kész bármit nyújtani.",
+      "tags": ["külpolitika", "honvédelem"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_17",
+      "question_start_time": "01:27:37",
+      "start_time": "01:29:37",
+      "end_time": "01:30:07",
+      "reporter": "Sarner Félix",
+      "outlet": "TV2",
+      "question": "Mit tartalmaz pontosan a vízimajor a gazdák számára?",
+      "answer": "Koordináló központ és alap létrejön, egyes kötelezettségeket elengednek (pl. másodvetés), 30 napos kedvezményes vízkivétel biztosított.",
+      "tags": ["környezet", "gazdaság"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    }
+  ]
+}
