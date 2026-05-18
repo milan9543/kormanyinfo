@@ -62,6 +62,10 @@
       {
         "id": "rtl_r04",
         "name": "Zalavári Noémi"
+      },
+      {
+        "id": "rtl_r05",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -80,6 +84,10 @@
       {
         "id": "index_r03",
         "name": "Szabó Gyula"
+      },
+      {
+        "id": "index_r04",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -158,6 +166,10 @@
       {
         "id": "blikk_r03",
         "name": "Szigeti Sándor"
+      },
+      {
+        "id": "blikk_r04",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -230,7 +242,9 @@
   {
     "id": "m1",
     "name": "M1 Híradó",
-    "aliases": ["M1"],
+    "aliases": [
+      "M1"
+    ],
     "reporters": [
       {
         "id": "m1_r01",
@@ -243,6 +257,10 @@
       {
         "id": "m1_r03",
         "name": "Lantos Csaba"
+      },
+      {
+        "id": "m1_r04",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -373,6 +391,10 @@
       {
         "id": "nepszava_r01",
         "name": "Derseny Dávid"
+      },
+      {
+        "id": "nepszava_r02",
+        "name": "ismeretlen"
       }
     ]
   },
@@ -417,6 +439,10 @@
       {
         "id": "24hu_r01",
         "name": "Horváth Csaba László"
+      },
+      {
+        "id": "24hu_r02",
+        "name": "Ürmös Dániel"
       }
     ]
   },
@@ -619,5 +645,25 @@
         "name": "Tom Kington"
       }
     ]
+  },
+  {
+    "id": "inforadio",
+    "name": "Inforádió",
+    "reporters": []
+  },
+  {
+    "id": "jelen",
+    "name": "Jelen",
+    "reporters": []
+  },
+  {
+    "id": "mti",
+    "name": "MTI",
+    "reporters": []
+  },
+  {
+    "id": "portfolio",
+    "name": "Portfólió",
+    "reporters": []
   }
 ]
