@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "title": "Kegyelmi botrány - rendkívüli sajtótájékoztató",
+    "date": "2026-05-19",
+    "youtube_url": "https://www.youtube.com/watch?v=okeHf4DkPYk",
+    "youtube_video_id": "okeHf4DkPYk",
+    "duration": "01:04:01",
+    "location": "Miniszterelnökség"
+  },
+  "speakers": [
+    {
+      "id": "s_01",
+      "name": "Magyar Péter",
+      "role": "miniszterelnök",
+      "position": "Magyarország miniszterelnöke (új kormány)"
+    },
+    {
+      "id": "s_02",
+      "name": "Kormányszóvivő",
+      "role": "kormányszóvivő",
+      "position": "kormányszóvivő"
+    }
+  ],
+  "opening_statements": [
+    {
+      "speaker_id": "s_02",
+      "start_time": "00:08:14",
+      "end_time": "00:08:30",
+      "summary": "A Kormányszóvivő bejelenti, hogy a kormány hétfői ülésén döntött arról, hogy a [kormany.hu/igazsagtetel](https://kormany.hu/igazsagtetel) oldalon nyilvánosságra hozzák a bicskei kegyelmi ügy igazságügyi minisztériumban fellelhető aktáit. A részleteket a miniszterelnök ismerteti.",
+      "tags": ["belpolitika", "igazságszolgáltatás"]
+    },
+    {
+      "speaker_id": "s_01",
+      "start_time": "00:08:30",
+      "end_time": "00:39:42",
+      "summary": "Magyar Péter miniszterelnök rendkívüli sajtótájékoztatót tart a bicskei kegyelmi botrányról, mielőtt Lengyelországba utazna. Köszönti Kaufmann Balázs 444-es újságírót, aki februárban felfedte az ügyet, és Fülöp Botond ügyvédet.\n\n**A kegyelmi eljárás menete:** Az igazságügyi minisztérium kegyelmi főosztálya vizsgálja a kérvényeket, felterjesztést készít a miniszternek, aki javaslatot tesz a köztársasági elnöknek, majd az elnöki határozatot az igazságügyi miniszter ellenjegyzi.\n\n**A dokumentumok tartalma:**\n- 1. irat: Az IM kegyelmi főosztálya **nem támogatta** K. Endre kegyelmi kérvényét (2023. április 14.).\n- 2. irat: 49 terhelt, 51 ügy – K. Endre monogramja nem szerepelt a javasolt kegyelmezettek között (április 17.).\n- 3. irat: Varga Judit igazságügyi miniszter negatív felterjesztést küldött Novák Katalinnak K. Endre ügyében (április 18.).\n- 4. irat: Április 27-én – egy nappal Ferenc pápa budapesti látogatása előtt – Novák Katalin kegyelmet adott, és **még aznap** Varga Judit ellenjegyezte, kihagyva a szokásos szolgálati utat.\n- 5. irat: A köztársasági elnök két ügyben (köztük K. Endre) megváltoztatta az IM felterjesztését; összesen 10 esetben döntött az IM-mel ellentétesen.\n- 6. irat (Répási Róbert feljegyzése Tuzson Bencének): Elismeri, hogy az ellenjegyzés nem a szokásos szolgálati út betartásával történt; a köztársasági elnöki hivatal kérte, hogy a kérelem a pápalátogatásig kerüljön felterjesztésre. A pápalátogatás kapcsán 22 személynek adott kegyelmet az elnök, ebből 10 esetben az IM felterjesztésével ellentétesen – köztük a Hunnia-per 6 terheltje (Budaházi György terrorizmus ügy) és K. Endre.\n\n**Következtetések:** Gulyás Gergely korábban elárulta, hogy a Hunnia-per ügyét a kormány megtárgyalta. Valószínűleg lobbitevékenység indult a kegyelmek érdekében. Két lehetőség: (1) a kormány tudott K. Endre ügyéről is, vagy (2) az igazságügyi minisztert szándékosan nem tájékoztatták arról, hogy az ő felterjesztésével ellentétes döntés született – „csőbe húzták\".\n\n**Bejelentések:**\n- Sulyok Tamás köztársasági elnököt felszólítja, hogy hozza nyilvánosságra a Sándor-palotában lévő bővebb aktát.\n- Országgyűlési vizsgálóbizottság felállítását tervezi, ahol kötelező lesz a megjelenés és az igazmondás.\n- Jogszabályváltoztatást ígér: pozitív kegyelmi döntések esetén nyilvánosságra kell hozni a kegyelmezett nevét.\n- K. Endre azért kaphatott kegyelmet, hogy kiskorúakkal dolgozhasson újra (a jogerős ítélet örök eltiltást mondott ki).",
+      "tags": ["belpolitika", "igazságszolgáltatás", "korrupció"]
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_01",
+      "question_start_time": "00:39:44",
+      "start_time": "00:40:04",
+      "end_time": "00:41:29",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "Mi különbözteti meg K. Endre ügyét a másik kilenc ellentétes döntéstől?",
+      "answer": "A Hunnia-ügy külön szálon futott; K. Endre ügyét kiemelték a normál csoportból. A 22 kegyelem közt 6 politikailag érzékeny Hunnia-ügy volt – a többit rácsapták, hogy ne tűnjön politikainak.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_02",
+      "question_start_time": "00:41:33",
+      "start_time": "00:41:44",
+      "end_time": "00:42:41",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "A katalán megjegyzés és az ügyvéd azonos-e a Budaházi-ügyben lobbizóval?",
+      "answer": "Sem megerősíteni, sem cáfolni nem tudja. Nem ért egyet azzal a szabályozással, amely tiltja az ügyvéd nevének nyilvánosságra hozatalát, de a jelenlegi adatvédelmi szabályok miatt nem mondhatja meg.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_03",
+      "question_start_time": "00:42:52",
+      "start_time": "00:43:06",
+      "end_time": "00:44:22",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "Van-e bizonyíték arra, hogy a kegyelmi kérvény benyújtója számíthatott a pápalátogatáshoz kapcsolódó tömeges kegyelemre?",
+      "answer": "A kegyelmi kérvény 2022 júniusában érkezett – közel egy évvel korábban. Az ügyet hirtelen előkapták és gyorsítottan intézték, ami példátlan az állami ügyintézésben. Politikai szándék volt a pápalátogatást kihasználni.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_04",
+      "question_start_time": "00:44:50",
+      "start_time": "00:44:57",
+      "end_time": "00:47:49",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "Ki járt el szándékosan: a köztársasági elnöki hivatal, a kegyelmi főosztály vagy a miniszteri kabinet? Van-e volt feleségétől származó információ?",
+      "answer": "Varga Juditától nincs információ, de egy volt miniszter családjától igen. Valószínűleg szándékosan nem tájékoztatták az igazságügyi minisztert a megváltoztatott döntésről – „csőbe húzták\". Az ügyet nyilván valaki kilobbizta, valószínűleg egy felsőbb hatalom. Vizsgálóbizottság fog ezzel foglalkozni.",
+      "tags": ["belpolitika", "igazságszolgáltatás", "korrupció"],
+      "criticism_percent": 25,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_05",
+      "question_start_time": "00:47:53",
+      "start_time": "00:48:11",
+      "end_time": "00:48:33",
+      "reporter": "Kaufmann Balázs",
+      "outlet": "444",
+      "question": "Répási Róbertnek meg kell-e jelennie a vizsgálóbizottság előtt?",
+      "answer": "Ez a vizsgálóbizottság feladata, de szerinte Répási Róbert, az akkori miniszter, a volt köztársasági elnök és a kormánytagok biztosan meg kell jelenjenek, köztük Varga Judit is.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_06",
+      "question_start_time": "00:49:10",
+      "start_time": "00:49:24",
+      "end_time": "00:50:07",
+      "reporter": "ismeretlen",
+      "outlet": "Telex",
+      "question": "Orbán Viktor feleségét is behívják-e a vizsgálóbizottságba?",
+      "answer": "Ez nem az ő feladata. Első körben a volt köztársasági elnök és hivatala, az akkori kormánytagok és az IM vezető tisztségviselői fontosak; az említett hölgy neve is felmerülhet.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 20,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_07",
+      "question_start_time": "00:50:08",
+      "start_time": "00:50:23",
+      "end_time": "00:51:11",
+      "reporter": "ismeretlen",
+      "outlet": "RTL Híradó",
+      "question": "Van-e sejtése, ki lobbizott K. Endre ügyében a politikai körökben? Ha Sulyok nem hozza nyilvánosságra az aktát, mi történik?",
+      "answer": "Konkrét tudomása nincs. Ha Sulyok megtagadja a nyilvánosságra hozatalt, övé a politikai, emberi és morális felelősség.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_08",
+      "question_start_time": "00:51:09",
+      "start_time": "00:51:10",
+      "end_time": "00:51:11",
+      "reporter": "ismeretlen",
+      "outlet": "RTL Híradó",
+      "question": "Beszélt-e Varga Judit az ellenjegyzés körülményeiről?",
+      "answer": "Nem.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 5,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_09",
+      "question_start_time": "00:51:17",
+      "start_time": "00:51:26",
+      "end_time": "00:55:13",
+      "reporter": "Varga Krisztián",
+      "outlet": "ATV",
+      "question": "Mikor kezdheti meg munkáját a vizsgálóbizottság? Ha Sulyok nem hozza nyilvánosságra az iratokat, van-e más lehetőség?",
+      "answer": "Először jogszabályt kell alkotni (kötelező megjelenés, igazmondás). Június végén–júliusban alakulhat meg, szeptember elején kezdheti munkáját. Sulyok ellenállása esetén nincs más jogi út; a köztársasági elnöki akta bővebb és biztosan létezik. Reméli, hogy Sulyok nyilvánosságra hozza.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_10",
+      "question_start_time": "00:55:15",
+      "start_time": "00:55:21",
+      "end_time": "00:55:35",
+      "reporter": "ismeretlen",
+      "outlet": "TV2",
+      "question": "Novák Katalinnal felvette-e a kapcsolatot a megválasztásuk óta?",
+      "answer": "Nem, erre nincs szükség; a vizsgálóbizottság a hivatalos út.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 20,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_11",
+      "question_start_time": "00:55:37",
+      "start_time": "00:56:08",
+      "end_time": "00:57:24",
+      "reporter": "ismeretlen",
+      "outlet": "Inforádió",
+      "question": "Milyen plusz információt várnak Sulyok aktájától? Mire hivatkoztak az iskolaigazgatók a kegyelmi kérvény támogatásakor?",
+      "answer": "A Sándor-palota dokumentumából kiderülhet, mit javasolt az ottani főosztály. Ha ők is nemlegesen javasoltak, erősebb lesz a gyanú kormánydöntésre. Az iskolaigazgatók K. Endrét kiváló nevelőként, az elesetteket segítőként jellemezték – ez tulajdonképpen szembeköpte az áldozatokat.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 10,
+      "hostility_percent": 5
+    },
+    {
+      "id": "q_12",
+      "question_start_time": "00:57:29",
+      "start_time": "00:58:13",
+      "end_time": "00:58:56",
+      "reporter": "ismeretlen",
+      "outlet": "24.hu",
+      "question": "Van-e politikai szándék a Tisza részéről a Budaházi-féle Hunnia-ügy kegyelmének kivizsgálására?",
+      "answer": "Az igazságszolgáltatás és a végrehajtás külön hatalmi ág; jogerős ítéleteket nem minősít. A köztársasági elnöknek diszkrecionális joga van a kegyelemhez, indokolási kötelezettség sincs. Ennek külön vizsgálata nem látszik értelmesnek.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 30,
+      "hostility_percent": 10
+    },
+    {
+      "id": "q_13",
+      "question_start_time": "00:58:56",
+      "start_time": "00:59:34",
+      "end_time": "01:01:32",
+      "reporter": "ismeretlen",
+      "outlet": "HVG",
+      "question": "Hogyan lehet kötelezővé tenni az igazmondást a vizsgálóbizottságban? Ki kerülhette meg a hivatali utat a minisztériumban?",
+      "answer": "A tanúknak igazmondási kötelezettségük van, a hamis tanúzás bűncselekmény – ezt kell alkalmazni. A Sándor-palota nem kerülhette meg; a miniszter aláírta a határozatot, de valószínűleg nem tájékoztatták arról, hogy kihagyták a szolgálati utat és megváltoztatták az ő döntését.",
+      "tags": ["belpolitika", "igazságszolgáltatás"],
+      "criticism_percent": 15,
+      "hostility_percent": 5
+    }
+  ]
+}

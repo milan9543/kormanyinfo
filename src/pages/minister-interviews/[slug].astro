@@ -1,5 +1,17 @@
 ---
 import { marked } from "marked";
+
+marked.use({
+  extensions: [],
+  hooks: {},
+  walkTokens: undefined,
+  renderer: {
+    link({ href, title, text }) {
+      const t = title ? ` title="${title}"` : "";
+      return `<a href="${href}"${t} target="_blank" rel="noopener noreferrer">${text}</a>`;
+    },
+  },
+});
 import Layout from "../../layouts/Layout.astro";
 import {
   getAllMinisterInterviews,
@@ -242,7 +254,7 @@ const videoId = interview.meta.youtube_video_id ?? null;
                   </span>
                 )}
                 <h3 class="font-body text-[22px] max-[700px]:text-[18px] font-bold leading-tight text-fg tracking-[-0.3px]">
-                  {q.question}
+                  <Fragment set:html={marked.parseInline(q.question)} />
                 </h3>
               </div>
               <div class="relative p-5 rounded-r-lg border-l-[5px] border-[#7c3aed] mb-3 answer-bg">
@@ -250,7 +262,7 @@ const videoId = interview.meta.youtube_video_id ?? null;
                   Válasz:
                 </div>
                 <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-fg">
-                  {q.answer}
+                  <Fragment set:html={marked.parseInline(q.answer)} />
                 </p>
                 <div class="flex justify-end mt-3">
                   {videoId ? (
@@ -362,6 +374,23 @@ const videoId = interview.meta.youtube_video_id ?? null;
   }
   .expose-prose :global(h2:first-child) {
     margin-top: 0;
+  }
+  .expose-prose :global(a) {
+    color: #7c3aed;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.15s;
+  }
+  .expose-prose :global(a:hover) {
+    opacity: 0.75;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) .expose-prose :global(a) {
+      color: #a78bfa;
+    }
+  }
+  [data-theme="dark"] .expose-prose :global(a) {
+    color: #a78bfa;
   }
   .answer-bg {
     background: color-mix(in srgb, #7c3aed 8%, transparent);

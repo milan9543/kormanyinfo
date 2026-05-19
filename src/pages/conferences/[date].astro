@@ -1,5 +1,17 @@
 ---
 import { marked } from "marked";
+
+marked.use({
+  extensions: [],
+  hooks: {},
+  walkTokens: undefined,
+  renderer: {
+    link({ href, title, text }) {
+      const t = title ? ` title="${title}"` : "";
+      return `<a href="${href}"${t} target="_blank" rel="noopener noreferrer">${text}</a>`;
+    },
+  },
+});
 import Layout from "../../layouts/Layout.astro";
 import {
   getAllConferences,
@@ -273,11 +285,7 @@ function timeToSeconds(t: string): number {
               )}
             </div>
             <div class="expose-prose px-8 pb-6 max-[600px]:px-5 max-[600px]:pb-5">
-              {stmt.summary.includes("\n") ? (
-                <Fragment set:html={marked(stmt.summary)} />
-              ) : (
-                <p>{stmt.summary}</p>
-              )}
+              <Fragment set:html={marked(stmt.summary)} />
               <div class="flex flex-wrap gap-1 mt-3">
                 {stmt.tags.map((t) => (
                   <button class="open-tag tag" data-tag={t}>
@@ -465,6 +473,15 @@ function timeToSeconds(t: string): number {
   }
   .expose-prose :global(h2:first-child) {
     margin-top: 0;
+  }
+  .expose-prose :global(a) {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: opacity 0.15s;
+  }
+  .expose-prose :global(a:hover) {
+    opacity: 0.75;
   }
   .read-check.is-read {
     border-color: var(--color-green);
@@ -672,7 +689,7 @@ function timeToSeconds(t: string): number {
                   );
                 })()}
                 <h3 class="font-body text-[22px] max-[700px]:text-[18px] font-bold leading-tight text-fg tracking-[-0.3px]">
-                  {q.question}
+                  <Fragment set:html={marked.parseInline(q.question)} />
                 </h3>
               </div>
               <div class="relative p-5 rounded-r-lg border-l-[5px] border-accent mb-3 [background:color-mix(in_srgb,var(--color-accent)_10%,transparent)]">
@@ -680,7 +697,7 @@ function timeToSeconds(t: string): number {
                   Válasz:
                 </div>
                 <p class="text-[15px] max-[700px]:text-sm leading-[1.7] text-fg">
-                  {q.answer}
+                  <Fragment set:html={marked.parseInline(q.answer)} />
                 </p>
                 <div class="flex justify-end mt-3">
                   {conf.meta.youtube_video_id ? (

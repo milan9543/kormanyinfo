@@ -55,7 +55,7 @@ For each Q&A pair provide:
 - question (extremely short Hungarian summary, max ~15 words)
 - answer (extremely short Hungarian summary, max ~20 words)
 - tags (1–3 broad topic tags, see rules)
-- criticism_percent (0-100: how critical the question is toward the government/officials — 0 = friendly/supportive, 100 = maximally adversarial)
+- criticism_percent (0-100: how critical the question is toward the person being asked and their party/government — 0 = friendly/supportive, 100 = maximally adversarial. If the question is about a third party (e.g. a previous government), score based on how uncomfortable it makes the interviewee, not how critical it is of the third party. Questions that simply ask the interviewee to elaborate on their own narrative score very low (5–15%).)
 - hostility_percent (0-100: how hostile or dismissive the official's reply is toward the reporter — 0 = respectful/cooperative, 100 = openly contemptuous)
 
 Return ONLY valid JSON. No markdown fences. Schema:
@@ -69,7 +69,7 @@ Return ONLY valid JSON. No markdown fences. Schema:
 }}
 
 RULES:
-- Opening statement summaries must be markdown. Keep it short but cover all major points. The string must be valid JSON (escape newlines as \\n, no literal line breaks).
+- Opening statement summaries must be markdown, detailed but short — cover all major points concisely. The string must be valid JSON (escape newlines as \\n, no literal line breaks).
 - Questions and answers must be EXTREMELY short — summaries, not transcriptions
 - All summaries and tags must be in Hungarian
 - Tags: 1–3 per entry, lowercase, broad topic categories ONLY. Preferred tags:
