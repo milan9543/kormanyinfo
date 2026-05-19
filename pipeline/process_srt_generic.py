@@ -37,6 +37,7 @@ Your job:
 2. For each reporter: extract name and outlet from self-introductions
 3. Separate every distinct question and its answer
 4. For opening statements: extract speaker, time range, summary, tags
+   - summary must be JSON-escaped markdown — short but detailed
 
 KNOWN OUTLETS AND REPORTERS
 The following JSON lists all known outlets and their regular reporters. Auto-generated subtitles
@@ -60,7 +61,7 @@ For each Q&A pair provide:
 Return ONLY valid JSON. No markdown fences. Schema:
 {{
   "speakers": [{{"id": "s_01", "name": "...", "role": "...", "position": "..."}}],
-  "opening_statements": [{{"speaker_id": "s_01", "start_time": "HH:MM:SS", "end_time": "HH:MM:SS", "summary": "...", "tags": [...]}}],
+  "opening_statements": [{{"speaker_id": "s_01", "start_time": "HH:MM:SS", "end_time": "HH:MM:SS", "summary": "markdown string with \\n escapes", "tags": [...]}}],
   "questions": [{{"id": "q_01", "question_start_time": "HH:MM:SS", "start_time": "HH:MM:SS", "end_time": "HH:MM:SS",
                   "reporter": "...", "outlet": "...",
                   "question": "...", "answer": "...", "tags": [...],
@@ -68,6 +69,7 @@ Return ONLY valid JSON. No markdown fences. Schema:
 }}
 
 RULES:
+- Opening statement summaries must be markdown. Keep it short but cover all major points. The string must be valid JSON (escape newlines as \\n, no literal line breaks).
 - Questions and answers must be EXTREMELY short — summaries, not transcriptions
 - All summaries and tags must be in Hungarian
 - Tags: 1–3 per entry, lowercase, broad topic categories ONLY. Preferred tags:

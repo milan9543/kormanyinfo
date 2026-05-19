@@ -1,24 +1,24 @@
 {
   "meta": {
-    "title": "",
+    "title": "Második kormányülés – Sajtótájékoztató",
     "date": "2026-05-18",
     "youtube_url": "https://www.youtube.com/watch?v=tMcZvmDf_cE",
     "youtube_video_id": "tMcZvmDf_cE",
-    "duration": "",
-    "location": ""
+    "duration": "02:45:35",
+    "location": "Miniszterelnökség"
   },
   "speakers": [
-    {
-      "id": "s_01",
-      "name": "Kormányszóvivő",
-      "role": "szóvivő",
-      "position": "kormányszóvivő"
-    },
     {
       "id": "s_02",
       "name": "Magyar Péter",
       "role": "miniszterelnök",
       "position": "miniszterelnök"
+    },
+    {
+      "id": "s_01",
+      "name": "Kormányszóvivő",
+      "role": "szóvivő",
+      "position": "kormányszóvivő"
     }
   ],
   "opening_statements": [
@@ -26,23 +26,15 @@
       "speaker_id": "s_01",
       "start_time": "00:05:16",
       "end_time": "00:25:16",
-      "summary": "A kormányszóvivő ismertette a kormányülés döntéseit: végrehajtási rendszer non-profit átalakítása, felszámolási rendszer bírósági kontroll alá vonása, közjegyzői rendszer reformja, azbesztszennyezés kezelése, autópályakoncesszió és eltitkolt költségvetési tételek feltárása, kormányzati gépkocsik megkülönböztető jelzéseinek korlátozása, vendégmunkások munkavállalási engedélyeinek felülvizsgálata, Élvonal alapítvány szerződésének felmondása, MTVA átvilágítása, állami ingatlanok átvilágítása, Paks üzemidő és Paks II felülvizsgálata, honvédségi légiflotta vizsgálata, önkormányzatok pénzügyi helyzetének egyeztetése, egészségügyi megszorítástervek nyilvánosságra hozatala, Lázár-féle leállított beruházások vizsgálata, diplomataútlevelek felülvizsgálata, lengyelországi és ausztriai út ismertetése.",
-      "tags": [
-        "belpolitika",
-        "gazdaság",
-        "korrupció"
-      ]
+      "summary": "## Kormányülés összefoglaló\n\n**Végrehajtás és lakhatás**\nKb. 550 szociális bérlakás állagmegóvása meghosszabbítva. Végrehajtási rendszer átalakítása: profitorientált modell helyett non-profit, állami felügyelet alatt működő közszolgáltatás. 670 ezer+ aktív ügy, kb. 2 millió érintett. Igazságügyi minisztérium június közepéig készíti a törvénymódosítást. Kilakoltatások felfüggesztése az új szabályozás hatályba lépéséig.\n\n**Felszámolás és közjegyzői reform**\nFelszámolási eljárások visszakerülnek bírósági kontroll alá; az elmúlt másfél évtizedben NER-közeli körök dominálták. Közjegyzői rendszer megnyitása: feladatok egy része kormányirodákhoz és bíróságokhoz kerül, díjak csökkentése.\n\n**Azbeszt-szennyezés**\nOsztrák bányákból származó azbeszt-szennyezett kőzúzalék legalább 3 megyében, több száz helyszínen. Import felfüggesztése vizsgálat alatt. Tárcaközi munkacsoport alakul. PM felveti az ügyet osztrák tárgyalásain.\n\n**Autópálya-koncesszió és költségvetés**\nAz előző kormány 286 milliárd forintnyi tételt eltüntetett a költségvetésből. Pénzügyminiszter megbízást kapott a 2026-os költségvetés valós helyzetének felmérésére.\n\n**Egyéb döntések**\n- Szirénák: csak miniszterelnök és belügyminiszter használhatja alapesetben\n- Vendégmunkások: szerdáig egyeztetés, jövő héten döntés a korlátozásról\n- Élvonal alapítvány: 261,7 milliárdos szerződés felmondása, ~20 milliárd visszakövetelése\n- MTVA: teljes körű átvilágítás\n- Állami ingatlanok: átvilágítás, Nemzeti Hausman program is érintett\n- Paks I üzemidő-hosszabbítás és Paks II felülvizsgálata\n- Katonai repülők használatának vizsgálata\n- Titkos egészségügyi megszorítási dokumentumok nyilvánosságra hozatala\n- Lázár-éra leállított beruházások átvilágítása\n- 1000+ diplomata útlevél felülvizsgálata\n- PM holnap Lengyelországba és Ausztriába utazik",
+      "tags": ["belpolitika", "gazdaság", "korrupció"]
     },
     {
       "speaker_id": "s_02",
       "start_time": "00:25:20",
       "end_time": "00:33:55",
-      "summary": "Magyar Péter miniszterelnök ismertette az EU-s forrástárgyalások állását (Brüsszelben tárgyalások kezdődtek, jövő héten aláírhatják a politikai megállapodást), az ukrán kisebbségi jogtárgyalások megindulását, valamint a bicskei kegyelmi dosszié holnapi részleges nyilvánosságra hozatalát; felszólította Sulyok Tamást a dosszié közzétételére és lemondására.",
-      "tags": [
-        "eu",
-        "külpolitika",
-        "belpolitika"
-      ]
+      "summary": "## Magyar Péter sajtótájékoztató – kiegészítő témák\n\n**Uniós források**\nA kormány kiemelt prioritása a Magyarországnak járó több ezer milliárd forintnyi uniós forrás hazahozatala. Magyar Péter levelet váltott Von der Leyennel; az EB delegációja Budapesten tárgyal egész héten. Cél: jövő héten Brüsszelben politikai megállapodás aláírása, majd augusztus 31-ig minden kérdés lezárása, hogy az összegek ősszel megérkezzenek.\n\n**Kárpátaljai magyarok**\nAntonio Costa EU Tanács elnöke tájékoztatta a PM-t: Ukrajna kész gyorsan tárgyalni a kárpátaljai magyarok 11 pontos kisebbségi jogcsomagjáról (kulturális, oktatási, nyelvhasználati jogok). Ez előfeltétele a magyar hozzájárulásnak Ukrajna első EU-csatlakozási fejezete megnyitásához júniusban.\n\n**Bicskei kegyelmi ügy**\nA kormány átvizsgálta a dosszét. Az igazságügyi minisztérium nemleges felterjesztése ellenére Novák Katalin köztársasági elnök megadta a kegyelmet a pedofil tanár segítőjének – a teljes minisztériumi struktúra, köztük Répási Róbert államtitkár jóváhagyta. A dosszé egy részét holnap délelőtt nyilvánosságra hozzák a kormány.hu/igazságtétel oldalon. A PM felszólítja Sulyok Tamás köztársasági elnököt, hogy munkaidő végéig hozza nyilvánosságra a Sándor-palotában lévő teljesebb dosszét, különben mondjon le – amit egyébként is május 31-ig elvárnak tőle.",
+      "tags": ["eu", "külpolitika", "belpolitika"]
     }
   ],
   "questions": [
@@ -55,11 +47,7 @@
       "outlet": "M1 Híradó",
       "question": "Tervez-e Magyar Péter személyesen találkozni Krausz Ferenc professzorral az alapítványi ügy kapcsán?",
       "answer": "Először az illetékes minisztérium végzi az átvilágítást; nyitott Krausz-szal való találkozóra, de a szerződés felmondása vagy a közérdekű alapítványok megszüntetése a cél.",
-      "tags": [
-        "oktatás",
-        "korrupció",
-        "belpolitika"
-      ],
+      "tags": ["oktatás", "korrupció", "belpolitika"],
       "criticism_percent": 20,
       "hostility_percent": 5
     },
@@ -72,10 +60,7 @@
       "outlet": "M1 Híradó",
       "question": "Tervez-e Magyar Péter személyes találkozót Zelenszkijjel a kárpátaljai kisebbségi jogok ügyében?",
       "answer": "Előbb technikai, majd külügyminiszteri szintű tárgyalások jönnek; ha megállapodás születik, kész Beregszászban találkozni az ukrán elnökkel.",
-      "tags": [
-        "külpolitika",
-        "belpolitika"
-      ],
+      "tags": ["külpolitika", "belpolitika"],
       "criticism_percent": 20,
       "hostility_percent": 5
     },
@@ -88,11 +73,7 @@
       "outlet": "RTL Híradó",
       "question": "Balási Gyula felajánlotta cégcsoportját az államnak – született-e döntés, mi lesz a 500 dolgozóval?",
       "answer": "A pénzügyminiszter vizsgálja a dokumentációt; elvárják a teljes dokumentáció megküldését, mert a részleteket látni kell az átvétel mérlegeléséhez; a NAV végrehajtást indított adótartozás miatt.",
-      "tags": [
-        "gazdaság",
-        "korrupció",
-        "belpolitika"
-      ],
+      "tags": ["gazdaság", "korrupció", "belpolitika"],
       "criticism_percent": 30,
       "hostility_percent": 10
     },
@@ -105,10 +86,7 @@
       "outlet": "RTL Híradó",
       "question": "Sulyok Tamás interjúja alapján nem tervez lemondani – mi lesz a konkrét eljárás, az alaptörvény melyik részét módosítják?",
       "answer": "Sulyok álláspontja változékony; május 31-ig megvárják, utána kétharmados felhatalmazással, alkotmányos keretek között távolítják el; a juttatások megváltoznak.",
-      "tags": [
-        "belpolitika",
-        "igazságszolgáltatás"
-      ],
+      "tags": ["belpolitika", "igazságszolgáltatás"],
       "criticism_percent": 55,
       "hostility_percent": 20
     },
@@ -121,10 +99,7 @@
       "outlet": "Telex",
       "question": "Van-e a miniszterelnöknek információja Lévai Anikó érintettségéről a kegyelmi ügyben?",
       "answer": "Konkrét bizonyíték nincs, de parlamenti vizsgálóbizottság felállítása és kötelező részvétel segíthet kideríteni; a kegyelmi döntéseket a jövőben nyilvánosságra kell hozni.",
-      "tags": [
-        "igazságszolgáltatás",
-        "belpolitika"
-      ],
+      "tags": ["igazságszolgáltatás", "belpolitika"],
       "criticism_percent": 60,
       "hostility_percent": 10
     },
@@ -137,10 +112,7 @@
       "outlet": "Telex",
       "question": "Szerepel-e a holnap közzéteendő dossziéban információ arról, miért ellenjegyezte Varga Judit a kegyelmi döntést?",
       "answer": "Nincs indokolás a dossziéban; valószínűleg figyelmetlenség volt, a 40 ügyes csomag egyszerre ment végig a minisztériumi struktúrán.",
-      "tags": [
-        "igazságszolgáltatás",
-        "belpolitika"
-      ],
+      "tags": ["igazságszolgáltatás", "belpolitika"],
       "criticism_percent": 55,
       "hostility_percent": 10
     },
@@ -153,10 +125,7 @@
       "outlet": "Telex",
       "question": "Mi indokolja az üzemanyag-árstop fenntartását, ha stratégiai tartalékot kell felhasználni?",
       "answer": "A magas világpiaci olajár és a lakosság tűrőképessége indokolja; a stratégiai készletre nyúlás bevett gyakorlat; az árstop kivezetése akkor jön, ha csökkeni kezd a világpiaci ár.",
-      "tags": [
-        "energia",
-        "gazdaság"
-      ],
+      "tags": ["energia", "gazdaság"],
       "criticism_percent": 50,
       "hostility_percent": 10
     },
@@ -169,10 +138,7 @@
       "outlet": "ATV",
       "question": "Mi az államháztartási hiány pontos száma; megszorítások várhatók-e?",
       "answer": "A pontos szám még nem ismert, a minisztériumok összegzik a vállalásokat; megszorítások nem lesznek, a túlárazott kötelezettségeket újratárgyalják; a hiány fenntarthatatlan, felelős gazdaságpolitikával csökkentik.",
-      "tags": [
-        "gazdaság",
-        "belpolitika"
-      ],
+      "tags": ["gazdaság", "belpolitika"],
       "criticism_percent": 55,
       "hostility_percent": 10
     },
@@ -185,10 +151,7 @@
       "outlet": "ATV",
       "question": "Miért emelte ki Répási Róbert nevét a kegyelmi üggyel kapcsolatban; mire fog rájönni a közvélemény az ügyvédi irodából?",
       "answer": "Répásit azért emelte ki, mert nemcsak Novák és Varga felelős; a holnap közzétett dossziéból kiderül, ki készítette a kegyelmi kérvényt – ezt most nem spoilerezné.",
-      "tags": [
-        "igazságszolgáltatás",
-        "belpolitika"
-      ],
+      "tags": ["igazságszolgáltatás", "belpolitika"],
       "criticism_percent": 50,
       "hostility_percent": 15
     },
@@ -201,9 +164,7 @@
       "outlet": "HírTV",
       "question": "Mikor lesznek kinevezve a közigazgatási államtitkárok?",
       "answer": "A mai napon megtörténnek a kinevezések, frissítsék a Magyar Közlönyt.",
-      "tags": [
-        "belpolitika"
-      ],
+      "tags": ["belpolitika"],
       "criticism_percent": 30,
       "hostility_percent": 25
     },
@@ -216,10 +177,7 @@
       "outlet": "HírTV",
       "question": "A 480 forintos benzinár visszahozatalára tett ígéret megszegett ígéretnek számít-e?",
       "answer": "A világpiaci olajár azóta megközelítőleg megduplázódott; annak idején hasonló áraknál kérte számon az előző kormányt, ma nincs realitása.",
-      "tags": [
-        "energia",
-        "gazdaság"
-      ],
+      "tags": ["energia", "gazdaság"],
       "criticism_percent": 70,
       "hostility_percent": 35
     },
@@ -232,10 +190,7 @@
       "outlet": "24.hu",
       "question": "Elképzelhetőek-e bővített köztársasági elnöki hatáskörök, esetleg elmozdulás a prezidenciális rendszer felé?",
       "answer": "Ha sor kerül rá, széles körű szakmai és társadalmi konzultáció előzi meg; jelenleg nem napirendi kérdés, de a nagy alkotmányozási folyamat ezt is érintheti.",
-      "tags": [
-        "belpolitika",
-        "igazságszolgáltatás"
-      ],
+      "tags": ["belpolitika", "igazságszolgáltatás"],
       "criticism_percent": 30,
       "hostility_percent": 10
     },
@@ -248,11 +203,7 @@
       "outlet": "24.hu",
       "question": "Az EU-s forrásokról: mik a vitás kérdések, és mi a helyzet a SAFE hitellel?",
       "answer": "A projektlista azonosítása a legnehezebb; a 16 milliárd eurós SAFE-hitelt felülvizsgálják, az 1300 milliárdos 4iG-szerződést valószínűleg felbontják; a hitelfelvétel csak valódi beruházásokra indokolt.",
-      "tags": [
-        "eu",
-        "gazdaság",
-        "honvédelem"
-      ],
+      "tags": ["eu", "gazdaság", "honvédelem"],
       "criticism_percent": 35,
       "hostility_percent": 15
     },
@@ -265,11 +216,7 @@
       "outlet": "444",
       "question": "Mit terveznek az állami cégek felügyelőbizottsági, igazgatósági tagjaival és menedzsmentjével; kaphatnak-e végkielégítést?",
       "answer": "FB/IG tagoknak nem jár végkielégítés; menedzsmentnél esetleg igen; politikai kinevezetteket felváltják, valódi szakemberek maradhatnak; az irányítás és tagok száma csökkentendő.",
-      "tags": [
-        "gazdaság",
-        "korrupció",
-        "belpolitika"
-      ],
+      "tags": ["gazdaság", "korrupció", "belpolitika"],
       "criticism_percent": 40,
       "hostility_percent": 10
     },
@@ -282,9 +229,7 @@
       "outlet": "444",
       "question": "Mikor neveznek ki új főispánokat, mi lesz a pozíció neve, politikai vagy szakmai kinevezés lesz?",
       "answer": "Szakítani szeretnének a politikai kinevezési hagyománnyal; szakmai, lehetőleg transzparens kiválasztás; középtávon megszűnik a vármegyerendszer.",
-      "tags": [
-        "belpolitika"
-      ],
+      "tags": ["belpolitika"],
       "criticism_percent": 35,
       "hostility_percent": 5
     },
@@ -297,10 +242,7 @@
       "outlet": "Magyar Hang",
       "question": "Az azbeszszennyezett területek lakóinak egészségügyi szűréséről döntött-e a kormány?",
       "answer": "Az egészségügyi miniszter részletes javaslatot tett; soron kívüli szűrővizsgálat várható; napokban tájékoztatás lesz; tárca közi munkacsoport alakul, napi jelentést kért.",
-      "tags": [
-        "egészségügy",
-        "környezet"
-      ],
+      "tags": ["egészségügy", "környezet"],
       "criticism_percent": 25,
       "hostility_percent": 5
     },
@@ -313,9 +255,7 @@
       "outlet": "Magyar Hang",
       "question": "Milyen elnöki szerepfelfogást és milyen körtől várna az új köztársasági elnök?",
       "answer": "Olyasvalakit javasolnak, aki valóban megtestesíti a nemzet egységét, kiáll az elesettekért, pártokon felül áll; közvetlen választás esetén is ilyen jelöltet ajánlanának.",
-      "tags": [
-        "belpolitika"
-      ],
+      "tags": ["belpolitika"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -328,10 +268,7 @@
       "outlet": "Partizán",
       "question": "Vonatkozik-e a végkielégítés-lemondási kérés az összes helyettes államtitkárra és szakmai felsővezetőre?",
       "answer": "Nem mindenki; lesznek, akik pozícióban maradnak; kérni lehet, de jogilag nem tiltható; majd magas adóval próbálkozhatnak.",
-      "tags": [
-        "belpolitika",
-        "korrupció"
-      ],
+      "tags": ["belpolitika", "korrupció"],
       "criticism_percent": 45,
       "hostility_percent": 10
     },
@@ -344,28 +281,9 @@
       "outlet": "Partizán",
       "question": "Az átadás-átvételi videóból mit szűrtek le a minisztériumi pincében talált DPK-s propagandakiadványokból?",
       "answer": "Bűncselekménynek minősíti: a pártfinanszírozás és a közfinanszírozás összekeverése súlyos bűncselekmény; feljelentés készül; az ügyészségnek hivatalból is el kell járni.",
-      "tags": [
-        "korrupció",
-        "belpolitika"
-      ],
+      "tags": ["korrupció", "belpolitika"],
       "criticism_percent": 50,
       "hostility_percent": 15
-    },
-    {
-      "id": "q_20",
-      "question_start_time": "01:40:41",
-      "start_time": "01:51:57",
-      "end_time": "01:52:16",
-      "reporter": "Sarkadi Zsolt",
-      "outlet": "Partizán",
-      "question": "Az összes kegyelmi aktát nyilvánosságra hozzák holnap, vagy csak a K. Endre-féle aktát?",
-      "answer": "Csak az érintett aktát; a többiek nem tartanak közérdeklődésre számot; semmilyen titkosítás nincs a dokumentumokon.",
-      "tags": [
-        "igazságszolgáltatás",
-        "belpolitika"
-      ],
-      "criticism_percent": 35,
-      "hostility_percent": 5
     },
     {
       "id": "q_21",
@@ -376,10 +294,7 @@
       "outlet": "HVG",
       "question": "A 2010–2026-os kormányülések feljegyzéseinek nyilvánosságra hozataláról mi derült ki; a Tisza-kormányülésekről készül-e feljegyzés?",
       "answer": "A feljegyzések még nem kerültek elő, határidő nem telt el; a Tisza-ülésekről hangfelvétel és emlékeztető készül, nyilvánosságra hozható, ha igény van rá.",
-      "tags": [
-        "belpolitika",
-        "média"
-      ],
+      "tags": ["belpolitika", "média"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -392,9 +307,7 @@
       "outlet": "HVG",
       "question": "Mikor ülnek össze legközelebb az országgyűlésben, mik lesznek az első törvényjavaslatok?",
       "answer": "Várhatóan jövő héten pünkösdi ülésnapok lesznek; képviselői juttatások csökkentése, miniszteri fizetések meghatározása, alaptörvény-módosítások szerepelnek.",
-      "tags": [
-        "belpolitika"
-      ],
+      "tags": ["belpolitika"],
       "criticism_percent": 20,
       "hostility_percent": 5
     },
@@ -407,11 +320,7 @@
       "outlet": "Portfólió",
       "question": "A SAFE-hitel felülvizsgálata befolyásolja-e az idei 2 milliárd eurós lehívási tervet; megvan-e a vagyonvisszaszerzési hivatal vezetője?",
       "answer": "Az idei lehívás nem feltétlenül változik; a hivatal létrehozása az országgyűlés feladata, jogszabályjavaslat hamarosan; az esetleges bevételek a módosított 2026-os költségvetésben jelennek meg.",
-      "tags": [
-        "gazdaság",
-        "korrupció",
-        "eu"
-      ],
+      "tags": ["gazdaság", "korrupció", "eu"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -424,12 +333,22 @@
       "outlet": "Gulyáságyú Média",
       "question": "Mit szűrtek le a minisztériumi pincében talált fideszes propaganda-kellékekből?",
       "answer": "Ez bűncselekmény: a pártfinanszírozás és közfinanszírozás összekeverése; feljelentés készül.",
-      "tags": [
-        "korrupció",
-        "belpolitika"
-      ],
+      "tags": ["korrupció", "belpolitika"],
       "criticism_percent": 55,
       "hostility_percent": 10
+    },
+    {
+      "id": "q_20",
+      "question_start_time": "01:40:41",
+      "start_time": "01:51:45",
+      "end_time": "01:51:50",
+      "reporter": "Sarkadi Zsolt",
+      "outlet": "Partizán",
+      "question": "Az összes kegyelmi aktát nyilvánosságra hozzák holnap, vagy csak a K. Endre-féle aktát?",
+      "answer": "Csak az érintett aktát; a többiek nem tartanak közérdeklődésre számot; semmilyen titkosítás nincs a dokumentumokon.",
+      "tags": ["igazságszolgáltatás", "belpolitika"],
+      "criticism_percent": 35,
+      "hostility_percent": 5
     },
     {
       "id": "q_25",
@@ -440,10 +359,7 @@
       "outlet": "Gulyáságyú Média",
       "question": "Az opusztaszeri emlékpark kapcsán melyik verzió igaz: kaptak-e pénzt a tűzivíztározóra?",
       "answer": "Az emlékpark igazgatója szerint egy fillért sem kaptak; Hankó Balázs bemondta, hogy adtak pénzt, de ezt az emlékpark nem erősítette meg.",
-      "tags": [
-        "korrupció",
-        "belpolitika"
-      ],
+      "tags": ["korrupció", "belpolitika"],
       "criticism_percent": 50,
       "hostility_percent": 10
     },
@@ -456,10 +372,7 @@
       "outlet": "Inforádió",
       "question": "Mi a terv Paks II-vel kapcsolatban?",
       "answer": "Felül kell vizsgálni a finanszírozást, a kivitelezést és a nemzetközi szerződést; az üzemidő-hosszabbítás is nagy lemaradásban van; mindkét kérdéssel sürgősen foglalkozni kell.",
-      "tags": [
-        "energia",
-        "gazdaság"
-      ],
+      "tags": ["energia", "gazdaság"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -472,10 +385,7 @@
       "outlet": "Inforádió",
       "question": "Mi lesz a Karmelitával és a többi presztízsépülettel?",
       "answer": "Társadalmi-szakmai egyeztetés dönt a funkciókról; addig a Karmelita látogatható marad; az oligarcháktól bérelt irodákba miniszterek nem költöznek.",
-      "tags": [
-        "belpolitika",
-        "korrupció"
-      ],
+      "tags": ["belpolitika", "korrupció"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -488,11 +398,7 @@
       "outlet": "Klub Rádió",
       "question": "Mik az EU-s tárgyalások vitás kérdései; az elveszett uniós pénzekért felmerül-e büntetőjogi felelősség?",
       "answer": "Vannak ellentmondásos bizottsági kérések, amelyeket nem teljesítenek; a napi 1 millió eurós bírság miatt büntetőjogi felelősség is felmerülhet; Lengyelország példáját követnék a megoldásban.",
-      "tags": [
-        "eu",
-        "igazságszolgáltatás",
-        "migráció"
-      ],
+      "tags": ["eu", "igazságszolgáltatás", "migráció"],
       "criticism_percent": 40,
       "hostility_percent": 10
     },
@@ -505,10 +411,7 @@
       "outlet": "Klub Rádió",
       "question": "A szolidaritási adót be kell-e fizetni az önkormányzatoknak júniusban; Budapest azt mondja, nem tudja fizetni.",
       "answer": "Igen, a hatályos kötelezettségeket teljesíteni kell; egyeztetés indul az önkormányzatokkal; hosszú távon a rendszer nem tartható fenn, de idő kell a változáshoz.",
-      "tags": [
-        "belpolitika",
-        "gazdaság"
-      ],
+      "tags": ["belpolitika", "gazdaság"],
       "criticism_percent": 40,
       "hostility_percent": 10
     },
@@ -521,11 +424,7 @@
       "outlet": "Kontroll",
       "question": "Van-e céldátum a Pegasus-típusú megfigyelések aktáinak nyilvánosságra hozatalára; tettek-e már feljelentést bűncselekményekért?",
       "answer": "Júliusi határidő van a minisztériumoknak a bűncselekmények feltárására; ez Pegasust is érint; korábbi feljelentéseket lesöpörtek, most újra meg fogják tenni.",
-      "tags": [
-        "belpolitika",
-        "korrupció",
-        "igazságszolgáltatás"
-      ],
+      "tags": ["belpolitika", "korrupció", "igazságszolgáltatás"],
       "criticism_percent": 45,
       "hostility_percent": 10
     },
@@ -538,10 +437,7 @@
       "outlet": "Népszava",
       "question": "A kekvák sorsáról mi várható rövid és hosszabb távon; tervez-e a kormány előrehozott önkormányzati választást?",
       "answer": "A kekvák modelljéről a döntés még nem született; az önkormányzati választásról a kormány nem tárgyalt.",
-      "tags": [
-        "belpolitika",
-        "oktatás"
-      ],
+      "tags": ["belpolitika", "oktatás"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -554,11 +450,7 @@
       "outlet": "MTI",
       "question": "A Nemzeti Választási Iroda nem fog kiköltözni a várból; mi lesz a 700 milliárdos Tiborcz-féle irodaházvásárlással?",
       "answer": "A teljes irodarendszert felülvizsgálják; az ügyletek valószínűleg szabálytalanok voltak, felbonthatók; miniszterek nem költöznek ilyen épületekbe.",
-      "tags": [
-        "korrupció",
-        "belpolitika",
-        "gazdaság"
-      ],
+      "tags": ["korrupció", "belpolitika", "gazdaság"],
       "criticism_percent": 35,
       "hostility_percent": 5
     },
@@ -571,9 +463,7 @@
       "outlet": "MTI",
       "question": "Sulyok Tamás leváltása után utódja ugyanazokkal az alkotmányos keretekkel veszi át a tisztséget?",
       "answer": "Igen, ez a logikus menet; rövid távon nem várható változás az alkotmányos keretekben.",
-      "tags": [
-        "belpolitika"
-      ],
+      "tags": ["belpolitika"],
       "criticism_percent": 20,
       "hostility_percent": 5
     },
@@ -586,10 +476,7 @@
       "outlet": "Euronews",
       "question": "Indokolt-e csatlakozni a Putyin háborús bűneit vizsgáló törvényszékhez a kisebbségi tárgyalások elősegítéséért; kik a delegáció tagjai?",
       "answer": "A kárpátaljai kisebbségi jogok alapjogok, nem adandók semmiért cserébe; a delegáció tagjait technikai tárgyaláson nem hozza nyilvánosságra; a kárpátaljai magyarok képviselőit bevonják.",
-      "tags": [
-        "külpolitika",
-        "eu"
-      ],
+      "tags": ["külpolitika", "eu"],
       "criticism_percent": 40,
       "hostility_percent": 10
     },
@@ -602,11 +489,7 @@
       "outlet": "Euronews",
       "question": "Módosítja-e rövid időn belül a kormány a menekültügyi szabályozást az egymillió eurós napi bírság miatt?",
       "answer": "Nem a gyorsaság, hanem a jó megoldás a fontos; Lengyelország példáját nézik; az Európai Bírósági ítélet miatt a bizottság már nem tud segíteni.",
-      "tags": [
-        "migráció",
-        "eu",
-        "igazságszolgáltatás"
-      ],
+      "tags": ["migráció", "eu", "igazságszolgáltatás"],
       "criticism_percent": 40,
       "hostility_percent": 10
     },
@@ -619,10 +502,7 @@
       "outlet": "Magyar Nemzet",
       "question": "Jogállamilag aggályos-e a miniszterelnöki ciklusok visszamenőleges korlátozása Orbán Viktorra vonatkozóan?",
       "answer": "Nem visszamenőleges, mindenkire vonatkozik; Orbán valószínűleg nem tervez visszatérni; a szabály rá is vonatkozik.",
-      "tags": [
-        "belpolitika",
-        "igazságszolgáltatás"
-      ],
+      "tags": ["belpolitika", "igazságszolgáltatás"],
       "criticism_percent": 65,
       "hostility_percent": 25
     },
@@ -635,10 +515,7 @@
       "outlet": "Magyar Nemzet",
       "question": "Mikor lesz tárlatvezetés a Szabadság György irodaházban, ahova a Tisza-frakció költözött?",
       "answer": "Személyesen elvezeti, ha lesz ideje; a Tisza azért nem az AVH-épületbe költözött, mert vannak elveik; a Szabadság György irodaházban szerinte nem luxus körülmények vannak.",
-      "tags": [
-        "belpolitika",
-        "média"
-      ],
+      "tags": ["belpolitika", "média"],
       "criticism_percent": 65,
       "hostility_percent": 30
     },
@@ -651,10 +528,7 @@
       "outlet": "Index",
       "question": "Megvizsgálták-e az orosz gázszerződéseket; nyilvánosságra hozzák-e?",
       "answer": "Még folyamatban van az átvizsgálás; ami nyilvánosságra hozható (pl. árképzés), azt közzéteszik; titoktartási kötelezettségeket betartják.",
-      "tags": [
-        "energia",
-        "külpolitika"
-      ],
+      "tags": ["energia", "külpolitika"],
       "criticism_percent": 35,
       "hostility_percent": 10
     },
@@ -667,9 +541,7 @@
       "outlet": "Index",
       "question": "Hogyan értékeli a kormány a forint erősödését; elég volt-e már?",
       "answer": "A stabilitás a legfontosabb, nem az árfolyam szintje; jelenleg kb. 360 Ft/euró; a Magyar Nemzeti Bank feladata az árfolyam-stabilitás biztosítása.",
-      "tags": [
-        "gazdaság"
-      ],
+      "tags": ["gazdaság"],
       "criticism_percent": 25,
       "hostility_percent": 5
     },
@@ -682,10 +554,7 @@
       "outlet": "Blikk",
       "question": "Érvényes-e a TEK önvédelmi jogköre; kiterjed-e a védelem Magyar Péter családtagjaira; mi lesz a TEK-kel?",
       "answer": "A családtagok védelmét nem kérte; a TEK-reformra jövő héten kerül elő a jogszabályjavaslat; cél az egységes irányítás a rendvédelmen belül.",
-      "tags": [
-        "honvédelem",
-        "belpolitika"
-      ],
+      "tags": ["honvédelem", "belpolitika"],
       "criticism_percent": 30,
       "hostility_percent": 10
     },
@@ -698,9 +567,7 @@
       "outlet": "Jelen",
       "question": "Gondolt-e a kormány az Orbán-éra traumáinak össztársadalmi feldolgozási folyamattá formálására?",
       "answer": "Nyitott rá, ha lesz igény; a régi történelmi traumák feldolgozásával együtt lehet ezt kezelni; a Radnai Márk vezette intézet is segíthet.",
-      "tags": [
-        "belpolitika"
-      ],
+      "tags": ["belpolitika"],
       "criticism_percent": 20,
       "hostility_percent": 5
     },
@@ -713,10 +580,7 @@
       "outlet": "Jelen",
       "question": "Küldött-e a kormány bankoknak jelzést a vagyonkimentés megakadályozására?",
       "answer": "Áttételesen jeleztek; a bankok tudják feladatukat; a NAV több eljárást indított, ami lelkesebbé tette a bankokat a bejelentésekre.",
-      "tags": [
-        "gazdaság",
-        "korrupció"
-      ],
+      "tags": ["gazdaság", "korrupció"],
       "criticism_percent": 30,
       "hostility_percent": 5
     },
@@ -729,10 +593,7 @@
       "outlet": "Reuters",
       "question": "A lengyelországi úton milyen gazdasági vagy védelmi megállapodások köthetők?",
       "answer": "Első tapogatózó tárgyalások; infrastruktúra (Varsó-Budapest vasút), agrárium, energetika, kereskedelem területein; V4 megerősítése a cél.",
-      "tags": [
-        "külpolitika",
-        "gazdaság"
-      ],
+      "tags": ["külpolitika", "gazdaság"],
       "criticism_percent": 15,
       "hostility_percent": 5
     },
@@ -745,10 +606,7 @@
       "outlet": "Reuters",
       "question": "Hogyan hagyta el Magyarországot a volt lengyel miniszter; felvette-e a kapcsolatot az USA-val?",
       "answer": "Nem vették fel a kapcsolatot; tudomása szerint Magyarországról nem utazott az USA-ba az érintett; tartózkodási helye a hatóságok előtt ismeretlen.",
-      "tags": [
-        "külpolitika",
-        "belpolitika"
-      ],
+      "tags": ["külpolitika", "belpolitika"],
       "criticism_percent": 40,
       "hostility_percent": 5
     },
@@ -761,10 +619,7 @@
       "outlet": "ismeretlen",
       "question": "Milyen lehetősége van a kormánynak, hogy visszaállítsa a közösségi médián letiltott polgárok hozzáférését?",
       "answer": "Mindenkit fel fognak oldani, akit közpénzből fenntartott oldalakon letiltottak; hamarosan útmutató jelenik meg a bejelentési lehetőségről.",
-      "tags": [
-        "média",
-        "belpolitika"
-      ],
+      "tags": ["média", "belpolitika"],
       "criticism_percent": 30,
       "hostility_percent": 5
     }
